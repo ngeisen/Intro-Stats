@@ -11,3 +11,27 @@
   <xi:include href="sec-section-name.ptx" />
 
 </chapter>
+<chapter>
+<title> Graphing Data </title>
+<objectives>
+<introduction>
+<p> In this chapter we will investigate different ways to organize and graph data. </p>
+</introdcution>
+<ol>
+<li>
+<p> One categorical variable </p>
+</li>
+<li>
+<p> Two categorical variables </p>
+</li>
+<li>
+<p> One quantitative variable </p> 
+</li>
+<li>
+<p> Two quantitative variables </p>
+</li>
+<li>
+<p> One quantitative variable and one categorical variable </p>
+<li>
+</ol>
+<objectives>
