@@ -5,4 +5,24 @@
 
   <p> Text of section. </p>
 
+<exercise>
+  <statement>
+    <p>
+      Directions: Put the letters in order.
+    </p>
+  </statement>
+  <blocks>
+    <block>
+      <p> A </p>
+    </block>
+    <block>
+      <p> B </p>
+    </block>
+    <block>
+      <p> C </p>
+    </block>
+  </blocks>
+</exercise>
+
+
 </section>
