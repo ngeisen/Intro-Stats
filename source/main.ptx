@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>Introductory Statistiscs</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Introduction to Statistical Analysis</title>
+    <subtitle>An interactive approach to analyzing data.</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
