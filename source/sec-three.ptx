@@ -3,7 +3,7 @@
 <section xml:id="sec-three" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Using StatKey</title>
 
-   
+    
         <objective> <term> Graphing One Categorical Variable </term> </objective>
 
         <p> How to graph students eye color with StatKey. </p>
@@ -13,16 +13,15 @@
         
         <figure xml:id="OneCatStatKey">
             <caption>Image of StatKey menu</caption>
-            <image source="OneCatStatKey.jpg">
+            <image source="OneCatStatKey.jpg" width="50%">
                 <shortdescription>The second option under descriptive statitics menu is the one categorical variable.</shortdescription>
             </image>
         </figure> 
 
         <p> Click on the <c> Upload File  </c> button and locate the data file on your computer. </p> 
-        <p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. note to insert image </p>
+        <p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below. </p>
      
-        <p> Sample output image </p> 
-
+        
         <figure xml:id="EyeColor">
             <caption>Sample image of StatKey output. </caption>
             <image source="EyeColor.jpg">
@@ -30,5 +29,13 @@
             </image>
         </figure>    
     
+<p> <term>Interpreting Bar Graphs</term> </p>
+<p> From the bar graph we can see that most students have brown eyes and green eyes occur the least. From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class. </p>
+    
+</p>
+
+<p> Using the graph above, which of the following statements are correct? Selelct all that apply. </p>
+
+
 
 </section>
