@@ -16,7 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Types of Data",
-  "body": " Types of Data  Text of section.  "
+  "body": " Types of Data  Text of section.   Directions: Put the letters in order.    A    B    C    "
+},
+{
+  "id": "exercise-1",
+  "level": "2",
+  "url": "sec-section-name.html#exercise-1",
+  "type": "Checkpoint",
+  "number": "1.1.1",
+  "title": "",
+  "body": " Directions: Put the letters in order.    A    B    C   "
 },
 {
   "id": "sec-two",
@@ -55,13 +64,22 @@ var ptx_lunr_docs = [
   "body": " Probability  "
 },
 {
-  "id": "ChapterBootstrap",
+  "id": "sec-sampdist",
   "level": "1",
-  "url": "ChapterBootstrap.html",
-  "type": "Chapter",
-  "number": "4",
-  "title": "Bootstrapping",
-  "body": " Bootstrapping  "
+  "url": "sec-sampdist.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Creating Sampling Distributions",
+  "body": " Creating Sampling Distributions  "
+},
+{
+  "id": "sec-bootdist",
+  "level": "1",
+  "url": "sec-bootdist.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Creating Bootstrap Distributions",
+  "body": " Creating Bootstrap Distributions  "
 },
 {
   "id": "ChapterTesting",
