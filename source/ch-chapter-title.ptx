@@ -16,37 +16,3 @@
 !  
 
 </chapter>
-
-<chapter>
-<title> Graphing Data </title>
-<objectives>
-<introduction>
-<p> In this chapter we will investigate different ways to organize and graph data. </p>
-</introdcution>
-<ol>
-<li>
-<p> One categorical variable </p>
-</li>
-<li>
-<p> Two categorical variables </p>
-</li>
-<li>
-<p> One quantitative variable </p> 
-</li>
-<li>
-<p> Two quantitative variables </p>
-</li>
-<li>
-<p> One quantitative variable and one categorical variable </p>
-<li>
-</ol>
-<objectives>
-
-<section>
-<title> Categorical Data </title>
-<p> how to graph eye color with StatKey </p>
-<p> open a web browswer and copy <url href="https://https://www.lock5stat.com/StatKey/" </p>
-<p> 1.	Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students’ eye colors. </p>
-<p> Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable. Click on the Upload File button and locate the data file on your computer. </p> 
-<p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. note to insert image </p>
-</section>

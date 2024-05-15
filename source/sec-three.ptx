@@ -3,7 +3,16 @@
 <section xml:id="sec-three" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Using StatKey</title>
 
+   
+        <objective> <term> Graphing One Categorical Variable </term> </objective>
 
+        <p> How to graph eye color with StatKey </p>
+        <p> Open a web browswer and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
+        <p> Download the csv file <c> Lab 1 Data.csv </c> posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors. </p>
+        <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Categorical Variable </em>. Click on the <c> Upload File  </c> button and locate the data file on your computer. </p> 
+        <p>  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. note to insert image </p>
+      
+    
     
 
 </section>
