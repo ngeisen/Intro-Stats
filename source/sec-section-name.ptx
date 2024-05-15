@@ -2,8 +2,32 @@
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title> Types of Data</title>
+<objectives>
+  <introduction>
+    <p>
+      At the end of this section you will able to
+    </p>
+  </introduction>
+  <ol>
+    <li>
+      <p>
+        Understand and apply the vocabulary associated with statistics.
+      </p>
+    </li>
+    <li> <p> Distinguish between quantitative data and categorical data. </p> </li>
+  </ol>
+</objectives>
 
-  <p> Text of section. </p>
+  <p> <term>Statistsics</term> is the science of collecting, describing, and analyzing data. </p>
+  <p> The subjects/objects that we obtain information about are called the <term>cases </term> or units in a dataset. These are represented as the <em>rows </em></p>
+  <p> A <term> variable </term> is any characteristic that is recorded for each case. The variables generally correspond to the <em> columns</em> in a data table.</p>
+  <p> A <term> categorical variable </term> divides the cases into groups, placing each case into exactly one of two or more categories.</p>
+  <p> A <term> quantitative variable </term> measures or records a numerical quantity for each case. </p>
+    
+    <p>Discuss structure of data, how collected. </p>
+  <p> discuss types of studies, create naming </p>
+
+
   <exercise>
     <statement>
       <p>
