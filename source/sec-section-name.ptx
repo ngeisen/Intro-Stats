@@ -53,4 +53,13 @@
     </blocks>
   </exercise>
   
+  <exercise>
+    <title>Sample exercise</title>
+    <statement><p>What is <m>2+2</m>?</p></statement>
+    <hint><p>We're being a bit tricky here...</p></hint>
+    <answer><p><m>22</m></p></answer>
+    <solution><p><m>22</m>, where <m>+</m> is the concatenation operator.</p></solution>
+  </exercise>
+
+
 </section>
