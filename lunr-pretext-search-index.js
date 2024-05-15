@@ -15,8 +15,8 @@ var ptx_lunr_docs = [
   "url": "sec-section-name.html",
   "type": "Section",
   "number": "1.1",
-  "title": "First Section Title",
-  "body": " First Section Title  Text of section.  "
+  "title": "Types of Data",
+  "body": " Types of Data  Text of section.  "
 },
 {
   "id": "sec-two",
@@ -33,8 +33,44 @@ var ptx_lunr_docs = [
   "url": "sec-three.html",
   "type": "Section",
   "number": "1.3",
-  "title": "",
-  "body": "  "
+  "title": "Using StatKey",
+  "body": " Using StatKey  "
+},
+{
+  "id": "ChapterTwo",
+  "level": "1",
+  "url": "ChapterTwo.html",
+  "type": "Chapter",
+  "number": "2",
+  "title": "Descriptive Statistiscs",
+  "body": " Descriptive Statistiscs  "
+},
+{
+  "id": "ChapterProb",
+  "level": "1",
+  "url": "ChapterProb.html",
+  "type": "Chapter",
+  "number": "3",
+  "title": "Probability",
+  "body": " Probability  "
+},
+{
+  "id": "ChapterBootstrap",
+  "level": "1",
+  "url": "ChapterBootstrap.html",
+  "type": "Chapter",
+  "number": "4",
+  "title": "Bootstrapping",
+  "body": " Bootstrapping  "
+},
+{
+  "id": "ChapterTesting",
+  "level": "1",
+  "url": "ChapterTesting.html",
+  "type": "Chapter",
+  "number": "5",
+  "title": "Hypothesis Testing",
+  "body": " Hypothesis Testing  "
 },
 {
   "id": "colophon-2",
