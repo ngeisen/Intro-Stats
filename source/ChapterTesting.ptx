@@ -4,5 +4,6 @@
     <title>Hypothesis Testing</title>
 
     <xi:include href="sec-advanced-topics.ptx" />
+    <xi:include href="sec-testing-eye.ptx" />
 
 </chapter>
