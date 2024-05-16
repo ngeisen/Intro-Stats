@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p>How many students prefer to win an Academy Award?</p>
+<p>The number of students is <fillin name="AnSwEr0001" characters="2"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <solution><p><m>2 = 2\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CiRjID0gMjsKCkJFR0lOX1BHTUwKSG93IG1hbnkgc3R1ZGVudHMgcHJlZmVyIHRvIHdpbiBhbiBBY2FkZW15IEF3YXJkPwoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVHlwZSB5b3VyIGFuc3dlciBpbiB0aGUgYmxhbmsgYmVsb3cnKUBdKioKClRoZSBudW1iZXIgb2Ygc3R1ZGVudHMgaXMgW19deyRjfXsyfS4KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYDIgPSBbJGNdXHRleHR7Ln1gXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2024-05-16T22:57:15Z       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+$c = 2;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How many students prefer to win an Academy Award?
+
+[@KeyboardInstructions('Type your answer in the blank below')@]**
+
+The number of students is [_]{$c}{2}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`2 = [$c]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>
