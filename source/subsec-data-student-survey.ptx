@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="subsec-data-student-survey" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Student Survey</title>
+    <p>Students in past semesters completed a survey in introductory statistics courses. The entire <url href="external/StudentSurvey.csv">Student Survey Dataset</url> is a comma-separated values document that includes responses from 362 students on the following 17 variables.</p>
+<p>
+    <ul>
+    <li><p>Year: Year in school</p></li>
+    <li><p>Sex: F=female or M=male</p></li>
+    <li><p>Smoke: Smoker? No or Yes</p></li>
+    <li><p>Award: Preferred award, Academy, Nobel, or Olympic</p></li>
+    <li><p>HigherSAT: Which SAT is higher? Math or Verbal</p></li>
+    <li><p>Exercise: Hours of exercise per week</p></li>
+    <li><p>TV: Hours of TV viewing per week</p></li>
+    <li><p>Height: Height (in inches)</p></li>
+    <li><p>Weight: Weight (in pounds)</p></li>
+    <li><p>Siblings: Number of siblings</p></li>
+    <li><p>BirthOrder: Birth order, 1=oldest</p></li>
+    <li><p>VerbalSAT: Verbal SAT score</p></li>
+    <li><p>MathSAT: Math SAT scorer</p></li>
+    <li><p>SAT: Combined Verbal + Math SAT</p></li>
+    <li><p>GPA: College grade point average</p></li>
+    <li><p>Pulse: Pulse rate (beats per minute)</p></li>
+    <li><p>Piercings: Number of body piercings</p></li>    
+</ul>
+ </p>
+ <p>
+ </p>
+ <p>
+    Here is the first 15 entries of the dataset:
+ </p>
+ <figure xml:id="figure-braille">
+    <caption>15 Student Responses</caption>
+    <image source="Student_Survey.jpg" width="100%">
+        <description>
+            The first 15 entries of the Student Survey Dataset
+        </description>
+    </image>
+</figure>
+<p>
+    Answer the following questions about the first 15 entries of the dataset.
+</p>
+<exercise label="row-matching">
+        <title>Rows of Data</title>
+        <statement>
+        <p>
+            What does each row represent?
+        </p>
+        </statement>
+        <choices randomize="yes">
+        <choice correct="yes">
+            <statement>
+            <p>
+                Each row is a list of responses by a student.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                Correct. Each row is a student response.
+            </p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement>
+            <p>
+                Each row is a list of responses of a case.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                Well done. a "case" is a survey-taker and is an important vocabulary word to know.
+            </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+            <p>
+                Each row is the list of responses of students on a single item of the survey.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                Rethink your selection. Responses on a single item are listed vertically.
+            </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+            <p>
+                Each row is a variable.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                The entries of a row do vary, but they do not represent different responses on a single survey item.
+            </p>
+            </feedback>
+        </choice>
+        </choices>
+</exercise>
+<p>
+    
+</p>
+<exercise label="column-matching">
+        <title>Columns of Data</title>
+        <statement>
+        <p>
+            What does each column represent?
+        </p>
+        </statement>
+        <choices randomize="yes">
+            <choice correct="yes">
+                <statement>
+                <p>
+                    Each column is the list of responses of students on a single item of the survey.
+                </p>
+                </statement>
+                <feedback>
+                <p>
+                    Correct. Columns are the item responses.
+                </p>
+                </feedback>
+            </choice>
+            <choice correct="yes">
+                <statement>
+                <p>
+                    Each column is a variable.
+                </p>
+                </statement>
+                <feedback>
+                <p>
+                    Well done. A "variable" is the responses of a survey item and is an important vocabulary word to know.
+                </p>
+                </feedback>
+            </choice>
+            <choice>
+            <statement>
+            <p>
+                Each column is a list of responses by a student.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                No. When you read down the column, the list is not the responses of a single student.
+            </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+            <p>
+                Each column is a list of responses of a case.
+            </p>
+            </statement>
+            <feedback>
+            <p>
+                Rethink your selection. A "case" is a survey-taker.
+            </p>
+            </feedback>
+        </choice>
+        </choices>
+    </exercise>
+<p>
+    
+</p>
+    <exercise>
+        <title>I'd like to thank the Academy</title>
+        <statement><p>How many students student in this list prefer to win an Academy Award?</p></statement>
+        <hint><p>The variable "Award" records students'preferred award: Academy Award, Nobel Prize, or Olympic Medal</p></hint>
+        <answer><p><m>2</m></p></answer>
+        <solution><p>Only <m>22</m> students preferred to win an Academy Award.</p></solution>
+    </exercise>
+    <p>
+        
+    </p>
+    <exercise label="case-matching">
+            <title>Characteristics of a Case</title>
+            <statement>
+            <p>
+                Which of the following are true about the student on this list who reported viewing the most hours of TV per week?
+            </p>
+            </statement>
+            <choices randomize="yes">
+                <choice correct="yes">
+                    <statement>
+                    <p>
+                        The student is a senior.
+                    </p>
+                    </statement>
+                    <feedback>
+                    <p>
+                        Correct.
+                    </p>
+                    </feedback>
+                </choice>
+                <choice correct="yes">
+                    <statement>
+                    <p>
+                        The student has a younger sibling.
+                    </p>
+                    </statement>
+                    <feedback>
+                    <p>
+                        Well done. We know the student has a sibling and is the first born, so the sibling must be younger.
+                    </p>
+                    </feedback>
+                </choice>
+                <choice correct="yes">
+                <statement>
+                <p>
+                    The student prefers to win an Nobel Prize.
+                </p>
+                </statement>
+                <feedback>
+                <p>
+                    Yes!
+                </p>
+                </feedback>
+            </choice>
+            <choice>
+                <statement>
+                <p>
+                    The student has a pulse rate of 65 bpm.
+                </p>
+                </statement>
+                <feedback>
+                <p>
+                    Be careful reading across the row.
+                </p>
+                </feedback>
+            </choice>
+            </choices>
+        </exercise>
+        <p>
+            
+        </p>
+            <exercise>
+                <title>Piercings</title>
+                <statement><p>What percentage of students on the list have piercings?</p></statement>
+                <hint><p>The percentage is the number of students with piercings out of the total number</p></hint>
+                <answer><p><m>40</m></p></answer>
+                <solution><p><m>40</m>% of the students have piercings, since <m>6</m> of the <m>15</m> reported having them</p></solution>
+            </exercise>
+
+</subsection>
