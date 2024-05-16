@@ -3,6 +3,30 @@
 <chapter xml:id="ChapterTwo" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Descriptive Statistiscs</title>
 
-    
+    <introduction>
+        <p> This chapter will show you multilple ways to describe the data with numerical statistiscs. </p>
+      </introduction> 
+
+      <objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to
+          </p>
+        </introduction>
+        <ol>
+          <li>
+            <p>
+              Describe the center of the data with mean, median, mode.
+            </p>
+          </li>
+          <li> <p> Describe the spread of a data set. </p> </li>
+        </ol>
+      </objectives>
+
+      <xi:include href="sec-shape.ptx" />
+      <xi:include href="centers.ptx" />
+      <xi:include href="spread.ptx" />
+      <xi:include href="boxplots.ptx" />
+
 
 </chapter>

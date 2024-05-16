@@ -20,4 +20,23 @@
         </ol>
       </objectives> 
 
+      <p> In this chapter we will investigate different ways to organize and graph data. </p>
+   <ol>
+    <li>
+    <p> One categorical variable </p>
+    </li>
+    <li>
+    <p> Two categorical variables </p>
+    </li>
+    <li>
+    <p> One quantitative variable </p> 
+    </li>
+    <li>
+    <p> Two quantitative variables </p>
+    </li>
+    <li>
+    <p> One quantitative variable and one categorical variable </p>
+    </li>
+    </ol>
+
 </section>

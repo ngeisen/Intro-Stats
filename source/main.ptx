@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>Introduction to Statistical Analysis</title>
-    <subtitle>An interactive approach to analyzing data.</subtitle>
+    <subtitle> An interactive approach to analyzing data.</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
