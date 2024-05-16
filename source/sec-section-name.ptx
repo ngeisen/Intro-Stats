@@ -24,6 +24,11 @@
   <p> A <term> categorical variable </term> divides the cases into groups, placing each case into exactly one of two or more categories.</p>
   <p> A <term> quantitative variable </term> measures or records a numerical quantity for each case. </p>
     
+<!-- include subsections -->
+<xi:include href="subsec-data-student-survey.ptx" />
+
+
+
     <p>Discuss structure of data, how collected. </p>
   <p> discuss types of studies, create naming </p>
 
