@@ -3,6 +3,6 @@
 <chapter xml:id="ChapterTesting" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Hypothesis Testing</title>
 
-    
+    <xi:include href="sec-advanced-topics.ptx" />
 
 </chapter>
