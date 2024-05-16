@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Investigation-Process" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The Statistical Investigation Process</title>
+
+    <p> Put before or after vocab is introduced? If after, then it can be used here...</p>
+
+
+<p></p>
+
+    <p>
+        <em>The first part below is partially copied and pasted from an Airforce OER- need to credit or rewrite more.</em>
+    </p>
+    
+    <p>
+        Researchers and scientists seek to answer questions using rigorous methods and careful observations. The collected observations form the backbone of statistical investigations and are called data. Statistics is the study of how best to collect, analyze, and draw conclusions from data. The <term>Statistical Investigation Process</term> can be divided into four main components: 
+    </p>
+    
+<ol>
+    <li>
+        <p>
+            Data Collection
+        </p>
+    </li>
+    <li>
+        <p>
+            Data Exploration
+        </p>
+    </li>
+    <li>
+        <p>
+            Data Analysis
+        </p>
+    </li>
+    <li>
+        <p>
+            Draw Conclusions from the Data.
+        </p>
+    </li>
+</ol>
+
+    
+  
+    <note>
+        Not all investigations will require all four steps. Some investigations are more exploratory in nature, for example. In this case, data may be collected without a research question in mind, and the goal is just to find interesting features in the data. 
+    </note>
+ 
+
+<p>
+    We will focus on traditional Statistical Investigations that span all four parts, and we will study methods used in each stage and how these methods affect amd depend on each other. Here are the four components again, but with more information on what each involves (<em>will expand this</em>):  
+</p>
+    
+
+ 
+
+
+
+    <ol>
+        <li>
+            <p>
+                Data Collection
+                <ul>
+                    <li>
+                        <p>
+                           Designing a study that allows for collection of relevant and accurate data.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                           Selecting who or what data will be colected from. 
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <p>
+                Data Exploration/Descriptive Statistics
+            </p>
+                <ul>
+                    <li>
+                        <p>
+                            Computing summary statistics.
+                        </p>
+                    </li>
+                    <li>
+                         <p>
+                            Summarizing data with graphs.    
+                         </p>
+                     </li>
+                </ul>
+        </li>
+        <li>
+            <p>
+                Data Analysis/Statistical Inference
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Confidence Intervals.
+                    </p>
+                </li>
+                <li>
+                     <p>
+                        Hypothesis Tests    
+                     </p>
+                 </li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                Draw Conclusions from the Data.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Association versus causation
+                    </p>
+                </li>
+                <li>
+                     <p>
+                        Generalizing results beyond the study's subjects.    
+                     </p>
+                 </li>
+            </ul>
+        </li>
+    </ol>
+
+    <note>
+        The topics that researchers and scientists investigate are as diverse as the questions they ask! However, many of these investigations can be addressed with just the basics that you will learn in this class. 
+</note>
+   
+
+<exploration>
+    <title>Sleep or Caffeine for Memory?</title>
+    <p>
+        The consumption of caffeine to benefit alertness is a common activity practiced by 90% of adults in North America. People often use caffeine to replace the need for sleep. We will look at a study that compared the effects of caffeine versus a daytime nap on the ability to recall memorized information. Click <url href=" https://www.sciencedirect.com/science/article/pii/S0166432808002416?via%3Dihub">here</url> to access the  article containing the full investigation.
+    </p>
+    
+    <p>
+        <term>Research Question:</term> Which is better for memory recall - caffeine or napping? 
+    </p>
+
+    <p>
+         The research question, which is paraphrased above, can be found in the <term>Introduction</term> section of the article. Here, the researchers discuss why their work is important and relevant. They cite previous research on the topic, and explain how and why they arrived on their specific research question.    
+    </p>
+    
+    <p>
+        <term>Step1: Data Collection:</term> In the <term>methods</term> section of the article, the researchers describe the subjects that participated in their study, how the participating subjects were selected, exactly what the subjects had to do as participants, and what information (data) was collected. 
+    </p>
+
+    <p>
+        For the portion of study that looked at memory recall of verbal information [The part of the study we are focusing on]:
+    </p>
+
+    <ul>
+        <li>
+            <p>
+                The subjects were 33 adults, between the ages of 18 and 39, that were recruited and gave informed consent to participate.   
+            </p>
+        </li>
+        <li>
+             <p>
+                Subjects were in the lab under supervision during the entire experimental day. At 09:30am, the verabl recall task began.  
+             </p>                
+                <ul>
+                    <li>
+                        <p>
+                            The experimenter read 24 unrelated words out loud, and subjects were immediately asked to recall as many of the words as possible. No feedback on performance was given. This was repeated three times.  
+                        </p>
+                    </li>
+                </ul>
+         </li>
+         <li>
+            <p>
+                Lunch was served at noon. Then at 1:00pm, subjects were randomly assigned to a take a nap, a caffiene pill, or placebo pill. So, subjects either took a nap (90-min of sleep maximum or up to 2 h in bed) starting at 1:00pm or were given an unmarked pill (200 mg caffeine or placebo) at 3:00pm. The experiementer recorded which group the subject was randomly assigned to.
+            </p>
+        </li>
+        <li>
+            <p>
+                 Sixty minutes later (4:00pm), subjects' recall was officially  tested. The experiement recorded the number of words correctly recalled. 
+            </p>
+        </li>
+    </ul>
+
+<p></p>
+
+<p>
+    <term>Step 2: Data Exploration:</term> In the <term>Methods</term> section of the article, the researchers summarized demographic information about the subjects, e.g. computing average age of subjects randomly assigned to each group, as well as the number of male and females in each group. The <term>Results</term> section of the article graphically compares the average number of words recalled across groups using a bar chart.  <em>explain error bars</em>
+</p>
+
+<figure xml:id="Recall-Compare">
+    <caption>Need to recreate this graph [currently stolen]. Shows that the Nap group recalled more words, on average, compared to the other two groups.</caption>
+   <image source="Images/Recall.png">
+    <description>
+      Bar chart comparing means, with error bars
+  </description>
+    <shortdescription>bar chart.</shortdescription>
+   </image>
+  </figure>
+ 
+ <note>
+    What do you think is the purpose of including the placebo group?
+ </note>
+
+  <p></p>
+
+ <p>
+    
+ 
+    <term>Step 3: Data Analysis:</term> In the <term>Analysis</term> section of the article, the researchers describe which statistical inference methods were used to analyze the data, and the results of the data analyses are provided in the <term>Results</term> section of the article.
+
+
+    "To examine that, we utilized a one-way analysis of variance (ANOVA) using three levels of the variable Group (caffeine, nap, placebo), separately for recall and recognition. 
+    Significant ANOVAs were followed-up by examining differences between groups at the specific time point with independent samples t-tests."
+
+    "Recall memory for Word List 1 after 7 h retention interval showed significant group differences (F = 5.41 p = 0.009, partial eta2 = 0.25, Fig. 2a). Post hoc tests showed: (a) the nap group performed significantly better than the caffeine group (p = 0.003); (b) nap performed marginally better than placebo (p = 0.06.); and (c) there were non-significant differences between caffeine and placebo (p = 0.22). Recognition memory for words after a 7 h retention interval also showed significant group differences for d’ (F = 4.51 p = 0.019, partial eta2 = 0.22, Fig. 2b). Post hoc tests showed: (a) nap performed significantly better than caffeine (p = 0.008); (b) nap better than placebo (p = 0.03); and (c) no difference between caffeine and placebo (p = 0.50)."
+
+</p>
+
+
+
+<p>
+    <term>Step 4: Draw Conclusions from the Data:</term> In the <term>Discussion</term> section of the article, the researchers state their overall conclusions obtained during Steps 2 and 3. Conclusions are written in the context of the entire investigation and in relationship to findings from previous studies. Conclusions are applied more boradly (beyond the subjects in the study), and researchers conclude that napping directly <term>causes</term> the higher recall ability. They state <q>...naps improved the ability to learn a new list of words ...</q>. 
+</p>
+
+<note>
+    <p>Studies must be designed in a specific way in order to draw cause-and-effect conclusions!</p>
+</note>
+</exploration>
+
+
+<exercise label="matching">
+    <title>Identifying Parts of a Study</title>
+    <statement>
+    <p>
+        This study also looked Motor Memory recall....
+    </p>
+    </statement>
+    <matches>
+    <match>
+        <premise>
+        Research Question
+        </premise>
+        <response>
+            Does caffeine affect motor memory compared to naps?
+        </response>
+    </match>
+    <match>
+        <premise>
+        Data Collection
+        </premise>
+        <response>
+        Describe Sample, Study, and Variables
+        </response>
+    </match>
+    <match>
+        <premise>
+        Data Exploration
+        </premise>
+        <response>
+        Stats and Graphs
+        </response>
+    </match>
+    <match>
+        <premise>
+        Data Analysis
+        </premise>
+        <response>
+        ANOVA Results
+        </response>
+    </match>
+    <match>
+        <premise>
+        Conclusion
+        </premise>
+        <response>
+        Conclusion
+        </response>
+    </match>
+    </matches>
+</exercise>
+</section>
