@@ -159,8 +159,17 @@ var ptx_lunr_docs = [
   "url": "sec-studytypes.html",
   "type": "Section",
   "number": "1.4",
+  "title": "Study Design",
+  "body": " Study Design    At the end of this section you will able to     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.     "
+},
+{
+  "id": "sec-studytypes-2",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-2",
+  "type": "Objectives",
+  "number": "1.4",
   "title": "",
-  "body": "  "
+  "body": "  At the end of this section you will able to     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.    "
 },
 {
   "id": "sec-shape",
@@ -169,7 +178,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Shape of Data",
-  "body": " Shape of Data  "
+  "body": " Shape of Data    At the end of this section you will able to     Accurately describe the shape of a graph as uniform, right skewed, left skewed, or bell shaped and symmetrical.    Correctly identify the approximate center of a distribution.     "
+},
+{
+  "id": "sec-shape-2",
+  "level": "2",
+  "url": "sec-shape.html#sec-shape-2",
+  "type": "Objectives",
+  "number": "2.1",
+  "title": "",
+  "body": "  At the end of this section you will able to     Accurately describe the shape of a graph as uniform, right skewed, left skewed, or bell shaped and symmetrical.    Correctly identify the approximate center of a distribution.    "
 },
 {
   "id": "centers",
@@ -178,7 +196,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Describing the Center of Data",
-  "body": " Describing the Center of Data  "
+  "body": " Describing the Center of Data    At the end of this section you will able to     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean, median, and mode using technology.     "
+},
+{
+  "id": "centers-2",
+  "level": "2",
+  "url": "centers.html#centers-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "  At the end of this section you will able to     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean, median, and mode using technology.    "
 },
 {
   "id": "spread",
@@ -244,103 +271,121 @@ var ptx_lunr_docs = [
   "body": " Randomization Distributions  "
 },
 {
-  "id": "sec-advanced-topics",
+  "id": "sec-HT-Bob-Tim",
   "level": "1",
-  "url": "sec-advanced-topics.html",
+  "url": "sec-HT-Bob-Tim.html",
   "type": "Section",
   "number": "5.1",
   "title": "Hypothesis Test",
-  "body": " Hypothesis Test   Which name belongs to the face on the left?      Photograph in the assets directory.   Photograph of .....  Photographs of faces of two men.    Have student submit answer - collect class data.  A printable version (worksheet) of this invetigation, plus questions, is available here: Facial Prototyping .  *Note that this file is stored in your assets folder, and is automatically put in external when pretext build the file.   Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  Use StatKey to answer the first two checkpoint questions below. Click here to access the actual article.     HT -Manually-authored exercise  Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.   We're being a bit tricky here...   , where is the concatenation operator.    CI -Manually-authored exercise  Also compute and interpret a 95% confidence interval for the parameter of interest.   We're being a bit tricky here...   , where is the concatenation operator.     Decision CI - Runestone-powered True\/False Question  Based on the confidence interval, we would NOT reject the null hypothesis.   The null value is outside of the CI.     Practical Import - Runestone-powered Matching Problem  Does your confidence interval suggest that the results are practically important? Explain.     Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.     The video below would be a demo of one of us using StatKey.   StatKey for the Hypothesis Test  Hello World    "
+  "body": " Hypothesis Test   Which name belongs to the face on the left?    Photograph in the assets directory.   Photograph of .....  Photographs of faces of two men.      Have student submit answer - collect class data - don't let students know the results yet! Only provide results after student has hypotheses set up.    A printable version (worksheet) of this invetigation, plus questions, is available here: Facial Prototyping .  *Note that this file is stored in your assets folder, and is automatically put in external when pretext build the file.   Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.    Comparing different formats for presenting the study - exploration vs example.    Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  Use StatKey to answer the first two checkpoint questions below. Click here to access the actual article.     Type of HT -Manually-authored exercise  What statistical hypotheses and what type of test (left, right, or two-tail) should we use to determine whether UNC students, in general, use facial prototypes when they encounter different names. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.   Null hypothesis should describe the no effect scenario.   Two-tailed, because....     HT -Manually-authored exercise  Now perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level.   We're being a bit tricky here...   , where is the concatenation operator.    Free Response Question -Runestone  Describe how StatKey could have generated each randomization sample when creating the randomization distribution (that you used in the previous question).  *Can only see text-box where student writes answer when connected to a capable server (Runestone).   , where is the concatenation operator.     CI -Manually-authored exercise  Also compute and interpret a 95% confidence interval for the parameter of interest.   We're being a bit tricky here...   , where is the concatenation operator.     Decision CI - Runestone-powered True\/False Question  Based on the confidence interval, we would NOT reject the null hypothesis.   The null value is outside of the CI.     Practical Import - Runestone-powered Matching Problem  Does your confidence interval suggest that the results are practically important? Explain.     Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.     The video below would be a demo of one of us using StatKey.   StatKey for the Hypothesis Test  Hello World    "
 },
 {
-  "id": "sec-advanced-topics-2",
+  "id": "sec-HT-Bob-Tim-2",
   "level": "2",
-  "url": "sec-advanced-topics.html#sec-advanced-topics-2",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-2",
   "type": "Investigation",
   "number": "5.1.1",
   "title": "Which name belongs to the face on the left?",
-  "body": " Which name belongs to the face on the left?    "
+  "body": " Which name belongs to the face on the left?  "
 },
 {
   "id": "BOBorTIM",
   "level": "2",
-  "url": "sec-advanced-topics.html#BOBorTIM",
+  "url": "sec-HT-Bob-Tim.html#BOBorTIM",
   "type": "Figure",
   "number": "5.1.1",
   "title": "",
   "body": " Photograph in the assets directory.   Photograph of .....  Photographs of faces of two men.   "
 },
 {
-  "id": "sec-advanced-topics-7",
+  "id": "sec-HT-Bob-Tim-4",
   "level": "2",
-  "url": "sec-advanced-topics.html#sec-advanced-topics-7",
-  "type": "Example",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-4",
+  "type": "Note",
   "number": "5.1.2",
+  "title": "",
+  "body": "  Have student submit answer - collect class data - don't let students know the results yet! Only provide results after student has hypotheses set up.   "
+},
+{
+  "id": "sec-HT-Bob-Tim-7",
+  "level": "2",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-7",
+  "type": "Exploration",
+  "number": "5.1.2",
+  "title": "Facial Prototyping.",
+  "body": " Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  "
+},
+{
+  "id": "sec-HT-Bob-Tim-11",
+  "level": "2",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-11",
+  "type": "Example",
+  "number": "5.1.3",
   "title": "Facial Prototyping.",
   "body": " Facial Prototyping  A study in Psychonomic Bulletin and Review (Lea, Thomas, Lamkin, and Bell, 2007) presented evidence that people use facial prototypes when they encounter different names. Participants were given two faces and asked to identify which one was Tim and which one was Bob. The researchers wrote that their participants “overwhelmingly agreed” on which face belonged to Tim and which face belonged to Bob but did not provide the exact results of their study.  Use StatKey to answer the first two checkpoint questions below. Click here to access the actual article.  "
 },
 {
-  "id": "sec-advanced-topics-9",
+  "id": "sec-HT-Bob-Tim-13",
   "level": "2",
-  "url": "sec-advanced-topics.html#sec-advanced-topics-9",
-  "type": "Checkpoint",
-  "number": "5.1.3",
-  "title": "HT -Manually-authored exercise.",
-  "body": "HT -Manually-authored exercise  Perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.  "
-},
-{
-  "id": "sec-advanced-topics-13",
-  "level": "2",
-  "url": "sec-advanced-topics.html#sec-advanced-topics-13",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-13",
   "type": "Checkpoint",
   "number": "5.1.4",
+  "title": "Type of HT -Manually-authored exercise.",
+  "body": "Type of HT -Manually-authored exercise  What statistical hypotheses and what type of test (left, right, or two-tail) should we use to determine whether UNC students, in general, use facial prototypes when they encounter different names. Let the parameter of interest be the probability that a student would assign the name Tim to the face on the left.  "
+},
+{
+  "id": "sec-HT-Bob-Tim-17",
+  "level": "2",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-17",
+  "type": "Checkpoint",
+  "number": "5.1.5",
+  "title": "HT -Manually-authored exercise.",
+  "body": "HT -Manually-authored exercise  Now perform a full hypothesis test to determine whether UNC students, in general, use facial prototypes when they encounter different names. Use a 5% significance level.  "
+},
+{
+  "id": "short-open-answer-question",
+  "level": "2",
+  "url": "sec-HT-Bob-Tim.html#short-open-answer-question",
+  "type": "Checkpoint",
+  "number": "5.1.6",
+  "title": "Free Response Question -Runestone.",
+  "body": "Free Response Question -Runestone  Describe how StatKey could have generated each randomization sample when creating the randomization distribution (that you used in the previous question).  *Can only see text-box where student writes answer when connected to a capable server (Runestone).  "
+},
+{
+  "id": "sec-HT-Bob-Tim-24",
+  "level": "2",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-24",
+  "type": "Checkpoint",
+  "number": "5.1.7",
   "title": "CI -Manually-authored exercise.",
   "body": "CI -Manually-authored exercise  Also compute and interpret a 95% confidence interval for the parameter of interest.  "
 },
 {
   "id": "true-false",
   "level": "2",
-  "url": "sec-advanced-topics.html#true-false",
+  "url": "sec-HT-Bob-Tim.html#true-false",
   "type": "Checkpoint",
-  "number": "5.1.5",
+  "number": "5.1.8",
   "title": "Decision CI - Runestone-powered True\/False Question.",
   "body": "Decision CI - Runestone-powered True\/False Question  Based on the confidence interval, we would NOT reject the null hypothesis.   The null value is outside of the CI.  "
 },
 {
   "id": "some-matching",
   "level": "2",
-  "url": "sec-advanced-topics.html#some-matching",
+  "url": "sec-HT-Bob-Tim.html#some-matching",
   "type": "Checkpoint",
-  "number": "5.1.6",
+  "number": "5.1.9",
   "title": "Practical Import - Runestone-powered Matching Problem.",
   "body": "Practical Import - Runestone-powered Matching Problem  Does your confidence interval suggest that the results are practically important? Explain.     Yes, because....    answer specific feedback      Yes, because......    answer specific feedback      No, because...    answer specific feedback      Question does not apply.    Does not apply if results were not statistically significant.    "
 },
 {
-  "id": "sec-advanced-topics-21",
+  "id": "sec-HT-Bob-Tim-32",
   "level": "2",
-  "url": "sec-advanced-topics.html#sec-advanced-topics-21",
+  "url": "sec-HT-Bob-Tim.html#sec-HT-Bob-Tim-32",
   "type": "Figure",
-  "number": "5.1.7",
+  "number": "5.1.10",
   "title": "StatKey for the Hypothesis Test",
   "body": " StatKey for the Hypothesis Test  Hello World   "
-},
-{
-  "id": "sec-testing-eye",
-  "level": "1",
-  "url": "sec-testing-eye.html",
-  "type": "Section",
-  "number": "5.2",
-  "title": "Testing - Free Response and Data Collection",
-  "body": " Testing - Free Response and Data Collection  Short Answer  This should be built with a text-box, only on a capable server (Runestone). So it can be answered   "
-},
-{
-  "id": "short-answer-question",
-  "level": "2",
-  "url": "sec-testing-eye.html#short-answer-question",
-  "type": "Checkpoint",
-  "number": "5.2.1",
-  "title": "Short Answer.",
-  "body": "Short Answer  This should be built with a text-box, only on a capable server (Runestone). So it can be answered  "
 },
 {
   "id": "backmatter-2",
