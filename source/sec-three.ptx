@@ -36,6 +36,65 @@
 
 <p> Using the graph above, which of the following statements are correct? Selelct all that apply. </p>
 
+<exercise label="some-matching">
+    <title> Interpreting information from a graph </title>
+    <statement>
+    <p>
+        Using the graph above, select all statements that apply.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            Brown eyes occur most often for these students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            This is represented by the tallest bar.
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            Blue eyes occurred 22.2%
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Take the frequency count and divide by the sample size for the percentage.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The sample size is 54 students.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            Look at the total from the frequency table.
+        </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p>
+            The distribution is right skewed.
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            We do not discuss distribution shape with categorical data.
+        </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
 
 
 </section>
