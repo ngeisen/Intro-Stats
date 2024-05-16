@@ -12,7 +12,7 @@
   <xi:include href="sec-two.ptx" />
   <xi:include href="sec-three.ptx" />
   
-  <xi:include href="sec-studytypes" />
+  <xi:include href="sec-studytypes.ptx" />
   
 
 
