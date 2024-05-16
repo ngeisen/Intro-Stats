@@ -48,7 +48,7 @@ data set. There are three measures of the <term> center </term> of the data. The
         <title>Find the measures of center</title>
         <statement><p>Find the mode, median, and mean for the data set 4, 5, 6?</p></statement>
         <hint><p>find the sum of the values and divide by the number of values.</p></hint>
-        <answer><p> No mode, median = 5, mean = 5 </p></answer>
+        <answer><p> No mode, median = 5, mean = 5 </p> </answer>
         <solution>
             <p><me> Find the mean (4+5+6)/3=5</me>.</p>
         </solution>
