@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Graphing Data",
-  "body": " Graphing Data    At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.     "
+  "body": " Graphing Data    At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.     In this chapter we will investigate different ways to organize and graph data.    One categorical variable    Two categorical variables    One quantitative variable    Two quantitative variables    One quantitative variable and one categorical variable    "
 },
 {
   "id": "sec-two-2",
@@ -154,13 +154,49 @@ var ptx_lunr_docs = [
   "body": "Interpreting information from a graph  Using the graph above, select all statements that apply.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.    "
 },
 {
-  "id": "ChapterTwo",
+  "id": "sec-studytypes",
   "level": "1",
-  "url": "ChapterTwo.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "Descriptive Statistiscs",
-  "body": " Descriptive Statistiscs  "
+  "url": "sec-studytypes.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "sec-shape",
+  "level": "1",
+  "url": "sec-shape.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Shape of Data",
+  "body": " Shape of Data  "
+},
+{
+  "id": "centers",
+  "level": "1",
+  "url": "centers.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Describing the Center of Data",
+  "body": " Describing the Center of Data  "
+},
+{
+  "id": "spread",
+  "level": "1",
+  "url": "spread.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Describing Spread of Data",
+  "body": " Describing Spread of Data  "
+},
+{
+  "id": "boxplots",
+  "level": "1",
+  "url": "boxplots.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Describing data with boxplots",
+  "body": " Describing data with boxplots  "
 },
 {
   "id": "ChapterProb",
@@ -197,6 +233,15 @@ var ptx_lunr_docs = [
   "number": "4.2.1",
   "title": "Distribution Matching Problem.",
   "body": "Distribution Matching Problem  Match the type of distribution with the appropriate description.    sampling distribution  Distribution of statistics computed for different samples of the same size taken from the population, centered at the parameter    bootstrap distribution  Distribution of bootstrap statistics taken with replacement from one original sample centered at the original sample statistic    randomization distribution  Distribution of random statistics we would observe just by random chance assuming Ho is true, center around Ho value   "
+},
+{
+  "id": "sec-randdist",
+  "level": "1",
+  "url": "sec-randdist.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Randomization Distributions",
+  "body": " Randomization Distributions  "
 },
 {
   "id": "sec-advanced-topics",
@@ -278,6 +323,24 @@ var ptx_lunr_docs = [
   "number": "5.1.7",
   "title": "StatKey for the Hypothesis Test",
   "body": " StatKey for the Hypothesis Test  Hello World   "
+},
+{
+  "id": "sec-testing-eye",
+  "level": "1",
+  "url": "sec-testing-eye.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Testing - Free Response and Data Collection",
+  "body": " Testing - Free Response and Data Collection  Short Answer  This should be built with a text-box, only on a capable server (Runestone). So it can be answered   "
+},
+{
+  "id": "short-answer-question",
+  "level": "2",
+  "url": "sec-testing-eye.html#short-answer-question",
+  "type": "Checkpoint",
+  "number": "5.2.1",
+  "title": "Short Answer.",
+  "body": "Short Answer  This should be built with a text-box, only on a capable server (Runestone). So it can be answered  "
 },
 {
   "id": "backmatter-2",
