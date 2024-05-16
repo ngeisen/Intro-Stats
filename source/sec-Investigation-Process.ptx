@@ -186,8 +186,39 @@
 <p></p>
 
 <p>
-    <term>Step 2: Data Exploration:</term> In the <term>Methods</term> section of the article, the researchers summarized demographic information about the subjects, e.g. computing average age of subjects randomly assigned to each group, as well as the number of male and females in each group. The <term>Results</term> section of the article graphically compares the average number of words recalled across groups using a bar chart.  <em>explain error bars</em>
+    <term>Step 2: Data Exploration:</term> In the <term>Methods</term> section of the article, the researchers summarized demographic information about the subjects, e.g. computing average age of subjects randomly assigned to each group, as well as the number of male and females in each group. 
+</p>   
+  
+
+<table>
+    <title>Put in data from article</title>
+  <tabular top="minor" left="minor" halign="center">
+    <col right="medium" />
+    <col right="major" />
+    <col />
+    <row bottom="medium">
+      <cell>1111</cell>
+      <cell right="minor">2222</cell>
+    </row>
+    <row bottom="major">
+      <cell>aaaa</cell>
+      <cell right="medium">bbbb</cell>
+    </row>
+    <row>
+      <cell bottom="minor">AAAA</cell>
+      <cell bottom="major" right="major">BBBB</cell>
+    </row>
+  </tabular>
+</table>
+   
+
+
+
+ <p>
+        The <term>Results</term> section of the article graphically compares the average number of words recalled across groups using a bar chart.  <em>explain error bars</em>  
 </p>
+
+
 
 <figure xml:id="Recall-Compare">
     <caption>Need to recreate this graph [currently stolen]. Shows that the Nap group recalled more words, on average, compared to the other two groups.</caption>
