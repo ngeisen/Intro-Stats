@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-studytypes" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title></title>
+    <title>Study Design </title>
 
-    
+    <objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to
+          </p>
+        </introduction>
+        <ol>
+          <li>
+            <p>
+              Appropriately identify as an observation or experimental study.
+            </p>
+          </li>
+          <li> <p> Correctly identify the explanatory and response variables. </p> </li>
+        </ol>
+      </objectives>
+       
 
 </section>

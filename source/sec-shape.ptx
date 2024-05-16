@@ -3,6 +3,21 @@
 <section xml:id="sec-shape" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Shape of Data </title>
 
-    
+    <objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to
+          </p>
+        </introduction>
+        <ol>
+          <li>
+            <p>
+              Accurately describe the shape of a graph as uniform, right skewed, left skewed, or bell shaped and symmetrical.
+            </p>
+          </li>
+          <li> <p> Correctly identify the approximate center of a distribution. </p> </li>
+        </ol>
+      </objectives>
+      
 
 </section>
