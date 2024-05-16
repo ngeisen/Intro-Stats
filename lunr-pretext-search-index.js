@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Types of Data",
-  "body": " Types of Data    At the end of this section you will able to     Understand and apply the vocabulary associated with statistics.    Distinguish between quantitative data and categorical data.      Statistsics is the science of collecting, describing, and analyzing data.  The subjects\/objects that we obtain information about are called the cases or units in a dataset. These are represented as the rows  A variable is any characteristic that is recorded for each case. The variables generally correspond to the columns in a data table.  A categorical variable divides the cases into groups, placing each case into exactly one of two or more categories.  A quantitative variable measures or records a numerical quantity for each case.  Discuss structure of data, how collected.  discuss types of studies, create naming   Directions: Put the letters in order.    A    B    C    Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator.  "
+  "body": " Types of Data    At the end of this section you will able to     Understand and apply the vocabulary associated with statistics.    Distinguish between quantitative data and categorical data.      Statistsics is the science of collecting, describing, and analyzing data.  The subjects\/objects that we obtain information about are called the cases or units in a dataset. These are represented as the rows  A variable is any characteristic that is recorded for each case. The variables generally correspond to the columns in a data table.  A categorical variable divides the cases into groups, placing each case into exactly one of two or more categories.  A quantitative variable measures or records a numerical quantity for each case.    Student Survey  Students in past semesters completed a survey in introductory statistics courses. The entire Student Survey Dataset is a comma-separated values document that includes responses from 362 students on the following 17 variables.    Year: Year in school  Sex: F=female or M=male  Smoke: Smoker? No or Yes  Award: Preferred award, Academy, Nobel, or Olympic  HigherSAT: Which SAT is higher? Math or Verbal  Exercise: Hours of exercise per week  TV: Hours of TV viewing per week  Height: Height (in inches)  Weight: Weight (in pounds)  Siblings: Number of siblings  BirthOrder: Birth order, 1=oldest  VerbalSAT: Verbal SAT score  MathSAT: Math SAT scorer  SAT: Combined Verbal + Math SAT  GPA: College grade point average  Pulse: Pulse rate (beats per minute)  Piercings: Number of body piercings      Here is the first 15 entries of the dataset:   15 Student Responses   The first 15 entries of the Student Survey Dataset    Answer the following questions about the first 15 entries of the dataset.  Rows of Data  What does each row represent?     Each row is a list of responses by a student.    Correct. Each row is a student response.      Each row is a list of responses of a case.    Well done. a \"case\" is a survey-taker and is an important vocabulary word to know.      Each row is the list of responses of students on a single item of the survey.    Rethink your selection. Responses on a single item are listed vertically.      Each row is a variable.    The entries of a row do vary, but they do not represent different responses on a single survey item.       Columns of Data  What does each column represent?     Each column is the list of responses of students on a single item of the survey.    Correct. Columns are the item responses.      Each column is a variable.    Well done. A \"variable\" is the responses of a survey item and is an important vocabulary word to know.      Each column is a list of responses by a student.    No. When you read down the column, the list is not the responses of a single student.      Each column is a list of responses of a case.    Rethink your selection. A \"case\" is a survey-taker.       I'd like to thank the Academy How many students student in this list prefer to win an Academy Award? The variable \"Award\" records students'preferred award: Academy Award, Nobel Prize, or Olympic Medal Only students preferred to win an Academy Award.    Characteristics of a Case  Which of the following are true about the student on this list who reported viewing the most hours of TV per week?     The student is a senior.    Correct.      The student has a younger sibling.    Well done. We know the student has a sibling and is the first born, so the sibling must be younger.      The student prefers to win an Nobel Prize.    Yes!      The student has a pulse rate of 65 bpm.    Be careful reading across the row.       Piercings What percentage of students on the list have piercings? The percentage is the number of students with piercings out of the total number % of the students have piercings, since of the reported having them   Discuss structure of data, how collected.  discuss types of studies, create naming   Directions: Put the letters in order.    A    B    C    Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator.  "
 },
 {
   "id": "sec-section-name-2",
@@ -73,20 +73,74 @@ var ptx_lunr_docs = [
   "body": "quantitative variable "
 },
 {
-  "id": "sec-section-name-10",
+  "id": "figure-braille",
   "level": "2",
-  "url": "sec-section-name.html#sec-section-name-10",
-  "type": "Checkpoint",
+  "url": "sec-section-name.html#figure-braille",
+  "type": "Figure",
   "number": "1.1.1",
   "title": "",
-  "body": " Directions: Put the letters in order.    A    B    C   "
+  "body": " 15 Student Responses   The first 15 entries of the Student Survey Dataset   "
+},
+{
+  "id": "row-matching",
+  "level": "2",
+  "url": "sec-section-name.html#row-matching",
+  "type": "Checkpoint",
+  "number": "1.1.2",
+  "title": "Rows of Data.",
+  "body": "Rows of Data  What does each row represent?     Each row is a list of responses by a student.    Correct. Each row is a student response.      Each row is a list of responses of a case.    Well done. a \"case\" is a survey-taker and is an important vocabulary word to know.      Each row is the list of responses of students on a single item of the survey.    Rethink your selection. Responses on a single item are listed vertically.      Each row is a variable.    The entries of a row do vary, but they do not represent different responses on a single survey item.    "
+},
+{
+  "id": "column-matching",
+  "level": "2",
+  "url": "sec-section-name.html#column-matching",
+  "type": "Checkpoint",
+  "number": "1.1.3",
+  "title": "Columns of Data.",
+  "body": "Columns of Data  What does each column represent?     Each column is the list of responses of students on a single item of the survey.    Correct. Columns are the item responses.      Each column is a variable.    Well done. A \"variable\" is the responses of a survey item and is an important vocabulary word to know.      Each column is a list of responses by a student.    No. When you read down the column, the list is not the responses of a single student.      Each column is a list of responses of a case.    Rethink your selection. A \"case\" is a survey-taker.    "
+},
+{
+  "id": "subsec-data-student-survey-12",
+  "level": "2",
+  "url": "sec-section-name.html#subsec-data-student-survey-12",
+  "type": "Checkpoint",
+  "number": "1.1.4",
+  "title": "I’d like to thank the Academy.",
+  "body": "I'd like to thank the Academy How many students student in this list prefer to win an Academy Award? The variable \"Award\" records students'preferred award: Academy Award, Nobel Prize, or Olympic Medal Only students preferred to win an Academy Award. "
+},
+{
+  "id": "case-matching",
+  "level": "2",
+  "url": "sec-section-name.html#case-matching",
+  "type": "Checkpoint",
+  "number": "1.1.5",
+  "title": "Characteristics of a Case.",
+  "body": "Characteristics of a Case  Which of the following are true about the student on this list who reported viewing the most hours of TV per week?     The student is a senior.    Correct.      The student has a younger sibling.    Well done. We know the student has a sibling and is the first born, so the sibling must be younger.      The student prefers to win an Nobel Prize.    Yes!      The student has a pulse rate of 65 bpm.    Be careful reading across the row.    "
+},
+{
+  "id": "subsec-data-student-survey-16",
+  "level": "2",
+  "url": "sec-section-name.html#subsec-data-student-survey-16",
+  "type": "Checkpoint",
+  "number": "1.1.6",
+  "title": "Piercings.",
+  "body": "Piercings What percentage of students on the list have piercings? The percentage is the number of students with piercings out of the total number % of the students have piercings, since of the reported having them "
 },
 {
   "id": "sec-section-name-11",
   "level": "2",
   "url": "sec-section-name.html#sec-section-name-11",
   "type": "Checkpoint",
-  "number": "1.1.2",
+  "number": "1.1.7",
+  "title": "",
+  "body": " Directions: Put the letters in order.    A    B    C   "
+},
+{
+  "id": "sec-section-name-12",
+  "level": "2",
+  "url": "sec-section-name.html#sec-section-name-12",
+  "type": "Checkpoint",
+  "number": "1.1.8",
   "title": "Sample exercise.",
   "body": "Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator. "
 },
