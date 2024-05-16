@@ -88,6 +88,37 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.81/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.81/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.81/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.2.18';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.18/prefix-runtime.45edeb346926694b.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.18/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.18/prefix-runestone.09f7e60697101f2d.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.18/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.18/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -106,7 +137,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ChapterBootstrap.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterBootstrap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapterTesting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-two.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapterTwo.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -116,28 +147,44 @@ window.MathJax = {
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistsical Basics</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Types of Data</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Graphing Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Using StatKey</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Using StatKey</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapterTwo.html" class="internal"><span class="codenumber">2</span> <span class="title">Descriptive Statistiscs</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div></li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">4</span> <span class="title">Bootstrapping</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Using StatKey</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ChapterTesting.html" class="internal"><span class="codenumber">5</span> <span class="title">Hypothesis Testing</span></a></div></li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-three"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">Using StatKey</span>
-</h2></section></div>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Using StatKey</span>
+</h2>
+<dfn class="terminology">Graphing One Categorical Variable</dfn><div class="para" id="p-23">How to graph students eye color with StatKey.</div>
+<div class="para" id="p-24">Open a web browswer and copy <a class="external" href="http://www.lock5stat.com/StatKey/" target="_blank"><code class="code-inline tex2jax_ignore">http://www.lock5stat.com/StatKey/</code></a>
+</div>
+<div class="para" id="p-25">Download the csv file <code class="code-inline tex2jax_ignore"> Lab 1 Data.csv </code> posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.</div>
+<div class="para" id="p-26">Under the <em class="emphasis">Descriptive Statistics and Graph</em> column on the left, choose the <em class="emphasis">One Categorical Variable</em>.</div>
+<figure class="figure figure-like" id="OneCatStatKey"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/OneCatStatKey.jpg" class="contained" alt="The second option under descriptive statitics menu is the one categorical variable."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span>Image of StatKey menu</figcaption></figure><div class="para" id="p-27">Click on the <code class="code-inline tex2jax_ignore"> Upload File  </code> button and locate the data file on your computer.</div>
+<div class="para" id="p-28">Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.</div>
+<figure class="figure figure-like" id="EyeColor"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/EyeColor.jpg" class="contained" alt="Sample image of bar graph and frequency table of the students eye color."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.2<span class="period">.</span></span><span class="space"> </span>Sample image of StatKey output.</figcaption></figure><div class="para" id="p-29"><dfn class="terminology">Interpreting Bar Graphs</dfn></div>
+<div class="para" id="p-30">From the bar graph we can see that most students have brown eyes and green eyes occur the least.</div>
+<div class="para" id="p-31">From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.</div>
+<div class="para" id="p-32">Using the graph above, which of the following statements are correct? Selelct all that apply.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ChapterBootstrap.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapterTesting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-two.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapterTwo.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

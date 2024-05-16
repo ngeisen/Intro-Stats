@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Types of Data",
-  "body": " Types of Data    At the end of this section you will able to     Understand and apply the vocabulary associated with statistics.    Distinguish between quantitative data and categorical data.      Statistsics is the science of collecting, describing, and analyzing data.  The subjects\/objects that we obtain information about are called the cases or units in a dataset. These are represented as the rows  A variable is any characteristic that is recorded for each case. The variables generally correspond to the columns in a data table.  A categorical variable divides the cases into groups, placing each case into exactly one of two or more categories.  A quantitative variable measures or records a numerical quantity for each case.  Discuss structure of data, how collected.  discuss types of studies, create naming   Directions: Put the letters in order.    A    B    C    "
+  "body": " Types of Data    At the end of this section you will able to     Understand and apply the vocabulary associated with statistics.    Distinguish between quantitative data and categorical data.      Statistsics is the science of collecting, describing, and analyzing data.  The subjects\/objects that we obtain information about are called the cases or units in a dataset. These are represented as the rows  A variable is any characteristic that is recorded for each case. The variables generally correspond to the columns in a data table.  A categorical variable divides the cases into groups, placing each case into exactly one of two or more categories.  A quantitative variable measures or records a numerical quantity for each case.  Discuss structure of data, how collected.  discuss types of studies, create naming   Directions: Put the letters in order.    A    B    C    Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator.  "
 },
 {
   "id": "objectives-1",
@@ -82,6 +82,15 @@ var ptx_lunr_docs = [
   "body": " Directions: Put the letters in order.    A    B    C   "
 },
 {
+  "id": "exercise-2",
+  "level": "2",
+  "url": "sec-section-name.html#exercise-2",
+  "type": "Checkpoint",
+  "number": "1.1.2",
+  "title": "Sample exercise.",
+  "body": "Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator. "
+},
+{
   "id": "sec-two",
   "level": "1",
   "url": "sec-two.html",
@@ -106,7 +115,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Using StatKey",
-  "body": " Using StatKey  "
+  "body": " Using StatKey   Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browswer and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statitics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.     Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Selelct all that apply.  "
+},
+{
+  "id": "OneCatStatKey",
+  "level": "2",
+  "url": "sec-three.html#OneCatStatKey",
+  "type": "Figure",
+  "number": "1.3.1",
+  "title": "",
+  "body": " Image of StatKey menu   The second option under descriptive statitics menu is the one categorical variable.   "
+},
+{
+  "id": "EyeColor",
+  "level": "2",
+  "url": "sec-three.html#EyeColor",
+  "type": "Figure",
+  "number": "1.3.2",
+  "title": "",
+  "body": " Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.   "
+},
+{
+  "id": "p-29",
+  "level": "2",
+  "url": "sec-three.html#p-29",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Interpreting Bar Graphs "
 },
 {
   "id": "ChapterTwo",
