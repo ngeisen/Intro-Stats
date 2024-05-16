@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Describing the Center of Data",
-  "body": " Describing the Center of Data    At the end of this section you will able to     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean, median, and mode using technology.     "
+  "body": " Describing the Center of Data    At the end of this section you will able to     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean, median, and mode using technology.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 for the mean. This is higher than the median because it is skewed by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 for the mean.  Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5  .   "
 },
 {
   "id": "centers-2",
@@ -206,6 +206,87 @@ var ptx_lunr_docs = [
   "number": "2.2",
   "title": "",
   "body": "  At the end of this section you will able to     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean, median, and mode using technology.    "
+},
+{
+  "id": "centers-3",
+  "level": "2",
+  "url": "centers.html#centers-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "center "
+},
+{
+  "id": "centers-4",
+  "level": "2",
+  "url": "centers.html#centers-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mode "
+},
+{
+  "id": "centers-5",
+  "level": "2",
+  "url": "centers.html#centers-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "median "
+},
+{
+  "id": "centers-6",
+  "level": "2",
+  "url": "centers.html#centers-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mean "
+},
+{
+  "id": "centers-7",
+  "level": "2",
+  "url": "centers.html#centers-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Sample: "
+},
+{
+  "id": "centers-8",
+  "level": "2",
+  "url": "centers.html#centers-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Solution: "
+},
+{
+  "id": "centers-10",
+  "level": "2",
+  "url": "centers.html#centers-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Sample: "
+},
+{
+  "id": "centers-11",
+  "level": "2",
+  "url": "centers.html#centers-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Solution: "
+},
+{
+  "id": "centers-12",
+  "level": "2",
+  "url": "centers.html#centers-12",
+  "type": "Checkpoint",
+  "number": "2.2.1",
+  "title": "Find the measures of center.",
+  "body": "Find the measures of center Find the mode, median, and mean for the data set 4, 5, 6? find the sum of the values and divide by the number of values. No mode, median = 5, mean = 5  .  "
 },
 {
   "id": "spread",
