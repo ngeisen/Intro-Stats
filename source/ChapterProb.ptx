@@ -9,11 +9,11 @@
         </introduction>
         <ol>
           <li> <p> Calculate the probability of simple events. </p> </li>
-          <li> <p> Use the probability rules for OR, AND, GIVEN statements. </p> </li>
+          <li> <p> Use the probability rules for OR, AND, and GIVEN statements. </p> </li>
           <li> <p> Use a tree diagram to determine the probability for multiple events. </p> </li>
         </ol>
       </objectives>
 
-  
+  <xi:include href="sec-probBasics.ptx" />
 
 </chapter>

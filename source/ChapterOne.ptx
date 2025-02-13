@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapterOne" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title> Introduction to Statistsics </title>
+  <title> Introduction to Statistics </title>
 
   <introduction>
-    <p> A review of common terminology to understand statistics </p>
+    <p> A review of terminology to understand statistics </p>
   </introduction>
 <objectives>
         <introduction>
-        <ol>
-          <p> At the end of this section you will able to:  </p>
+          <p> At the end of this section you will able to: </p>
+            <ol>
           <li> <p> Identify the cases and variables in a data set.</p> </li>
           <li> <p> Distinguish between a sample and a poplulation. </p> </li>
-          <li> <p> Classify variables as qualitative or quantitative </p> </li>
+          <li> <p> Classify variables as qualitative or quantitative. </p> </li>
             </ol>
         </introduction>
 </objectives>

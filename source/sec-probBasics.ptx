@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-probBasics" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Probability Basics  </title>
+
+  <objectives>
+        <introduction>
+          <p> At the end of this section you will able to:  </p>
+            <ol>
+            <li> <p> Find the probabilty of a single event. </p> </li>
+            <li> <p> Determine if outcomes are equally likely. </p> </li>
+            </ol>
+        </introduction>
+        </objectives>  
+
+</section>
