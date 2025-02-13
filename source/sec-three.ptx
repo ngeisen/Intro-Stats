@@ -3,18 +3,18 @@
 <section xml:id="sec-three" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Using StatKey</title>
 
-    
+    <p>  </p> 
         <objective> <term> Graphing One Categorical Variable </term> </objective>
 
         <p> How to graph students eye color with StatKey. </p>
-        <p> Open a web browswer and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
+        <p> Open a web browser and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
         <p> Download the csv file <c> Lab 1 Data.csv </c> posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors. </p>
         <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Categorical Variable </em>. </p>
         
         <figure xml:id="OneCatStatKey">
             <caption>Image of StatKey menu</caption>
             <image source="OneCatStatKey.jpg" width="50%">
-                <shortdescription>The second option under descriptive statitics menu is the one categorical variable.</shortdescription>
+                <shortdescription>The second option under descriptive statistics menu is the one categorical variable.</shortdescription>
             </image>
         </figure> 
 
@@ -29,18 +29,21 @@
             </image>
         </figure>    
     
-<p> <term>Interpreting Bar Graphs</term> </p>
-<p> From the bar graph we can see that most students have brown eyes and green eyes occur the least. </p>
+     <p>  </p> 
+       <p>  </p> 
+       
+<objective> <term>Interpreting Bar Graphs</term> </objective>
+<p> From the bar graph we can see that most students have brown eyes and green eyes occur the least often. </p>
 <p> From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class. </p>
     
 
-<p> Using the graph above, which of the following statements are correct? Selelct all that apply. </p>
+<p> Using the graph above, which of the following statements are correct? Select all that apply. </p>
 
 <exercise label="some-matching">
     <title> Interpreting information from a graph </title>
     <statement>
     <p>
-        Using the graph above, select all statements that apply.
+        Using the graph above, select all true statements that apply to the eye color graph.
     </p>
     </statement>
     <choices randomize="yes">

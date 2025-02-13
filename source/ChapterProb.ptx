@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapterProb" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Probability</title>
+    <title> Probability</title>
 
-    
+  <objectives>
+        <introduction>
+          <p> At the end of this section, you will be able to:   </p>
+        </introduction>
+        <ol>
+          <li> <p> Calculate the probability of simple events. </p> </li>
+          <li> <p> Use the probability rules for OR, AND, GIVEN statements. </p> </li>
+          <li> <p> Use a tree diagram to determine the probability for multiple events. </p> </li>
+        </ol>
+      </objectives>
+
+  
 
 </chapter>

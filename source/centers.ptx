@@ -5,18 +5,14 @@
 
     <objectives>
         <introduction>
-          <p>
-            At the end of this section you will able to
-          </p>
+          <p> At the end of this section you will able to: </p>
         </introduction>
         <ol>
           <li>
-            <p>
-              Accurately estimate the location of the center of a distribution.
-            </p>
+            <p> Accurately estimate the location of the center of a distribution. </p>
           </li>
           <li> <p> Calculate the mean, median, and mode from a data set. </p> </li>
-          <li> <p> Calculate the mean, median, and mode using technology. </p> </li>
+          <li> <p> Calculate the mean and median using technology. </p> </li>
         </ol>
       </objectives>
        
@@ -35,7 +31,8 @@ data set. There are three measures of the <term> center </term> of the data. The
      <p> The <term> mean </term> is the arithmetic average of the numbers. You will add all the values together then divide by the number of values. </p>
         
      <p> <term> Sample: </term> A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48. </p>
-    <p> <term> Solution: </term> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72,  thus the median is 36. The mean is the sum of the values divided by 5, thus 217/5 = 43.4 for the mean. This is higher than the median because it is skewed by the large value of 72. </p> 
+    <p> <term> Solution: </term> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72,  thus the median is 36. The mean is the sum of the values divided by 5, thus 217/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72. </p> 
+    
 
     <p> A data set can have more than one mode. If there is a tie between two values for the most
         number of times, then both values are the mode and the data is called <em> bimodal </em> (two

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapterTwo" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Descriptive Statistiscs</title>
+    <title>Descriptive Statistics</title>
 
     <introduction>
-        <p> This chapter will show you multilple ways to describe the data with numerical statistiscs. </p>
+        <p> In this chapter we will investigate multiple ways to describe the data with graphs and numerical statistics. </p>
       </introduction> 
 
       <objectives>
         <introduction>
           <p>
-            At the end of this section you will able to
+            At the end of this section you will able to:
           </p>
         </introduction>
         <ol>
           <li>
-            <p>
-              Describe the center of the data with mean, median, mode.
-            </p>
+            <p> Describe the shape of the data distribution. </p> </li>
+            <li> <p> Describe the center of the data with mean, median, mode. </p>
           </li>
-          <li> <p> Describe the spread of a data set. </p> </li>
+          <li> <p> Describe the spread of a data set with range, interquartile-range, and standard deviation. </p> </li>
         </ol>
       </objectives>
 

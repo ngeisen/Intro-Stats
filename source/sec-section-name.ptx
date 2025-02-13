@@ -18,12 +18,30 @@
   </ol>
 </objectives>
 
-  <p> <term>Statistsics</term> is the science of collecting, describing, and analyzing data. </p>
+  <p> You may ask yourself, what is statistics? <term>Statistics </term> is the science of conducting studies to collect, organize, analyze and interpret data. </p>
+  <p> We are going to use an investigative approach to learning about statistics. We will look at different ways of collecting data (such as with surveys and questionnaires). We will organize the data with graphs and tables so we can see what the data tells us at a glance. We will describe the data with numerical summaries (known as statistics) and word descriptions.  Later in the semester we will look at other ways to analyze data, such as finding intervals to predict a typical value and compare whether the sample is similar or different from previously known values.</p>
+  
   <p> The subjects/objects that we obtain information about are called the <term>cases </term> or units in a dataset. These are represented as the <em>rows </em></p>
   <p> A <term> variable </term> is any characteristic that is recorded for each case. The variables generally correspond to the <em> columns</em> in a data table.</p>
+  
+  
   <p> A <term> categorical variable </term> divides the cases into groups, placing each case into exactly one of two or more categories.</p>
   <p> A <term> quantitative variable </term> measures or records a numerical quantity for each case. </p>
-    
+  <p> <term> Data </term> are the values or measurements the variables assume. </p> 
+
+<p> For example, what are the majors for the students in your class? The major is the variable since there are multiple responses from the students (such as math major, history major, education, nursing, biology major). Other variables you can ask students in your class are their grade level (freshman, sophomore, junior, senior) and the number of credit hours taken this semester.
+If we asked the students (case) in class, there will be lots of different majors (data). </p>
+
+<p> There are two key terms we use to distinguish the groups we collect data from: </p>
+<li> <p> The <term> population </term> is the set of all subjects in the study. </p> </li>
+<li> <p> A <term> sample </term> is a group or subset of subjects selected from the population. </p> </li>
+<p> If we asked ALL residents of the state of Colorado where they were born, then the Colorado residents would be the population. But if we asked just some people from a single city in the state of Colorado, they would a sample from the state. </p>
+
+<p>There are two main branches of statistics that we are interested in. </p>
+<p>In <term>descriptive statistics </term> the statistician tries to describe a situation.  It consists of collecting, organizing, summarizing and presenting the data. </p>
+<p>While with <term> inferential statistics </term> the statisticians make inferences from samples to make predictions about the population.  It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions. </p>
+
+
 <!-- include subsections -->
 <xi:include href="subsec-data-student-survey.ptx" />
 
