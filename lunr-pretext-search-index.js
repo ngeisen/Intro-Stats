@@ -244,76 +244,103 @@ var ptx_lunr_docs = [
   "body": "Sample exercise What is ? We're being a bit tricky here... , where is the concatenation operator. "
 },
 {
-  "id": "sec-two",
-  "level": "1",
-  "url": "sec-two.html",
-  "type": "Section",
-  "number": "1.3",
-  "title": "Graphing Data",
-  "body": " Graphing Data    At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.     In this chapter we will investigate different ways to organize and graph data.    One categorical variable    Two categorical variables    One quantitative variable    Two quantitative variables    One quantitative variable and one categorical variable    "
-},
-{
-  "id": "sec-two-2",
-  "level": "2",
-  "url": "sec-two.html#sec-two-2",
-  "type": "Objectives",
-  "number": "1.3",
-  "title": "",
-  "body": "  At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.    "
-},
-{
-  "id": "sec-three",
-  "level": "1",
-  "url": "sec-three.html",
-  "type": "Section",
-  "number": "1.4",
-  "title": "Using StatKey",
-  "body": " Using StatKey     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.  Interpreting information from a graph  Using the graph above, select all true statements that apply to the eye color graph.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.     "
-},
-{
-  "id": "OneCatStatKey",
-  "level": "2",
-  "url": "sec-three.html#OneCatStatKey",
-  "type": "Figure",
-  "number": "1.4.1",
-  "title": "",
-  "body": " Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.   "
-},
-{
-  "id": "EyeColor",
-  "level": "2",
-  "url": "sec-three.html#EyeColor",
-  "type": "Figure",
-  "number": "1.4.2",
-  "title": "",
-  "body": " Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.   "
-},
-{
-  "id": "some-matching",
-  "level": "2",
-  "url": "sec-three.html#some-matching",
-  "type": "Checkpoint",
-  "number": "1.4.3",
-  "title": "Interpreting information from a graph.",
-  "body": "Interpreting information from a graph  Using the graph above, select all true statements that apply to the eye color graph.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.    "
-},
-{
   "id": "sec-studytypes",
   "level": "1",
   "url": "sec-studytypes.html",
   "type": "Section",
-  "number": "1.5",
+  "number": "1.3",
   "title": "Study Design",
-  "body": " Study Design    At the end of this section you will able to     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.     "
+  "body": " Study Design    At the end of this section you will able to     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.     Recall there are two main types of studies:   observational studies where researchers collect data by watching or asking questions, and draw conclusions based on these observations.   Experimental Studies where the researcher manipulates a variable to determine how the treatment influences the other variables.   Identify the type of study described: A researcher decided to check the Greeley Police Department records for 2 months to determine what types of crimes were committed.     Observational study    Observational study because they are looking at the records, not manipulating a variable.      Experimental study    They are not manipulating a variable.     Identify the type of study described.  Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.     Experimental study    They are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.     Many observational studies involve surveys and questionnaires, which uses questions to collect the data for the study. Others look at historical records to collect the data. In educational environment, observations of the participants is how the data is collected – by jotting down notes or videotaping the behaviors.  There are three main types of variables we will look at within an experimental study.  The independent variable is the variable that is being manipulated by the researchers. It is also called the explanatory variable.  The dependent variable is the result of manipulation. It is also called the response variable.  A confounding variable is one that influences the dependent variable but cannot be separated from the independent variable.  For this example, identify the variables. A sample of 50 men with high triglyceride levels were randomly assigned to two groups: one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.  Type of bran consumed is the independent variable. They want to determine which one works better in lowering the triglyceride levels.  Whether or not the triglyceride level changes is the dependent variable. This is the result of the of manipulating which type of bran they consumed.  In this case, both bran groups were in the treatment group, there was not control group in the study.  There are several possible confounding variables in this study. Things that could influence the triglyceride levels could be diet, amount of exercise, current healthy, and weight of the participants.  Identify the type of variable.  What variable is the type of bran the participants consumed?     independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.     Identify the type of variable  What variable is the triglyceride levels?     dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.     "
 },
 {
   "id": "sec-studytypes-2",
   "level": "2",
   "url": "sec-studytypes.html#sec-studytypes-2",
   "type": "Objectives",
-  "number": "1.5",
+  "number": "1.3",
   "title": "",
   "body": "  At the end of this section you will able to     Appropriately identify as an observation or experimental study.    Correctly identify the explanatory and response variables.    "
+},
+{
+  "id": "sec-studytypes-4",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "observational studies "
+},
+{
+  "id": "sec-studytypes-5",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Experimental Studies "
+},
+{
+  "id": "ObsMatching",
+  "level": "2",
+  "url": "sec-studytypes.html#ObsMatching",
+  "type": "Checkpoint",
+  "number": "1.3.1",
+  "title": "",
+  "body": " Identify the type of study described: A researcher decided to check the Greeley Police Department records for 2 months to determine what types of crimes were committed.     Observational study    Observational study because they are looking at the records, not manipulating a variable.      Experimental study    They are not manipulating a variable.    "
+},
+{
+  "id": "ExpMatching",
+  "level": "2",
+  "url": "sec-studytypes.html#ExpMatching",
+  "type": "Checkpoint",
+  "number": "1.3.2",
+  "title": "Identify the type of study described..",
+  "body": "Identify the type of study described.  Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups: consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.     Experimental study    They are manipulating a variable.      Observational study    Experimental since they are manipulating a variable.    "
+},
+{
+  "id": "sec-studytypes-10",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "independent variable "
+},
+{
+  "id": "sec-studytypes-11",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dependent variable "
+},
+{
+  "id": "sec-studytypes-12",
+  "level": "2",
+  "url": "sec-studytypes.html#sec-studytypes-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "confounding variable "
+},
+{
+  "id": "MatchingIndep",
+  "level": "2",
+  "url": "sec-studytypes.html#MatchingIndep",
+  "type": "Checkpoint",
+  "number": "1.3.3",
+  "title": "Identify the type of variable..",
+  "body": "Identify the type of variable.  What variable is the type of bran the participants consumed?     independent variable    Yes, because they want to see if the type of bran influences the triglyceride level.      dependent variable    No, the dependent variable is the triglyceride level.      confounding variable    There were no confounding variable listed, but a person’s diet and health may influence the results.    "
+},
+{
+  "id": "MatchingDep",
+  "level": "2",
+  "url": "sec-studytypes.html#MatchingDep",
+  "type": "Checkpoint",
+  "number": "1.3.4",
+  "title": "Identify the type of variable.",
+  "body": "Identify the type of variable  What variable is the triglyceride levels?     dependent variable    Yes, checking to see if triglyceride level changes.      independent variable    No, the independent variable is type of bran.      confounding variable    There were no confounding variables listed, but the amount of time a person exercises may influence the results.    "
 },
 {
   "id": "DayOne",
@@ -322,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "First Day Introduction",
-  "body": " First Day Introduction    At the end of this section you will able to:    "
+  "body": " First Day Introduction    At the end of this section you will able to:    You may ask yourself, what is statistics? Statistics is the science of conducting studies to collect, organize, analyze and interpret data.  We are going to use an investigative approach to learning about statistics. We will look at different ways of collecting data (such as with surveys and questionnaires). We will organize the data with graphs and tables so we can see what the data tells us at a glance. We will describe the data with numerical summaries (known as statistics) and word descriptions. Later in the semester we will look at other ways to analyze data, such as finding intervals to predict a typical value and compare whether the sample is similar or different from previously known values. We will also investigate if there is an association between varibles.  To begin this journey, let’s look at some vocabulary commonly associated with statistics.   A case is the unit of observation, typically a person or object that you are interested in finding information about.    A variable is a characteristic that can assume different values, the measurement or observation about the case (unit).     Data are the values or measurements the variables assume.    For example , what are the majors for the students in your class? The major is the variable since there are multiple responses from the students (such as math major, history major, education, nursing, biology major). Other variables you can ask students in your class are their grade level (freshman, sophomore, junior, senior) and the number of credit hours taken this semester. If we asked the students (case) in class, there will be lots of different majors (data).  There are two key terms we use to distinguish the groups we collect data from:   The population is the set of all subjects in the study.    A sample is a group or subset of subjects selected from the population.   If we asked ALL residents of the state of Colorado where they were born, then the Colorado residents would be the population. But if we asked just some people from a single city in the state of Colorado, they would a sample from the state.  There are two main branches of statistics that we are interested in.  In descriptive statistics the statistician tries to describe a situation. It consists of collecting, organizing, summarizing and presenting the data.  While with inferential statistics the statisticians make inferences from samples to make predictions about the population. It consists of generalizing data from samples, performing estimations and hypothesis testing, determining relationships among variables, and making predictions.  Identify if each situation is descriptive or inferential statistics:  There are two main types of data we will be working with:   Qualitative variables are placed into distinct categories. Such as the color of cars found in a parking lot. The car colors can be classified as white, red, blue, and black.   Quantitative variables are numerical and can be ordered. There are two types of quantitative variables. Discrete variables can be counted, such as the number of cars in the different parking lots. The values are whole numbers. Other numerical variables are continuous variables , meaning any value (decimal or fraction) can occur. These are often obtained by measuring something. A continuous variable could be the length of the cars in the parking lot or the time it takes a car to stop when traveling 20 miles per hour.  "
 },
 {
   "id": "DayOne-2",
@@ -332,6 +359,150 @@ var ptx_lunr_docs = [
   "number": "2.1",
   "title": "",
   "body": "  At the end of this section you will able to:   "
+},
+{
+  "id": "DayOne-3",
+  "level": "2",
+  "url": "DayOne.html#DayOne-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Statistics "
+},
+{
+  "id": "DayOne-6-1",
+  "level": "2",
+  "url": "DayOne.html#DayOne-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "case "
+},
+{
+  "id": "DayOne-7-1",
+  "level": "2",
+  "url": "DayOne.html#DayOne-7-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "variable "
+},
+{
+  "id": "DayOne-8-1",
+  "level": "2",
+  "url": "DayOne.html#DayOne-8-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data "
+},
+{
+  "id": "DayOne-11-1",
+  "level": "2",
+  "url": "DayOne.html#DayOne-11-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "population "
+},
+{
+  "id": "DayOne-12-1",
+  "level": "2",
+  "url": "DayOne.html#DayOne-12-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sample "
+},
+{
+  "id": "DayOne-15",
+  "level": "2",
+  "url": "DayOne.html#DayOne-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "descriptive statistics "
+},
+{
+  "id": "DayOne-16",
+  "level": "2",
+  "url": "DayOne.html#DayOne-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inferential statistics "
+},
+{
+  "id": "DayOne-19",
+  "level": "2",
+  "url": "DayOne.html#DayOne-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Qualitative variables "
+},
+{
+  "id": "DayOne-20",
+  "level": "2",
+  "url": "DayOne.html#DayOne-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Quantitative variables Discrete variables continuous variables "
+},
+{
+  "id": "sec-two",
+  "level": "1",
+  "url": "sec-two.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Graphing Data",
+  "body": " Graphing Data    At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.     In this chapter we will investigate different ways to organize and graph data.    One categorical variable    Two categorical variables    One quantitative variable    Two quantitative variables    One quantitative variable and one categorical variable    "
+},
+{
+  "id": "sec-two-2",
+  "level": "2",
+  "url": "sec-two.html#sec-two-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "  At the end of this section you will able to     Graph data appropriately (with technology).    Describe data in words and with quantitative measures.    "
+},
+{
+  "id": "sec-three",
+  "level": "1",
+  "url": "sec-three.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Graphing with StatKey",
+  "body": " Graphing with StatKey     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.  Interpreting information from a graph  Using the graph above, select all true statements that apply to the eye color graph.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.     "
+},
+{
+  "id": "OneCatStatKey",
+  "level": "2",
+  "url": "sec-three.html#OneCatStatKey",
+  "type": "Figure",
+  "number": "2.3.1",
+  "title": "",
+  "body": " Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.   "
+},
+{
+  "id": "EyeColor",
+  "level": "2",
+  "url": "sec-three.html#EyeColor",
+  "type": "Figure",
+  "number": "2.3.2",
+  "title": "",
+  "body": " Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.   "
+},
+{
+  "id": "some-matching",
+  "level": "2",
+  "url": "sec-three.html#some-matching",
+  "type": "Checkpoint",
+  "number": "2.3.3",
+  "title": "Interpreting information from a graph.",
+  "body": "Interpreting information from a graph  Using the graph above, select all true statements that apply to the eye color graph.     Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.    "
 },
 {
   "id": "sec-shape",
@@ -484,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Probability Basics",
-  "body": " Probability Basics    At the end of this section you will able to:    Find the probabilty of a single event.    Determine if outcomes are equally likely.      "
+  "body": " Probability Basics    At the end of this section you will able to:    Find the probabilty of a single event.    Determine if outcomes are equally likely.      In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability.  The questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident. The chance of winning the lottery is very small, yet many people will spend the money on lottery tickets. Yet, if instead they saved the money that they spend on the lottery, they would have more money. In general, events that have a low probability (under 5%) are unlikely to occur. Whereas if an event has a high probability of happening (over 80%), then there is a good chance that the event will happen.  First let us review some definitions to help us understand probability.   Experiment is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin.  The outcomes are the results of an experiment. The outcomes from flipping a coin is head or tail.  An event is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen.  The sample space is the collection of all possible outcomes of the experiment. For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space.  exercise  To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4\/10 = 2\/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513\/100 = 51.3% of the time. This is an example of experimental probability since the value was found by actually doing the experiment.  The approximate probability of an event A, written as , is  Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates theoretical probability which is based on the sample space. But it assumes that all outcomes are equally likely to occur.  "
 },
 {
   "id": "sec-probBasics-2",
@@ -494,6 +665,60 @@ var ptx_lunr_docs = [
   "number": "4.1",
   "title": "",
   "body": "  At the end of this section you will able to:    Find the probabilty of a single event.    Determine if outcomes are equally likely.     "
+},
+{
+  "id": "sec-probBasics-6",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Experiment "
+},
+{
+  "id": "sec-probBasics-7",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "outcomes "
+},
+{
+  "id": "sec-probBasics-8",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "event "
+},
+{
+  "id": "sec-probBasics-9",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sample space "
+},
+{
+  "id": "sec-probBasics-11",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "experimental probability "
+},
+{
+  "id": "sec-probBasics-13",
+  "level": "2",
+  "url": "sec-probBasics.html#sec-probBasics-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "theoretical probability "
 },
 {
   "id": "sec-sampdist",
