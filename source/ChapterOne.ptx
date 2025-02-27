@@ -17,5 +17,6 @@
         </introduction>
 </objectives>
 <xi:include href="sec-DayOne.ptx" />
-
+<xi:include href="sec-two.ptx" />
+  <xi:include href="sec-three.ptx" />
   </chapter>

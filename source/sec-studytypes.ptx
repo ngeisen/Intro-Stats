@@ -18,6 +18,110 @@
           <li> <p> Correctly identify the explanatory and response variables. </p> </li>
         </ol>
       </objectives>
-       
+
+<p> Recall there are two main types of studies: </p>
+<p> <term> observational studies </term> where researchers collect data by watching or asking questions, and draw conclusions based on these observations. </p>
+<p>  <term> Experimental Studies </term>  where the researcher manipulates a variable to determine how the treatment influences the other variables. </p>
+<exercise label="ObsMatching">
+<statement> <p> Identify the type of study described: A researcher decided to check the Greeley Police Department records for 2 months to determine what types of crimes were committed.  </p> </statement>
+<choices randomize="yes">
+    <choice correct="yes">
+        <statement> <p> Observational study </p> </statement>
+	<feedback> <p> Observational study because they are looking at the records, not manipulating a variable.  </p> </feedback>
+</choice>
+<choice>
+        <statement> <p> Experimental study </p> </statement>
+        <feedback>
+        <p> They are not manipulating a variable.</p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+
+
+<exercise label="ExpMatching">
+<title> Identify the type of study described. </title>
+•	<statement> <p> Identify the type of study described: A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  consumed 2 tablespoons of oat bran daily for 6 weeks or consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels.   </p> </statement>
+<choices randomize="yes">
+    <choice correct="yes">
+        <statement> <p> Experimental study </p> </statement>
+	<feedback> <p> They are manipulating a variable.  </p> </feedback>
+</choice>
+<choice>
+        <statement> <p> Observational study </p> </statement>
+        <feedback>
+        <p> Experimental since they are manipulating a variable.</p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+<p> Many observational studies involve surveys and questionnaires, which uses questions to collect the data for the study. Others look at historical records to collect the data. In educational environment, observations of the participants is how the data is collected – by jotting down notes or videotaping the behaviors. </p>
+  
+<p> There are three main types of variables we will look at within an experimental study. </p>
+
+<p> The <term>  independent variable </term>  is the variable that is being manipulated by the researchers.  It is also called the explanatory variable. </p>
+<p> The <term> dependent variable </term>  is the result of manipulation.  It is also called the response variable. </p>
+<p> A <term> confounding variable </term>  is one that influences the dependent variable but cannot be separated from the independent variable. </p>
+
+<p> For this example, identify the variables. A sample of 50 men with high triglyceride levels were randomly assigned to two groups:  one consumed 2 tablespoons of oat bran daily for 6 weeks and the other group consumed 2 tablespoons of wheat bran for 6 weeks, to determine which bran worked better to lower their triglyceride levels. </p> 
+
+<p> Type of bran consumed is the independent variable. They want to determine which one works better in lowering the triglyceride levels. </p>
+<p> Whether or not the triglyceride level changes is the dependent variable. This is the result of the of manipulating which type of bran they consumed. </p>
+<p> In this case, both bran groups were in the treatment group, there was not control group in the study. </p>
+<p> There are several possible confounding variables in this study. Things that could influence the triglyceride levels could be diet, amount of exercise, current healthy, and weight of the participants. </p>
+<exercise label="MatchingIndep">
+<title> Identify the type of variable. </title>
+•	<statement> <p> What variable is the type of bran the participants consumed?  </p> </statement>
+<choices randomize="yes">
+    <choice correct="yes">
+        <statement> <p> independent variable </p> </statement>
+	<feedback> <p> Yes, because they want to see if the type of bran influences the triglyceride level.  </p> </feedback>
+</choice>
+<choice>
+        <statement> <p> dependent variable  </p> </statement>
+        <feedback>
+        <p> No, the dependent variable is the triglyceride level.</p>
+        </feedback>
+    </choice>
+<choice>
+        <statement> <p> confounding variable  </p> </statement>
+        <feedback>
+        <p> There were no confounding variable listed, but a person’s diet and health may influence the results.</p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+
+<exercise label="MatchingDep">
+<title> Identify the type of variable </title>
+•	<statement> <p> What variable is the triglyceride levels?  </p> </statement>
+<choices randomize="yes">
+    <choice correct="yes">
+        <statement> <p> dependent variable </p> </statement>
+	<feedback> <p> Yes, checking to see if triglyceride level changes.  </p> </feedback>
+</choice>
+<choice>
+        <statement> <p> independent variable  </p> </statement>
+        <feedback>
+        <p> No, the independent variable is type of bran.</p>
+        </feedback>
+    </choice>
+<choice>
+        <statement> <p> confounding variable </p> </statement>
+        <feedback>
+        <p> There were no confounding variables listed, but the amount of time a person exercises may influence the results. </p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+
+
+
+
+
+
+
+
+
 
 </section> 

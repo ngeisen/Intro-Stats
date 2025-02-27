@@ -13,4 +13,23 @@
         </introduction>
         </objectives>  
 
+<p> In this chapter we will learn a little about probability. Many people are familiar with probability from playing games of chance, such as flipping coins, rolling dice and playing cards. We will use several of these examples to help explain the rules of probability. </p>
+<p> The questions that probability can help with are your chances that the car you are buying will need more maintenance, your chances of passing a class, your chances of winning the lottery, your chances of being in a car accident.  The chance of winning the lottery is very small, yet many people will spend the money on lottery tickets.  Yet, if instead they saved the money that they spend on the lottery, they would have more money.  In general, events that have a low probability (under 5%) are unlikely to occur.  Whereas if an event has a high probability of happening (over 80%), then there is a good chance that the event will happen.  </p>
+
+<p> First let us review some definitions to help us understand probability. </p>
+<p> <term> Experiment</term>  is an activity that has specific results that can occur, but the result is unknown before you begin. Such as flipping a coin. </p>
+<p> The <term> outcomes </term> are the results of an experiment. The outcomes from flipping a coin is head or tail. </p>
+<p> An <term> event </term>  is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen. </p>
+<p> The <term> sample space</term>  is the collection of all possible outcomes of the experiment.  For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. </p>
+
+<p> exercise </p> 
+
+ <p> To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4/10 = 2/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513/100 = 51.3% of the time. This is an example of <term> experimental probability </term> since the value was found by actually doing the experiment. </p> 
+<p> The approximate probability of an event A, written as , is </p>
+
+
+<p> Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates <term> theoretical probability </term> which is based on the sample space. But it assumes that all outcomes are equally likely to occur. </p>
+
+
+
 </section>
