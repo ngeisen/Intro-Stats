@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-collect-data" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Collecting Data</title>
+  <p> Text of section. </p>
+
+<p> Recall that the <term> population </term> is the set of all subjects for the study, while a <term> sample </term> is a group or subset selected from the population. It is often difficult or too expensive to examine the whole population for a study, thus we use a sample to help us draw conclusions about the population. When we choose a sample, we want it to be as similar to the population as possible. We are going to simulate several sampling methods using Gettysburg’s Address as the population. </p>
+<p> President Abraham Lincoln delivered one of the most famous speeches in United States history at the dedication of the Gettysburg National Cemetery on November 19, 1863. After the featured speaker spoke for two hours, Lincoln delivered his 269-word message in approximately two minutes.  Our goal is to estimate the average length of words in Abraham Lincoln’s Gettysburg Address by selecting a sample of ten words. The entire text of Lincoln’s Gettysburg Address is given below.  </p> 
+
+<p> <em> Four score and seven years ago our fathers brought forth, on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.  But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they here gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth. </em> </p> 
+<p> Step 1: Your task is to select a sample of 10 words to estimate the average length of words in his speech.  Pick words that appear to be representative of the population of all the words.  If you print the address, you can circle the ten words you choose. </p>
+<p> Step 2: Find the lengths (number of letters) for each of the 10 words you selected. </p> 
+<p> Step 3: Calculate the average number of letters for the 10 words in your sample. Take the total number of letters and divide by the 10 words for the average. </p>  
+
+Exercise:
+Which best describes your average value for the average word length?
+<exercise label="GettysCircleWord">
+    <title> Your average word length </title>
+    <statement>
+    <p> Which best describes your average value for the average word length? </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> Between 3 and 6 letters per word. </p>
+        </statement>
+        <feedback>
+        <p>That is a good estimate.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> Less than 3 letters per word. </p>
+        </statement>
+        <feedback>
+        <p>This estimate is a bit low, there are a lot of large words not included in your sample.  </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+        <p> More than 6 letters per word. </p>
+        </statement>
+        <feedback>
+        <p> This estimate is a bit high, you likely included a lot of the larger words and did not include some of the smaller words  </p>
+        </feedback>
+    </choice>
+</choices>
+</exercise>
+
+  <p> The image below is a class distribution of the average number of letters for the Gettysburg Address by circling ten words. Each dot represents the average value for a student. There were 64 student samples taken. We can see the values range from 3.4 to 6.4 with the center around 5.5 letters per word, thus this will be our predicted value for the typical word length. But it turns out, we are often biased in the words we select. Some students selected bigger words to be representative, others selected more smaller words. Did you notice how many two and three letter words there were? Were you biased in your sampling selection?? </p>
+    <figure xml:id="GettysburgCircle">
+            <caption>Image of Average Word Length from Gettysburg Address</caption>
+            <image source="GettyCircle.png" >
+                <shortdescription>Shows average word length prediction for 64 students clustered between 5 and 6.</shortdescription>
+            </image>
+        </figure> 
+  <p> <term> Sampling bias </term> occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way. If sampling bias exists, we cannot trust generalizations from the sample to the population. So, we need a better method for predicting the typical or average value.    </p>
+
+<p> Now let's investigate using a more random approach in selecting the words for a better estimate of the population average. </p>
+<p> Randomly choose ten numbers between 1 and 269 and record them. Find the corresponding word in Lincoln’s Gettysburg Address and find the average word length for your new sample. </p>
+<p> You can also use technology to find the random numbers. Try the link for a random number generator at <url href="https://www.random.org/" />  Go midway down the page to <c> Numbers </c> and select <c>Integer Generator</c>. Generate 10 random integers between 1 and 269. Click on <c>Get Numbers</c>. </p>
+Sample below
+        <figure xml:id="RandomOrg">
+            <caption>Image RandomOrg menu</caption>
+            <image source="RandomOrg.png" width="60%">
+                <shortdescription>image of website menu.</shortdescription>
+            </image>
+        </figure>
+
+<p> The image below is a sample of ten randomly selected numbers using the applet. </p> 
+        <figure xml:id="SampleRandom">
+            <caption>Image Sample of random numbers</caption>
+            <image source="SampleRandNum.png" width="50%">
+                <shortdescription>lists ten random numbers.</shortdescription>
+            </image>
+        </figure>
+
+<p> Matching these numbers to the corresponding word in Gettysburg Address gives the average of 3.9 letters per word. This is closer to the actual average of 4.3 letters per word. We will look at the class distribution later. </p>
+  <figure xml:id="GettysWords">
+            <caption>Sample of Gettysburg Address words</caption>
+            <image source="GettyYellow.png" >
+                <shortdescription> Image of highlighted words.</shortdescription>
+            </image>
+        </figure>
+  
+
+
+</section>

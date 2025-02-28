@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ChapterOne" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title> Introduction to Statistics </title>
+  <title> Organizing Data </title>
 
   <introduction>
     <p> A review of terminology to understand statistics </p>

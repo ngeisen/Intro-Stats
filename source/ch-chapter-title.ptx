@@ -10,7 +10,7 @@
   <!-- include sections -->
   <xi:include href="sec-Investigation-Process.ptx" />
   <xi:include href="sec-section-name.ptx" />
-  
+  <xi:include href="sec-collect-data.ptx" />
   <xi:include href="sec-studytypes.ptx" />
 
 
