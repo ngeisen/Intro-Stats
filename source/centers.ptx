@@ -5,20 +5,19 @@
 
     <objectives>
         <introduction>
-          <p> At the end of this section you will able to: </p>
+          <p>
+            At the end of this section you will able to:
+          </p>
         </introduction>
         <ol>
-          <li>
-            <p> Accurately estimate the location of the center of a distribution. </p>
-          </li>
+          <li> <p> Accurately estimate the location of the center of a distribution. </p> </li>
           <li> <p> Calculate the mean, median, and mode from a data set. </p> </li>
           <li> <p> Calculate the mean and median using technology. </p> </li>
         </ol>
       </objectives>
        
       <p>
-        This section focuses on measures of central tendency. Many times you are asking what
-to expect "on average" or what is a typical value. These types of questions can be answered by knowing the center of the
+        This section focuses on measures of central tendency. Many times you are asking what to expect "on average" or what is a typical value. These types of questions can be answered by knowing the center of the
 data set. There are three measures of the <term> center </term> of the data. They are the mean, median, and mode.
       </p>
       <p>  
@@ -31,15 +30,14 @@ data set. There are three measures of the <term> center </term> of the data. The
      <p> The <term> mean </term> is the arithmetic average of the numbers. You will add all the values together then divide by the number of values. </p>
         
      <p> <term> Sample: </term> A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48. </p>
-    <p> <term> Solution: </term> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72,  thus the median is 36. The mean is the sum of the values divided by 5, thus 217/5 = 43.4 is the mean apps per person. This is higher than the median because it is skewed to the right by the large value of 72. </p> 
-    
+    <p> <term> Solution: </term> The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, <c> 36 </c>, 48, 72 when arranged in order,  thus the median is 36. The mean is the sum of the values divided by 5, thus 217/5 = 43.4 apps per person. This is higher than the median because it is skewed to the right by the large value of 72. </p> 
 
     <p> A data set can have more than one mode. If there is a tie between two values for the most
         number of times, then both values are the mode and the data is called <em> bimodal </em> (two
         modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being <em> multimodal </em>. </p>
        
     <p> <term> Sample: </term> A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72. </p>
-    <p> <term> Solution: </term> This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42,  thus the median is 42. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 for the mean. </p> 
+    <p> <term> Solution: </term> This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)/2=42, thus the median is 42 apps. The mean is the sum of the values divided by 6, thus 289/6 = 48.167 apps per person. </p> 
          
       <exercise>
         <title>Find the measures of center</title>
