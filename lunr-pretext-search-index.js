@@ -10,6 +10,15 @@ var ptx_lunr_docs = [
   "body": ""
 },
 {
+  "id": "frontmatter-4",
+  "level": "1",
+  "url": "frontmatter-4.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " Thanks to  "
+},
+{
   "id": "sec-Investigation-Process",
   "level": "1",
   "url": "sec-Investigation-Process.html",
@@ -190,9 +199,9 @@ var ptx_lunr_docs = [
   "body": "Rows of Data  What does each row represent?     Each row is a list of responses by a student.    Correct. Each row is a student response.      Each row is a list of responses of a case.    Well done. a \"case\" is a survey-taker and is an important vocabulary word to know.      Each row is the list of responses of students on a single item of the survey.    Rethink your selection. Responses on a single item are listed vertically.      Each row is a variable.    The entries of a row do vary, but they do not represent different responses on a single survey item.    "
 },
 {
-  "id": "column-matching",
+  "id": "column-Matching",
   "level": "2",
-  "url": "sec-section-name.html#column-matching",
+  "url": "sec-section-name.html#column-Matching",
   "type": "Checkpoint",
   "number": "1.2.3",
   "title": "Columns of Data.",
@@ -791,6 +800,42 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "theoretical probability "
+},
+{
+  "id": "ProbRules",
+  "level": "1",
+  "url": "ProbRules.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Probability Rules",
+  "body": " Probability Rules    At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given    Use a tree diagram to determine the probability of multiple events      "
+},
+{
+  "id": "ProbRules-2",
+  "level": "2",
+  "url": "ProbRules.html#ProbRules-2",
+  "type": "Objectives",
+  "number": "4.2",
+  "title": "",
+  "body": "  At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given    Use a tree diagram to determine the probability of multiple events     "
+},
+{
+  "id": "ProbDist.ptx",
+  "level": "1",
+  "url": "ProbDist.ptx.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Probability Distribution",
+  "body": " Probability Distribution    At the end of this section you will able to:    Determine the .    Calcuate the probabilty from a probability distribution    Calculate the mean and standard deviaton for probabilty distributions      "
+},
+{
+  "id": "ProbDist.ptx-2",
+  "level": "2",
+  "url": "ProbDist.ptx.html#ProbDist.ptx-2",
+  "type": "Objectives",
+  "number": "4.3",
+  "title": "",
+  "body": "  At the end of this section you will able to:    Determine the .    Calcuate the probabilty from a probability distribution    Calculate the mean and standard deviaton for probabilty distributions     "
 },
 {
   "id": "sec-sampdist",
