@@ -24,8 +24,7 @@
     <li><p>Piercings: Number of body piercings</p></li>    
 </ul>
  </p>
- <p>
- </p>
+ <p>    </p>
  <p>
     Here is the first 15 entries of the dataset:
  </p>
@@ -101,7 +100,7 @@
 <p>
     
 </p>
-<exercise label="column-matching">
+<exercise label="column-Matching">
         <title>Columns of Data</title>
         <statement>
         <p>

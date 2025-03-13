@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ProbRules" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title> Probability Rules </title>
+ <objectives>
+        <introduction>
+          <p> At the end of this section you will able to:   </p>
+            <ol>
+           <li> <p> Determine if events are mutually exclusive.   </p> </li>
+            <li> <p> Determine the probability using the rules for “or”, “and”, and “given   </p> </li>
+            <li> <p> Use a tree diagram to determine the probability of multiple events   </p> </li>  
+            
+          </ol>
+        </introduction>
+    </objectives>  
+
+
+
+    </section> 

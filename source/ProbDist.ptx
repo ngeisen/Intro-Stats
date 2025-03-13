@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ProbDist.ptx" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title> Probability Distribution </title>
+ <objectives>
+        <introduction>
+          <p> At the end of this section you will able to:   </p>
+            <ol>
+           <li> <p> Determine the .   </p> </li>
+            <li> <p> Calcuate the probabilty from a probability distribution  </p> </li>
+            <li> <p> Calculate the mean and standard deviaton for probabilty distributions    </p> </li>  
+            
+          </ol>
+        </introduction>
+    </objectives>  
+
+
+
+    </section>
