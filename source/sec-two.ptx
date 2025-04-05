@@ -39,4 +39,59 @@
     </li>
     </ol>
 
+
+
+
+
+<p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. This will be the focus of the chapter. </p>
+<p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <term> frequency </term>  represents the number of times a particular category occurs from the raw data. This is organized in a <term> frequency table </term> summarizing each category with its frequency. This works best with nominal and ordinal level data. </p>
+<p> On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data. </p>
+<figure xml:id="EyeRaw">
+            <caption>Image of Raw Eye Color Data</caption>
+            <image source="EyeRaw.jpg" width="50%">
+                <shortdescription>Lists 20 eye colors.</shortdescription>
+            </image>
+        </figure> 
+<p> The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students. </p>
+<figure xml:id="EyeFreq">
+            <caption>Image of Eye Frequency</caption>
+            <image source="EyeFreq.jpg" width="30%">
+                <shortdescription>Frequency of 10 brown, 4blue, 4 green, and 2 hazel.</shortdescription>
+            </image>
+        </figure> 
+<p> Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category. </p>
+<figure xml:id="EyeBar">
+            <caption>Image of Eye Bar Graph</caption>
+            <image source="EyeBar.jpg" width="60%">
+                <shortdescription>Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel.</shortdescription>
+            </image>
+        </figure>
+<p> The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample. </p>
+<p> A <term> relative frequency table </term> also shows the proportion or percentage of cases that fall in each category, as shown below. </p>
+<figure xml:id="EyeRelFreq">
+            <caption>Image of Eye Relative Frequency Table</caption>
+            <image source="EyeRelFreq.png" width="50%">
+                <shortdescription>Relative frequency table showing of 50% brown,  20% blue, 20% green, and 10% hazel.</shortdescription>
+            </image>
+        </figure>
+<p> The proportion of some category is found by  <me>Proportion =  \frac{\text {Number in that Category}{\text {Total Number Cases}} </me>. </p>
+<p> Brown eyes occurred 10 times out of the sample of 20 students thus <m> \hat p = 10/20=.5 </m> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <m> \hat p =4/20=.2 </m> which is 20% of the students. </p>
+<p> The proportion for a sample is denoted <m> \hat p </m> and read “p-hat.” </p>
+<p> The proportion for a population is denoted p. </p>
+<p> Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. </p>
+<figure xml:id="EyeCircle">
+            <caption>Image of Eye Circle Graph</caption>
+            <image source="EyeCircle.png" width="50%">
+                <shortdescription>Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel.</shortdescription>
+            </image>
+        </figure>
+<p> See the section for <term> Graphing with StatKey </term> for details on how to graph using technology. </p>
+
+
+
+
+
+
+
+
 </section>
