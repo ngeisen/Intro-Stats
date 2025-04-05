@@ -16,5 +16,21 @@
         </ol>
       </objectives>
  
+<p> Variability is an important idea in statistics. If we were to measure the height of everyone in our class, every observation could give a different value. That means not every student is the same height. Thus, there is variability in the heights of the students in class. If we asked the heights of students in several different classes, there will be variation among the different samples. Variability describes how the data are spread out. If the data are very close to each other, then there is low variability. If the data are very spread out, then there is high variability. We will investigate the range, variance, and standard deviation as measures of spread in the values. </p>
+
+<p> The <term> range </term> of a set of data is the difference between the largest and the smallest data values (also known as the maximum and minimum values). This lets us know how spread apart the extreme values of the data are. </p>
+
+<p> A better way is to describe the variability is with the standard deviation, which is the average distance each value is from the mean. We will illustrate this with an example and then review how to calculate it using technology. </p>
+<p> The sample standard deviation is designated by <m> s </m> and the variance is <m> s^2 </m>. The formula is </p>
+<p> <me> s = \sqrt { \frac{\sum{(x-\bar x)^2}} {n-1} } </me> </p> 
+<p> The formula says we took each value X and subtracted the mean, we squared the difference, then add them all together, then divided by one less than the sample size to get the variance. Then we take the square root to get the standard deviation.  Aren’t you glad we can do this with technology! </p>
+<p> The population standard deviation is designated by <m> σ </m> and the variance is <m> σ^2 </m>. The formula for the population standard deviation is </p>
+<p> <me>  \sigma  = \sqrt { \frac{\sum{(X-\mu)^2}} {N} } </me> </p> 
+
+<p> If you record the quartiles together with the maximum and minimum you have five-number summary. The <term> five-number summary </term> consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot. </p>
+
+<p>The <term>interquartile range (IQR) </term>, is the difference between the first and third quartiles, thus <m> IQR = Q3 - Q1</m> which represents the middle 50% of the data. If the IQR is <em> large </em> the data is spread out and if the IQR is <em>small</em> the data is closer together. </p>
+
+
 
 </section>

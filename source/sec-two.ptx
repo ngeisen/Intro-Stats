@@ -74,10 +74,13 @@
                 <shortdescription>Relative frequency table showing of 50% brown,  20% blue, 20% green, and 10% hazel.</shortdescription>
             </image>
         </figure>
-<p> The proportion of some category is found by  <me>Proportion =  \frac{\text {Number in that Category}{\text {Total Number Cases}} </me>. </p>
+<p> The proportion of some category is found by </p> 
+<p> <me> p =  \frac{\text{Number in that Category}} {\text{Total Number Cases}} </me> </p>
+  
+  
 <p> Brown eyes occurred 10 times out of the sample of 20 students thus <m> \hat p = 10/20=.5 </m> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <m> \hat p =4/20=.2 </m> which is 20% of the students. </p>
 <p> The proportion for a sample is denoted <m> \hat p </m> and read “p-hat.” </p>
-<p> The proportion for a population is denoted p. </p>
+<p> The proportion for a population is denoted <m> p </m>. </p>
 <p> Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories. </p>
 <figure xml:id="EyeCircle">
             <caption>Image of Eye Circle Graph</caption>

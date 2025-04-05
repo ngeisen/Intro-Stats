@@ -222,7 +222,7 @@
 
 <figure xml:id="Recall-Compare">
     <caption>Need to recreate this graph [currently stolen]. Shows that the Nap group recalled more words, on average, compared to the other two groups.</caption>
-   <image source="Images/Recall.png">
+   <image source="Images/Recall.png" width ="50%">
     <description>
       Bar chart comparing means, with error bars
   </description>
