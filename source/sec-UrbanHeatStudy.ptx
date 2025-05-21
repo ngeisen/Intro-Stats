@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-UrbanHeatStudy.ptx" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Urban Heat Study</title>
+  <p> Text of section. </p>
+
+
+
+<p><term>Urban-Suburban Temperature Investigation</term></p>
+
+  <p>The phenomenon known as the urban heat island (UHI) effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth. The following tasks analyze climatological data from the summer 2024.</p>
+<p><term>Available Data</term> </p>
+    <p>NOAA Regional Climate Centers (<url>https://scacis.rcc-acis.org/</url>) provides climatological data from stations across the United States. The following information is available from many of the stations:</p>
+
+<p> Temperature</p>
+  <ul>
+  <li>
+    <p><em>Date:</em> The specific day of the observation.</p>
+  </li>
+  <li>
+    <p><em>MaxTemperature:</em> The highest air temperature recorded during a 24-hour period.</p>
+  </li>
+  <li>
+    <p><em>MinTemperature:</em> The lowest air temperature recorded during a 24-hour period.</p>
+  </li>
+  <li>
+    <p><em>AvgTemperature:</em> The average of the maximum and minimum temperatures for a day.</p>
+  </li>
+  <li>
+    <p><em>AvgTemperatureDeparture:</em> The difference between the observed average temperature and a long-term average (typically a 30-year period), indicating how much warmer or cooler the day was compared to the norm.</p>
+  </li>
+</ul>
+<p> Degree Day</p>
+<ul>
+  <li>
+    <p><em>HDD (Heating Degree Days):</em> A measure of how much (in degrees) and for how long (in days) the outside air temperature was below a certain base temperature (commonly 65°F). It's used to estimate the energy needed for heating.</p>
+  </li>
+  <li>
+    <p><em>CDD (Cooling Degree Days):</em> A measure of how much (in degrees) and for how long (in days) the outside air temperature was above a certain base temperature (commonly 65°F). It's used to estimate the energy needed for cooling.</p>
+  </li>
+</ul>
+<p> Precipitation and Snow</p>
+<ul>
+  <li>
+    <p><em>Precipitation:</em> The total amount of water (in liquid equivalent) that has fallen, including rain, snow, sleet, and hail.</p>
+  </li>
+  <li>
+    <p><em>Snowfall:</em> The total amount of snow that has fallen, typically measured in inches.</p>
+  </li>
+  <li>
+    <p><em>SnowDepth:</em> The depth of the snow on the ground at a specific time, measured in inches.</p>
+  </li>
+</ul>
+
+<subsection xml:id="subsec-UrbanHeatDatatable">
+<title>Data Organization</title>
+<p>The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available (<code>MetroDenver_Climatological-Data.csv</code>).</p>
+   
+<figure xml:id="UrbanHeat">
+            <caption>Urban Heat Data</caption>
+            <image source="UrbanHeatTable.png" >
+                <shortdescription>Image of datafile showing 15 cities.</shortdescription>
+            </image>
+        </figure>
+
+<p> <term>Interpretation Questions From Data Table</term> </p>
+<exercise>
+  <title> Rows</title>
+        <p>Describe what each row represents and describe it in context.</p> 
+        <solution><p> Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024. </p></solution>
+      </exercise>
+
+<exercise>
+<title> Columns</title>
+        <p>Describe what each column represents.</p>
+        <solution><p>Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station. </p></solution>
+      </exercise>
+<exercise> <title> Variable </title>
+        <p>For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.</p>
+        <solution><p> It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.</p></solution>
+      </exercise>
+
+<exercise> <title> Commonalities</title>
+        <p>Determine one thing in common for the dates when the high temperature in Denver was 100°F.</p>
+        <solution><p> Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.</p> </solution>
+      </exercise>
+<exercise> <title> Differences </title>
+        <p>Determine one thing that was different for the dates when the high temperature in Denver was 100°F.</p>
+        <solution><p>One day had measurable precipitation while the other did not.</p></solution>
+      </exercise>
+</subsection> 
+
+
+<subsection xml:id="subsec-UrbanHeatDisplay"> 
+<title>Data Display</title>
+   
+<p> How would a climatologist characterize the high temperatures of Denver, Colorado, in summer 2024? </p>
+
+    <p> The following histogram presents that high temperatures from June 1 to August 31, 2024, at the Denver Water Department near downtown Denver.</p>
+<figure xml:id="UrbanHeatHisto">
+            <caption>Denver High Temperatures</caption>
+            <image source="UrbanHeatHisto.png" >
+                <shortdescription>Shows daily high temperature with most values between 85 and 100 with a few lower temps down to 65F.</shortdescription>
+            </image>
+        </figure>
+
+    <exercise> <title> Shape</title>
+      <p>Describe the shape of the dataset in context.</p>
+      <solution> <p>The high temperatures of Denver in summer 2024 were skewed left.</p></solution>
+    </exercise>
+
+    <exercise> <title> Center</title>
+      <p>StatKey reports the mean as 90.78. Interpret it in context.</p>
+      <solution><p>Typical high temperature at the Denver station was 90.78°F in summer 2024.</p></solution>
+    </exercise>
+
+    <exercise> <title> Spread</title>
+      <p>StatKey reports the standard deviation as 6.47. Interpret it in context.</p>
+      <solution> <p> The standard deviation is a measure of spread. According to the 95% rule, we would expect approximately 95% of the temperatures in Denver in summer 2024 to be within 2 standard deviations (2*6.47 = 12.94) of the mean. Because the dataset is skewed left, the 95% rule might not apply as well as it does when the dataset is bell-shaped.</p> </solution>
+    </exercise>
+
+  </subsection> 
+
+<subsection xml:id="subsec-UrbanHeatAssociation">
+ <title>Association Between Variables </title>
+
+</subsection> 
+
+
+<subsection xml:id="subsec-UrbanHeatStudyType">
+ <title>Study Type</title>
+
+</subsection> 
+
+<subsection xml:id="subsec-UrbanHeatBootstrap">
+ <title>Estimating with Bootstrapping</title>
+
+</subsection> 
+
+<subsection xml:id="subsec-UrbanHeatRandom">
+      <title>Using Randomization Samples</title>
+
+</subsection> 
+
+
+
+
+</section>

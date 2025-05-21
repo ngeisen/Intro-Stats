@@ -6,5 +6,5 @@
     <xi:include href="sec-sampdist.ptx" />  
     <xi:include href="sec-bootdist.ptx" /> 
     <xi:include href="sec-randdist.ptx" />  
-
+<xi:include href="sec-UrbanHeatStudy.ptx" />
 </chapter>
