@@ -122,22 +122,192 @@
 
 <subsection xml:id="subsec-UrbanHeatAssociation">
  <title>Association Between Variables </title>
+<p> The climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado. The complete dataset is available (MetroDenver_Temperatures.csv). </p>
+<p>One preliminary way to determine if UHI effect exists is to decide if there is a visual association between location (urban or suburban) and high temperature.</p>
+<p>The graph below shows the boxplot of high temperatures at the two Metro Denver climate stations. </p>
+<figure xml:id="UrbanHeatBox">
+            <caption>Comparing Heat Boxplot</caption>
+            <image source="HeatBoxplot.png" >
+                <shortdescription>comparing heat temperatures between Denver and Centennial.</shortdescription>
+            </image>
+        </figure>
+<exercise> <title> Outliers </title> 
+<p> Identify any outliers in the dataset. State each outlier value and its corresponding station location.</p>
+<solution> <p>There was one outlier temperature for each climate station represented by the asterisk. Denver had a lower outlier temperature of 67F. Centennial had a lower outlier temperature of 64F. </p> </solution>
+</exercise> 
+<exercise> <title> Medians </title> 
+<p> Estimate the median temperature values of the two datasets and compare them in context. </p>
+<solution> <p> In summer 2024, the median high temperature for Denver was 91.5 F while the median high temperature for Centennial was 88 F, suggesting that the typical urban high temperature was 6.5 F higher than the typical suburban high temperature at the two locations. </p> </solution>
+</exercise> 
+<exercise> <title> IQR</title> 
+<p>Estimate the interquartile ranges (IQRs) of the two datasets and compare them in context.</p>
+<solution> <p>In summer 2024, the IQR for Denver was 96-87 = 9 F and for Centennial was 93 – 85 = 8 F, suggesting that the spread of the middle 50% of the values of the temperatures was similar for both locations.
+</p> </solution>
+</exercise> 
+<exercise> <title> Association </title> 
+<p> Based on the boxplot, is there an association between the high temperatures between Denver and Centennial? Explain your thinking. </p> 
+<solution> <p>An association exists between a categorical variable (location) and a numerical variable (high temperature), if the difference between the measures of center in relation to the measure of spread distinguishes the two datasets. </p>
+<p>The difference between the two medians was 6.5 F. The IQRs of the high temperatures of the two locations was about 8.5 F. The proportion of the difference of center to spread was 0.76. There is some visual evidence to suggest that high temperature is associated with location since the box for Denver is shifted farther to the right. Later we will determine this numerically with hypothesis testing.
+</p> </solution>
+</exercise> 
 
 </subsection> 
 
 
 <subsection xml:id="subsec-UrbanHeatStudyType">
  <title>Study Type</title>
+<p> The phenomenon known as the <term>urban heat island (UHI) effect </term>suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth. </p>
+<p> <term>Study 1</term></p> 
+ <p>A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.</p>
+<p>Answer the following questions regarding Study 1.</p>
+<exercise> <title> Sample</title> 
+<p> Identify the sample. Is the sample representative of the population? Briefly explain.</p>
+<solution> <p>The sample is the temperatures at the two climate stations in the Denver metro area during the summer 2024. The sample is representative of recent summer high temperatures in the Denver metro area. </p> </solution>
+</exercise> 
+<exercise> <title> Variables</title> 
+<p> Identify the variables and classify as explanatory or response. Describe what type of variable each is. </p>
+<solution> <p>The explanatory variable is the location (urban versus nearby suburban), thus categorical or qualitative. The response variable is high temperature (measured in degrees Fahrenheit), thus numeric or quantitative. </p> </solution>
+</exercise> 
+<exercise> <title> Study Design</title> 
+<p> What research design did the climatologist use to answer the research question? Briefly explain. </p>
+<solution> <p>The study is a matched pair design. The climatologist obtained the data at two climate stations in the same metro area on the same days in summer 2024. </p> 
+<p> This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in the Denver metro area on the same days in summer 2024. </p> </solution>
+</exercise> 
+<exercise> <title> Causation</title> 
+<p> If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain. </p>
+<solution> <p> Because the study is an observational study, any association may not be concluded as causation. There may be confounding variables unaccounted for in the study that affect the high temperatures of the urban and suburban stations other than the UHI effect. For example, Denver is near the Rocky Mountain range; geographical phenomena may influence the temperatures at the stations rather than the UHI effect. </p> </solution>
+</exercise> 
+
+<p> <term>Study 2 </term> </p> 
+<p> A climatologist obtained a list of 20 most urban areas/cities in the United States. Using the map of climate stations from the NOAA Regional Climate Centers (https://scacis.rcc-acis.org/), the climatologist selected an urban station near the center of the city. Next, the climatologist zoomed out from the selected urban station to find a nearby suburban station. In most cases, the climatologist selected the nearest station that recorded the same climatological data located just outside the city’s loop or beltway (i.e., the large, controlled-access highway that encircles a city). The following is a table of the metro areas and the climate stations selected by the climatologist. </p> 
+<p> Table of cities</p> 
+<exercise> <title> Sample</title> 
+<p> Identify the sample. Is the sample representative of the population? Briefly explain. </p> 
+<solution> <p> The sample is the temperatures at the two climate stations in 20 most populated metro areas in the US in August 2024. The sample is representative of recent summer high temperatures of urban and suburban locations in metro areas in the US. </p> </solution>
+</exercise> 
+<exercise> <title> Variables</title> 
+<p>Identify the variables and classify as explanatory or response. Describe what type of variable each is. </p> 
+<solution> <p> The explanatory variable is the location (urban versus nearby suburban) which is categorical. The response variable is high temperature (measured in degrees Fahrenheit) which is numerical. </p> </solution>
+</exercise> 
+<exercise> <title> Study Design</title> 
+<p> What research design did the climatologist use to answer the research question? Briefly explain. </p> 
+<solution> <p>The study is a matched pair design. The climatologist obtained data on the same day in August 2024 for climate stations of 20 metro areas. Thus, the data for each day is paired by location. This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in 20 metro areas. </p> </solution>
+</exercise> 
+<exercise> <title> Causation</title> 
+<p>If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain. </p>
+<solution> <p> Because the study is an observational study, any association may not be concluded as causation. However, given the diverse locations of the 20 urban areas, a single confounding variable consistent among the metro areas is less likely than selecting the high temperatures at a single urban area. </p> </solution>
+</exercise> 
 
 </subsection> 
 
 <subsection xml:id="subsec-UrbanHeatBootstrap">
  <title>Estimating with Bootstrapping</title>
+<p> A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado. </p>
+<p> The climatologist wanted to infer the true difference in high temperatures during the summer between the two stations. So, he calculated the difference in high temperatures between the Denver station and the Centennial station each day. The original sample displays a dotplot of the temperature differences. The bootstrap sample displays one dotplot generated by StatKey. </p> 
+<figure xml:id="UrbanHeatBoot1">
+            <caption>Bootstrap Samples</caption>
+            <image source="HeatBoot1.png" >
+                <shortdescription>original sample and a bootstrap sample.</shortdescription>
+            </image>
+        </figure>
+<exercise> <title> Bootstrap Sample</title> 
+<p> Explain how <em>StatKey </em> obtained the Bootstrap Sample. </p>
+<solution> <p>A bootstrap sample is randomly generated from the original sample with replacement with the same sample size as the original. That is, 92 values from the original sample were randomly selected with replacement to form the bootstrap sample. The bootstrap sample statistic is the mean of 4.5 as the average difference in temperature for the sample. </p> </solution>
+</exercise>
+<p> The dotplot below is a bootstrap distribution of the difference in high temperatures from StatKey based on the high temperature data recorded in summer 2024 (the original sample).  </p> 
+<figure xml:id="UrbanHeatBoot2">
+            <caption>Bootstrap Distribution of 1000 samples</caption>
+            <image source="HeatBoot2.png" >
+                <shortdescription> Bootstrap Distribution of 1000 samples.</shortdescription>
+            </image>
+        </figure>
+<p> Answer the following using the Bootstrap distribution. </p>
+<exercise> <title> Bootstrap Dotplot</title> 
+<p> Identify on the dotplot the relevant value obtained from the bootstrap sample. Briefly explain what you indicated.</p> 
+<solution> <p> There is a single dot for the value of 4.5 in the dotplot. It is the mean of the given bootstrap sample from above. Recall that each dot represents the mean from a bootstrap sample. The bootstrap distribution shows 1000 samples with each sample of 92 values of the difference in temperature. </p> </solution>
+</exercise> 
+<exercise> <title> Standard Error</title> 
+<p> State the standard error for the bootstrap distribution. </p> 
+<solution> <p> The dotplot states that the standard error is 0.631, which measures the spread in the distribution from the mean. </p> </solution>
+</exercise> 
+<exercise> <title> Margin of Error</title> 
+<p> Determine the margin of error for a 95% confidence interval for the mean difference of high temperatures. </p> 
+<solution> <p> The margin of error using the 95% Rule is 2 times the standard error, thus 2(0.631) = 1.262. The margin of error is how precise the value of 2.783 (the sample mean difference) is as an estimate for the typical mean difference of high temperatures between the Denver and Centennial climate stations. </p> </solution>
+</exercise> 
+<exercise> <title> Interval</title> 
+<p>Use the bootstrap distribution to compute a 95% confidence interval for the actual mean difference of high temperatures between the Denver and Centennial climate stations. Round values to three decimal places. </p> 
+<solution> <p> Using the 95% Rule, </p>
+<p> Lower bound: <m>2.783-2(0.631) = 2.783 - 1.262 = 1.521 </m></p>
+<p> Upper bound: <m>2.783 + 2(0.631) = 2.783 + 1.262 = 4.045 </m></p>
+<p>The 95% confidence interval is (1.521, 4.045). </p>
+<p> We are 95% confident that the true mean difference of high temperatures between the Denver and Centennial climate stations is between 1.521 F and 4.045 F. </p>
+<p> We are 95% confident that the actual high temperature at the Denver climate stations is on average between 1.521 F and 4.045 F hotter than at the Centennial climate station during the summer months. </p> 
+</solution>
+</exercise> 
 
 </subsection> 
 
 <subsection xml:id="subsec-UrbanHeatRandom">
       <title>Using Randomization Samples</title>
+<p> A climatologist collected the data at three stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The following is a summary of the clinical stations:</p>
+<ul> 
+<li> <p> Denver Water Department near downtown Denver (urban station) </p> </li>
+<li> <p> Denver Centennial Airport in Centennial, southeast of downtown Denver (suburban station) </p> </li>
+<li> <p> Lakewood, a suburb west of downtown Denver (suburban station) </p> </li>
+</ul> 
+<p>The climatologist wanted to test whether there were any statistical differences in high temperatures of the three climate stations during summer months. So, he calculated the difference in high temperatures between each pair of stations: Denver–Centennial, Denver–Lakewood, and Centennial–Lakewood. </p> 
+<p> <term> Study 1 </term> </p> 
+<p> In the first study, the climatologist wanted to decide using statistical analysis if the UHI effect was statistically credible. He examined the differences in high temperatures between two climate stations - one urban and one suburban in the Denver metro area - to test the claim that there is a statistical difference that we would expect if there were a UHI effect. </p>
+<p> The original sample displays a dotplot of the differences between the high temperatures of the Denver and Centennial stations. The randomization sample displays one dotplot generated by StatKey. </p>
+<figure xml:id="UrbanHeatRansom1">
+            <caption>Randomization Sample</caption>
+            <image source="HeatRandom1.png" >
+                <shortdescription>original sample and a randomized sample.</shortdescription>
+            </image>
+        </figure>
+<exercise> <title> Randomized Sample</title> 
+<p>Explain how <em>StatKey </em> obtained the Randomization Sample. </p>
+<solution> <p> A randomization sample for paired data is obtained when we assume that there is no difference between the Denver and Centennial high temperatures, thus the population mean of the differences is zero. So, the center of the randomization dotplot should be centered at the null value of 0. The standard error of the randomization dotplot should be equal to the sampling distribution using the original sample and generating random samples of size 92.</p>
+<p> StatKey generates the Randomization Sample by randomly selecting 92 values from the original sample with replacement, into two groups and finds the difference between each pair, so that the randomization sample is centered at 0. </p> </solution>
+</exercise> 
+<exercise> <title> Dotplot</title> 
+<p> Identify on the dotplot the relevant value obtained from the randomization sample. Briefly explain what you indicated. </p>
+<solution> <p>The mean of the randomization sample is 1.5. The red dot displays the mean of the randomization sample on the distribution below. Each dot in the distribution below is the average difference between the two randomized groups</p> </solution>
+</exercise> 
+
+
+
+<p> Below is a randomization distribution from StatKey based on the climatologist’s claim for 2000 samples. </p> 
+<figure xml:id="UrbanHeatRandom2">
+            <caption>Randomization Distribution</caption>
+            <image source="HeatRandom2.png" >
+                <shortdescription>Randomized distribution of 2000 samples centered at zero.</shortdescription>
+            </image>
+        </figure>
+
+
+<exercise> <title> Hypotheses</title> 
+<p>Write the null and alternative hypotheses for the climatologist's claim. </p>
+<solution> <p> Let <m> \mu_d </m>  be the population mean of the difference in the paired high temperatures between the Denver and Centennial stations. Then, the hypotheses are: <m> Ho: \mu_d ≠ 0 </m> and <m>Ha: \mu_d =0</m> </p> 
+</solution>
+</exercise> 
+<exercise> <title> Sample statistic </title> 
+<p>d.	What is the observed sample statistic of the original sample? Estimate where to plot this observed statistic on the randomization dotplot. </p> 
+<solution> <p> The mean of the sample data is <m> \bar x = 2.783 </m> . However, the value 2.783 is too far to the right of the maximum value on the randomization dotplot to be identified on the graph. Thus it is unlikely to occur by random chance </p> 
+</solution>
+</exercise> 
+<exercise> <title> p-value</title> 
+<p>Estimate and interpret the p-value using the randomization distribution. </p> 
+<solution> <p> None of the 2000 random samples were greater than or equal to the sample statistic 2.783. So, the p-value = 0/2000 = 0.</p>
+ <p>  When we assume that there is no difference in the high temperatures between the Denver and Centennial stations, the chance of getting the mean difference of 2.783 is near zero, thus highly unlikely to occur if the null hypothesis true. This indicates that the difference is statistically significant. </p> </solution>
+</exercise> 
+<exercise> <title> Conclusion</title> 
+<p> Based on the climatologist's results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer. </p>
+<solution> <p> It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station. </p> </solution>
+</exercise> 
+
+
+
 
 </subsection> 
 
