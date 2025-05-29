@@ -3,7 +3,7 @@
 <section xml:id="sec-bootdist" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Creating Bootstrap Distributions</title>
 
-    <exercise label="matching">
+    <exercise label="matching2">
         <title>Distribution Matching Problem</title>
         <statement>
         <p>
