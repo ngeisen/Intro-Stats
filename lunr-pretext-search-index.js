@@ -649,9 +649,9 @@ var ptx_lunr_docs = [
   "body": " Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.   "
 },
 {
-  "id": "some-matching",
+  "id": "eye-matching",
   "level": "2",
-  "url": "sec-three.html#some-matching",
+  "url": "sec-three.html#eye-matching",
   "type": "Checkpoint",
   "number": "2.3.3",
   "title": "Interpreting information from a graph.",
@@ -919,18 +919,18 @@ var ptx_lunr_docs = [
   "body": "  At the end of this section you will able to:    Determine if events are mutually exclusive.    Determine the probability using the rules for “or”, “and”, and “given    Use a tree diagram to determine the probability of multiple events     "
 },
 {
-  "id": "ProbDist.ptx",
+  "id": "ProbDist",
   "level": "1",
-  "url": "ProbDist.ptx.html",
+  "url": "ProbDist.html",
   "type": "Section",
   "number": "4.3",
   "title": "Probability Distribution",
   "body": " Probability Distribution    At the end of this section you will able to:    Determine the .    Calcuate the probabilty from a probability distribution    Calculate the mean and standard deviaton for probabilty distributions      "
 },
 {
-  "id": "ProbDist.ptx-2",
+  "id": "ProbDist-2",
   "level": "2",
-  "url": "ProbDist.ptx.html#ProbDist.ptx-2",
+  "url": "ProbDist.html#ProbDist-2",
   "type": "Objectives",
   "number": "4.3",
   "title": "",
@@ -955,9 +955,9 @@ var ptx_lunr_docs = [
   "body": " Creating Bootstrap Distributions   Distribution Matching Problem   Match the type of distribution with the appropriate description.     sampling distribution  Distribution of statistics computed for different samples of the same size taken from the population, centered at the parameter    bootstrap distribution  Distribution of bootstrap statistics taken with replacement from one original sample centered at the original sample statistic    randomization distribution  Distribution of random statistics we would observe just by random chance assuming Ho is true, center around Ho value     "
 },
 {
-  "id": "matching",
+  "id": "matching2",
   "level": "2",
-  "url": "sec-bootdist.html#matching",
+  "url": "sec-bootdist.html#matching2",
   "type": "Checkpoint",
   "number": "5.2.1",
   "title": "Distribution Matching Problem.",
@@ -973,27 +973,27 @@ var ptx_lunr_docs = [
   "body": " Randomization Distributions  "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx",
+  "id": "sec-UrbanHeatStudy",
   "level": "1",
-  "url": "sec-UrbanHeatStudy.ptx.html",
+  "url": "sec-UrbanHeatStudy.html",
   "type": "Section",
   "number": "5.4",
   "title": "Urban Heat Study",
   "body": " Urban Heat Study  Text of section.  Urban-Suburban Temperature Investigation  The phenomenon known as the urban heat island (UHI) effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth. The following tasks analyze climatological data from the summer 2024.  Available Data   NOAA Regional Climate Centers ( https:\/\/scacis.rcc-acis.org\/ ) provides climatological data from stations across the United States. The following information is available from many of the stations:  Temperature    Date: The specific day of the observation.    MaxTemperature: The highest air temperature recorded during a 24-hour period.    MinTemperature: The lowest air temperature recorded during a 24-hour period.    AvgTemperature: The average of the maximum and minimum temperatures for a day.    AvgTemperatureDeparture: The difference between the observed average temperature and a long-term average (typically a 30-year period), indicating how much warmer or cooler the day was compared to the norm.    Degree Day    HDD (Heating Degree Days): A measure of how much (in degrees) and for how long (in days) the outside air temperature was below a certain base temperature (commonly 65°F). It's used to estimate the energy needed for heating.    CDD (Cooling Degree Days): A measure of how much (in degrees) and for how long (in days) the outside air temperature was above a certain base temperature (commonly 65°F). It's used to estimate the energy needed for cooling.    Precipitation and Snow    Precipitation: The total amount of water (in liquid equivalent) that has fallen, including rain, snow, sleet, and hail.    Snowfall: The total amount of snow that has fallen, typically measured in inches.    SnowDepth: The depth of the snow on the ground at a specific time, measured in inches.     Data Organization  The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available ( MetroDenver_Climatological-Data.csv ).   Urban Heat Data   Image of datafile showing 15 cities.     Interpretation Questions From Data Table    Rows  Describe what each row represents and describe it in context.  Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024.    Columns  Describe what each column represents.  Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station.    Variable  For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.  It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.    Commonalities  Determine one thing in common for the dates when the high temperature in Denver was 100°F.  Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.     Differences  Determine one thing that was different for the dates when the high temperature in Denver was 100°F.  One day had measurable precipitation while the other did not.     Data Display  How would a climatologist characterize the high temperatures of Denver, Colorado, in summer 2024?  The following histogram presents that high temperatures from June 1 to August 31, 2024, at the Denver Water Department near downtown Denver.   Denver High Temperatures   Shows daily high temperature with most values between 85 and 100 with a few lower temps down to 65F.     Shape  Describe the shape of the dataset in context.   The high temperatures of Denver in summer 2024 were skewed left.    Center  StatKey reports the mean as 90.78. Interpret it in context.  Typical high temperature at the Denver station was 90.78°F in summer 2024.    Spread  StatKey reports the standard deviation as 6.47. Interpret it in context.   The standard deviation is a measure of spread. According to the 95% rule, we would expect approximately 95% of the temperatures in Denver in summer 2024 to be within 2 standard deviations (2*6.47 = 12.94) of the mean. Because the dataset is skewed left, the 95% rule might not apply as well as it does when the dataset is bell-shaped.      Association Between Variables  The climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado. The complete dataset is available (MetroDenver_Temperatures.csv).  One preliminary way to determine if UHI effect exists is to decide if there is a visual association between location (urban or suburban) and high temperature.  The graph below shows the boxplot of high temperatures at the two Metro Denver climate stations.   Comparing Heat Boxplot   comparing heat temperatures between Denver and Centennial.     Outliers  Identify any outliers in the dataset. State each outlier value and its corresponding station location.   There was one outlier temperature for each climate station represented by the asterisk. Denver had a lower outlier temperature of 67F. Centennial had a lower outlier temperature of 64F.     Medians  Estimate the median temperature values of the two datasets and compare them in context.   In summer 2024, the median high temperature for Denver was 91.5 F while the median high temperature for Centennial was 88 F, suggesting that the typical urban high temperature was 6.5 F higher than the typical suburban high temperature at the two locations.     IQR  Estimate the interquartile ranges (IQRs) of the two datasets and compare them in context.   In summer 2024, the IQR for Denver was 96-87 = 9 F and for Centennial was 93 – 85 = 8 F, suggesting that the spread of the middle 50% of the values of the temperatures was similar for both locations.     Association  Based on the boxplot, is there an association between the high temperatures between Denver and Centennial? Explain your thinking.   An association exists between a categorical variable (location) and a numerical variable (high temperature), if the difference between the measures of center in relation to the measure of spread distinguishes the two datasets.  The difference between the two medians was 6.5 F. The IQRs of the high temperatures of the two locations was about 8.5 F. The proportion of the difference of center to spread was 0.76. There is some visual evidence to suggest that high temperature is associated with location since the box for Denver is shifted farther to the right. Later we will determine this numerically with hypothesis testing.      Study Type  The phenomenon known as the urban heat island (UHI) effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth.   Study 1  A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.  Answer the following questions regarding Study 1.   Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in the Denver metro area during the summer 2024. The sample is representative of recent summer high temperatures in the Denver metro area.     Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban), thus categorical or qualitative. The response variable is high temperature (measured in degrees Fahrenheit), thus numeric or quantitative.     Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained the data at two climate stations in the same metro area on the same days in summer 2024.  This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in the Denver metro area on the same days in summer 2024.     Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. There may be confounding variables unaccounted for in the study that affect the high temperatures of the urban and suburban stations other than the UHI effect. For example, Denver is near the Rocky Mountain range; geographical phenomena may influence the temperatures at the stations rather than the UHI effect.     Study 2   A climatologist obtained a list of 20 most urban areas\/cities in the United States. Using the map of climate stations from the NOAA Regional Climate Centers (https:\/\/scacis.rcc-acis.org\/), the climatologist selected an urban station near the center of the city. Next, the climatologist zoomed out from the selected urban station to find a nearby suburban station. In most cases, the climatologist selected the nearest station that recorded the same climatological data located just outside the city’s loop or beltway (i.e., the large, controlled-access highway that encircles a city). The following is a table of the metro areas and the climate stations selected by the climatologist.  Table of cities   Sample  Identify the sample. Is the sample representative of the population? Briefly explain.   The sample is the temperatures at the two climate stations in 20 most populated metro areas in the US in August 2024. The sample is representative of recent summer high temperatures of urban and suburban locations in metro areas in the US.     Variables  Identify the variables and classify as explanatory or response. Describe what type of variable each is.   The explanatory variable is the location (urban versus nearby suburban) which is categorical. The response variable is high temperature (measured in degrees Fahrenheit) which is numerical.     Study Design  What research design did the climatologist use to answer the research question? Briefly explain.   The study is a matched pair design. The climatologist obtained data on the same day in August 2024 for climate stations of 20 metro areas. Thus, the data for each day is paired by location. This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in 20 metro areas.     Causation  If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.   Because the study is an observational study, any association may not be concluded as causation. However, given the diverse locations of the 20 urban areas, a single confounding variable consistent among the metro areas is less likely than selecting the high temperatures at a single urban area.      Estimating with Bootstrapping  A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.  The climatologist wanted to infer the true difference in high temperatures during the summer between the two stations. So, he calculated the difference in high temperatures between the Denver station and the Centennial station each day. The original sample displays a dotplot of the temperature differences. The bootstrap sample displays one dotplot generated by StatKey.   Bootstrap Samples   original sample and a bootstrap sample.     Bootstrap Sample  Explain how StatKey obtained the Bootstrap Sample.   A bootstrap sample is randomly generated from the original sample with replacement with the same sample size as the original. That is, 92 values from the original sample were randomly selected with replacement to form the bootstrap sample. The bootstrap sample statistic is the mean of 4.5 as the average difference in temperature for the sample.    The dotplot below is a bootstrap distribution of the difference in high temperatures from StatKey based on the high temperature data recorded in summer 2024 (the original sample).   Bootstrap Distribution of 1000 samples   Bootstrap Distribution of 1000 samples.    Answer the following using the Bootstrap distribution.   Bootstrap Dotplot  Identify on the dotplot the relevant value obtained from the bootstrap sample. Briefly explain what you indicated.   There is a single dot for the value of 4.5 in the dotplot. It is the mean of the given bootstrap sample from above. Recall that each dot represents the mean from a bootstrap sample. The bootstrap distribution shows 1000 samples with each sample of 92 values of the difference in temperature.     Standard Error  State the standard error for the bootstrap distribution.   The dotplot states that the standard error is 0.631, which measures the spread in the distribution from the mean.     Margin of Error  Determine the margin of error for a 95% confidence interval for the mean difference of high temperatures.   The margin of error using the 95% Rule is 2 times the standard error, thus 2(0.631) = 1.262. The margin of error is how precise the value of 2.783 (the sample mean difference) is as an estimate for the typical mean difference of high temperatures between the Denver and Centennial climate stations.     Interval  Use the bootstrap distribution to compute a 95% confidence interval for the actual mean difference of high temperatures between the Denver and Centennial climate stations. Round values to three decimal places.   Using the 95% Rule,  Lower bound:  Upper bound:  The 95% confidence interval is (1.521, 4.045).  We are 95% confident that the true mean difference of high temperatures between the Denver and Centennial climate stations is between 1.521 F and 4.045 F.  We are 95% confident that the actual high temperature at the Denver climate stations is on average between 1.521 F and 4.045 F hotter than at the Centennial climate station during the summer months.      Using Randomization Samples  A climatologist collected the data at three stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The following is a summary of the clinical stations:    Denver Water Department near downtown Denver (urban station)    Denver Centennial Airport in Centennial, southeast of downtown Denver (suburban station)    Lakewood, a suburb west of downtown Denver (suburban station)    The climatologist wanted to test whether there were any statistical differences in high temperatures of the three climate stations during summer months. So, he calculated the difference in high temperatures between each pair of stations: Denver–Centennial, Denver–Lakewood, and Centennial–Lakewood.   Study 1   In the first study, the climatologist wanted to decide using statistical analysis if the UHI effect was statistically credible. He examined the differences in high temperatures between two climate stations - one urban and one suburban in the Denver metro area - to test the claim that there is a statistical difference that we would expect if there were a UHI effect.  The original sample displays a dotplot of the differences between the high temperatures of the Denver and Centennial stations. The randomization sample displays one dotplot generated by StatKey.   Randomization Sample   original sample and a randomized sample.     Randomized Sample  Explain how StatKey obtained the Randomization Sample.   A randomization sample for paired data is obtained when we assume that there is no difference between the Denver and Centennial high temperatures, thus the population mean of the differences is zero. So, the center of the randomization dotplot should be centered at the null value of 0. The standard error of the randomization dotplot should be equal to the sampling distribution using the original sample and generating random samples of size 92.  StatKey generates the Randomization Sample by randomly selecting 92 values from the original sample with replacement, into two groups and finds the difference between each pair, so that the randomization sample is centered at 0.     Dotplot  Identify on the dotplot the relevant value obtained from the randomization sample. Briefly explain what you indicated.   The mean of the randomization sample is 1.5. The red dot displays the mean of the randomization sample on the distribution below. Each dot in the distribution below is the average difference between the two randomized groups    Below is a randomization distribution from StatKey based on the climatologist’s claim for 2000 samples.   Randomization Distribution   Randomized distribution of 2000 samples centered at zero.     Hypotheses  Write the null and alternative hypotheses for the climatologist's claim.   Let be the population mean of the difference in the paired high temperatures between the Denver and Centennial stations. Then, the hypotheses are: and      Sample statistic  d. What is the observed sample statistic of the original sample? Estimate where to plot this observed statistic on the randomization dotplot.   The mean of the sample data is . However, the value 2.783 is too far to the right of the maximum value on the randomization dotplot to be identified on the graph. Thus it is unlikely to occur by random chance     p-value  Estimate and interpret the p-value using the randomization distribution.   None of the 2000 random samples were greater than or equal to the sample statistic 2.783. So, the p-value = 0\/2000 = 0.  When we assume that there is no difference in the high temperatures between the Denver and Centennial stations, the chance of getting the mean difference of 2.783 is near zero, thus highly unlikely to occur if the null hypothesis true. This indicates that the difference is statistically significant.     Conclusion  Based on the climatologist's results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer.   It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station.     "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-3",
+  "id": "sec-UrbanHeatStudy-3",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-3",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Urban-Suburban Temperature Investigation "
 },
 {
-  "id": "sec-UrbanHeatStudy.ptx-5",
+  "id": "sec-UrbanHeatStudy-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#sec-UrbanHeatStudy.ptx-5",
+  "url": "sec-UrbanHeatStudy.html#sec-UrbanHeatStudy-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1002,7 +1002,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeat",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeat",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeat",
   "type": "Figure",
   "number": "5.4.1",
   "title": "",
@@ -1011,7 +1011,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-4",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-4",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1020,7 +1020,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-5",
   "type": "Checkpoint",
   "number": "5.4.2",
   "title": "Rows.",
@@ -1029,7 +1029,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-6",
   "type": "Checkpoint",
   "number": "5.4.3",
   "title": "Columns.",
@@ -1038,7 +1038,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-7",
   "type": "Checkpoint",
   "number": "5.4.4",
   "title": "Variable.",
@@ -1047,7 +1047,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-8",
   "type": "Checkpoint",
   "number": "5.4.5",
   "title": "Commonalities.",
@@ -1056,7 +1056,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDatatable-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable-9",
   "type": "Checkpoint",
   "number": "5.4.6",
   "title": "Differences.",
@@ -1065,7 +1065,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatHisto",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatHisto",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatHisto",
   "type": "Figure",
   "number": "5.4.7",
   "title": "",
@@ -1074,7 +1074,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDisplay-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-5",
   "type": "Checkpoint",
   "number": "5.4.8",
   "title": "Shape.",
@@ -1083,7 +1083,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDisplay-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-6",
   "type": "Checkpoint",
   "number": "5.4.9",
   "title": "Center.",
@@ -1092,7 +1092,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatDisplay-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay-7",
   "type": "Checkpoint",
   "number": "5.4.10",
   "title": "Spread.",
@@ -1101,7 +1101,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatBox",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBox",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBox",
   "type": "Figure",
   "number": "5.4.11",
   "title": "",
@@ -1110,7 +1110,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatAssociation-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-6",
   "type": "Checkpoint",
   "number": "5.4.12",
   "title": "Outliers.",
@@ -1119,7 +1119,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatAssociation-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-7",
   "type": "Checkpoint",
   "number": "5.4.13",
   "title": "Medians.",
@@ -1128,7 +1128,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatAssociation-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-8",
   "type": "Checkpoint",
   "number": "5.4.14",
   "title": "IQR.",
@@ -1137,7 +1137,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatAssociation-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation-9",
   "type": "Checkpoint",
   "number": "5.4.15",
   "title": "Association.",
@@ -1146,7 +1146,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-2",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1155,7 +1155,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-3",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-3",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1164,7 +1164,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-6",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-6",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-6",
   "type": "Checkpoint",
   "number": "5.4.16",
   "title": "Sample.",
@@ -1173,7 +1173,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-7",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-7",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-7",
   "type": "Checkpoint",
   "number": "5.4.17",
   "title": "Variables.",
@@ -1182,7 +1182,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-8",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-8",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-8",
   "type": "Checkpoint",
   "number": "5.4.18",
   "title": "Study Design.",
@@ -1191,7 +1191,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-9",
   "type": "Checkpoint",
   "number": "5.4.19",
   "title": "Causation.",
@@ -1200,7 +1200,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1209,7 +1209,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-13",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-13",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-13",
   "type": "Checkpoint",
   "number": "5.4.20",
   "title": "Sample.",
@@ -1218,7 +1218,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-14",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-14",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-14",
   "type": "Checkpoint",
   "number": "5.4.21",
   "title": "Variables.",
@@ -1227,7 +1227,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-15",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-15",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-15",
   "type": "Checkpoint",
   "number": "5.4.22",
   "title": "Study Design.",
@@ -1236,7 +1236,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatStudyType-16",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType-16",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType-16",
   "type": "Checkpoint",
   "number": "5.4.23",
   "title": "Causation.",
@@ -1245,7 +1245,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatBoot1",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBoot1",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBoot1",
   "type": "Figure",
   "number": "5.4.24",
   "title": "",
@@ -1254,7 +1254,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatBootstrap-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-5",
   "type": "Checkpoint",
   "number": "5.4.25",
   "title": "Bootstrap Sample.",
@@ -1263,7 +1263,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatBoot2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatBoot2",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatBoot2",
   "type": "Figure",
   "number": "5.4.26",
   "title": "",
@@ -1272,7 +1272,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatBootstrap-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-9",
   "type": "Checkpoint",
   "number": "5.4.27",
   "title": "Bootstrap Dotplot.",
@@ -1281,7 +1281,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatBootstrap-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-10",
   "type": "Checkpoint",
   "number": "5.4.28",
   "title": "Standard Error.",
@@ -1290,7 +1290,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatBootstrap-11",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-11",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-11",
   "type": "Checkpoint",
   "number": "5.4.29",
   "title": "Margin of Error.",
@@ -1299,7 +1299,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatBootstrap-12",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap-12",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap-12",
   "type": "Checkpoint",
   "number": "5.4.30",
   "title": "Interval.",
@@ -1308,7 +1308,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-5",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-5",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1317,7 +1317,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatRansom1",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatRansom1",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatRansom1",
   "type": "Figure",
   "number": "5.4.31",
   "title": "",
@@ -1326,7 +1326,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-9",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-9",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-9",
   "type": "Checkpoint",
   "number": "5.4.32",
   "title": "Randomized Sample.",
@@ -1335,7 +1335,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-10",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-10",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-10",
   "type": "Checkpoint",
   "number": "5.4.33",
   "title": "Dotplot.",
@@ -1344,7 +1344,7 @@ var ptx_lunr_docs = [
 {
   "id": "UrbanHeatRandom2",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#UrbanHeatRandom2",
+  "url": "sec-UrbanHeatStudy.html#UrbanHeatRandom2",
   "type": "Figure",
   "number": "5.4.34",
   "title": "",
@@ -1353,7 +1353,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-13",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-13",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-13",
   "type": "Checkpoint",
   "number": "5.4.35",
   "title": "Hypotheses.",
@@ -1362,7 +1362,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-14",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-14",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-14",
   "type": "Checkpoint",
   "number": "5.4.36",
   "title": "Sample statistic.",
@@ -1371,7 +1371,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-15",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-15",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-15",
   "type": "Checkpoint",
   "number": "5.4.37",
   "title": "p-value.",
@@ -1380,7 +1380,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-UrbanHeatRandom-16",
   "level": "2",
-  "url": "sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom-16",
+  "url": "sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom-16",
   "type": "Checkpoint",
   "number": "5.4.38",
   "title": "Conclusion.",
@@ -1486,9 +1486,9 @@ var ptx_lunr_docs = [
   "body": " Decision CI - Runestone-powered True\/False Question   Based on the confidence interval, we would NOT reject the null hypothesis.    The null value is outside of the CI.   "
 },
 {
-  "id": "some-matching",
+  "id": "pracimport-matching",
   "level": "2",
-  "url": "sec-HT-Bob-Tim.html#some-matching",
+  "url": "sec-HT-Bob-Tim.html#pracimport-matching",
   "type": "Checkpoint",
   "number": "6.1.9",
   "title": "Practical Import - Runestone-powered Matching Problem.",
