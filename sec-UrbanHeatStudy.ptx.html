@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr" data-legacy-colorscheme="blue_red">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-legacy                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Urban Heat Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Introduction to Statistical Analysis">
+<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.7.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
+<p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-randdist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterBootstrap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapterTesting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistsical Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Investigation-Process.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Statistical Investigation Process</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Working with Data</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-data-student-survey" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Student Survey</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-collect-data.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Collecting Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-studytypes.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Study Design</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterTwo.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-shape.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Shape of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="centers.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing the Center of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spread.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Describing Spread of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boxplots.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Describing data with boxplots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.ptx.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDatatable" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Data Organization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatDisplay" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Data Display</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatAssociation" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Association Between Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatStudyType" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Study Type</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatBootstrap" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Estimating with Bootstrapping</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.ptx.html#subsec-UrbanHeatRandom" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Using Randomization Samples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterTesting.html" class="internal"><span class="codenumber">6</span> <span class="title">Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-HT-Bob-Tim.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Hypothesis Test</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-UrbanHeatStudy.ptx"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.4</span><span class="space"> </span><span class="title">Urban Heat Study</span>
+</h2>
+<div class="para" id="sec-UrbanHeatStudy.ptx-2">Text of section.</div>
+<div class="para" id="sec-UrbanHeatStudy.ptx-3"><dfn class="terminology">Urban-Suburban Temperature Investigation</dfn></div>
+<div class="para" id="sec-UrbanHeatStudy.ptx-4">The phenomenon known as the <em class="emphasis">urban heat island (UHI)</em> effect suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth. The following tasks analyze climatological data from the summer 2024.</div>
+<div class="para" id="sec-UrbanHeatStudy.ptx-5"><dfn class="terminology">Available Data</dfn></div>
+<div class="para" id="sec-UrbanHeatStudy.ptx-6">NOAA Regional Climate Centers (<a class="external" href="" target="_blank">https://scacis.rcc-acis.org/</a><details class="ptx-footnote" aria-live="polite" id="sec-UrbanHeatStudy.ptx-6-2"><summary class="ptx-footnote__number" title="Footnote 5.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-UrbanHeatStudy.ptx-6-2"><code class="code-inline tex2jax_ignore"></code></div></details>) provides climatological data from stations across the United States. The following information is available from many of the stations:</div>
+<div class="para" id="sec-UrbanHeatStudy.ptx-7">Temperature</div>
+<ul class="disc" id="sec-UrbanHeatStudy.ptx-8">
+<li id="sec-UrbanHeatStudy.ptx-8-1"><div class="para" id="sec-UrbanHeatStudy.ptx-8-1-1">
+<em class="emphasis">Date:</em> The specific day of the observation.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-8-2"><div class="para" id="sec-UrbanHeatStudy.ptx-8-2-1">
+<em class="emphasis">MaxTemperature:</em> The highest air temperature recorded during a 24-hour period.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-8-3"><div class="para" id="sec-UrbanHeatStudy.ptx-8-3-1">
+<em class="emphasis">MinTemperature:</em> The lowest air temperature recorded during a 24-hour period.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-8-4"><div class="para" id="sec-UrbanHeatStudy.ptx-8-4-1">
+<em class="emphasis">AvgTemperature:</em> The average of the maximum and minimum temperatures for a day.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-8-5"><div class="para" id="sec-UrbanHeatStudy.ptx-8-5-1">
+<em class="emphasis">AvgTemperatureDeparture:</em> The difference between the observed average temperature and a long-term average (typically a 30-year period), indicating how much warmer or cooler the day was compared to the norm.</div></li>
+</ul>
+<div class="para" id="sec-UrbanHeatStudy.ptx-9">Degree Day</div>
+<ul class="disc" id="sec-UrbanHeatStudy.ptx-10">
+<li id="sec-UrbanHeatStudy.ptx-10-1"><div class="para" id="sec-UrbanHeatStudy.ptx-10-1-1">
+<em class="emphasis">HDD (Heating Degree Days):</em> A measure of how much (in degrees) and for how long (in days) the outside air temperature was below a certain base temperature (commonly 65°F). It’s used to estimate the energy needed for heating.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-10-2"><div class="para" id="sec-UrbanHeatStudy.ptx-10-2-1">
+<em class="emphasis">CDD (Cooling Degree Days):</em> A measure of how much (in degrees) and for how long (in days) the outside air temperature was above a certain base temperature (commonly 65°F). It’s used to estimate the energy needed for cooling.</div></li>
+</ul>
+<div class="para" id="sec-UrbanHeatStudy.ptx-11">Precipitation and Snow</div>
+<ul class="disc" id="sec-UrbanHeatStudy.ptx-12">
+<li id="sec-UrbanHeatStudy.ptx-12-1"><div class="para" id="sec-UrbanHeatStudy.ptx-12-1-1">
+<em class="emphasis">Precipitation:</em> The total amount of water (in liquid equivalent) that has fallen, including rain, snow, sleet, and hail.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-12-2"><div class="para" id="sec-UrbanHeatStudy.ptx-12-2-1">
+<em class="emphasis">Snowfall:</em> The total amount of snow that has fallen, typically measured in inches.</div></li>
+<li id="sec-UrbanHeatStudy.ptx-12-3"><div class="para" id="sec-UrbanHeatStudy.ptx-12-3-1">
+<em class="emphasis">SnowDepth:</em> The depth of the snow on the ground at a specific time, measured in inches.</div></li>
+</ul>
+<section class="subsection" id="subsec-UrbanHeatDatatable"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="space"> </span><span class="title">Data Organization</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatDatatable-2">The climatologist collected the data at the Denver Water Department near downtown Denver, Colorado. The complete dataset is available (MetroDenver_Climatological-Data.csv).</div>
+<figure class="figure figure-like" id="UrbanHeat"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/UrbanHeatTable.png" class="contained" alt="Image of datafile showing 15 cities."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.1<span class="period">.</span></span><span class="space"> </span>Urban Heat Data</figcaption></figure><div class="para" id="subsec-UrbanHeatDatatable-4"><dfn class="terminology">Interpretation Questions From Data Table</dfn></div>
+<article class="exercise exercise-like" id="subsec-UrbanHeatDatatable-5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Rows.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDatatable-5-2">Describe what each row represents and describe it in context.</div>
+<details id="subsec-UrbanHeatDatatable-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDatatable-5-3-1">Each row is called a case. It is the information from the climate station for the specific day (the first through the fifteenth) in August 2024.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDatatable-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Columns.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDatatable-6-2">Describe what each column represents.</div>
+<details id="subsec-UrbanHeatDatatable-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDatatable-6-3-1">Each column represents a variable. Each column is a measurement of temperature, degree days, and precipitation at the climate station.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDatatable-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Variable.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDatatable-7-2">For the column labeled “Den_MaxTemperature”, describe the data values in context, the type of data collected, and determine all the possible data values.</div>
+<details id="subsec-UrbanHeatDatatable-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDatatable-7-3-1">It is the highest air temperature recorded during a 24-hour period in Denver, CO. The variable is quantitative since numerical data. The continuous temperatures appear to be rounded to the nearest integer between 67 and 100 degrees Fahrenheit.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDatatable-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Commonalities.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDatatable-8-2">Determine one thing in common for the dates when the high temperature in Denver was 100°F.</div>
+<details id="subsec-UrbanHeatDatatable-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDatatable-8-3-1">Minimum temperatures in the 60s, average temperatures in the 80s, highest average temperature departures, zero HDD, highest CDD values, and zero snow-related values.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDatatable-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Differences.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDatatable-9-2">Determine one thing that was different for the dates when the high temperature in Denver was 100°F.</div>
+<details id="subsec-UrbanHeatDatatable-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDatatable-9-3-1">One day had measurable precipitation while the other did not.</div></div></details></article></section><section class="subsection" id="subsec-UrbanHeatDisplay"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="space"> </span><span class="title">Data Display</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatDisplay-2">How would a climatologist characterize the high temperatures of Denver, Colorado, in summer 2024?</div>
+<div class="para" id="subsec-UrbanHeatDisplay-3">The following histogram presents that high temperatures from June 1 to August 31, 2024, at the Denver Water Department near downtown Denver.</div>
+<figure class="figure figure-like" id="UrbanHeatHisto"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/UrbanHeatHisto.png" class="contained" alt="Shows daily high temperature with most values between 85 and 100 with a few lower temps down to 65F."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.7<span class="period">.</span></span><span class="space"> </span>Denver High Temperatures</figcaption></figure><article class="exercise exercise-like" id="subsec-UrbanHeatDisplay-5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">Shape.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDisplay-5-2">Describe the shape of the dataset in context.</div>
+<details id="subsec-UrbanHeatDisplay-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDisplay-5-3-1">The high temperatures of Denver in summer 2024 were skewed left.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDisplay-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Center.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDisplay-6-2">StatKey reports the mean as 90.78. Interpret it in context.</div>
+<details id="subsec-UrbanHeatDisplay-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDisplay-6-3-1">Typical high temperature at the Denver station was 90.78°F in summer 2024.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatDisplay-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Spread.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatDisplay-7-2">StatKey reports the standard deviation as 6.47. Interpret it in context.</div>
+<details id="subsec-UrbanHeatDisplay-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatDisplay-7-3-1">The standard deviation is a measure of spread. According to the 95% rule, we would expect approximately 95% of the temperatures in Denver in summer 2024 to be within 2 standard deviations (2*6.47 = 12.94) of the mean. Because the dataset is skewed left, the 95% rule might not apply as well as it does when the dataset is bell-shaped.</div></div></details></article></section><section class="subsection" id="subsec-UrbanHeatAssociation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="space"> </span><span class="title">Association Between Variables</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatAssociation-2">The climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado. The complete dataset is available (MetroDenver_Temperatures.csv).</div>
+<div class="para" id="subsec-UrbanHeatAssociation-3">One preliminary way to determine if UHI effect exists is to decide if there is a visual association between location (urban or suburban) and high temperature.</div>
+<div class="para" id="subsec-UrbanHeatAssociation-4">The graph below shows the boxplot of high temperatures at the two Metro Denver climate stations.</div>
+<figure class="figure figure-like" id="UrbanHeatBox"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeatBoxplot.png" class="contained" alt="comparing heat temperatures between Denver and Centennial."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.11<span class="period">.</span></span><span class="space"> </span>Comparing Heat Boxplot</figcaption></figure><article class="exercise exercise-like" id="subsec-UrbanHeatAssociation-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">Outliers.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatAssociation-6-2">Identify any outliers in the dataset. State each outlier value and its corresponding station location.</div>
+<details id="subsec-UrbanHeatAssociation-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatAssociation-6-3-1">There was one outlier temperature for each climate station represented by the asterisk. Denver had a lower outlier temperature of 67F. Centennial had a lower outlier temperature of 64F.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatAssociation-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.13</span><span class="period">.</span><span class="space"> </span><span class="title">Medians.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatAssociation-7-2">Estimate the median temperature values of the two datasets and compare them in context.</div>
+<details id="subsec-UrbanHeatAssociation-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatAssociation-7-3-1">In summer 2024, the median high temperature for Denver was 91.5 F while the median high temperature for Centennial was 88 F, suggesting that the typical urban high temperature was 6.5 F higher than the typical suburban high temperature at the two locations.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatAssociation-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.14</span><span class="period">.</span><span class="space"> </span><span class="title">IQR.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatAssociation-8-2">Estimate the interquartile ranges (IQRs) of the two datasets and compare them in context.</div>
+<details id="subsec-UrbanHeatAssociation-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatAssociation-8-3-1">In summer 2024, the IQR for Denver was 96-87 = 9 F and for Centennial was 93 – 85 = 8 F, suggesting that the spread of the middle 50% of the values of the temperatures was similar for both locations.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatAssociation-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.15</span><span class="period">.</span><span class="space"> </span><span class="title">Association.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatAssociation-9-2">Based on the boxplot, is there an association between the high temperatures between Denver and Centennial? Explain your thinking.</div>
+<details id="subsec-UrbanHeatAssociation-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-UrbanHeatAssociation-9-3-1">An association exists between a categorical variable (location) and a numerical variable (high temperature), if the difference between the measures of center in relation to the measure of spread distinguishes the two datasets.</div>
+<div class="para" id="subsec-UrbanHeatAssociation-9-3-2">The difference between the two medians was 6.5 F. The IQRs of the high temperatures of the two locations was about 8.5 F. The proportion of the difference of center to spread was 0.76. There is some visual evidence to suggest that high temperature is associated with location since the box for Denver is shifted farther to the right. Later we will determine this numerically with hypothesis testing.</div>
+</div></details></article></section><section class="subsection" id="subsec-UrbanHeatStudyType"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="space"> </span><span class="title">Study Type</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatStudyType-2">The phenomenon known as the <dfn class="terminology">urban heat island (UHI) effect</dfn>suggests that urban areas retain more heat than their surrounding suburban or rural areas. A climatologist wondered if the UHI effect is a statistically measurable phenomenon or simply an urban myth.</div>
+<div class="para" id="subsec-UrbanHeatStudyType-3"><dfn class="terminology">Study 1</dfn></div>
+<div class="para" id="subsec-UrbanHeatStudyType-4">A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.</div>
+<div class="para" id="subsec-UrbanHeatStudyType-5">Answer the following questions regarding Study 1.</div>
+<article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.16</span><span class="period">.</span><span class="space"> </span><span class="title">Sample.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-6-2">Identify the sample. Is the sample representative of the population? Briefly explain.</div>
+<details id="subsec-UrbanHeatStudyType-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-6-3-1">The sample is the temperatures at the two climate stations in the Denver metro area during the summer 2024. The sample is representative of recent summer high temperatures in the Denver metro area.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.17</span><span class="period">.</span><span class="space"> </span><span class="title">Variables.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-7-2">Identify the variables and classify as explanatory or response. Describe what type of variable each is.</div>
+<details id="subsec-UrbanHeatStudyType-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-7-3-1">The explanatory variable is the location (urban versus nearby suburban), thus categorical or qualitative. The response variable is high temperature (measured in degrees Fahrenheit), thus numeric or quantitative.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.18</span><span class="period">.</span><span class="space"> </span><span class="title">Study Design.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-8-2">What research design did the climatologist use to answer the research question? Briefly explain.</div>
+<details id="subsec-UrbanHeatStudyType-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-UrbanHeatStudyType-8-3-1">The study is a matched pair design. The climatologist obtained the data at two climate stations in the same metro area on the same days in summer 2024.</div>
+<div class="para" id="subsec-UrbanHeatStudyType-8-3-2">This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in the Denver metro area on the same days in summer 2024.</div>
+</div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.19</span><span class="period">.</span><span class="space"> </span><span class="title">Causation.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-9-2">If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.</div>
+<details id="subsec-UrbanHeatStudyType-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-9-3-1">Because the study is an observational study, any association may not be concluded as causation. There may be confounding variables unaccounted for in the study that affect the high temperatures of the urban and suburban stations other than the UHI effect. For example, Denver is near the Rocky Mountain range; geographical phenomena may influence the temperatures at the stations rather than the UHI effect.</div></div></details></article><div class="para" id="subsec-UrbanHeatStudyType-10"><dfn class="terminology">Study 2</dfn></div>
+<div class="para" id="subsec-UrbanHeatStudyType-11">A climatologist obtained a list of 20 most urban areas/cities in the United States. Using the map of climate stations from the NOAA Regional Climate Centers (https://scacis.rcc-acis.org/), the climatologist selected an urban station near the center of the city. Next, the climatologist zoomed out from the selected urban station to find a nearby suburban station. In most cases, the climatologist selected the nearest station that recorded the same climatological data located just outside the city’s loop or beltway (i.e., the large, controlled-access highway that encircles a city). The following is a table of the metro areas and the climate stations selected by the climatologist.</div>
+<div class="para" id="subsec-UrbanHeatStudyType-12">Table of cities</div>
+<article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.20</span><span class="period">.</span><span class="space"> </span><span class="title">Sample.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-13-2">Identify the sample. Is the sample representative of the population? Briefly explain.</div>
+<details id="subsec-UrbanHeatStudyType-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-13-3-1">The sample is the temperatures at the two climate stations in 20 most populated metro areas in the US in August 2024. The sample is representative of recent summer high temperatures of urban and suburban locations in metro areas in the US.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-14"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.21</span><span class="period">.</span><span class="space"> </span><span class="title">Variables.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-14-2">Identify the variables and classify as explanatory or response. Describe what type of variable each is.</div>
+<details id="subsec-UrbanHeatStudyType-14-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-14-3-1">The explanatory variable is the location (urban versus nearby suburban) which is categorical. The response variable is high temperature (measured in degrees Fahrenheit) which is numerical.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-15"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.22</span><span class="period">.</span><span class="space"> </span><span class="title">Study Design.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-15-2">What research design did the climatologist use to answer the research question? Briefly explain.</div>
+<details id="subsec-UrbanHeatStudyType-15-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-15-3-1">The study is a matched pair design. The climatologist obtained data on the same day in August 2024 for climate stations of 20 metro areas. Thus, the data for each day is paired by location. This is an observational study. The climatologist did not actively induce change in the explanatory variable, but rather the climatologist recorded the high temperatures at the two different climate stations in 20 metro areas.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatStudyType-16"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.23</span><span class="period">.</span><span class="space"> </span><span class="title">Causation.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatStudyType-16-2">If the researcher finds an association between the explanatory and response variables, would it also be appropriate to conclude causation? Explain.</div>
+<details id="subsec-UrbanHeatStudyType-16-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatStudyType-16-3-1">Because the study is an observational study, any association may not be concluded as causation. However, given the diverse locations of the 20 urban areas, a single confounding variable consistent among the metro areas is less likely than selecting the high temperatures at a single urban area.</div></div></details></article></section><section class="subsection" id="subsec-UrbanHeatBootstrap"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="space"> </span><span class="title">Estimating with Bootstrapping</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatBootstrap-2">A climatologist collected the data at two stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The urban station was the Denver Water Department near downtown Denver. The suburban station was located at the Denver Centennial Airport in Centennial, Colorado.</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-3">The climatologist wanted to infer the true difference in high temperatures during the summer between the two stations. So, he calculated the difference in high temperatures between the Denver station and the Centennial station each day. The original sample displays a dotplot of the temperature differences. The bootstrap sample displays one dotplot generated by StatKey.</div>
+<figure class="figure figure-like" id="UrbanHeatBoot1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeatBoot1.png" class="contained" alt="original sample and a bootstrap sample."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.24<span class="period">.</span></span><span class="space"> </span>Bootstrap Samples</figcaption></figure><article class="exercise exercise-like" id="subsec-UrbanHeatBootstrap-5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.25</span><span class="period">.</span><span class="space"> </span><span class="title">Bootstrap Sample.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatBootstrap-5-2">Explain how <em class="emphasis">StatKey</em> obtained the Bootstrap Sample.</div>
+<details id="subsec-UrbanHeatBootstrap-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatBootstrap-5-3-1">A bootstrap sample is randomly generated from the original sample with replacement with the same sample size as the original. That is, 92 values from the original sample were randomly selected with replacement to form the bootstrap sample. The bootstrap sample statistic is the mean of 4.5 as the average difference in temperature for the sample.</div></div></details></article><div class="para" id="subsec-UrbanHeatBootstrap-6">The dotplot below is a bootstrap distribution of the difference in high temperatures from StatKey based on the high temperature data recorded in summer 2024 (the original sample).</div>
+<figure class="figure figure-like" id="UrbanHeatBoot2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeatBoot2.png" class="contained" alt="Bootstrap Distribution of 1000 samples."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.26<span class="period">.</span></span><span class="space"> </span>Bootstrap Distribution of 1000 samples</figcaption></figure><div class="para" id="subsec-UrbanHeatBootstrap-8">Answer the following using the Bootstrap distribution.</div>
+<article class="exercise exercise-like" id="subsec-UrbanHeatBootstrap-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.27</span><span class="period">.</span><span class="space"> </span><span class="title">Bootstrap Dotplot.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatBootstrap-9-2">Identify on the dotplot the relevant value obtained from the bootstrap sample. Briefly explain what you indicated.</div>
+<details id="subsec-UrbanHeatBootstrap-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatBootstrap-9-3-1">There is a single dot for the value of 4.5 in the dotplot. It is the mean of the given bootstrap sample from above. Recall that each dot represents the mean from a bootstrap sample. The bootstrap distribution shows 1000 samples with each sample of 92 values of the difference in temperature.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatBootstrap-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.28</span><span class="period">.</span><span class="space"> </span><span class="title">Standard Error.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatBootstrap-10-2">State the standard error for the bootstrap distribution.</div>
+<details id="subsec-UrbanHeatBootstrap-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatBootstrap-10-3-1">The dotplot states that the standard error is 0.631, which measures the spread in the distribution from the mean.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatBootstrap-11"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.29</span><span class="period">.</span><span class="space"> </span><span class="title">Margin of Error.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatBootstrap-11-2">Determine the margin of error for a 95% confidence interval for the mean difference of high temperatures.</div>
+<details id="subsec-UrbanHeatBootstrap-11-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatBootstrap-11-3-1">The margin of error using the 95% Rule is 2 times the standard error, thus 2(0.631) = 1.262. The margin of error is how precise the value of 2.783 (the sample mean difference) is as an estimate for the typical mean difference of high temperatures between the Denver and Centennial climate stations.</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatBootstrap-12"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.30</span><span class="period">.</span><span class="space"> </span><span class="title">Interval.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-2">Use the bootstrap distribution to compute a 95% confidence interval for the actual mean difference of high temperatures between the Denver and Centennial climate stations. Round values to three decimal places.</div>
+<details id="subsec-UrbanHeatBootstrap-12-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-1">Using the 95% Rule,</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-2">Lower bound: <span class="process-math">\(2.783-2(0.631) = 2.783 - 1.262 = 1.521 \)</span>
+</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-3">Upper bound: <span class="process-math">\(2.783 + 2(0.631) = 2.783 + 1.262 = 4.045 \)</span>
+</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-4">The 95% confidence interval is (1.521, 4.045).</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-5">We are 95% confident that the true mean difference of high temperatures between the Denver and Centennial climate stations is between 1.521 F and 4.045 F.</div>
+<div class="para" id="subsec-UrbanHeatBootstrap-12-3-6">We are 95% confident that the actual high temperature at the Denver climate stations is on average between 1.521 F and 4.045 F hotter than at the Centennial climate station during the summer months.</div>
+</div></details></article></section><section class="subsection" id="subsec-UrbanHeatRandom"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="space"> </span><span class="title">Using Randomization Samples</span>
+</h3>
+<div class="para" id="subsec-UrbanHeatRandom-2">A climatologist collected the data at three stations in the Denver Metro Area in Colorado from June 1 to August 31, 2024. The following is a summary of the clinical stations:</div>
+<ul class="disc" id="subsec-UrbanHeatRandom-3">
+<li id="subsec-UrbanHeatRandom-3-1"><div class="para" id="subsec-UrbanHeatRandom-3-1-1">Denver Water Department near downtown Denver (urban station)</div></li>
+<li id="subsec-UrbanHeatRandom-3-2"><div class="para" id="subsec-UrbanHeatRandom-3-2-1">Denver Centennial Airport in Centennial, southeast of downtown Denver (suburban station)</div></li>
+<li id="subsec-UrbanHeatRandom-3-3"><div class="para" id="subsec-UrbanHeatRandom-3-3-1">Lakewood, a suburb west of downtown Denver (suburban station)</div></li>
+</ul>
+<div class="para" id="subsec-UrbanHeatRandom-4">The climatologist wanted to test whether there were any statistical differences in high temperatures of the three climate stations during summer months. So, he calculated the difference in high temperatures between each pair of stations: Denver–Centennial, Denver–Lakewood, and Centennial–Lakewood.</div>
+<div class="para" id="subsec-UrbanHeatRandom-5"><dfn class="terminology">Study 1</dfn></div>
+<div class="para" id="subsec-UrbanHeatRandom-6">In the first study, the climatologist wanted to decide using statistical analysis if the UHI effect was statistically credible. He examined the differences in high temperatures between two climate stations - one urban and one suburban in the Denver metro area - to test the claim that there is a statistical difference that we would expect if there were a UHI effect.</div>
+<div class="para" id="subsec-UrbanHeatRandom-7">The original sample displays a dotplot of the differences between the high temperatures of the Denver and Centennial stations. The randomization sample displays one dotplot generated by StatKey.</div>
+<figure class="figure figure-like" id="UrbanHeatRansom1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeatRandom1.png" class="contained" alt="original sample and a randomized sample."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.31<span class="period">.</span></span><span class="space"> </span>Randomization Sample</figcaption></figure><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.32</span><span class="period">.</span><span class="space"> </span><span class="title">Randomized Sample.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-9-2">Explain how <em class="emphasis">StatKey</em> obtained the Randomization Sample.</div>
+<details id="subsec-UrbanHeatRandom-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-UrbanHeatRandom-9-3-1">A randomization sample for paired data is obtained when we assume that there is no difference between the Denver and Centennial high temperatures, thus the population mean of the differences is zero. So, the center of the randomization dotplot should be centered at the null value of 0. The standard error of the randomization dotplot should be equal to the sampling distribution using the original sample and generating random samples of size 92.</div>
+<div class="para" id="subsec-UrbanHeatRandom-9-3-2">StatKey generates the Randomization Sample by randomly selecting 92 values from the original sample with replacement, into two groups and finds the difference between each pair, so that the randomization sample is centered at 0.</div>
+</div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.33</span><span class="period">.</span><span class="space"> </span><span class="title">Dotplot.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-10-2">Identify on the dotplot the relevant value obtained from the randomization sample. Briefly explain what you indicated.</div>
+<details id="subsec-UrbanHeatRandom-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatRandom-10-3-1">The mean of the randomization sample is 1.5. The red dot displays the mean of the randomization sample on the distribution below. Each dot in the distribution below is the average difference between the two randomized groups</div></div></details></article><div class="para" id="subsec-UrbanHeatRandom-11">Below is a randomization distribution from StatKey based on the climatologist’s claim for 2000 samples.</div>
+<figure class="figure figure-like" id="UrbanHeatRandom2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeatRandom2.png" class="contained" alt="Randomized distribution of 2000 samples centered at zero."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.34<span class="period">.</span></span><span class="space"> </span>Randomization Distribution</figcaption></figure><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.35</span><span class="period">.</span><span class="space"> </span><span class="title">Hypotheses.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-13-2">Write the null and alternative hypotheses for the climatologist’s claim.</div>
+<details id="subsec-UrbanHeatRandom-13-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatRandom-13-3-1">Let <span class="process-math">\(\mu_d \)</span>  be the population mean of the difference in the paired high temperatures between the Denver and Centennial stations. Then, the hypotheses are: <span class="process-math">\(Ho: \mu_d ≠ 0 \)</span> and <span class="process-math">\(Ha: \mu_d =0\)</span>
+</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-14"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.36</span><span class="period">.</span><span class="space"> </span><span class="title">Sample statistic.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-14-2">d.	What is the observed sample statistic of the original sample? Estimate where to plot this observed statistic on the randomization dotplot.</div>
+<details id="subsec-UrbanHeatRandom-14-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatRandom-14-3-1">The mean of the sample data is <span class="process-math">\(\bar x = 2.783 \)</span> . However, the value 2.783 is too far to the right of the maximum value on the randomization dotplot to be identified on the graph. Thus it is unlikely to occur by random chance</div></div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-15"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.37</span><span class="period">.</span><span class="space"> </span><span class="title">p-value.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-15-2">Estimate and interpret the p-value using the randomization distribution.</div>
+<details id="subsec-UrbanHeatRandom-15-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-UrbanHeatRandom-15-3-1">None of the 2000 random samples were greater than or equal to the sample statistic 2.783. So, the p-value = 0/2000 = 0.</div>
+<div class="para" id="subsec-UrbanHeatRandom-15-3-2">When we assume that there is no difference in the high temperatures between the Denver and Centennial stations, the chance of getting the mean difference of 2.783 is near zero, thus highly unlikely to occur if the null hypothesis true. This indicates that the difference is statistically significant.</div>
+</div></details></article><article class="exercise exercise-like" id="subsec-UrbanHeatRandom-16"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4.38</span><span class="period">.</span><span class="space"> </span><span class="title">Conclusion.</span>
+</h4>
+<div class="para" id="subsec-UrbanHeatRandom-16-2">Based on the climatologist’s results, what decision and what conclusion would the climatologist make for their investigation assuming α=0.05? Explain your answer.</div>
+<details id="subsec-UrbanHeatRandom-16-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="subsec-UrbanHeatRandom-16-3-1">It is very unlikely that we would get a mean difference of 2.783 by chance if the actual difference was 0. It is much less than the confidence level α=0.05. So, we would reject the assumption that there is no difference between the high temperatures at the Denver and Centennial stations. There is evidence that there is a statistical difference between the high temperatures at the urban and suburban stations, and the average high temperature at the urban station was greater than the average high temperature at the suburban station.</div></div></details></article></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-randdist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapterTesting.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
