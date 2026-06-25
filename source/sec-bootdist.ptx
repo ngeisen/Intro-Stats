@@ -3,6 +3,228 @@
 <section xml:id="sec-bootdist" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Creating Bootstrap Distributions</title>
 
+<introduction>
+    <p> Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population. </p>
+  </introduction>
+ 
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Construct and interpret a bootstrap distribution for the mean.</p>    </li>
+    <li> <p> Construct and interpret a bootstrap distribution for proportions.</p> </li>
+        
+</ol>
+</objectives>
+
+
+<subsection xml:id="subsec-BootstrapMeans">
+  <title>Bootstrap Distributions for Means</title>
+
+  <p> Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples. </p>
+<p>In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.</p>
+
+<p>Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars. </p>
+<p>Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy. </p>
+<p> What is the typical MPGe of newer models of EVs? </p>
+<p>To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:</p> 
+<ul>
+<li> <p> Tesla Model X Plaid - 91 MPGe </p> </li>
+<li> <p> Jaguar I-Pace EV400 - 85 MPGe </p> </li>
+<li> <p> Polestar 2 Single Motor - 107 MPGe </p> </li>
+<li> <p> Lucid Air Pure AWD - 140 MPGe </p> </li>
+<li> <p> Lordstown Endurance - 48 MPGe </p> </li>
+</ul> 
+
+<p> We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution. </p>
+<p> To generate a bootstrap distribution, we: </p>
+<ol>
+<li> <p> Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size. </p> </li>
+<li> <p> Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples. </p> </li>
+<li> <p> Collect the statistics for many bootstrap samples to create a bootstrap distribution. </p> </li>
+</ol> 
+<p> To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.</p> 
+<p> The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation. </p> 
+
+<p> Give example </p> 
+<p> To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology. </p> 
+
+</subsection>
+
+<subsection xml:id="subsec-BootTechnologyMean">
+  <title>Using Technology: Mean</title>
+
+<p> Open <term> StatKey </term> and in the middle column under <term> Bootstrap Confidence Intervals </term> we are going to select  <term> CI for Single Mean </term>. </p> 
+<figure xml:id="BootstrapMenu">
+            <caption> Bootstrap Menu </caption>
+            <image source="boot1.png" >
+                <shortdescription>first option in second column is bootstrap for the mean.</shortdescription>
+            </image>
+        </figure> 
+<p> Click on the <c> Upload File </c> button and identify the data file: <em>EV2023-Sample5 </em> and select the variable <em> CombMPGe</em> .</p>
+<figure xml:id="BootstrapMenuOptions">
+            <caption> Bootstrap for Mean </caption>
+            <image source="Boot2.png" >
+                <shortdescription>fourth option is to upload the file.</shortdescription>
+            </image>
+        </figure>
+<p> Interpreting StatKey: On the top right side you will see the <term>Original Sample</term> information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507. </p>
+<p> If we click on the <c> Generate 1 Sample </c> button, then on the bottom right side we will see the five randomly selected cars with replacement under the <term> Bootstrap Sample </term> . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples. </p> 
+<figure xml:id="BootstrapMPGe">
+            <caption> Bootstrap MPGe for 501 Samples </caption>
+            <image source="Boot3.png" >
+                <shortdescription>dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671.</shortdescription>
+            </image>
+        </figure>
+<p> Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023. </p> 
+
+<p> <term> Exploration </term> </p> 
+<p> Now it's time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets. </p> 
+<exercise>
+    <statement> 
+<p> As you generate more samples, what happens to the shape of the distribution? </p></statement>
+<solution> <p> Notice how the distribution becomes more bell shaped and symmetric with more samples. </p> </solution>
+</exercise> 
+
+<exercise> <statement>
+<p> Where is the center of the distribution? </p></statement>
+<solution> <p> The center of the bootstrap distribution is approximately the same as the original sample mean.  </p> </solution> 
+</exercise> 
+
+<exercise> <statement>
+<p> Compare the standard deviation of the original sample to the standard error of the distribution. </p></statement> 
+<solution> <p> The standard error is smaller since there is less variation with the distribution than a single sample.  </p> </solution> 
+</exercise> 
+<p> Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter. </p> 
+<p> When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using <term> statistics </term> <m>  \pm 2 \bullet  SE </m>   where SE denotes the standard error of the statistic estimated from the bootstrap distribution. </p> 
+<p> Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives </p>
+<p> <md> \text {mean} \pm 2 \bullet SE </md>  </p>
+<p> <md> 94.2 \pm 2 (12.797) </md></p>
+<p> <md> 94.2 \pm 25.594 </md> </p>
+<p> <md> (68.606, 119.794) </md> </p>
+<p> We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles. </p> 
+
+<p> If we click on <c>Two Tail </c> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles. </p> 
+<figure xml:id="BootstrapCIMPGe1">
+            <caption> Bootstrap Interval for MPGe </caption>
+            <image source="Boot4.png" >
+                <shortdescription>Middle 95% of dots between 67.2 and 117 MPGe.</shortdescription>
+            </image>
+        </figure>
+
+<p> If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.</p> 
+<figure xml:id="BootstrapCIMPGe2">
+            <caption> Bootstrap Interval for MPGe </caption>
+            <image source="Boot5.png" >
+                <shortdescription>Middle 90% of dots between 71.6 and 113.14 MPGe.</shortdescription>
+            </image>
+        </figure>
+
+<p> <term> Exploration </term> </p> 
+<p> Now it's time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets. </p> 
+<exercise>
+    <statement>
+<p> Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval </p></statement> 
+<solution> <p> Once the distribution appears bell-shaped and symmetric, the interval values do not change much by generating additional samples. This may vary by how much variation there is in the original sample.</p> </solution>
+</exercise> 
+<exercise> <statement>
+<p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle. </p></statement> 
+<solution> <p> As the middle percentage increases, the interval becomes wider since it includes more values in the interval.  </p> </solution> 
+</exercise> 
+<exercise>
+    <statement>
+    <p> Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle. </p>
+    </statement>
+    <solution> <p> As the middle percentage decreases, the interval becomes narrower since it includes fewer values in the interval.  </p> </solution> 
+</exercise> 
+<exercise>
+    <statement>
+     <p> What happens to the standard error as you increase the number of samples. </p>
+    </statement>
+    <solution> <p> The standard error does not change much by adding generating additional samples.  </p> </solution> 
+</exercise> 
+
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-BootstrapProportions">
+  <title> Bootstrap Distributions for Proportions</title>
+
+<p>Suppose you want to find what proportion of Skittles  are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution. </p>
+<p> Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape. </p> 
+
+<figure xml:id="BootstrapSkittle1">
+            <caption> Bootstrap For 10 Bags </caption>
+            <image source="BootSkittle1.png" >
+                <shortdescription>proportions between 12.5% and 25% grape .</shortdescription>
+            </image>
+        </figure>
+<p> This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%. </p> 
+
+<figure xml:id="BootstrapSkittle2">
+            <caption> Bootstrap For 250 Bags </caption>
+            <image source="BootSkittle2.png" >
+                <shortdescription>proportions between 8% and 32% grape with higher frequencies at the center near 0.183.</shortdescription>
+            </image>
+        </figure>
+
+<p> This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%. </p> 
+
+  </subsection>
+
+  
+<subsection xml:id="subsec-BootTechnologyProp">
+  <title>Using Technology: Proportions</title>
+  <p> Using StatKey to construct bootstrap distributions from a single proportion. </p> 
+<p> Launch <term>StatKey</term>, and from the center column under <term>Bootstrap Confidence Intervals</term>, select the second option <term>CI for Single Proportion</term>. </p> 
+<figure xml:id="BootstrapSkittle3">
+            <caption> StatKey Menu </caption>
+            <image source="BootSkittle3.png" >
+                <shortdescription>select the second option under Bootstrap Confidence Intervals .</shortdescription>
+            </image>
+        </figure>
+<p> Click on <c>Edit Data</c> and enter the count of 12 grape from a sample size of 65 candies and then click <c>OK</c> </p>
+<figure xml:id="BootstrapSkittle4">
+            <caption> Edit Proportion </caption>
+            <image source="BootSkittle4.png" >
+                <shortdescription>use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok .</shortdescription>
+            </image>
+        </figure>
+<p> Click on <c> Generate 1 Sample</c>. On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends. </p>
+
+<figure xml:id="BootstrapSkittle5">
+            <caption> Generate Bootstrap Sample </caption>
+            <image source="BootSkittle5.png" >
+                <shortdescription>one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph .</shortdescription>
+            </image>
+        </figure>
+<p> Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4/65=0.062 to 23/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047. </p> 
+
+<figure xml:id="BootstrapSkittle6">
+            <caption> Generate Bootstrap Distribution </caption>
+            <image source="BootSkittle6.png" >
+                <shortdescription>500 dots representing the proportion of grapes for each bag .</shortdescription>
+            </image>
+        </figure>
+
+<p> If you click on <c>Two-Tail</c> it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution. </p> 
+<figure xml:id="BootstrapSkittle7">
+            <caption> Bootstrap Confidence Interval</caption>
+            <image source="BootSkittle7.png" >
+                <shortdescription>Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 .</shortdescription>
+            </image>
+        </figure>
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-BootstrapPractice">
+  <title>Practice Problems</title>
+
     <exercise label="matching2">
         <title>Distribution Matching Problem</title>
         <statement>
@@ -37,6 +259,7 @@
         </match>
         </matches>
     </exercise>
-     
+   </subsection>
+       
 
 </section>

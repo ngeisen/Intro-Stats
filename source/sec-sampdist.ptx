@@ -232,9 +232,89 @@ The top right graph shows the original data with 268 words with an average of 4.
 
  </subsection>
 
+<subsection xml:id="subsec-SamplingProportions">
+  <title>Sampling Distributions for Proportions</title>
+  <p> Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions.  Where do you think the center of the distribution will be? </p> 
+<p>The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data? </p>
+<figure xml:id="StatkeyCoinToss">
+            <caption> Proportion of heads in 25 coin tosses</caption>
+            <image source="CoinToss1.png" >
+                <shortdescription> slightly left skewed centered at 52%. </shortdescription>
+            </image>
+        </figure>
+<p> This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads. </p> 
+<figure xml:id="StatkeyCoinToss2">
+            <caption> Proportion of heads in 25 coin tosses for 200 students</caption>
+            <image source="CoinToss2.png" >
+                <shortdescription> bell shape centered at 50% heads. </shortdescription>
+            </image>
+        </figure>
+
+  </subsection>
+
+
+<subsection xml:id="subsec-DistTechnologyProp">
+  <title>Using Technology: Proportions</title>
+
+<p> Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion. </p>
+<p> Open <term>StatKey</term> and in the middle of the page we want <c>Sampling Distribution</c> and click on <c>Proportions</c>.</p>
+<figure xml:id="StatkeySamplingProportion1">
+            <caption> StatKey Sampling Distribution Menu</caption>
+            <image source="StatkeySampProp1.png" >
+                <shortdescription> Proportion is the second option under Sampling Distribution. </shortdescription>
+            </image>
+        </figure> 
+<p>Under the <c> Edit Proportion</c> button change the proportion to .50 and click <c> OK </c> and change the <em> Choose sample size of n = </em> <c> 50 </c> to represent 50 coin tosses in each sample. </p>
+<figure xml:id="StatkeySamplingProportionMenu">
+            <caption> StatKey Sampling Proportion Menu</caption>
+            <image source="SampProp1.png" >
+                <shortdescription> second option allows you to edit the proportion and the fourth allows you to change the sample size. </shortdescription>
+            </image>
+        </figure>
+<p> If you click on the <c> Generate 1 Sample </c> button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph. </p> 
+<figure xml:id="StatkeySamplingProportion2">
+            <caption> One Sampling Proportion </caption>
+            <image source="SampProp2.png" >
+                <shortdescription> count of 22 heads from 50 coin tosses. </shortdescription>
+            </image>
+        </figure>
+<p> You can keep generating one sample at a time or you can jump to the <c> Generate 100 Samples </c> to generate 200 samples of 50-coin tosses.  We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads. </p> 
+<figure xml:id="StatkeySamplingProportion3">
+            <caption> Sampling Distribution of 200 Proportions </caption>
+            <image source="SampProp3.png" >
+                <shortdescription> proportion of heads from 200 students  tossing 50 coins. </shortdescription>
+            </image>
+        </figure>
+<p> <term> Exploration</term> </p> 
+<p> Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.  </p> 
+
+<exercise> 
+  <statement>
+    <p> What happens to the shape of the sampling distribution when more samples are included? </p> 
+  </statement>
+<solution><p> With more samples, the distribution becomes more symmetric and bell-shaped. The center of the distribution is the population proportion. </p> </solution> 
+</exercise>
+
+<exercise> 
+  <statement>
+    <p> What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample. </p> 
+  </statement>
+<solution><p> When each sample size is larger, the distribution becomes more symmetric and bell-shaped with fewer samples needed. There is less spread (variation) with larger sample sizes. The center of the distribution is the population parameter. </p>
+</solution> 
+</exercise>
+
+<exercise> 
+  <statement>
+    <p> What happens to the standard error when each sample size increases? Explore with multiple sample sizes.  </p> 
+  </statement>
+<solution><p> When each sample size is larger, the standard error becomes smaller since there is less variation within larger sample sizes. The standard error measures the standard deviation of the sampling distribution. </p> 
+</solution> 
+</exercise>
 
 
 
+        
+</subsection>
 
 
 </section>
