@@ -19,68 +19,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Introduction to Statistical Analysis">
-<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '8.1.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -119,16 +74,15 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
 <p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
-</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="DayOne.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterOne.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-three.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
@@ -163,7 +117,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
 </ul>
 </li>
@@ -180,15 +144,45 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
@@ -209,46 +203,373 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-two"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Graphing Data</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-two">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Data</span>
 </h2>
 <article class="objectives goal-like" id="sec-two-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="sec-two-2-1"><div class="para" id="sec-two-2-1-1">At the end of this section you will able to</div></div>
+<div class="introduction" id="sec-two-2-1">
+<div class="para" id="sec-two-2-1-1">At the end of this section you will able to<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
 <ol class="decimal" id="sec-two-2-2">
-<li id="sec-two-2-2-1"><div class="para" id="sec-two-2-2-1-1">Graph data appropriately (with technology).</div></li>
-<li id="sec-two-2-2-2"><div class="para" id="sec-two-2-2-2-1">Describe data in words and with quantitative measures.</div></li>
-</ol></article><div class="para" id="sec-two-3">In this chapter we will investigate different ways to organize and graph data.</div>
-<ol class="decimal" id="sec-two-4">
-<li id="sec-two-4-1"><div class="para" id="sec-two-4-1-1">One categorical variable</div></li>
-<li id="sec-two-4-2"><div class="para" id="sec-two-4-2-1">Two categorical variables</div></li>
-<li id="sec-two-4-3"><div class="para" id="sec-two-4-3-1">One quantitative variable</div></li>
-<li id="sec-two-4-4"><div class="para" id="sec-two-4-4-1">Two quantitative variables</div></li>
-<li id="sec-two-4-5"><div class="para" id="sec-two-4-5-1">One quantitative variable and one categorical variable</div></li>
+<li id="sec-two-2-2-1">
+<div class="para" id="sec-two-2-2-1-1">Graph data appropriately (with technology).<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.1"><a href="#sec-two-2-2-1" title="Copy heading and permalink for Objective 2.2.1" aria-label="Copy heading and permalink for Objective 2.2.1">🔗</a></div>
+</li>
+<li id="sec-two-2-2-2">
+<div class="para" id="sec-two-2-2-2-1">Describe data in words and with quantitative measures.<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.2"><a href="#sec-two-2-2-2" title="Copy heading and permalink for Objective 2.2.2" aria-label="Copy heading and permalink for Objective 2.2.2">🔗</a></div>
+</li>
 </ol>
-<div class="para" id="sec-two-5">Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. This will be the focus of the chapter.</div>
-<div class="para" id="sec-two-6">Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <dfn class="terminology">frequency</dfn>  represents the number of times a particular category occurs from the raw data. This is organized in a <dfn class="terminology">frequency table</dfn> summarizing each category with its frequency. This works best with nominal and ordinal level data.</div>
-<div class="para" id="sec-two-7">On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.</div>
+<div class="autopermalink" data-description="Objectives 2.2"><a href="#sec-two-2" title="Copy heading and permalink for Objectives 2.2" aria-label="Copy heading and permalink for Objectives 2.2">🔗</a></div>
+</article>
+<div class="para" id="sec-two-3">In this chapter we will investigate different ways to organize and graph data.<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="sec-two-4">
+<li id="sec-two-4-1">
+<div class="para" id="sec-two-4-1-1">One categorical variable<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-two-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-two-4-2">
+<div class="para" id="sec-two-4-2-1">Two categorical variables<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-two-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-two-4-3">
+<div class="para" id="sec-two-4-3-1">One quantitative variable<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-two-4-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-two-4-4">
+<div class="para" id="sec-two-4-4-1">Two quantitative variables<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-two-4-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-two-4-5">
+<div class="para" id="sec-two-4-5-1">One quantitative variable and one categorical variable<div class="autopermalink" data-description="Paragraph"><a href="#sec-two-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#sec-two-4-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<section class="subsection" id="subsec-GraphOneCat">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing One Categorical Variable</span>
+</h3>
+<div class="para" id="subsec-GraphOneCat-2">Categorical data is data that can be sorted into categories. The categories are typically non-numeric and represent a quality or characteristic of the data. In this section we will explore how to organize and graph categorical data. We will also learn how to summarize the data with proportions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-3">Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. This will be the focus of the chapter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-4">Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <dfn class="terminology">frequency</dfn>  represents the number of times a particular category occurs from the raw data. This is organized in a <dfn class="terminology">frequency table</dfn> summarizing each category with its frequency. This works best with nominal and ordinal level data.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-5">On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="EyeRaw"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/EyeRaw.jpg" class="contained" alt="Lists 20 eye colors."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.1<span class="period">.</span></span><span class="space"> </span>Image of Raw Eye Color Data</figcaption></figure><div class="para" id="sec-two-9">The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Raw Eye Color Data<div class="autopermalink" data-description="Figure 2.2.1"><a href="#EyeRaw" title="Copy heading and permalink for Figure 2.2.1" aria-label="Copy heading and permalink for Figure 2.2.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphOneCat-7">The data is organized into 4 distinct categories. With this smaller data set we can count how many have brown eyes, how many have blue eyes, then green and hazel. With a larger data set we will use technology to help us find the frequency. From this sample there are 10 with brown eyes, 4 have blue eyes, 4 have green eyes, and 2 have hazel eyes. If we add the counts together, we get our sample of 20 students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="EyeFreq"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/EyeFreq.jpg" class="contained" alt="Frequency of 10 brown, 4blue, 4 green, and 2 hazel."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.2<span class="period">.</span></span><span class="space"> </span>Image of Eye Frequency</figcaption></figure><div class="para" id="sec-two-11">Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Eye Frequency<div class="autopermalink" data-description="Figure 2.2.2"><a href="#EyeFreq" title="Copy heading and permalink for Figure 2.2.2" aria-label="Copy heading and permalink for Figure 2.2.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphOneCat-9">Once we have the tallies, we can graph the data as a bar graph or bar chart. We typically list the categories along the horizontal x-axis and the frequencies vertically along the y-axis, as shown below. The height of each bar represents the frequency for that category.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="EyeBar"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/EyeBar.jpg" class="contained" alt="Bar graph showing of 10 brown, 4blue, 4 green, and 2 hazel."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.3<span class="period">.</span></span><span class="space"> </span>Image of Eye Bar Graph</figcaption></figure><div class="para" id="sec-two-13">The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.</div>
-<div class="para" id="sec-two-14">A <dfn class="terminology">relative frequency table</dfn> also shows the proportion or percentage of cases that fall in each category, as shown below.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Eye Bar Graph<div class="autopermalink" data-description="Figure 2.2.3"><a href="#EyeBar" title="Copy heading and permalink for Figure 2.2.3" aria-label="Copy heading and permalink for Figure 2.2.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphOneCat-11">The bar graph allows us to quickly see that brown occurs most often and hazel eyes occurred least often in this sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-12">A <dfn class="terminology">relative frequency table</dfn> also shows the proportion or percentage of cases that fall in each category, as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="EyeRelFreq"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/EyeRelFreq.png" class="contained" alt="Relative frequency table showing of 50% brown,  20% blue, 20% green, and 10% hazel."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.4<span class="period">.</span></span><span class="space"> </span>Image of Eye Relative Frequency Table</figcaption></figure><div class="para" id="sec-two-16">The proportion of some category is found by</div>
-<div class="para logical" id="sec-two-17"><div class="displaymath process-math">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Eye Relative Frequency Table<div class="autopermalink" data-description="Figure 2.2.4"><a href="#EyeRelFreq" title="Copy heading and permalink for Figure 2.2.4" aria-label="Copy heading and permalink for Figure 2.2.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphOneCat-14">The proportion of some category is found by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-GraphOneCat-15">
+<div class="displaymath process-math" id="subsec-GraphOneCat-15-1">
 \begin{equation*}
 p =  \frac{\text{Number in that Category}} {\text{Total Number Cases}} 
 \end{equation*}
-</div></div>
-<div class="para" id="sec-two-18">Brown eyes occurred 10 times out of the sample of 20 students thus <span class="process-math">\(\hat p = 10/20=.5 \)</span> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <span class="process-math">\(\hat p =4/20=.2 \)</span> which is 20% of the students.</div>
-<div class="para" id="sec-two-19">The proportion for a sample is denoted <span class="process-math">\(\hat p \)</span> and read “p-hat.”</div>
-<div class="para" id="sec-two-20">The proportion for a population is denoted <span class="process-math">\(p \text{.}\)</span>
 </div>
-<div class="para" id="sec-two-21">Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-16">Brown eyes occurred 10 times out of the sample of 20 students thus <span class="process-math">\(\hat p = 10/20=.5 \)</span> which is 50% of the students. Blue eyes occurred 4 times out of the sample of 20 students thus <span class="process-math">\(\hat p =4/20=.2 \)</span> which is 20% of the students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-17">The proportion for a sample is denoted <span class="process-math">\(\hat p \)</span> and read “p-hat.”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-18">The proportion for a population is denoted <span class="process-math">\(p \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphOneCat-19">Categorical data can also be graphed as pie graph or circle chart. The graph typically includes the percentage for each of the categories.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="EyeCircle"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/EyeCircle.png" class="contained" alt="Graph showing of 50% brown, 20% blue, 20% green, and 10% hazel."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.5<span class="period">.</span></span><span class="space"> </span>Image of Eye Circle Graph</figcaption></figure><div class="para" id="sec-two-23">See the section for <dfn class="terminology">Graphing with StatKey</dfn> for details on how to graph using technology.</div></section></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Eye Circle Graph<div class="autopermalink" data-description="Figure 2.2.5"><a href="#EyeCircle" title="Copy heading and permalink for Figure 2.2.5" aria-label="Copy heading and permalink for Figure 2.2.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphOneCat-21">See the section for <dfn class="terminology">Graphing with StatKey</dfn> for details on how to graph using technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphOneCat-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.1: Graphing One Categorical Variable"><a href="#subsec-GraphOneCat" title="Copy heading and permalink for Subsection 2.2.1: Graphing One Categorical Variable" aria-label="Copy heading and permalink for Subsection 2.2.1: Graphing One Categorical Variable">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-GraphTwoCategorical">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Two Categorical Variables</span>
+</h3>
+<div class="para" id="subsec-GraphTwoCategorical-2">When working with two categorical variables, we often look for possible relationships between the two variables using a <dfn class="terminology">two-way table</dfn>.  The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-3">We are going to investigate the possible relationship using the UNC Women’s basketball data set. The dataset <dfn class="terminology">22-23 UNCWBB</dfn> gives the results of the UNC Women’s Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were <em class="emphasis">Win Loss</em> variable which stated if the UNC team won or lost the game and the <em class="emphasis">HomeAway</em> variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="WBdata"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/WBdata.png" class="contained" alt="Lists 9 games as home/awa and win/loss."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of partial data set<div class="autopermalink" data-description="Figure 2.2.6"><a href="#WBdata" title="Copy heading and permalink for Figure 2.2.6" aria-label="Copy heading and permalink for Figure 2.2.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoCategorical-5">The results for these variables are shown in the two-way table below. To create the table, in StatKey choose <dfn class="terminology">Two Categorical Variables</dfn> along the left menu and select the variable <em class="emphasis">WinLoss</em> and <em class="emphasis">HomeAway</em> for the table.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="WBtwoWayTable"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WBtwoWayTable.png" class="contained" alt="Summarizes value for 31 games."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of WB two-way table<div class="autopermalink" data-description="Figure 2.2.7"><a href="#WBtwoWayTable" title="Copy heading and permalink for Figure 2.2.7" aria-label="Copy heading and permalink for Figure 2.2.7">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoCategorical-7">From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-8"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<article class="exercise exercise-like" id="subsec-GraphTwoCategorical-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-GraphTwoCategorical-9-1">As a review, is the study an experiment or an observational study?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-GraphTwoCategorical-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoCategorical-9-2-1">This is an observational study since we are looking at recorded data, there was no manipulation of variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.8.1"><a href="#subsec-GraphTwoCategorical-9-2" title="Copy heading and permalink for Solution 2.2.8.1" aria-label="Copy heading and permalink for Solution 2.2.8.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.2.8"><a href="#subsec-GraphTwoCategorical-9" title="Copy heading and permalink for Checkpoint 2.2.8" aria-label="Copy heading and permalink for Checkpoint 2.2.8">🔗</a></div>
+</article>
+<div class="para" id="subsec-GraphTwoCategorical-10">What proportion of games did the UNC Women’s Basketball team win during the 2022-2023 season?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-11">
+<em class="emphasis">Solution:</em> The team won 13 of the 31 games played, thus p(win) = 13/31 = 0.419 so 41.9% of the games.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-12"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<article class="exercise exercise-like" id="subsec-GraphTwoCategorical-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-GraphTwoCategorical-13-1">What proportion of games did the UNC Women’s Basketball team play at <em class="emphasis">Away</em> during the 2022-2023 season?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-GraphTwoCategorical-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoCategorical-13-2-1">p(away) = 16/31 = .516 so 51.6% of the games.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.9.1"><a href="#subsec-GraphTwoCategorical-13-2" title="Copy heading and permalink for Solution 2.2.9.1" aria-label="Copy heading and permalink for Solution 2.2.9.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.2.9"><a href="#subsec-GraphTwoCategorical-13" title="Copy heading and permalink for Checkpoint 2.2.9" aria-label="Copy heading and permalink for Checkpoint 2.2.9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-GraphTwoCategorical-14"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-GraphTwoCategorical-14-1">Does the UNC Women’s Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-GraphTwoCategorical-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoCategorical-14-2-1">P (win at home) = 8/15 = .533 = 53.3%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-14-2-2">P (win at away) = 5/16 = 0.3125 = 31.3%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-14-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-14-2-3">So it does appear they win more at home.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-14-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.10.1"><a href="#subsec-GraphTwoCategorical-14-2" title="Copy heading and permalink for Solution 2.2.10.1" aria-label="Copy heading and permalink for Solution 2.2.10.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.2.10"><a href="#subsec-GraphTwoCategorical-14" title="Copy heading and permalink for Checkpoint 2.2.10" aria-label="Copy heading and permalink for Checkpoint 2.2.10">🔗</a></div>
+</article>
+<div class="para" id="subsec-GraphTwoCategorical-15"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-GraphTwoCategorical-16">
+<dfn class="terminology">Side by side bar graph</dfn> compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-17">
+<dfn class="terminology">Segmented bar graph</dfn> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoCategorical-18">The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins  in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="WBgraph"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/WBgraph.png" class="contained" alt="Segment bar graph comparing home and away wins."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of WB home and away<div class="autopermalink" data-description="Figure 2.2.11"><a href="#WBgraph" title="Copy heading and permalink for Figure 2.2.11" aria-label="Copy heading and permalink for Figure 2.2.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoCategorical-20">If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="WBwins"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/WBwins.png" class="contained" alt="Segment bar graph comparing wins and losses."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of WB wins and losses<div class="autopermalink" data-description="Figure 2.2.12"><a href="#WBwins" title="Copy heading and permalink for Figure 2.2.12" aria-label="Copy heading and permalink for Figure 2.2.12">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoCategorical-22">See the section <dfn class="terminology">Graphing with StatKey</dfn> for more information on graphing two categorical variables with technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoCategorical-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.2: Graphing Two Categorical Variables"><a href="#subsec-GraphTwoCategorical" title="Copy heading and permalink for Subsection 2.2.2: Graphing Two Categorical Variables" aria-label="Copy heading and permalink for Subsection 2.2.2: Graphing Two Categorical Variables">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-QuantGraphs">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing One Quantitative Variable</span>
+</h3>
+<div class="para" id="subsec-QuantGraphs-2">A <dfn class="terminology">dotplot</dfn> is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/DotplotTattoos.png" class="contained" alt="image of number of tattoos"></div>
+<div class="para" id="subsec-QuantGraphs-4">
+<em class="emphasis">Interpret Dotplot:</em> From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-QuantGraphs-5">A <dfn class="terminology">histogram</dfn> is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WeightsHisto.png" class="contained" alt="histogram of student weights"></div>
+<div class="para" id="subsec-QuantGraphs-7">
+<em class="emphasis">Interpret Histogram:</em>The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-QuantGraphs-8">A <dfn class="terminology">boxplot</dfn> splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WeightsBox.png" class="contained" alt="boxplot of student weights"></div>
+<div class="para" id="subsec-QuantGraphs-10">
+<em class="emphasis">Interpret Boxplot:</em> The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-QuantGraphs-11">An <dfn class="terminology">outlier</dfn> is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-QuantGraphs-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-GraphTwoQuantitative">
+<h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Two Quantitative Variables</span>
+</h4>
+<div class="para" id="subsec-GraphTwoQuantitative-2">There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a <dfn class="terminology">scatterplot</dfn> where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-3">
+<dfn class="terminology">Correlation</dfn> is a statistical method used to determine whether a relationship between two quantitative variables exists.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-4">For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a <dfn class="terminology">positive correlation</dfn>. If the points form an approximate line, then it’s a positive linear relationship. A <dfn class="terminology">negative correlation</dfn> exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-5">We use the <dfn class="terminology">correlation coefficient</dfn> to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as <em class="emphasis">r</em> and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong <em class="emphasis">positive linear</em> relationship, the value of <em class="emphasis">r</em>  is closer to +1. If there is a strong <em class="emphasis">negative linear</em>  relationship, the value of <em class="emphasis">r</em>  is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of<em class="emphasis">r</em>  is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-6">First, let’s use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-7">We are going to investigate if there is a relationship between a person’s height and his/her shoe size using the first day survey. If we know a person’s height, are we able to predict his/her shoe size? Or if we know a person’s shoe size, can we predict his/her height? Let’s find out. We will use technology to help us create the scatterplot and find the correlation value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-8">Link to <a class="external" href="https://www.lock5stat.com/StatKey/" target="_blank">StatKey.</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-9">Open StatKey, under the left column <em class="emphasis">Descriptive Statistics and Graph</em>, select <code class="code-inline tex2jax_ignore">Two Quantitative Variables.</code> Click on the<code class="code-inline tex2jax_ignore">Upload File</code> button and find the saved data file <code class="code-inline tex2jax_ignore">ClassSurvey1</code> on your computer and click <code class="code-inline tex2jax_ignore"> Open</code> on the bottom right.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeyTwoQuant.png" class="contained" alt="StatKey two quantitative variables"></div>
+<div class="para" id="subsec-GraphTwoQuantitative-11">Identify the two quantitative variables, select the x-variable first, <em class="emphasis">Shoe size</em>, and then the y-variable, <em class="emphasis">Height</em>, and then click <code class="code-inline tex2jax_ignore"> Ok </code> at the bottom right.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SelectTwoQuant.png" class="contained" alt="select the two quantitative variables image"></div>
+<div class="para" id="subsec-GraphTwoQuantitative-13">The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ShoeHeightScatterplot1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ShoesHeightsScatter.png" class="contained" alt="Shoe size and Height Scatterplot."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Scatterplot for Shoe Size and Height<div class="autopermalink" data-description="Figure 2.2.13"><a href="#ShoeHeightScatterplot1" title="Copy heading and permalink for Figure 2.2.13" aria-label="Copy heading and permalink for Figure 2.2.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoQuantitative-15">Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-16">If you click on the <code class="code-inline tex2jax_ignore">Switch Variables</code> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="HeightvsShoeScatterplot2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/HeightShoesScatterplot.png" class="contained" alt="Scatterplot with height on x-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Scatterplot for Height and shoe size<div class="autopermalink" data-description="Figure 2.2.14"><a href="#HeightvsShoeScatterplot2" title="Copy heading and permalink for Figure 2.2.14" aria-label="Copy heading and permalink for Figure 2.2.14">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-GraphTwoQuantitative-18">A few words of warning: just because a correlation between variables exists it does not indicate one variable <em class="emphasis">causes</em> the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not <em class="emphasis">cause</em> their shoe size to be large. Just as having a larger shoe size does not <em class="emphasis">cause</em> a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-19">
+<dfn class="terminology">Practice</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-GraphTwoQuantitative-20">Now let’s investigate the type of relationship between a person’s weight and height. Do you think this will be positive, negative, or no relationship? Click on the <code class="code-inline tex2jax_ignore">Change Columns</code> to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="WeightHeightScatterplot"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WeightHeightScatterplot.png" class="contained" alt="Scatterplot with weight on x-axis and height on y."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Image of Scatterplot for Weight and Height<div class="autopermalink" data-description="Figure 2.2.15"><a href="#WeightHeightScatterplot" title="Copy heading and permalink for Figure 2.2.15" aria-label="Copy heading and permalink for Figure 2.2.15">🔗</a></div></figcaption>
+</figure>
+<details id="subsec-GraphTwoQuantitative-22" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Coefficient.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-22-2-1">Compute the correlation coefficient between weight and height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-22-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-22-3-1">Correlation Coefficient r = 0.623.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-22-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.16.1"><a href="#subsec-GraphTwoQuantitative-22-3" title="Copy heading and permalink for Solution 2.2.16.1" aria-label="Copy heading and permalink for Solution 2.2.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.16: Correlation Coefficient"><a href="#subsec-GraphTwoQuantitative-22" title="Copy heading and permalink for Example 2.2.16: Correlation Coefficient" aria-label="Copy heading and permalink for Example 2.2.16: Correlation Coefficient">🔗</a></div>
+</article></details>
+<details id="subsec-GraphTwoQuantitative-23" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Type of Relationship.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-23-2-1">Identify the type of relationship between weight and height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-23-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-23-3-1">There’s a moderate positive linear relationship.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-23-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.17.1"><a href="#subsec-GraphTwoQuantitative-23-3" title="Copy heading and permalink for Solution 2.2.17.1" aria-label="Copy heading and permalink for Solution 2.2.17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.17: Type of Relationship"><a href="#subsec-GraphTwoQuantitative-23" title="Copy heading and permalink for Example 2.2.17: Type of Relationship" aria-label="Copy heading and permalink for Example 2.2.17: Type of Relationship">🔗</a></div>
+</article></details>
+<details id="subsec-GraphTwoQuantitative-24" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Describe the Relationship.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-24-2-1">Describe the relationship between weight and height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-24-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-24-3-1">As student’s weights increase, their heights also increase.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-24-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.18.1"><a href="#subsec-GraphTwoQuantitative-24-3" title="Copy heading and permalink for Solution 2.2.18.1" aria-label="Copy heading and permalink for Solution 2.2.18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.18: Describe the Relationship"><a href="#subsec-GraphTwoQuantitative-24" title="Copy heading and permalink for Example 2.2.18: Describe the Relationship" aria-label="Copy heading and permalink for Example 2.2.18: Describe the Relationship">🔗</a></div>
+</article></details>
+<details id="subsec-GraphTwoQuantitative-25" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-25-2-1">Identify the slope when x= weight and y=height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-25-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-25-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-25-3-1">Slope = 0.077 is positive.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-25-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.19.1"><a href="#subsec-GraphTwoQuantitative-25-3" title="Copy heading and permalink for Solution 2.2.19.1" aria-label="Copy heading and permalink for Solution 2.2.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.19: Slope"><a href="#subsec-GraphTwoQuantitative-25" title="Copy heading and permalink for Example 2.2.19: Slope" aria-label="Copy heading and permalink for Example 2.2.19: Slope">🔗</a></div>
+</article></details>
+<details id="subsec-GraphTwoQuantitative-26" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Y-intercept.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-26-2-1">Identify the y-intercept when x=weight and y=height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-26-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-26-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-26-3-1">The y-intercept = 54.692 inches.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-26-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.20.1"><a href="#subsec-GraphTwoQuantitative-26-3" title="Copy heading and permalink for Solution 2.2.20.1" aria-label="Copy heading and permalink for Solution 2.2.20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.20: Y-intercept"><a href="#subsec-GraphTwoQuantitative-26" title="Copy heading and permalink for Example 2.2.20: Y-intercept" aria-label="Copy heading and permalink for Example 2.2.20: Y-intercept">🔗</a></div>
+</article></details>
+<details id="subsec-GraphTwoQuantitative-27" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Regression Equation.</span>
+</h5></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-27-2-1">Identify the regression equation where x= weight and y=height.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-GraphTwoQuantitative-27-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-GraphTwoQuantitative-27-3-1">Height = 0.077(weight)+54.692 or <span class="process-math">\(y=0.077x+54.692 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-GraphTwoQuantitative-27-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.21.1"><a href="#subsec-GraphTwoQuantitative-27-3" title="Copy heading and permalink for Solution 2.2.21.1" aria-label="Copy heading and permalink for Solution 2.2.21.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.21: Regression Equation"><a href="#subsec-GraphTwoQuantitative-27" title="Copy heading and permalink for Example 2.2.21: Regression Equation" aria-label="Copy heading and permalink for Example 2.2.21: Regression Equation">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 2.2.3.1: Graphing Two Quantitative Variables"><a href="#subsec-GraphTwoQuantitative" title="Copy heading and permalink for Subsection 2.2.3.1: Graphing Two Quantitative Variables" aria-label="Copy heading and permalink for Subsection 2.2.3.1: Graphing Two Quantitative Variables">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection 2.2.3: Graphing One Quantitative Variable"><a href="#subsec-QuantGraphs" title="Copy heading and permalink for Subsection 2.2.3: Graphing One Quantitative Variable" aria-label="Copy heading and permalink for Subsection 2.2.3: Graphing One Quantitative Variable">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 2.2: Graphing Data"><a href="#sec-two" title="Copy heading and permalink for Section 2.2: Graphing Data" aria-label="Copy heading and permalink for Section 2.2: Graphing Data">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="DayOne.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-three.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

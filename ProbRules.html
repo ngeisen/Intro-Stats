@@ -19,68 +19,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Introduction to Statistical Analysis">
-<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '8.1.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -119,16 +74,15 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
 <p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
-</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-probBasics.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterProb.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ProbDist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
@@ -163,7 +117,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
 </ul>
 </li>
@@ -180,15 +144,45 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
@@ -209,18 +203,335 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="ProbRules"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Probability Rules</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ProbRules">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Rules</span>
 </h2>
 <article class="objectives goal-like" id="ProbRules-2"><h3 class="heading"><span class="type">Objectives</span></h3>
 <div class="introduction" id="ProbRules-2-1">
-<div class="para" id="ProbRules-2-1-1">At the end of this section you will able to:</div>
+<div class="para" id="ProbRules-2-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#ProbRules-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <ol class="decimal" id="ProbRules-2-1-2">
-<li id="ProbRules-2-1-2-1"><div class="para" id="ProbRules-2-1-2-1-1">Determine if events are mutually exclusive.</div></li>
-<li id="ProbRules-2-1-2-2"><div class="para" id="ProbRules-2-1-2-2-1">Determine the probability using the rules for “or”, “and”, and “given</div></li>
-<li id="ProbRules-2-1-2-3"><div class="para" id="ProbRules-2-1-2-3-1">Use a tree diagram to determine the probability of multiple events</div></li>
+<li id="ProbRules-2-1-2-1">
+<div class="para" id="ProbRules-2-1-2-1-1">Determine if events are mutually exclusive.<div class="autopermalink" data-description="Paragraph"><a href="#ProbRules-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ProbRules-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ProbRules-2-1-2-2">
+<div class="para" id="ProbRules-2-1-2-2-1">Determine the probability using the rules for “or”, “and”, and “given<div class="autopermalink" data-description="Paragraph"><a href="#ProbRules-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ProbRules-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ProbRules-2-1-2-3">
+<div class="para" id="ProbRules-2-1-2-3-1">Use a tree diagram to determine the probability of multiple events<div class="autopermalink" data-description="Paragraph"><a href="#ProbRules-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ProbRules-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-</div></article></section></div>
+</div>
+<div class="autopermalink" data-description="Objectives 4.2"><a href="#ProbRules-2" title="Copy heading and permalink for Objectives 4.2" aria-label="Copy heading and permalink for Objectives 4.2">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-ProbRules1">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic Probability Rules Review</span>
+</h3>
+<div class="para" id="subsec-ProbRules1-2">It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.  In this section we will focus on probability rules based on the <em class="emphasis">theoretical probabilities</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-3">There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are <em class="emphasis">equally likely</em> to occur.  This means that every outcome has the same chance of happening.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="EquallyLikely-matching"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equally Likely.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="EquallyLikely-matching-2-1">Which of the following experiments have equally likely outcomes?<div class="autopermalink" data-description="Paragraph"><a href="#EquallyLikely-matching-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-EquallyLikely-matching" data-multipleanswers="false" data-random="">
+<li data-component="answer" id="rs-EquallyLikely-matching_opt_a" data-correct="">
+<div class="para" id="EquallyLikely-matching-3-1-1-1">Tossing a fair coin.</div>
+</li>
+<li data-component="feedback" id="rs-EquallyLikely-matching_opt_a">
+<li data-component="answer" id="rs-EquallyLikely-matching_opt_b">
+<div class="para" id="EquallyLikely-matching-3-2-1-1">Rolling loaded dice.</div>
+</li>
+<li data-component="feedback" id="rs-EquallyLikely-matching_opt_b">
+<div class="para" id="EquallyLikely-matching-3-2-2-1">Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.</div>
+</li>
+<li data-component="answer" id="rs-EquallyLikely-matching_opt_c">
+<div class="para" id="EquallyLikely-matching-3-3-1-1">Pull a ball out of a bag containing 5 red balls and 6 green balls.</div>
+</li>
+<li data-component="feedback" id="rs-EquallyLikely-matching_opt_c">
+<div class="para" id="EquallyLikely-matching-3-3-2-1">Assuming the balls are the same size, then each ball has the same chance of being chosen.  The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different .</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 4.2.1: Equally Likely"><a href="#EquallyLikely-matching" title="Copy heading and permalink for Checkpoint 4.2.1: Equally Likely" aria-label="Copy heading and permalink for Checkpoint 4.2.1: Equally Likely">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbRules1-5">First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StandardDeck2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/DeckCards.png" class="contained" alt="four suits with 13 numbered cards in deck."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Standard deck of cards<div class="autopermalink" data-description="Figure 4.2.2"><a href="#StandardDeck2" title="Copy heading and permalink for Figure 4.2.2" aria-label="Copy heading and permalink for Figure 4.2.2">🔗</a></div></figcaption>
+</figure>
+<article class="exercise exercise-like" id="subsec-ProbRules1-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hearts.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-7-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a heart?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.3: Hearts"><a href="#subsec-ProbRules1-7" title="Copy heading and permalink for Checkpoint 4.2.3: Hearts" aria-label="Copy heading and permalink for Checkpoint 4.2.3: Hearts">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Queen.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-8-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a Queen?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.4: Queen"><a href="#subsec-ProbRules1-8" title="Copy heading and permalink for Checkpoint 4.2.4: Queen" aria-label="Copy heading and permalink for Checkpoint 4.2.4: Queen">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Queen of Hearts.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-9-2-1">If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.5: Queen of Hearts"><a href="#subsec-ProbRules1-9" title="Copy heading and permalink for Checkpoint 4.2.5: Queen of Hearts" aria-label="Copy heading and permalink for Checkpoint 4.2.5: Queen of Hearts">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">not Queen of Hearts.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-10-2-1">If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.6: not Queen of Hearts"><a href="#subsec-ProbRules1-10" title="Copy heading and permalink for Checkpoint 4.2.6: not Queen of Hearts" aria-label="Copy heading and permalink for Checkpoint 4.2.6: not Queen of Hearts">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbRules1-11">Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-12">Two events are <dfn class="terminology">mutually exclusive</dfn> if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-13">Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together.  We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-14">When two events A and B are mutually exclusive, the probability that either A or B will occur is <span class="process-math">\(P(\text{A or B}) = P(A) + P(B) \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-15">When two events A and B are mutually exclusive, the probability that A and B will occur together is <span class="process-math">\(P(\text{A and B}) = 0 \)</span> since they cannot occur at the same time.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-16">
+<em class="emphasis">For example,</em> find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) = <span class="process-math">\(P(5) + P(6) = 4/52+4/52=8/52 = 0.1538\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-17">Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus <span class="process-math">\(P(\text{5 and 6})=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-ProbRules1-18"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Queen or King.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-18-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.7: Queen or King"><a href="#subsec-ProbRules1-18" title="Copy heading and permalink for Checkpoint 4.2.7: Queen or King" aria-label="Copy heading and permalink for Checkpoint 4.2.7: Queen or King">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-19"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Face Card.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-19-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.8: Face Card"><a href="#subsec-ProbRules1-19" title="Copy heading and permalink for Checkpoint 4.2.8: Face Card" aria-label="Copy heading and permalink for Checkpoint 4.2.8: Face Card">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbRules1-20">So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. <em class="emphasis">For example,</em> what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-21">P(Spade or Ace) 13/52 + 4/52 - 1/52 = 16/52 = 0.3077.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-22">If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-23">When two events A and B are <em class="emphasis">not</em> mutually exclusive, the probability that either A or B will occur is <span class="process-math">\(P(\text{A or B}) = P(A) + P(B) - P(\text{A and B})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-ProbRules1-24"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Five or Diamond.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-24-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.9: Five or Diamond"><a href="#subsec-ProbRules1-24" title="Copy heading and permalink for Checkpoint 4.2.9: Five or Diamond" aria-label="Copy heading and permalink for Checkpoint 4.2.9: Five or Diamond">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-25"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Five or Six or Diamond.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-25-2-1">If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-25-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.10: Five or Six or Diamond"><a href="#subsec-ProbRules1-25" title="Copy heading and permalink for Checkpoint 4.2.10: Five or Six or Diamond" aria-label="Copy heading and permalink for Checkpoint 4.2.10: Five or Six or Diamond">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbRules1-26"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-ProbRules1-27">When two events are mutually exclusive, this is also known as being <dfn class="terminology">disjoint</dfn>. In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="VennDisjoint"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/VennDisj.png" class="contained" alt="non touching circles ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Disjoint Venn Diagram<div class="autopermalink" data-description="Figure 4.2.11"><a href="#VennDisjoint" title="Copy heading and permalink for Figure 4.2.11" aria-label="Copy heading and permalink for Figure 4.2.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbRules1-29">When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="VennNotDisjoint"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/VennNotDisj.png" class="contained" alt="overlapping circles ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Non Disjoint Venn Diagram<div class="autopermalink" data-description="Figure 4.2.12"><a href="#VennNotDisjoint" title="Copy heading and permalink for Figure 4.2.12" aria-label="Copy heading and permalink for Figure 4.2.12">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbRules1-31">We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="AutoSalesTable"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/AutoSalesTable.png" class="contained" alt="First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Iron Mountain Auto Sales Table<div class="autopermalink" data-description="Figure 4.2.13"><a href="#AutoSalesTable" title="Copy heading and permalink for Figure 4.2.13" aria-label="Copy heading and permalink for Figure 4.2.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbRules1-33">
+<dfn class="terminology">Examples:</dfn> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-34">a. A foreign car is sold.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-35">Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90/300 = 0.30 or 30%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-36">b. The car is foreign and compact.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-37">Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50/300 = 0.1667 or 16.7%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-38">c. The car is foreign or compact.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-39">Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90/300 + 150/300 – 50/300 = 190/300 = 0.633 or 63.3%<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-40">Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbRules1-41">
+<dfn class="terminology">Checkpoints:</dfn> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-41" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-ProbRules1-42"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compact.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-42-2-1">The car is compact.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-42-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.14: Compact"><a href="#subsec-ProbRules1-42" title="Copy heading and permalink for Checkpoint 4.2.14: Compact" aria-label="Copy heading and permalink for Checkpoint 4.2.14: Compact">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-43"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">domestic or sedan.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-43-2-1">The car is domestic or a sedan.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-43-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.15: domestic or sedan"><a href="#subsec-ProbRules1-43" title="Copy heading and permalink for Checkpoint 4.2.15: domestic or sedan" aria-label="Copy heading and permalink for Checkpoint 4.2.15: domestic or sedan">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRules1-44"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Domestic SUV.</span>
+</h4>
+<div class="para" id="subsec-ProbRules1-44-2-1">The car is domestic and SUV.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRules1-44-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.16: Domestic SUV"><a href="#subsec-ProbRules1-44" title="Copy heading and permalink for Checkpoint 4.2.16: Domestic SUV" aria-label="Copy heading and permalink for Checkpoint 4.2.16: Domestic SUV">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 4.2.1: Basic Probability Rules Review"><a href="#subsec-ProbRules1" title="Copy heading and permalink for Subsection 4.2.1: Basic Probability Rules Review" aria-label="Copy heading and permalink for Subsection 4.2.1: Basic Probability Rules Review">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-ProbRulesPractice">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Practice Problems</span>
+</h3>
+<div class="para" id="subsec-ProbRulesPractice-2">
+<dfn class="terminology">Hockey Hall of Fame:</dfn> From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="HockeyFame"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/HockeyFameTable.png" class="contained" alt="First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hockey Hall of Fame Table<div class="autopermalink" data-description="Figure 4.2.17"><a href="#HockeyFame" title="Copy heading and permalink for Figure 4.2.17" aria-label="Copy heading and permalink for Figure 4.2.17">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbRulesPractice-4">Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-5"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defense.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-5-2-1">What is the probability that an inductee chosen at random is a defenseman?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.18: Defense"><a href="#subsec-ProbRulesPractice-5" title="Copy heading and permalink for Checkpoint 4.2.18: Defense" aria-label="Copy heading and permalink for Checkpoint 4.2.18: Defense">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-6"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Canadian.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-6-2-1">What is the probability that an inductee chosen at random is not Canadian?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.19: Canadian"><a href="#subsec-ProbRulesPractice-6" title="Copy heading and permalink for Checkpoint 4.2.19: Canadian" aria-label="Copy heading and permalink for Checkpoint 4.2.19: Canadian">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-7"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Canadian goalie.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-7-2-1">What is the probability that a player chosen at random is a goalie born in Canada<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.20: Canadian goalie"><a href="#subsec-ProbRulesPractice-7" title="Copy heading and permalink for Checkpoint 4.2.20: Canadian goalie" aria-label="Copy heading and permalink for Checkpoint 4.2.20: Canadian goalie">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-8"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Canada or Defense.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-8-2-1">What is the probability that a player chosen at random is either born in Canada or a defenseman?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.21: Canada or Defense"><a href="#subsec-ProbRulesPractice-8" title="Copy heading and permalink for Checkpoint 4.2.21: Canada or Defense" aria-label="Copy heading and permalink for Checkpoint 4.2.21: Canada or Defense">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-9"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defense or Goalie.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-9-2-1">What is the probability that the player chosen at random either plays defense or is a goalie<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.22: Defense or Goalie"><a href="#subsec-ProbRulesPractice-9" title="Copy heading and permalink for Checkpoint 4.2.22: Defense or Goalie" aria-label="Copy heading and permalink for Checkpoint 4.2.22: Defense or Goalie">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Canada plays Defense.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-10-2-1">What is the probability that a Canadian inductee plays defense?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.23: Canada plays Defense"><a href="#subsec-ProbRulesPractice-10" title="Copy heading and permalink for Checkpoint 4.2.23: Canada plays Defense" aria-label="Copy heading and permalink for Checkpoint 4.2.23: Canada plays Defense">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-11"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Defense is Canadian.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-11-2-1">What is the probability that an inductee who plays defense is Canadian?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.24: Defense is Canadian"><a href="#subsec-ProbRulesPractice-11" title="Copy heading and permalink for Checkpoint 4.2.24: Defense is Canadian" aria-label="Copy heading and permalink for Checkpoint 4.2.24: Defense is Canadian">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbRulesPractice-12">
+<dfn class="terminology">Blood Typing:</dfn> Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative.  The table below presents the results of a representative sample of 360 adults in the U.S.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BloodTypes"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/BloodTable.png" class="contained" alt="First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Blood Type Table<div class="autopermalink" data-description="Figure 4.2.25"><a href="#BloodTypes" title="Copy heading and permalink for Figure 4.2.25" aria-label="Copy heading and permalink for Figure 4.2.25">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbRulesPractice-14">Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-15"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">negative.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-15-2-1">What is the probability that a person in the sample chosen at random has a negative Rh factor?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.26: negative"><a href="#subsec-ProbRulesPractice-15" title="Copy heading and permalink for Checkpoint 4.2.26: negative" aria-label="Copy heading and permalink for Checkpoint 4.2.26: negative">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-16"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">not AB.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-16-2-1">What is the probability that a person in the sample chosen at random is <dfn class="terminology">not</dfn>  a universal plasma donor (universal plasma donors have Type AB blood)?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.27: not AB"><a href="#subsec-ProbRulesPractice-16" title="Copy heading and permalink for Checkpoint 4.2.27: not AB" aria-label="Copy heading and permalink for Checkpoint 4.2.27: not AB">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-17"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">B+.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-17-2-1">What is the probability that a person in the sample chosen at random has type B and positive Rh factor?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.28: B+"><a href="#subsec-ProbRulesPractice-17" title="Copy heading and permalink for Checkpoint 4.2.28: B+" aria-label="Copy heading and permalink for Checkpoint 4.2.28: B+">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-18"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A or negative.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-18-2-1">What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.29: A or negative"><a href="#subsec-ProbRulesPractice-18" title="Copy heading and permalink for Checkpoint 4.2.29: A or negative" aria-label="Copy heading and permalink for Checkpoint 4.2.29: A or negative">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-19"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A or B.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-19-2-1">What is the probability that a person in the sample chosen at random has blood type A or blood type B?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.30: A or B"><a href="#subsec-ProbRulesPractice-19" title="Copy heading and permalink for Checkpoint 4.2.30: A or B" aria-label="Copy heading and permalink for Checkpoint 4.2.30: A or B">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-20"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Blood.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-20-2-1">What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.31: Blood"><a href="#subsec-ProbRulesPractice-20" title="Copy heading and permalink for Checkpoint 4.2.31: Blood" aria-label="Copy heading and permalink for Checkpoint 4.2.31: Blood">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbRulesPractice-21"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Blood.</span>
+</h4>
+<div class="para" id="subsec-ProbRulesPractice-21-2-1">What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbRulesPractice-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.2.32: Blood"><a href="#subsec-ProbRulesPractice-21" title="Copy heading and permalink for Checkpoint 4.2.32: Blood" aria-label="Copy heading and permalink for Checkpoint 4.2.32: Blood">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 4.2.2: Probability Practice Problems"><a href="#subsec-ProbRulesPractice" title="Copy heading and permalink for Subsection 4.2.2: Probability Practice Problems" aria-label="Copy heading and permalink for Subsection 4.2.2: Probability Practice Problems">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 4.2: Probability Rules"><a href="#ProbRules" title="Copy heading and permalink for Section 4.2: Probability Rules" aria-label="Copy heading and permalink for Section 4.2: Probability Rules">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-probBasics.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ProbDist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

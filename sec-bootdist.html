@@ -19,68 +19,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Introduction to Statistical Analysis">
-<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '8.1.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -119,16 +74,15 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
 <p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
-</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-sampdist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterBootstrap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-randdist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
@@ -163,7 +117,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
 </ul>
 </li>
@@ -180,15 +144,45 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
@@ -209,20 +203,314 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-bootdist"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Creating Bootstrap Distributions</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-bootdist">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Creating Bootstrap Distributions</span>
 </h2>
-<article class="exercise exercise-like" id="matching2"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Distribution Matching Problem.</span>
+<section class="introduction" id="sec-bootdist-2">
+<div class="para" id="sec-bootdist-2-1">Previously we discussed creating a sampling distribution from a known population. In this section we are working in the other direction. Often, we do not know the details of the population, but we are able to gather a sample. We will be using information from a single sample to understand what is true about the population.<div class="autopermalink" data-description="Paragraph"><a href="#sec-bootdist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-bootdist-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-bootdist-3-1">
+<div class="para" id="sec-bootdist-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-bootdist-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec-bootdist-3-2">
+<li id="sec-bootdist-3-2-1">
+<div class="para" id="sec-bootdist-3-2-1-1">Construct and interpret a bootstrap distribution for the mean.<div class="autopermalink" data-description="Paragraph"><a href="#sec-bootdist-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.2.1"><a href="#sec-bootdist-3-2-1" title="Copy heading and permalink for Objective 5.2.1" aria-label="Copy heading and permalink for Objective 5.2.1">🔗</a></div>
+</li>
+<li id="sec-bootdist-3-2-2">
+<div class="para" id="sec-bootdist-3-2-2-1">Construct and interpret a bootstrap distribution for proportions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-bootdist-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.2.2"><a href="#sec-bootdist-3-2-2" title="Copy heading and permalink for Objective 5.2.2" aria-label="Copy heading and permalink for Objective 5.2.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 5.2"><a href="#sec-bootdist-3" title="Copy heading and permalink for Objectives 5.2" aria-label="Copy heading and permalink for Objectives 5.2">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-BootstrapMeans">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bootstrap Distributions for Means</span>
 </h3>
+<div class="para" id="subsec-BootstrapMeans-2">Previously we constructed sampling distributions based on population parameters we already know by taking thousands of different samples. However, in most situations we do not know the value of population parameters and we do not have the resources to take multiple samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-3">In this section we introduce a method for estimating the variability of statistic that uses only the data in the original sample - by sampling with replacement. This will allow us to approximate the sampling distribution and construct confidence intervals.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-4">Recently there has been an increase in awareness of fuel economy and more options for electric vehicles. We are going to investigate a sample of cars to predict how energy efficient they are. MPGe (miles per gallon equivalent) is the measurement used to track the efficiency of electric vehicles (EVs), similar to the way MPG (miles per gallon) measures regular gas-powered cars.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-5">Devised by the Environmental Protection Agency (EPA), MPGe uses the exact amount of electric energy equal to the energy in one gallon of gasoline and then looks at the distance that a specific electric vehicle travels on that amount of energy.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-6">What is the typical MPGe of newer models of EVs?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-7">To answer the question, a curious electric vehicle enthusiast obtained the following random sample of the MPGe of EVs from 2023:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-BootstrapMeans-8">
+<li id="subsec-BootstrapMeans-8-1">
+<div class="para" id="subsec-BootstrapMeans-8-1-1">Tesla Model X Plaid - 91 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-8-2">
+<div class="para" id="subsec-BootstrapMeans-8-2-1">Jaguar I-Pace EV400 - 85 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-8-3">
+<div class="para" id="subsec-BootstrapMeans-8-3-1">Polestar 2 Single Motor - 107 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-8-4">
+<div class="para" id="subsec-BootstrapMeans-8-4-1">Lucid Air Pure AWD - 140 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-8-5">
+<div class="para" id="subsec-BootstrapMeans-8-5-1">Lordstown Endurance - 48 MPGe<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-BootstrapMeans-8-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="subsec-BootstrapMeans-9">We are going to simulate creating a sampling distribution but using just this one sample of five cars. This process is known as generating a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-10">To generate a bootstrap distribution, we:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-BootstrapMeans-11">
+<li id="subsec-BootstrapMeans-11-1">
+<div class="para" id="subsec-BootstrapMeans-11-1-1">Generate bootstrap samples by sampling with replacement from the original sample, using the same sample size.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-BootstrapMeans-11-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-11-2">
+<div class="para" id="subsec-BootstrapMeans-11-2-1">Compute the statistic of interest, called a bootstrap statistic, for each of the bootstrap samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-BootstrapMeans-11-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-BootstrapMeans-11-3">
+<div class="para" id="subsec-BootstrapMeans-11-3-1">Collect the statistics for many bootstrap samples to create a bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-BootstrapMeans-11-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="subsec-BootstrapMeans-12">To illustrate this process: List each car on a note card with its MPGe. Randomly select a card, note the MPGE for the car, then replace the card to the deck. Shuffle the cards. Repeat the process until you have a sample of 5 cars. Find the average value of the five cars then plot the point to begin the distribution. Keep repeating this process until we have a bootstrap distribution of the sample means.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-13">The purpose of replacing the card is to give us some variability in the samples we select. If we use the same 5 cars each time, there is no variation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-14">Give example<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapMeans-15">To have enough samples to get a bell-shaped distribution will take time. We would likely need thousands of samples of size 5. But we can simulate this process with technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapMeans-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.2.1: Bootstrap Distributions for Means"><a href="#subsec-BootstrapMeans" title="Copy heading and permalink for Subsection 5.2.1: Bootstrap Distributions for Means" aria-label="Copy heading and permalink for Subsection 5.2.1: Bootstrap Distributions for Means">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-BootTechnologyMean">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology: Mean</span>
+</h3>
+<div class="para" id="subsec-BootTechnologyMean-2">Open <dfn class="terminology">StatKey</dfn> and in the middle column under <dfn class="terminology">Bootstrap Confidence Intervals</dfn> we are going to select  <dfn class="terminology">CI for Single Mean</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapMenu"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/boot1.png" class="contained" alt="first option in second column is bootstrap for the mean."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Menu<div class="autopermalink" data-description="Figure 5.2.1"><a href="#BootstrapMenu" title="Copy heading and permalink for Figure 5.2.1" aria-label="Copy heading and permalink for Figure 5.2.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyMean-4">Click on the <code class="code-inline tex2jax_ignore"> Upload File </code> button and identify the data file: <em class="emphasis">EV2023-Sample5</em> and select the variable <em class="emphasis">CombMPGe</em> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapMenuOptions"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot2.png" class="contained" alt="fourth option is to upload the file."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap for Mean<div class="autopermalink" data-description="Figure 5.2.2"><a href="#BootstrapMenuOptions" title="Copy heading and permalink for Figure 5.2.2" aria-label="Copy heading and permalink for Figure 5.2.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyMean-6">Interpreting StatKey: On the top right side you will see the <dfn class="terminology">Original Sample</dfn> information. The sample of 5 cards has a mean MPGe of 94.2, median 91, and standard deviation of 33.507.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-7">If we click on the <code class="code-inline tex2jax_ignore"> Generate 1 Sample </code> button, then on the bottom right side we will see the five randomly selected cars with replacement under the <dfn class="terminology">Bootstrap Sample</dfn> . For this sample the mean is 80, the median is 85, and the standard deviation is 18.138. The mean of 80 which is plotted on the Bootstrap Dotplot. Continue generating samples until you have generated at least 500 samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapMPGe"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot3.png" class="contained" alt="dotplot of 501 dots for average car mileage with values between 60 and 130 centered at 93.671."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap MPGe for 501 Samples<div class="autopermalink" data-description="Figure 5.2.3"><a href="#BootstrapMPGe" title="Copy heading and permalink for Figure 5.2.3" aria-label="Copy heading and permalink for Figure 5.2.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyMean-9">Interpreting StatKey: The Bootstrap Dot plot has 501 samples of the average MPGe for 5 electric vehicles. The distribution is approximately bell shaped and centered at the mean 93.671 and the standard error is 12.797. So using this sample data, we would predict the population mean to be around 93-94 MPGe for electric vehicles from 2023.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-10">
+<dfn class="terminology">Exploration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-11">Now it’s time for you to explore the data. You can continue working with the MPGe or you can choose one of the built-in data sets.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-12"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-12-1-1">As you generate more samples, what happens to the shape of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.4"><a href="#subsec-BootTechnologyMean-12" title="Copy heading and permalink for Checkpoint 5.2.4" aria-label="Copy heading and permalink for Checkpoint 5.2.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-13-1-1">Where is the center of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.5"><a href="#subsec-BootTechnologyMean-13" title="Copy heading and permalink for Checkpoint 5.2.5" aria-label="Copy heading and permalink for Checkpoint 5.2.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-14"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-14-1-1">Compare the standard deviation of the original sample to the standard error of the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.6"><a href="#subsec-BootTechnologyMean-14" title="Copy heading and permalink for Checkpoint 5.2.6" aria-label="Copy heading and permalink for Checkpoint 5.2.6">🔗</a></div>
+</article>
+<div class="para" id="subsec-BootTechnologyMean-15">Just as our samples have variation, we do not want just a single number to represent the typical population value, we want an interval to estimate the likely values our parameter will take. Thus we look at creating an interval to predict the parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-16">When a bootstrap distribution for a sample statistic is symmetric and bell-shaped, we estimate a 95% confidence interval using <dfn class="terminology">statistics</dfn> <span class="process-math">\(\pm 2 \bullet  SE \)</span>   where SE denotes the standard error of the statistic estimated from the bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-17">Using the original sample mean of 94.2 and the standard error of the bootstrap distribution of 12.797 this gives<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-BootTechnologyMean-18">
+<div class="displaymath process-math" id="subsec-BootTechnologyMean-18-1">
+\begin{equation*}
+\text {mean} \pm 2 \bullet SE 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-BootTechnologyMean-19">
+<div class="displaymath process-math" id="subsec-BootTechnologyMean-19-1">
+\begin{equation*}
+94.2 \pm 2 (12.797) 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-BootTechnologyMean-20">
+<div class="displaymath process-math" id="subsec-BootTechnologyMean-20-1">
+\begin{equation*}
+94.2 \pm 25.594 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-BootTechnologyMean-21">
+<div class="displaymath process-math" id="subsec-BootTechnologyMean-21-1">
+\begin{equation*}
+(68.606, 119.794) 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-22">We can be 95% confidence that the mean combined MPGe for electric vehicles in 2023 is between 68.6 and 119.8 miles.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-23">If we click on <code class="code-inline tex2jax_ignore">Two Tail </code> we can select .95 to create a 95% confidence interval of our predicted mean value for the population using our bootstrap distribution. We can be 95% confident that the mean combined MPGe for all electric vehicles in 2023 is between 67.2 and 117.0 miles.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapCIMPGe1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot4.png" class="contained" alt="Middle 95% of dots between 67.2 and 117 MPGe."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.7"><a href="#BootstrapCIMPGe1" title="Copy heading and permalink for Figure 5.2.7" aria-label="Copy heading and permalink for Figure 5.2.7">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyMean-25">If we change the middle percentage to .90 to represent the middle 90% of the values in the distribution, our interval is now from 71.6 to 113.14 MPGe for the electric vehicles in 2023.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapCIMPGe2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Boot5.png" class="contained" alt="Middle 90% of dots between 71.6 and 113.14 MPGe."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Interval for MPGe<div class="autopermalink" data-description="Figure 5.2.8"><a href="#BootstrapCIMPGe2" title="Copy heading and permalink for Figure 5.2.8" aria-label="Copy heading and permalink for Figure 5.2.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyMean-27">
+<dfn class="terminology">Exploration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyMean-28">Now it’s time for you to explore what impacts the intervals in the bootstrap distribution. You can continue working with the MPGe or you can choose one of the built-in data sets.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-29"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-29-1-1">Choose a specific confidence level (such as 95%), as you generate more samples, what happens to the interval? You will need to keep changing the middle percentage to .95 or your designed level each time you re-evaluate the interval<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-29-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.9"><a href="#subsec-BootTechnologyMean-29" title="Copy heading and permalink for Checkpoint 5.2.9" aria-label="Copy heading and permalink for Checkpoint 5.2.9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-30"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-30-1-1">Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 50% to 70% to 90% of the values in the middle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-30-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.10"><a href="#subsec-BootTechnologyMean-30" title="Copy heading and permalink for Checkpoint 5.2.10" aria-label="Copy heading and permalink for Checkpoint 5.2.10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-31"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-31-1-1">Generate a bootstrap distribution. Keep the number of samples the same. Compare what happens to the interval when you go from 95% to 85% to 75% of the values in the middle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-31-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.11"><a href="#subsec-BootTechnologyMean-31" title="Copy heading and permalink for Checkpoint 5.2.11" aria-label="Copy heading and permalink for Checkpoint 5.2.11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-BootTechnologyMean-32"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-BootTechnologyMean-32-1-1">What happens to the standard error as you increase the number of samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyMean-32-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.2.12"><a href="#subsec-BootTechnologyMean-32" title="Copy heading and permalink for Checkpoint 5.2.12" aria-label="Copy heading and permalink for Checkpoint 5.2.12">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.2.2: Using Technology: Mean"><a href="#subsec-BootTechnologyMean" title="Copy heading and permalink for Subsection 5.2.2: Using Technology: Mean" aria-label="Copy heading and permalink for Subsection 5.2.2: Using Technology: Mean">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-BootstrapProportions">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bootstrap Distributions for Proportions</span>
+</h3>
+<div class="para" id="subsec-BootstrapProportions-2">Suppose you want to find what proportion of Skittles  are grape flavored in a typical bag. So you enlist the help of your friends. You and each of your friends buy a bag of Skittles and count how many are grape out of the total number in the bag. Each person calculates the proportion that are grape and plots them on a graph to create a distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapProportions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootstrapProportions-3">Since each person has their own bag of candy, each sample is independent of the others and taken from the population of all Skittles candy. We will assume each bag has the same number of candies. Below is a bootstrap distribution from 2.17 ounce bags of Skittles candy for the proportion that is grape.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapProportions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle1.png" class="contained" alt="proportions between 12.5% and 25% grape ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap For 10 Bags<div class="autopermalink" data-description="Figure 5.2.13"><a href="#BootstrapSkittle1" title="Copy heading and permalink for Figure 5.2.13" aria-label="Copy heading and permalink for Figure 5.2.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootstrapProportions-5">This distribution of ten bags is centered at 16.6% for the proportion of grape Skittles, with values ranging from 12.5% to 25%.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapProportions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle2.png" class="contained" alt="proportions between 8% and 32% grape with higher frequencies at the center near 0.183."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap For 250 Bags<div class="autopermalink" data-description="Figure 5.2.14"><a href="#BootstrapSkittle2" title="Copy heading and permalink for Figure 5.2.14" aria-label="Copy heading and permalink for Figure 5.2.14">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootstrapProportions-7">This simulated distribution is for 250 bags of Skittles. The proportion of grapes is centered at 0.183 with standard error of 0.048. With 250 samples, the bootstrap distribution is symmetric and bell shaped. Based on this distribution, we would predict that the proportion of grape Skittles is around 18.3%.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootstrapProportions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.2.3: Bootstrap Distributions for Proportions"><a href="#subsec-BootstrapProportions" title="Copy heading and permalink for Subsection 5.2.3: Bootstrap Distributions for Proportions" aria-label="Copy heading and permalink for Subsection 5.2.3: Bootstrap Distributions for Proportions">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-BootTechnologyProp">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology: Proportions</span>
+</h3>
+<div class="para" id="subsec-BootTechnologyProp-2">Using StatKey to construct bootstrap distributions from a single proportion.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-BootTechnologyProp-3">Launch <dfn class="terminology">StatKey</dfn>, and from the center column under <dfn class="terminology">Bootstrap Confidence Intervals</dfn>, select the second option <dfn class="terminology">CI for Single Proportion</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle3.png" class="contained" alt="select the second option under Bootstrap Confidence Intervals ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Menu<div class="autopermalink" data-description="Figure 5.2.15"><a href="#BootstrapSkittle3" title="Copy heading and permalink for Figure 5.2.15" aria-label="Copy heading and permalink for Figure 5.2.15">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyProp-5">Click on <code class="code-inline tex2jax_ignore">Edit Data</code> and enter the count of 12 grape from a sample size of 65 candies and then click <code class="code-inline tex2jax_ignore">OK</code><div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle4.png" class="contained" alt="use the second table for Edit Data and enter the count 12 and sample size 65. Then click ok ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Edit Proportion<div class="autopermalink" data-description="Figure 5.2.16"><a href="#BootstrapSkittle4" title="Copy heading and permalink for Figure 5.2.16" aria-label="Copy heading and permalink for Figure 5.2.16">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyProp-7">Click on <code class="code-inline tex2jax_ignore"> Generate 1 Sample</code>. On the right side of the screen, it will identify how many grape in a sample of 65 candies and plots the proportion on the graph. This simulates the proportion of grape flavored candies for each bag of 65 candies. Each new sample simulates the proportion from one of your friends.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle5.png" class="contained" alt="one sample of 65 Skittles has 17 grapes and plots proportion 0.262 on the graph ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Generate Bootstrap Sample<div class="autopermalink" data-description="Figure 5.2.17"><a href="#BootstrapSkittle5" title="Copy heading and permalink for Figure 5.2.17" aria-label="Copy heading and permalink for Figure 5.2.17">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyProp-9">Continue generating samples until you have a bell-shaped distribution. You may need 500 samples. The image below shows how the values are centered at 0.184 with values ranging from 4/65=0.062 to 23/65=0.354. If you click on a dot, the Bootstrap Sample count and proportion will show on the right. The mean proportion is 0.184 with the standard error of 0.047.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle6.png" class="contained" alt="500 dots representing the proportion of grapes for each bag ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Generate Bootstrap Distribution<div class="autopermalink" data-description="Figure 5.2.18"><a href="#BootstrapSkittle6" title="Copy heading and permalink for Figure 5.2.18" aria-label="Copy heading and permalink for Figure 5.2.18">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-BootTechnologyProp-11">If you click on <code class="code-inline tex2jax_ignore">Two-Tail</code> it constructs the 95% confidence interval. Reading the values along the bottom of the screen we are predict the true proportion of grape Skittles is between 10.8% and 27.7% based on this simulated bootstrap distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-BootTechnologyProp-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="BootstrapSkittle7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/BootSkittle7.png" class="contained" alt="Distribution removes 2.5% of dots off each end focusing on the center proportions between 0.108 and 0.277 ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bootstrap Confidence Interval<div class="autopermalink" data-description="Figure 5.2.19"><a href="#BootstrapSkittle7" title="Copy heading and permalink for Figure 5.2.19" aria-label="Copy heading and permalink for Figure 5.2.19">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Subsection 5.2.4: Using Technology: Proportions"><a href="#subsec-BootTechnologyProp" title="Copy heading and permalink for Subsection 5.2.4: Using Technology: Proportions" aria-label="Copy heading and permalink for Subsection 5.2.4: Using Technology: Proportions">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-BootstrapPractice">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="matching2"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Distribution Matching Problem.</span>
+</h4>
 <div class="ptx-runestone-container"><div class="runestone cardsort_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="rs-matching2">
-<span data-subcomponent="question"><div class="para" id="matching2-2-1">Match the type of distribution with the appropriate description.</div></span><li data-subcomponent="draggable" id="rs-matching2_drag1" data-category="1">sampling distribution</li>
+<span data-subcomponent="question">
+<div class="para" id="matching2-2-1">Match the type of distribution with the appropriate description.<div class="autopermalink" data-description="Paragraph"><a href="#matching2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><li data-subcomponent="draggable" id="rs-matching2_drag1" data-category="1">sampling distribution</li>
 <li data-subcomponent="dropzone" for="rs-matching2_drag1" data-category="1">Distribution of statistics computed for different samples of the same size taken from the population, centered at the parameter</li>
 <li data-subcomponent="draggable" id="rs-matching2_drag2" data-category="2">bootstrap distribution</li>
 <li data-subcomponent="dropzone" for="rs-matching2_drag2" data-category="2">Distribution of bootstrap statistics taken with replacement from one original sample centered at the original sample statistic</li>
 <li data-subcomponent="draggable" id="rs-matching2_drag3" data-category="3">randomization distribution</li>
 <li data-subcomponent="dropzone" for="rs-matching2_drag3" data-category="3">Distribution of random statistics we would observe just by random chance assuming Ho is true, center around Ho value</li>
-</ul></div></div></article></section></div>
+</ul></div></div>
+<div class="autopermalink" data-description="Checkpoint 5.2.20: Distribution Matching Problem"><a href="#matching2" title="Copy heading and permalink for Checkpoint 5.2.20: Distribution Matching Problem" aria-label="Copy heading and permalink for Checkpoint 5.2.20: Distribution Matching Problem">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.2.5: Practice Problems"><a href="#subsec-BootstrapPractice" title="Copy heading and permalink for Subsection 5.2.5: Practice Problems" aria-label="Copy heading and permalink for Subsection 5.2.5: Practice Problems">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 5.2: Creating Bootstrap Distributions"><a href="#sec-bootdist" title="Copy heading and permalink for Section 5.2: Creating Bootstrap Distributions" aria-label="Copy heading and permalink for Section 5.2: Creating Bootstrap Distributions">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-sampdist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-randdist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

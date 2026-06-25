@@ -19,68 +19,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Introduction to Statistical Analysis">
-<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '8.1.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -119,16 +74,15 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
 <p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
-</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ChapterBootstrap.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterBootstrap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-bootdist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
@@ -163,7 +117,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
 </ul>
 </li>
@@ -180,15 +144,45 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
@@ -209,9 +203,312 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-sampdist"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.1</span><span class="space"> </span><span class="title">Creating Sampling Distributions</span>
-</h2></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-sampdist">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Creating Sampling Distributions</span>
+</h2>
+<section class="introduction" id="sec-sampdist-2">
+<div class="para" id="sec-sampdist-2-1">Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know everything about the population.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-sampdist-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-sampdist-3-1">
+<div class="para" id="sec-sampdist-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec-sampdist-3-2">
+<li id="sec-sampdist-3-2-1">
+<div class="para" id="sec-sampdist-3-2-1-1">Construct and interpret a sampling distribution for the mean.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.1.1"><a href="#sec-sampdist-3-2-1" title="Copy heading and permalink for Objective 5.1.1" aria-label="Copy heading and permalink for Objective 5.1.1">🔗</a></div>
+</li>
+<li id="sec-sampdist-3-2-2">
+<div class="para" id="sec-sampdist-3-2-2-1">Construct and interpret a sampling distribution for proportions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 5.1.2"><a href="#sec-sampdist-3-2-2" title="Copy heading and permalink for Objective 5.1.2" aria-label="Copy heading and permalink for Objective 5.1.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 5.1"><a href="#sec-sampdist-3" title="Copy heading and permalink for Objectives 5.1" aria-label="Copy heading and permalink for Objectives 5.1">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-DistReview">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Quick Review</span>
+</h3>
+<div class="para" id="subsec-DistReview-2">The rest of the semester we will focus on statistical inference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-statisticalinference"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-statisticalinference-1-1">
+<dfn class="terminology">Statistical inference</dfn> is a process of drawing conclusions about the population based on the information from a sample.<div class="autopermalink" data-description="Paragraph"><a href="#def-statisticalinference-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 5.1.1"><a href="#def-statisticalinference" title="Copy heading and permalink for Definition 5.1.1" aria-label="Copy heading and permalink for Definition 5.1.1">🔗</a></div>
+</article>
+<div class="para" id="subsec-DistReview-4">First let us review some vocabulary and notations. When we refer to a <em class="emphasis">parameter</em>, we are referring to a number that describes some aspects of the population,  such as the mean, standard deviation, and proportions. While a <em class="emphasis">statistics</em> is a number that describes that same aspect about the sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistReview-5">Here is a summary of the notations we will be using the rest of the semester.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-DistReview-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Statistical Symbols<div class="autopermalink" data-description="Table 5.1.2: Statistical Symbols"><a href="#subsec-DistReview-6" title="Copy heading and permalink for Table 5.1.2: Statistical Symbols" aria-label="Copy heading and permalink for Table 5.1.2: Statistical Symbols">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r2 l0 t2 lines"></td>
+<td class="l m b2 r2 l0 t2 lines">Statistics</td>
+<td class="l m b2 r2 l0 t2 lines">Parameter</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">Mean</td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\bar x \)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\mu \)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">Standard deviation</td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(s\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\sigma \)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l0 t0 lines">Proportion</td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\hat p\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(p \)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-DistReview-7">When we want to describe an aspect of the population, we use the sample statistic as our best estimate of the parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistReview-8">As we have seen from class data, it can vary from semester to semester depending on the class makeup. So if we want to predict the parameter from the sample statistic, we need to know how much it may vary from sample to sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.1.1: A Quick Review"><a href="#subsec-DistReview" title="Copy heading and permalink for Subsection 5.1.1: A Quick Review" aria-label="Copy heading and permalink for Subsection 5.1.1: A Quick Review">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-SamplingMeans">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sampling Distributions for Means</span>
+</h3>
+<div class="para" id="subsec-SamplingMeans-2">Recall from the first week of class how we estimated the average word length of Gettysburg Address? Each person collected a sample of 10 words and found the average number of letters per word. Now, we are going to look at the distribution of this data. We are plotting each person’s average value on a dot plot so see how much variation we have within the samples. If we have more samples, we can get a better estimate of what the population value is likely to be.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-3">Below is a sampling distribution of the average word length from ten circle words from a class of 34 students, thus 34 dots in the distribution with average values ranging from 3.0 to 9.4.  The distribution is bimodal for 5.5 and 6.0. We can see the variation in the average values from the sample of ten words.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="GettysCircled"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/GettyF24dot.png" class="contained" alt="Shows average word length prediction for 34 students clustered between 5 and 6."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Dotplot of Average Word Length from Gettysburg Address<div class="autopermalink" data-description="Figure 5.1.3"><a href="#GettysCircled" title="Copy heading and permalink for Figure 5.1.3" aria-label="Copy heading and permalink for Figure 5.1.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SamplingMeans-5">The histogram of the same data for 34 students is a bit more bell shaped when grouped into intervals with most values landing between 5 and 8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="GettysCircledBar"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/GettyF24bar.png" class="contained" alt="Shows average word length prediction for 34 students clustered between 5 and 8 ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Histogram of Average Word Length from Gettysburg Address<div class="autopermalink" data-description="Figure 5.1.4"><a href="#GettysCircledBar" title="Copy heading and permalink for Figure 5.1.4" aria-label="Copy heading and permalink for Figure 5.1.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SamplingMeans-7">Below is a sampling distribution of the average word length from the ten random words selected from Gettysburg Address in a class of 34 students. This distribution has average values ranging from 3.0 to 6.3.  The distribution is multimodal for 4.0 and 4.4 and 5.0 with a smaller range of values. The random sample is a better predictor of the actual mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="GettysRandom"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/GettyRandF24dot.png" class="contained" alt="Shows average word length prediction for 34 students clustered between 4 and 5."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Dotplot of Average Random Word Length from Gettysburg Address<div class="autopermalink" data-description="Figure 5.1.5"><a href="#GettysRandom" title="Copy heading and permalink for Figure 5.1.5" aria-label="Copy heading and permalink for Figure 5.1.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SamplingMeans-9">The histogram is more bell shaped centered between 4.0 to 4.7, which is a better predictor of the true population mean for the average word length of Gettysburg Address.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-10">What do you think will happen if we have a larger number of students finding the average word length? Would the distribution be more uniform or more bell-shaped? Would our prediction be better or worse? Think about it for a minute or two and then we will continue our investigation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-11">Below is a sampling distribution of the average word length from ten random words from Gettysburg Address using several classes. The total number of students is 267, thus 267 dots in the distribution. The values range from 2.0 to 6.6 with a mean of 4.47 and median 4.4 letters per word.  The mode is 4.0 letters per word. This distribution is more bell shaped centered around 4.4 letters per word. Having more student samples helps us make a better prediction of what we think the population mean is.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="GettysRanDist"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Getty267dot.png" class="contained" alt="Shows average word length prediction for 267 students clustered between 4 and 5."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Dotplot of Average Word Length from 267 Samples<div class="autopermalink" data-description="Figure 5.1.6"><a href="#GettysRanDist" title="Copy heading and permalink for Figure 5.1.6" aria-label="Copy heading and permalink for Figure 5.1.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SamplingMeans-13">With a larger sample of 267 students the distribution is more bell shaped and clustered around the parameter in the center. Here we would predict the population mean to be around 4.4 to 4.5 letters per word.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-14">Here is a case where we can compare our prediction to the actual population parameter to see how close our estimate is. The actual average is 4.29 letters per word in Gettysburg Address.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-15">
+<dfn class="terminology">Understanding the Basics</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-16">The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-SamplingDistribution"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-SamplingDistribution-1-1">A <dfn class="terminology">sampling distribution</dfn> is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.<div class="autopermalink" data-description="Paragraph"><a href="#def-SamplingDistribution-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 5.1.7"><a href="#def-SamplingDistribution" title="Copy heading and permalink for Definition 5.1.7" aria-label="Copy heading and permalink for Definition 5.1.7">🔗</a></div>
+</article>
+<div class="para" id="subsec-SamplingMeans-18">Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-19">We use the <dfn class="terminology">standard error</dfn>  to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingMeans-20">Let us investigate how the sampling distribution will change if we alter how big each sample of words is for each student. But this time, we will use technology to help simulate this process so we can have larger samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.1.2: Sampling Distributions for Means"><a href="#subsec-SamplingMeans" title="Copy heading and permalink for Subsection 5.1.2: Sampling Distributions for Means" aria-label="Copy heading and permalink for Subsection 5.1.2: Sampling Distributions for Means">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-DistTechnologyMean">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology: Mean</span>
+</h3>
+<div class="para" id="subsec-DistTechnologyMean-2">Since it is often difficult to create a sampling distribution, such as having 1000 students gather a sample of 10 words to predict the average, we can use technology to simulate a sampling distribution. We are going to upload the Gettysburg Address into StatKey and choose a variety of sample sizes to see how close we can get to predicting the actual average number of letters per word.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-3">Open <dfn class="terminology">StatKey</dfn> and in the middle of the page we want <code class="code-inline tex2jax_ignore">Sampling Distribution</code> and click on <code class="code-inline tex2jax_ignore">Mean</code>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingMenu"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeySamplingMenu.png" class="contained" alt="Mean is the first option under Sampling Distribution."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Sampling Distribution Menu<div class="autopermalink" data-description="Figure 5.1.8"><a href="#StatkeySamplingMenu" title="Copy heading and permalink for Figure 5.1.8" aria-label="Copy heading and permalink for Figure 5.1.8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-5">Click on <code class="code-inline tex2jax_ignore">Upload File</code> and locate where the data file is saved on your computer and select the variable <em class="emphasis">Actual Words</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingMeanMenu"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeySamplingMeanMenu.png" class="contained" alt="The first option is preloaded data, second to show data, third is to edit data, fourth is the sample size of 10 words, the fifth option is Upload File, and the sixth is to Change Columns."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Sampling Distribution for Mean Menu<div class="autopermalink" data-description="Figure 5.1.9"><a href="#StatkeySamplingMeanMenu" title="Copy heading and permalink for Figure 5.1.9" aria-label="Copy heading and permalink for Figure 5.1.9">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-7">The default is choosing a sample of size n=10.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-8">Once the data is uploaded you will see a similar image to this one.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySampling1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Sampling1.png" class="contained" alt="Screen has three parts, original data in top right, once sample bottom right, and main screen for the future distribution."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey for one sample<div class="autopermalink" data-description="Figure 5.1.10"><a href="#StatkeySampling1" title="Copy heading and permalink for Figure 5.1.10" aria-label="Copy heading and permalink for Figure 5.1.10">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-10">
+<em class="emphasis">Interpreting StatKey:</em> The top right graph shows the original data with 268 words with an average of 4.287. We can see the original data is right skewed. If we click on the <code class="code-inline tex2jax_ignore"> Generate 1 Sample </code> button we see the number of letters for each of the 10 randomly selected words from the population in the dot plot on the bottom right side. This sample has a mean of 4.2 and this mean value is graphed in the main graphic as a single dot. We can generate another sample of ten words by clicking <code class="code-inline tex2jax_ignore"> Generate 1 Sample </code>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySampling2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Sampling2.png" class="contained" alt="image of second sample of ten words."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey for two samples<div class="autopermalink" data-description="Figure 5.1.11"><a href="#StatkeySampling2" title="Copy heading and permalink for Figure 5.1.11" aria-label="Copy heading and permalink for Figure 5.1.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-12">This new sample of 10 random words has a mean of 4.6 and is also plotted on the main graph. The average of the two sample means is 4.4.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-13">Our goal is to see what the typical values are when we have more samples. Now let’s generate 100 samples to represent 100 students completing this task. (Note: when you complete this on your own, your values may be slightly different but once the number of samples is larger enough the distribution will be similar.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySampling3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Sampling3.png" class="contained" alt="100 samples of ten words."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey with 100 sample means<div class="autopermalink" data-description="Figure 5.1.12"><a href="#StatkeySampling3" title="Copy heading and permalink for Figure 5.1.12" aria-label="Copy heading and permalink for Figure 5.1.12">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-15">Now we have 100 students represented by the 100 dots, and the mean of these average values is 4.377 which is at the center of the distribution. This distribution is still slightly right skewed.  So let us add more samples to the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySampling4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Sampling4.png" class="contained" alt="1002 samples of ten words."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey with 100 sample means<div class="autopermalink" data-description="Figure 5.1.13"><a href="#StatkeySampling4" title="Copy heading and permalink for Figure 5.1.13" aria-label="Copy heading and permalink for Figure 5.1.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyMean-17">We can see we have a bell-shaped distribution that is symmetric and centered at mean 4.268 which is close to the know population parameter of 4.287. We now have 1002 total samples of ten words, and the standard error is 0.653 to describe how much variation we have between the samples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-18">We can see that most average values for the ten words is between 3.5 and 5.0 from the distribution, which relates to the mean of the distribution plus/minus the standard error, thus <span class="process-math">\(4.268 +/- 0.653 \)</span> which gives 3.615 to 4.921 as the typical values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-19">Using the 95% rule from earlier in the semester we have the mean plus/minus two times time standard error (which is the standard deviation of the sampling distribution) the mean <span class="process-math">\(4.268 +/- 2(0.653)\)</span> gives 2.962 to 5.574 which relates to where most of the values occur.  So the center of our sampling distribution (mean 4.268) is a good estimate for the population parameter (4.287).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-20">
+<dfn class="terminology">Exploration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyMean-21">Now it is your turn to explore sampling distributions using StatKey. You can continue using the Gettysburg Address or choose one of the pre-loaded data sets in StatKey. As you explore sampling distributions, answer the following questions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-DistTechnologyMean-22"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyMean-22-1-1">What happens to the shape of the sampling distribution when more samples are included?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.14"><a href="#subsec-DistTechnologyMean-22" title="Copy heading and permalink for Checkpoint 5.1.14" aria-label="Copy heading and permalink for Checkpoint 5.1.14">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyMean-23"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyMean-23-1-1">What happens to the shape of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.15"><a href="#subsec-DistTechnologyMean-23" title="Copy heading and permalink for Checkpoint 5.1.15" aria-label="Copy heading and permalink for Checkpoint 5.1.15">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyMean-24"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyMean-24-1-1">What happens to the center of the sampling distribution when more samples are included?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.16"><a href="#subsec-DistTechnologyMean-24" title="Copy heading and permalink for Checkpoint 5.1.16" aria-label="Copy heading and permalink for Checkpoint 5.1.16">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyMean-25"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyMean-25-1-1">What happens to the center of the sampling distribution when each sample size is larger? Say 25 or 50 words in each sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.17"><a href="#subsec-DistTechnologyMean-25" title="Copy heading and permalink for Checkpoint 5.1.17" aria-label="Copy heading and permalink for Checkpoint 5.1.17">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyMean-26"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyMean-26-1-1">What happens to the standard error of the sampling distribution when each sample size is larger?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-26-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.18"><a href="#subsec-DistTechnologyMean-26" title="Copy heading and permalink for Checkpoint 5.1.18" aria-label="Copy heading and permalink for Checkpoint 5.1.18">🔗</a></div>
+</article>
+<details id="subsec-DistTechnologyMean-27" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-DistTechnologyMean-27-1-1">Let’s change this to sample size of n=25 so we can see how it compares to previous sampling distributions. Click on <code class="code-inline tex2jax_ignore"> Reset Plot</code> and change the <dfn class="terminology">choose samples of size n =</dfn> <code class="code-inline tex2jax_ignore"> 25 </code>. Then generate 1000 samples. This will represent each student randomly selecting 25 words to find the average number of letters per word. The sampling of 1000 dots represents the 1000 students completing this task.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="StatkeySampling5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Sampling5.png" class="contained" alt="Bell shaped with most values ranging from 3.5 to 5.3."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey with 1000 samples of 25 words<div class="autopermalink" data-description="Figure 5.1.20"><a href="#StatkeySampling5" title="Copy heading and permalink for Figure 5.1.20" aria-label="Copy heading and permalink for Figure 5.1.20">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="subsec-DistTechnologyMean-27-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-DistTechnologyMean-27-2-1">This sampling distribution has a mean of 4.291 with a standard error of 0.402. The amount of variation is smaller when each sample is larger. With more samples (dots) the center is closer to the population parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyMean-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.1.19.1"><a href="#subsec-DistTechnologyMean-27-2" title="Copy heading and permalink for Solution 5.1.19.1" aria-label="Copy heading and permalink for Solution 5.1.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.1.19"><a href="#subsec-DistTechnologyMean-27" title="Copy heading and permalink for Example 5.1.19" aria-label="Copy heading and permalink for Example 5.1.19">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 5.1.3: Using Technology: Mean"><a href="#subsec-DistTechnologyMean" title="Copy heading and permalink for Subsection 5.1.3: Using Technology: Mean" aria-label="Copy heading and permalink for Subsection 5.1.3: Using Technology: Mean">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-SamplingProportions">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sampling Distributions for Proportions</span>
+</h3>
+<div class="para" id="subsec-SamplingProportions-2">Recall at the beginning of our probability unit, where each person tossed a coin 25 times and kept track of the number of heads and tails. If we find the proportion of heads for each person, then plot those values on a dotplot, we can create a sampling distribution for proportions.  Where do you think the center of the distribution will be?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingProportions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SamplingProportions-3">The dotplot below shows the proportion of heads for each of 62 students for 25 coin tosses. Students had between 32% and 68% heads with the mean at 51.5% and median 52%. This sampling distribution appears to be left skewed. What do you think will happen if we combine more student data?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingProportions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeyCoinToss"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/CoinToss1.png" class="contained" alt="slightly left skewed centered at 52%."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Proportion of heads in 25 coin tosses<div class="autopermalink" data-description="Figure 5.1.21"><a href="#StatkeyCoinToss" title="Copy heading and permalink for Figure 5.1.21" aria-label="Copy heading and permalink for Figure 5.1.21">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SamplingProportions-5">This sampling distribution of 250 students for 25 coin tosses is more bell shaped and centered closer to the theoretical population parameter of 50% heads. Proportions ranged form 28% to 76% heads.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingProportions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeyCoinToss2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/CoinToss2.png" class="contained" alt="bell shape centered at 50% heads."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Proportion of heads in 25 coin tosses for 200 students<div class="autopermalink" data-description="Figure 5.1.22"><a href="#StatkeyCoinToss2" title="Copy heading and permalink for Figure 5.1.22" aria-label="Copy heading and permalink for Figure 5.1.22">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Subsection 5.1.4: Sampling Distributions for Proportions"><a href="#subsec-SamplingProportions" title="Copy heading and permalink for Subsection 5.1.4: Sampling Distributions for Proportions" aria-label="Copy heading and permalink for Subsection 5.1.4: Sampling Distributions for Proportions">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-DistTechnologyProp">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology: Proportions</span>
+</h3>
+<div class="para" id="subsec-DistTechnologyProp-2">Since it is often difficult to create large sampling distribution, such as having 1000 students toss 25 coins to find the proportion of heads, StatKey can do the work for us. Technology allows us to simulate the coin tosses by choosing a variety of sample sizes to see how close we can get to predicting the actual proportion.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyProp-3">Open <dfn class="terminology">StatKey</dfn> and in the middle of the page we want <code class="code-inline tex2jax_ignore">Sampling Distribution</code> and click on <code class="code-inline tex2jax_ignore">Proportions</code>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingProportion1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/StatkeySampProp1.png" class="contained" alt="Proportion is the second option under Sampling Distribution."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Sampling Distribution Menu<div class="autopermalink" data-description="Figure 5.1.23"><a href="#StatkeySamplingProportion1" title="Copy heading and permalink for Figure 5.1.23" aria-label="Copy heading and permalink for Figure 5.1.23">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyProp-5">Under the <code class="code-inline tex2jax_ignore"> Edit Proportion</code> button change the proportion to .50 and click <code class="code-inline tex2jax_ignore"> OK </code> and change the <em class="emphasis">Choose sample size of n =</em> <code class="code-inline tex2jax_ignore"> 50 </code> to represent 50 coin tosses in each sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingProportionMenu"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SampProp1.png" class="contained" alt="second option allows you to edit the proportion and the fourth allows you to change the sample size."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey Sampling Proportion Menu<div class="autopermalink" data-description="Figure 5.1.24"><a href="#StatkeySamplingProportionMenu" title="Copy heading and permalink for Figure 5.1.24" aria-label="Copy heading and permalink for Figure 5.1.24">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyProp-7">If you click on the <code class="code-inline tex2jax_ignore"> Generate 1 Sample </code> button then in the bottom right screen identifies how many heads in the sample of 50 coin tosses. This sample had 22 heads thus the proportion is 0.440 which is plotted on the distribution graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingProportion2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SampProp2.png" class="contained" alt="count of 22 heads from 50 coin tosses."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>One Sampling Proportion<div class="autopermalink" data-description="Figure 5.1.25"><a href="#StatkeySamplingProportion2" title="Copy heading and permalink for Figure 5.1.25" aria-label="Copy heading and permalink for Figure 5.1.25">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyProp-9">You can keep generating one sample at a time or you can jump to the <code class="code-inline tex2jax_ignore"> Generate 100 Samples </code> to generate 200 samples of 50-coin tosses.  We can see the distribution is approximately bell shaped and centered at 49%. The proportions range from 0.32 to 0.66 heads from the image below. Your distribution should look similar where the parameter is centered around 50% heads.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="StatkeySamplingProportion3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/SampProp3.png" class="contained" alt="proportion of heads from 200 students  tossing 50 coins."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sampling Distribution of 200 Proportions<div class="autopermalink" data-description="Figure 5.1.26"><a href="#StatkeySamplingProportion3" title="Copy heading and permalink for Figure 5.1.26" aria-label="Copy heading and permalink for Figure 5.1.26">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-DistTechnologyProp-11">
+<dfn class="terminology">Exploration</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-DistTechnologyProp-12">Now it is your turn to explore sampling distributions using StatKey for proportions. You can continue using the coin tosses or choose one of the pre-loaded data sets in StatKey.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="subsec-DistTechnologyProp-13"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyProp-13-1-1">What happens to the shape of the sampling distribution when more samples are included?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.27"><a href="#subsec-DistTechnologyProp-13" title="Copy heading and permalink for Checkpoint 5.1.27" aria-label="Copy heading and permalink for Checkpoint 5.1.27">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyProp-14"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyProp-14-1-1">What happens to the shape and spread of the sampling distribution when each sample size is larger? Say 100 coin tosses per sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.28"><a href="#subsec-DistTechnologyProp-14" title="Copy heading and permalink for Checkpoint 5.1.28" aria-label="Copy heading and permalink for Checkpoint 5.1.28">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-DistTechnologyProp-15"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-DistTechnologyProp-15-1-1">What happens to the standard error when each sample size increases? Explore with multiple sample sizes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistTechnologyProp-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 5.1.29"><a href="#subsec-DistTechnologyProp-15" title="Copy heading and permalink for Checkpoint 5.1.29" aria-label="Copy heading and permalink for Checkpoint 5.1.29">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 5.1.5: Using Technology: Proportions"><a href="#subsec-DistTechnologyProp" title="Copy heading and permalink for Subsection 5.1.5: Using Technology: Proportions" aria-label="Copy heading and permalink for Subsection 5.1.5: Using Technology: Proportions">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 5.1: Creating Sampling Distributions"><a href="#sec-sampdist" title="Copy heading and permalink for Section 5.1: Creating Sampling Distributions" aria-label="Copy heading and permalink for Section 5.1: Creating Sampling Distributions">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ChapterBootstrap.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-bootdist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -19,68 +19,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Introduction to Statistical Analysis">
-<meta property="book:author" content="Nancy Geisendorfer, Kristin Kang, Robert Powers ">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,16 +57,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.1';
+eBookConfig.runestone_version = '8.1.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -119,16 +74,15 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
 <p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
-</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ProbRules.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterProb.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ChapterBootstrap.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
@@ -163,7 +117,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
 </ul>
 </li>
@@ -180,15 +144,45 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
@@ -209,18 +203,282 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="ProbDist"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Probability Distribution</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ProbDist">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Distribution</span>
 </h2>
-<article class="objectives goal-like" id="ProbDist-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<div class="introduction" id="ProbDist-2-1">
-<div class="para" id="ProbDist-2-1-1">At the end of this section you will able to:</div>
-<ol class="decimal" id="ProbDist-2-1-2">
-<li id="ProbDist-2-1-2-1"><div class="para" id="ProbDist-2-1-2-1-1">Determine the .</div></li>
-<li id="ProbDist-2-1-2-2"><div class="para" id="ProbDist-2-1-2-2-1">Calcuate the probabilty from a probability distribution</div></li>
-<li id="ProbDist-2-1-2-3"><div class="para" id="ProbDist-2-1-2-3-1">Calculate the mean and standard deviaton for probabilty distributions</div></li>
+<div class="para" id="ProbDist-2-1">In this section we will learn how to create a probability distribution, find the mean and standard deviation for a probability distribution, and use technology to find these statistics.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="objectives goal-like" id="ProbDist-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="ProbDist-3-1">
+<div class="para" id="ProbDist-3-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="ProbDist-3-2">
+<li id="ProbDist-3-2-1">
+<div class="para" id="ProbDist-3-2-1-1">Create a probability distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 4.3.1"><a href="#ProbDist-3-2-1" title="Copy heading and permalink for Objective 4.3.1" aria-label="Copy heading and permalink for Objective 4.3.1">🔗</a></div>
+</li>
+<li id="ProbDist-3-2-2">
+<div class="para" id="ProbDist-3-2-2-1">Calcuate the probabilty from a probability distribution.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 4.3.2"><a href="#ProbDist-3-2-2" title="Copy heading and permalink for Objective 4.3.2" aria-label="Copy heading and permalink for Objective 4.3.2">🔗</a></div>
+</li>
+<li id="ProbDist-3-2-3">
+<div class="para" id="ProbDist-3-2-3-1">Calculate the mean and standard deviaton for probabilty distributions.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 4.3.3"><a href="#ProbDist-3-2-3" title="Copy heading and permalink for Objective 4.3.3" aria-label="Copy heading and permalink for Objective 4.3.3">🔗</a></div>
+</li>
 </ol>
-</div></article></section></div>
+<div class="autopermalink" data-description="Objectives 4.3"><a href="#ProbDist-3" title="Copy heading and permalink for Objectives 4.3" aria-label="Copy heading and permalink for Objectives 4.3">🔗</a></div>
+</article>
+<div class="para" id="ProbDist-4">Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ProbDist-5">We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ProbDist-6">
+<dfn class="terminology">Pre-Class Activity: Dice Data</dfn><div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ProbDist-7">Each person will roll a die 50 times and keep track of the number that lands face up each time. It’s handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ProbDist-8">Online Dice: <a class="external" href="https://www.virtualdiceroll.com/5/en/five-dice" target="_blank">Virtual Dice</a><div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ProbDist-9">Below is my data for 50 dice rolls.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DiceDataTable"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/DiceDataSampleTable.png" class="contained" alt="lists dice number and probabilities."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample of dice data table<div class="autopermalink" data-description="Figure 4.3.1"><a href="#DiceDataTable" title="Copy heading and permalink for Figure 4.3.1" aria-label="Copy heading and permalink for Figure 4.3.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ProbDist-11">Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in <span class="process-math">\(L_1 \)</span> and the frequency in <span class="process-math">\(L_2\)</span> . Use the [STAT]  button and select option 1: Edit [enter] to enter the data.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DiceDataInput"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/DiceData1.png" class="contained" alt="Entering dice data into calculator."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Entering dice data into calculator<div class="autopermalink" data-description="Figure 4.3.2"><a href="#DiceDataInput" title="Copy heading and permalink for Figure 4.3.2" aria-label="Copy heading and permalink for Figure 4.3.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ProbDist-13">Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure <code class="code-inline tex2jax_ignore">ON </code> is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: <span class="process-math">\(L_1 \)</span> and Freq: <span class="process-math">\(L_2\text{.}\)</span>  Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.)<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DiceDataGraph"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/DiceData2.png" class="contained" alt="Histogram of dice frequencies is approximately uniform."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph of dice frequencies<div class="autopermalink" data-description="Figure 4.3.3"><a href="#DiceDataGraph" title="Copy heading and permalink for Figure 4.3.3" aria-label="Copy heading and permalink for Figure 4.3.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ProbDist-15">How would you describe the shape of your distribution? What does that tell you about the probability of each event?  We will compare your distribution in class.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-ProbDistBasics">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+</h3>
+<div class="para" id="subsec-ProbDistBasics-2">Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a <em class="emphasis">variable</em> was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistBasics-3">A <dfn class="terminology">random variable</dfn> is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistBasics-4">
+<dfn class="terminology">Discrete variables</dfn> have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While <dfn class="terminology">continuous variables</dfn> can assume any real number value. The temperature outside does not jump from 75 to 76,  it can be any temperature in between these endpoints such as 75.6 to 75.83.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistBasics-5">When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ProbabilityDistribution"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-ProbabilityDistribution-1-1">A <dfn class="terminology">discrete probability distribution</dfn> consists of the values a random variable can assume and the corresponding probabilities of those values.<div class="autopermalink" data-description="Paragraph"><a href="#def-ProbabilityDistribution-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.3.4"><a href="#def-ProbabilityDistribution" title="Copy heading and permalink for Definition 4.3.4" aria-label="Copy heading and permalink for Definition 4.3.4">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbDistBasics-7">If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ProbDiscrete-matching"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Discrete Variables.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="ProbDiscrete-matching-2-1">Which of the following variables are discrete?  Select all statements that apply.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDiscrete-matching-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-ProbDiscrete-matching" data-multipleanswers="true" data-random="">
+<li data-component="answer" id="rs-ProbDiscrete-matching_opt_a" data-correct="">
+<div class="para" id="ProbDiscrete-matching-3-1-1-1">The number of energy drinks you purchased each day.</div>
+</li>
+<li data-component="feedback" id="rs-ProbDiscrete-matching_opt_a">
+<div class="para" id="ProbDiscrete-matching-3-1-2-1">Yes, counting the number of drinks is discrete.</div>
+</li>
+<li data-component="answer" id="rs-ProbDiscrete-matching_opt_b">
+<div class="para" id="ProbDiscrete-matching-3-2-1-1">Time to complete the Bolder Boulder 10K run..</div>
+</li>
+<li data-component="feedback" id="rs-ProbDiscrete-matching_opt_b">
+<div class="para" id="ProbDiscrete-matching-3-2-2-1">Time is continuous. The 2025 winning time was 28:21 minutes.</div>
+</li>
+<li data-component="answer" id="rs-ProbDiscrete-matching_opt_c">
+<div class="para" id="ProbDiscrete-matching-3-3-1-1">Speed of swimmers in 100 m breaststroke.</div>
+</li>
+<li data-component="feedback" id="rs-ProbDiscrete-matching_opt_c">
+<div class="para" id="ProbDiscrete-matching-3-3-2-1">Speed is a continuous rate.</div>
+</li>
+<li data-component="answer" id="rs-ProbDiscrete-matching_opt_d" data-correct="">
+<div class="para" id="ProbDiscrete-matching-3-4-1-1">Number of clients an insurance agent has.</div>
+</li>
+<li data-component="feedback" id="rs-ProbDiscrete-matching_opt_d">
+<div class="para" id="ProbDiscrete-matching-3-4-2-1">Yes, counting the number of clients is discrete.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 4.3.5: Discrete Variables"><a href="#ProbDiscrete-matching" title="Copy heading and permalink for Checkpoint 4.3.5: Discrete Variables" aria-label="Copy heading and permalink for Checkpoint 4.3.5: Discrete Variables">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ProbContinuous-matching"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Continuous Variables.</span>
+</h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="ProbContinuous-matching-2-1">Which of the following variables are continuous?  Select all statements that apply.<div class="autopermalink" data-description="Paragraph"><a href="#ProbContinuous-matching-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-ProbContinuous-matching" data-multipleanswers="true" data-random="">
+<li data-component="answer" id="rs-ProbContinuous-matching_opt_a" data-correct="">
+<div class="para" id="ProbContinuous-matching-3-1-1-1">The weight of players on the football team.</div>
+</li>
+<li data-component="feedback" id="rs-ProbContinuous-matching_opt_a">
+<div class="para" id="ProbContinuous-matching-3-1-2-1">Yes, weight is continuous.</div>
+</li>
+<li data-component="answer" id="rs-ProbContinuous-matching_opt_b">
+<div class="para" id="ProbContinuous-matching-3-2-1-1">The number of credit hours students are taking this semester.</div>
+</li>
+<li data-component="feedback" id="rs-ProbContinuous-matching_opt_b">
+<div class="para" id="ProbContinuous-matching-3-2-2-1">Credit hours will be discrete.</div>
+</li>
+<li data-component="answer" id="rs-ProbContinuous-matching_opt_c">
+<div class="para" id="ProbContinuous-matching-3-3-1-1">The number of pets students have.</div>
+</li>
+<li data-component="feedback" id="rs-ProbContinuous-matching_opt_c">
+<div class="para" id="ProbContinuous-matching-3-3-2-1">The number of pets is discrete.</div>
+</li>
+<li data-component="answer" id="rs-ProbContinuous-matching_opt_d" data-correct="">
+<div class="para" id="ProbContinuous-matching-3-4-1-1">Speed of swimmers in 100 m breaststroke.</div>
+</li>
+<li data-component="feedback" id="rs-ProbContinuous-matching_opt_d">
+<div class="para" id="ProbContinuous-matching-3-4-2-1">Speed of swimmers will be continuous.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 4.3.6: Continuous Variables"><a href="#ProbContinuous-matching" title="Copy heading and permalink for Checkpoint 4.3.6: Continuous Variables" aria-label="Copy heading and permalink for Checkpoint 4.3.6: Continuous Variables">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbDistBasics-10"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Distribution.</span>
+</h4>
+<div class="para" id="subsec-ProbDistBasics-10-2">Determine whether the following table is an appropriate probability distribution. Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-ProbDistBasics-10-3"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/ProbDist1.png" class="contained" alt="probabilities of -.05, 0.18, 0.28, 1.22."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.3.8"><a href="#subsec-ProbDistBasics-10-3" title="Copy heading and permalink for Figure 4.3.8" aria-label="Copy heading and permalink for Figure 4.3.8">🔗</a></div></figcaption>
+</figure>
+<details id="subsec-ProbDistBasics-10-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-ProbDistBasics-10-4-1">No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-10-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.7.1"><a href="#subsec-ProbDistBasics-10-4" title="Copy heading and permalink for Solution 4.3.7.1" aria-label="Copy heading and permalink for Solution 4.3.7.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 4.3.7: Probability Distribution"><a href="#subsec-ProbDistBasics-10" title="Copy heading and permalink for Checkpoint 4.3.7: Probability Distribution" aria-label="Copy heading and permalink for Checkpoint 4.3.7: Probability Distribution">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="subsec-ProbDistBasics-11"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Distribution.</span>
+</h4>
+<div class="para" id="subsec-ProbDistBasics-11-2">Is the following table an appropriate probability distribution? Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-ProbDistBasics-11-3"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/ProbDist2.png" class="contained" alt="probabilities of .35, 0.25, 0.15, .25."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.3.10"><a href="#subsec-ProbDistBasics-11-3" title="Copy heading and permalink for Figure 4.3.10" aria-label="Copy heading and permalink for Figure 4.3.10">🔗</a></div></figcaption>
+</figure>
+<details id="subsec-ProbDistBasics-11-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-ProbDistBasics-11-4-1">Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-11-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.9.1"><a href="#subsec-ProbDistBasics-11-4" title="Copy heading and permalink for Solution 4.3.9.1" aria-label="Copy heading and permalink for Solution 4.3.9.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 4.3.9: Probability Distribution"><a href="#subsec-ProbDistBasics-11" title="Copy heading and permalink for Checkpoint 4.3.9: Probability Distribution" aria-label="Copy heading and permalink for Checkpoint 4.3.9: Probability Distribution">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 4.3.1: Understanding the Basics"><a href="#subsec-ProbDistBasics" title="Copy heading and permalink for Subsection 4.3.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 4.3.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-ProbDistStatistics">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary Statistics</span>
+</h3>
+<div class="para" id="subsec-ProbDistStatistics-2">The next step in our adventure with probability distributions is to find the summary statistics - the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-3">So let’s think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move - on average, for the game?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-4">If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-5">How can we do this theoretically?  First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21/6 = 3.5 spaces on average. Now let’s look at the college version. We create the theoretical probability distribution table - we list the dice numbers and their probabilities. We are going to multiply each event by its probability and then add them all together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="DiceDataTable2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/DiceTable2.png" class="contained" alt="lists dice number and theoretical values of 1/6."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Theoretical dice distribution<div class="autopermalink" data-description="Figure 4.3.11"><a href="#DiceDataTable2" title="Copy heading and permalink for Figure 4.3.11" aria-label="Copy heading and permalink for Figure 4.3.11">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbDistStatistics-7">The mean is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-8">
+<span class="process-math">\(\mu = 1(1/6)+2(1/6)+3(1/6)+4(1/6)+5(1/6)+6(1/6)=21/6=3.5 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ProbDistMean"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="def-ProbDistMean-1-1">
+<div class="para">The <dfn class="terminology">mean</dfn>  of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability.</div>
+<div class="displaymath process-math" id="def-ProbDistMean-1-1-2">
+\begin{equation*}
+\mu=\sum\left(X\cdot P(X)\right)  
+\end{equation*}
+</div>
+<div class="para">where each X is one of the outcomes and each P(X) is the corresponding probability.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistMean-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.3.12"><a href="#def-ProbDistMean" title="Copy heading and permalink for Definition 4.3.12" aria-label="Copy heading and permalink for Definition 4.3.12">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbDistStatistics-10">Now let’s find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsec-ProbDistStatistics-11"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/ProbDistDice.png" class="contained" alt="dice probabilities of .20, .18, .16, .14, .12, .20"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.3.13"><a href="#subsec-ProbDistStatistics-11" title="Copy heading and permalink for Figure 4.3.13" aria-label="Copy heading and permalink for Figure 4.3.13">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-ProbDistStatistics-12">Mean is <span class="process-math">\(\mu = 1(.20)+2(.18)+3(.16)+4(.14)+5(.12)+6(.20)= 3.4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-13">Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ProbDistVariance"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="def-ProbDistVariance-1-1">
+<div class="para">To find the <dfn class="terminology">variance</dfn>, subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products.</div>
+<div class="displaymath process-math" id="def-ProbDistVariance-1-1-2">
+\begin{equation*}
+\sigma^2=\sum{\left(x-\mu\right)^2\cdot p(x)} 
+\end{equation*}
+</div>
+<div class="para">where each <span class="process-math">\(x\)</span> represents the outcome, <span class="process-math">\(\mu \)</span> is the mean, and <span class="process-math">\(p(x)\)</span> is the corresponding probability.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistVariance-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.3.14"><a href="#def-ProbDistVariance" title="Copy heading and permalink for Definition 4.3.14" aria-label="Copy heading and permalink for Definition 4.3.14">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbDistStatistics-15">Find the variance for 50 dice rolls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-16">
+<span class="process-math">\(\sigma^2 = 
+(1-3.4)^2 (.20)+(2-3.4)^2 (.18) + (3-3.4)^2 (.16) + (4-3.4)^2 (.14) + (5-3.4)^2 (.12) +(6-3.4)^2 (.20) = 3.24 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ProbDistStandardDeviation"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="def-ProbDistStandardDeviation-1-1">
+<div class="para">The <dfn class="terminology">standard deviation</dfn> is the square root of the variance. It measures how spread out the values are from the mean.</div>
+<div class="displaymath process-math" id="def-ProbDistStandardDeviation-1-1-2">
+\begin{equation*}
+\sigma=\sqrt{\sum{\left(x-\mu\right)^2\cdot p(x)}}  
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistStandardDeviation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.3.15"><a href="#def-ProbDistStandardDeviation" title="Copy heading and permalink for Definition 4.3.15" aria-label="Copy heading and permalink for Definition 4.3.15">🔗</a></div>
+</article>
+<div class="para" id="subsec-ProbDistStatistics-18">Find the standard deviation for 50 dice rolls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-19">
+<span class="process-math">\(\sigma = \sqrt{3.24} =1.8 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-ProbDistStatistics-20">From the center of 3.4 most values are within 1.8 of it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.3.2: Summary Statistics"><a href="#subsec-ProbDistStatistics" title="Copy heading and permalink for Subsection 4.3.2: Summary Statistics" aria-label="Copy heading and permalink for Subsection 4.3.2: Summary Statistics">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 4.3: Probability Distribution"><a href="#ProbDist" title="Copy heading and permalink for Section 4.3: Probability Distribution" aria-label="Copy heading and permalink for Section 4.3: Probability Distribution">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ProbRules.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ChapterBootstrap.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
