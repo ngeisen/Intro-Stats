@@ -40,7 +40,10 @@
 
 
 
-
+<subsection xml:id="subsec-GraphOneCat">
+  <title>Graphing One Categorical Variable</title>
+<p> Categorical data is data that can be sorted into categories. The categories are typically non-numeric and represent a quality or characteristic of the data. In this section we will explore how to organize and graph categorical data. We will also learn how to summarize the data with proportions. 
+    </p>
 <p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. This will be the focus of the chapter. </p>
 <p> Once a researcher has gathered the data for a particular variable, they need a way to summarize the data in a meaningful way. Generally, the first step is organizing the data and then presenting the data in graphs and charts. A convenient method is organizing the data in a frequency distribution. With categorical data, the <term> frequency </term>  represents the number of times a particular category occurs from the raw data. This is organized in a <term> frequency table </term> summarizing each category with its frequency. This works best with nominal and ordinal level data. </p>
 <p> On the first day of class, students respond to the Class Survey by identifying their eye color. In the sample of 20 students below, construct a frequency table to summarize the data. </p>
@@ -87,11 +90,188 @@
             </image>
         </figure>
 <p> See the section for <term> Graphing with StatKey </term> for details on how to graph using technology. </p>
+</subsection>
+
+ <subsection xml:id="subsec-GraphTwoCategorical">
+  <title> Graphing Two Categorical Variables </title>
+<p> When working with two categorical variables, we often look for possible relationships between the two variables using a <term> two-way table </term>.  The categories for one variable are listed down the side (rows) and the categories for the second variable are listed across the top (columns). Each cell of the table contains the count for the number of data cases that are in both categories.</p> 
+<p> We are going to investigate the possible relationship using the UNC Women's basketball data set. The dataset <term> 22-23 UNCWBB </term> gives the results of the UNC Women's Basketball team for the 31 games played during the 2022-2023 season. Two variables measured within that dataset were <em>Win Loss </em> variable which stated if the UNC team won or lost the game and the <em>HomeAway </em> variable which indicates whether that game was a home game or an away game. The image below is a screen shot of the first nine games from the data set
+. </p>
+
+<figure xml:id="WBdata">
+            <caption>Image of partial data set</caption>
+            <image source="WBdata.png" width="80%">
+                <shortdescription>Lists 9 games as home/awa and win/loss.</shortdescription>
+            </image>
+        </figure> 
+<p> The results for these variables are shown in the two-way table below. To create the table, in StatKey choose <term> Two Categorical Variables </term> along the left menu and select the variable <em> WinLoss</em> and <em>HomeAway </em> for the table.  </p>
+<figure xml:id="WBtwoWayTable">
+            <caption>Image of WB two-way table</caption>
+            <image source="WBtwoWayTable.png" >
+                <shortdescription>Summarizes value for 31 games.</shortdescription>
+            </image>
+        </figure> 
+ 
+<p> From the table we can see there were a total of 31 games, 15 of the games were home and 16 games were away. UNC won 13 games and lost 18 games total. They won 8 of the home games and lost 7 at home. They won 5 away games and lost 11 away games. </p>
+<p>     </p>
+<exercise> 
+<p> As a review, is the study an experiment or an observational study? </p>
+<solution> <p> This is an observational study since we are looking at recorded data, there was no manipulation of variables. </p> </solution>
+</exercise>
 
 
+<p> What proportion of games did the UNC Women's Basketball team win during the 2022-2023 season? </p>
+<p> <em> Solution:</em> The team won 13 of the 31 games played, thus p(win) = 13/31 = 0.419 so 41.9% of the games. </p>
+<p>      </p>
+<exercise>
+<p> What proportion of games did the UNC Women's Basketball team play at <em> Away</em> during the 2022-2023 season? </p>
+<solution> <p> p(away) = 16/31 = .516 so 51.6% of the games. </p> </solution> 
+</exercise>
+
+<exercise>
+<p> Does the UNC Women's Basketball team have a greater success rate, meaning they win more often, at home games as compared to away games? </p>
+<solution> <p> P (win at home) = 8/15 = .533 = 53.3% </p> 
+<p> P (win at away) = 5/16 = 0.3125 = 31.3% </p>
+<p> So it does appear they win more at home. </p>
+</solution>
+</exercise> 
+
+<p>      </p>
+<p> <term>Side by side bar graph </term> compares the categories next to each other one of the variables. The height of each bar is the number of the corresponding cell in the two-way table. </p>
+<p> <term>Segmented bar graph </term> is like a side-by-side bar chart, but the bars are stacked instead of side-by-side. This helps to see the total for each variable across the categories. </p>
+
+<p> The segmented bar graph below list the home and away games along the horizontal axis. The colors represent wins  in brown and losses in blue. The heights tell us there were 15 home games an 16 away games. From the graph it shows there were more losses Away since the blue section is larger. UNC had more wins at Home since the brown section is larger for the home games. </p>
+
+<figure xml:id="WBgraph">
+            <caption>Image of WB home and away</caption>
+            <image source="WBgraph.png" width="50%">
+                <shortdescription>Segment bar graph comparing home and away wins.</shortdescription>
+            </image>
+        </figure> 
+
+<p> If we switch the variables on the axes, we have the segmented bar graph below. It is easy to see there were more losses for the season. </p>
+<figure xml:id="WBwins">
+            <caption>Image of WB wins and losses</caption>
+            <image source="WBwins.png" width="50%">
+                <shortdescription>Segment bar graph comparing wins and losses.</shortdescription>
+            </image>
+</figure> 
+
+<p> See the section <term>Graphing with StatKey</term> for more information on graphing two categorical variables with technology. </p> 
+ 
 
 
+  </subsection>
 
+<subsection xml:id="subsec-QuantGraphs">
+  <title> Graphing One Quantitative Variable </title>
+
+
+<p> A <term> dotplot</term> is a graph where the values are listed along the x-axis and each dot represents the case. The total number of dots represents the sample size. The graph below illustrates the number of tattoos for each student from a sample of 43 students.</p>
+<image source="DotplotTattoos.png" >
+                <shortdescription> image of number of tattoos</shortdescription>
+            </image>
+<p> <em> Interpret Dotplot: </em> From the dotplot we can see there are 43 dots for the sample of 43 students. Clearly 0 tattoos occur most often (26 students). There are 7 students with 1 tattoo, one student with 2 tattoos, one student with 3 tattoos, four students with 4 tattoos, two students with 5 tattoos. There is one student with 10 and one student with 12 tattoos. The data is from Survey 2</p> 
+
+<p> A <term> histogram </term> is similar to a bar graph, except we generally have continuous data thus the bars touch. We can adjust the width of the bar to create an interval of values, and the frequency of cases that fall in that interval are shown on the y-axis. Histograms are helpful to describe the shape of the distribution. </p>
+<image source="WeightsHisto.png" >
+                <shortdescription> histogram of student weights</shortdescription>
+            </image>
+<p> <em> Interpret Histogram: </em>The histogram created by StatKey shows the weights, in pounds, from a sample of 42 students. The lightest student weight is 115 pounds while the largest weight is 303 pounds. Most students are between 125 and 225 pounds. The width of each interval is 25 pounds creating 9 subdivisions. There are 12 students whose weights are between 150 and 175 pounds. The mean weight is 171.1 pounds. Data found in Survey1. </p>
+<p> A <term> boxplot </term> splits the data into four sections with the same number of cases in each region. This helps to see the spread of the values. Boxplot are also known as box-and-whisker plots because the box represents the middle 50% of the data and there is a whisker to the smallest value and a whisker to the largest value. </p>
+<image source="WeightsBox.png" >
+                <shortdescription> boxplot of student weights</shortdescription>
+            </image>
+<p> <em> Interpret Boxplot: </em> The boxplot created by StatKey shows the weights, in pounds, from a sample of 42 students. The minimum student weight is 115 pounds while the maximum weight is 303 pounds. Most students are between 140 and 200 pounds, represented by the box for the middle 50% of the student weights. The middle line represents the median of 163.5 pounds. Data found in Survey 1. </p> 
+<p> An <term> outlier </term> is a data value that is much larger or smaller than the rest of the data. This may indicate an unusual value. The student weight of 303 is an outlier as indicated by the star in the boxplot. </p>
+
+
+<subsection xml:id="subsec-GraphTwoQuantitative">
+  <title> Graphing Two Quantitative Variables </title>
+<p> There are times when we want to determine whether a relationship exists between two quantitative variables. This can visually be seen with a <term> scatterplot </term> where the data are plotted as points. The independent variable, also known as the explanatory variable, is scaled along the x-axis and the dependent variable, also known as the response variable, is scaled along the y-axis. Once the data is plotted as paired points (x,y) we can describe the pattern between the two variables. </p>
+  <p>  <term>Correlation </term> is a statistical method used to determine whether a relationship between two quantitative variables exists. </p>
+  <p>  For now, we will focus on simple linear relationships. If the pattern shows that the y-values are increasing as the x-values increase, then we have a <term> positive correlation </term>. If the points form an approximate line, then it’s a positive linear relationship. A <term> negative correlation </term> exists when one variable increase while the other variable decreases. If the points form a line, then it’s a negative linear relationship. If the points appear more random and there is no pattern, then there is typically a weak or no correlation thus no relationship exists between the two variables. </p>
+  
+  <p> We use the <term> correlation coefficient </term> to describe the strength of the linear relationship as well as its direction (as positive or negative). The sample correlation coefficient value is designated as <em> r </em> and the population value as ρ (rho). The range of values is from -1 to +1. If there is a strong <em> positive linear </em> relationship, the value of <em> r </em>  is closer to +1. If there is a strong <em> negative linear</em>  relationship, the value of <em> r </em>  is closer to -1. If there is no linear relationship or if there is a weak relationship, the value of<em> r </em>  is close to 0. When the correlation values are close to +0.5 or -0.5 we will call that a moderate relationship. </p>
+  <p> First, let's use some intuitive reasoning to determine if a relationship may exist. For the following situations, do you think there is a positive relationship, negative relationship or no relationship?  </p>
+  <p> We are going to investigate if there is a relationship between a person’s height and his/her shoe size using the first day survey. If we know a person’s height, are we able to predict his/her shoe size? Or if we know a person’s shoe size, can we predict his/her height? Let’s find out.
+    We will use technology to help us create the scatterplot and find the correlation value. </p>
+    <p>
+      Link to  
+      <url href="https://www.lock5stat.com/StatKey/"> StatKey.
+      </url>
+    </p>
+    <p> Open StatKey, under the left column <em> Descriptive Statistics and Graph </em>, select <c>Two Quantitative Variables.</c> Click on the<c>Upload File</c> button and find the saved data file <c>ClassSurvey1</c> on your computer and click <c> Open</c> on the bottom right. </p>
+    <image source="StatkeyTwoQuant.png" >
+      <shortdescription> StatKey two quantitative variables </shortdescription>
+  </image>
+  <p> Identify the two quantitative variables, select the x-variable first, <em> Shoe size</em>, and then the y-variable, <em>Height</em>, and then click <c> Ok </c> at the bottom right.  </p>
+  <image source="SelectTwoQuant.png" >
+    <shortdescription> select the two quantitative variables image </shortdescription>
+</image>
+<p> The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. </p>
+<figure xml:id="ShoeHeightScatterplot1">
+  <caption>Image of Scatterplot for Shoe Size and Height </caption>
+  <image source="ShoesHeightsScatter.png" >
+      <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
+  </image>
+</figure>
+<p> Interpreting graph: From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. </p>
+
+<p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
+<figure xml:id="HeightvsShoeScatterplot2">
+  <caption>Image of Scatterplot for Height and shoe size </caption>
+  <image source="HeightShoesScatterplot.png" >
+      <shortdescription> Scatterplot with height on x-axis.</shortdescription>
+  </image>
+</figure>
+
+<p> A few words of warning: just because a correlation between variables exists it does not indicate one variable <em>causes </em> the other to occur. It is possible a third variable, known as a lurking variable, may account for the correlation. Just because a student is tall, does not <em> cause </em> their shoe size to be large. Just as having a larger shoe size does not <em> cause </em> a student to be taller. When working with observational studies, we cannot assume causation even if there is a strong correlation between variables. </p>
+
+<p> <term> Practice </term> </p>
+<p> Now let's investigate the type of relationship between a person's weight and height. Do you think this will be positive, negative, or no relationship? Click on the <c>Change Columns</c> to change the variables and describe the nature of the relationship from the scatterplot and the correlation coefficient. </p>
+<figure xml:id="WeightHeightScatterplot">
+  <caption>Image of Scatterplot for Weight and Height </caption>
+  <image source="WeightHeightScatterplot.png" >
+      <shortdescription> Scatterplot with weight on x-axis and height on y.</shortdescription>
+  </image>
+</figure>
+<example>
+  <title> Correlation Coefficient </title> 
+  <statement> <p> Compute the correlation coefficient between weight and height. </p> </statement>
+  <solution> <p> Correlation Coefficient r = 0.623.</p> </solution>
+  </example>
+  <example>
+    <title> Type of Relationship </title> 
+    <statement> <p> Identify the type of relationship between weight and height. </p> </statement>
+    <solution> <p> There's a moderate positive linear relationship. </p> </solution>
+    </example>
+    <example>
+    <title> Describe the Relationship </title> 
+    <statement> <p> Describe the relationship between weight and height. </p> </statement>
+    <solution> <p> As student's weights increase, their heights also increase. </p> </solution>
+    </example>
+    
+    <example>
+    <title> Slope </title> 
+    <statement> <p> Identify the slope when x= weight and y=height. </p> </statement>
+    <solution> <p> Slope = 0.077 is positive.</p> </solution>
+    </example>
+    <example>
+    <title> Y-intercept </title> 
+    <statement> <p> Identify the y-intercept when x=weight and y=height. </p> </statement>
+    <solution> <p> The y-intercept = 54.692 inches.</p> </solution>
+    </example>
+
+    <example>
+    <title> Regression Equation </title> 
+    <statement> <p> Identify the regression equation where x= weight and y=height. </p> </statement>
+    <solution> <p> Height = 0.077(weight)+54.692 or <m> y=0.077x+54.692 </m>.</p> </solution>
+    </example>
+  </subsection>
+
+
+  </subsection>
 
 
 

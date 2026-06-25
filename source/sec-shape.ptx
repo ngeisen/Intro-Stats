@@ -17,4 +17,33 @@
       </objectives>
       
 
+<p> When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a <term> uniform </term> distribution. The center of the distribution is around the center of the middle intervals. </p>
+<image source="ShapeUniform.png" width="60%">
+                <shortdescription> uniform with equal heights</shortdescription>
+            </image>
+<p>      </p>
+<p> A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is referred to as <term> normally </term> distributed. Symmetric refers to imagining folding the graph in half about the middle and the two sides will align.  If one of the tails is longer than the other, we refer to it as being skewed.</p>
+<image source="ShapeSym.png" width="60%">
+                <shortdescription> symmetric with hump in middle</shortdescription>
+            </image>
+<p>      </p>
+
+<p> If the data tends to cluster on the right side, and we see a few values on the left side, this is known as <term> left skewed </term> since the tail goes to the left of the data. This indicates the mean will be left of the median. </p>
+<image source="ShapeLeft.png" width="60%">
+                <shortdescription> left skew</shortdescription>
+            </image>
+<p>      </p>
+
+<p> If the data tends to cluster on the left side, and we see a few values on the right side, this is known as <term> right skewed </term> since the tail goes to the right of the data. This indicates the mean will be right of the median.</p>
+<image source="ShapeRight.png" width="60%">
+                <shortdescription> right skew</shortdescription>
+            </image>
+<p>      </p>
+
+<p> Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of <term> bimodal </term> (meaning two values occur more often than others). </p>
+<image source="ShapeBimodal.png" width="60%">
+                <shortdescription> bimodal with two humps</shortdescription>
+            </image>
+
+
 </section>
