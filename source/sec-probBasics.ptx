@@ -9,6 +9,8 @@
             <ol>
             <li> <p> Find the probabilty of a single event. </p> </li>
             <li> <p> Determine if outcomes are equally likely. </p> </li>
+            <li> <p> Identify the sample space of an event.   </p> </li>
+            <li> <p> Compare experimental probability with theoretical probability. </p> </li>
             </ol>
         </introduction>
         </objectives>  
@@ -22,13 +24,164 @@
 <p> An <term> event </term>  is a set of certain outcomes of an experiment that you want to have happen. So if I want to know the likelihood of getting heads, getting heads is the event I want to happen. </p>
 <p> The <term> sample space</term>  is the collection of all possible outcomes of the experiment.  For a single coin toss the sample space is the same as heads or tails. But if I toss two coins, say a penny and nickel, then the sample space includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. </p>
 
-<p> exercise </p> 
+<exercise> <title> Outcomes </title>
+    <statement>
+        <p>
+            Suppose that the experiment is rolling a single die. List the outcomes and sample space.
+        </p>
+    </statement>
+<solution> <p>  The outcomes are the die number 1, 2, 3, 4, 5, 6. The sample space is the set {1, 2, 3, 4, 5, 6}.  </p> </solution> 
+</exercise>
 
  <p> To determine the likelihood of flipping heads, we need to perform the experiment. Suppose you toss a coin 10 times and heads landed up 4 times. Based on this experiment, the probability of getting heads is 4 out of 10 tries or 4/10 = 2/5 =.40 or 40%. Probabilities can be written as decimals, fractions, or percentages. Suppose you toss the coin 1000 times and heads occurred 513 times. Thus the probability of heads is now 513/100 = 51.3% of the time. This is an example of <term> experimental probability </term> since the value was found by actually doing the experiment. </p> 
 <p> The approximate probability of an event A, written as , is </p>
-
+<p> <md> P(A) =  \frac{\text{Number of outcomes for event A}} {\text{Total number of outcomes in sample space}} </md> </p>
 
 <p> Most likely you know that the probability of flipping a heads is ½ since there are two sides to the coin. This illustrates <term> theoretical probability </term> which is based on the sample space. But it assumes that all outcomes are equally likely to occur. </p>
+<p> Consider the experiment of spinning the spinner below. There are four possible outcomes: red, blue, green, and yellow.  We will expect the color blue to be spun about ¼ of the time if we spin it many times.  The probability is indicated by writing P(blue) = ¼. </p>  
+
+<figure xml:id="ProbSpinner1">
+            <caption>Spinner with equal outcomes</caption>
+            <image source="Spinner1.png" >
+                <shortdescription>circular spinner split into four equal parts.</shortdescription>
+            </image>
+        </figure>
+<p> Since each color represents the same fraction of the circle, we refer to them being <term> equally likely </term> to occur since the probability is the same. Just as rolling any number on a fair die is also equally likely at 1/6 since there are six sides. </p>
+
+<figure xml:id="ProbSpinner2">
+            <caption>Spinner with unequal outcomes</caption>
+            <image source="Spinner2.png" >
+                <shortdescription>circular spinner split into four equal of different size.</shortdescription>
+            </image>
+        </figure>
+<exercise> <title> Spinner Probabilities </title>
+    <statement>
+     <p>  Find the following probabilities for the spinner above. </p>
+<p> a. Probability of spinning red </p> 
+<p> b. Probability of spinning yellow </p> 
+<p> c. Probability of spinning green </p> 
+ </statement>
+<solution> <p> a. P(red)=25%, b. P(yellow) = 38%, and c. P(green) = 13%  </p> </solution> 
+</exercise>
+
+<exercise> <title> More likely </title>
+    <statement>
+    <p>  Which color is most likely to occur on the spinner? Why. </p>
+    </statement>
+<solution> <p>  P(yellow) = 38%, thus yellow is most likely to occur since it has the highest probability  </p> </solution> 
+</exercise>
+
+<exercise> <title> Spinner Probabilities </title>
+    <statement>
+    <p>  Find the following probabilities for the spinner above. </p>
+    <p> a. Probability of spinning red or blue</p> 
+    <p> b. Probability of spinning yellow or green  </p> 
+    </statement>
+<solution> <p>  P(red or blue) = 50% since this represents half the circle</p>
+<p>  P(yellow or green) = 38+12 = 50%  </p> </solution> 
+</exercise>
+
+<exercise> <title> Marbles </title>
+    <statement>
+      <p> Find the probability of selecting a green marble on one draw from a box containing five green marbles and seven blue marbles.  </p>
+    </statement>
+<solution> <p> Since there are 5 green marbles and a total of 12 marbles in the box, the probability is P(green)=5/12. </p> </solution>
+</exercise>
+
+<p>There are several rules regarding the possible values in probability. The probability of an event A is any number between and including 0 and 1, when written as decimals.    If an event cannot occur the probability is 0, since no chance of it occurring. While an event that is certain to occur the probability is 1, which is 100%. </p>
+<p> <em> For example,</em> when rolling a fair six-sided die, the probability of each event is 1/6 = 0.167 since the sample space is the set {1, 2, 3, 4, 5, 6}. The probability of rolling an 8 on this die would be 0 since it is not in the sample space. The sum of the probabilities of the outcomes in the sample space is 1, which represents 100% of the events.</p> 
+
+<exercise> <title> Probability Rules</title>
+    <statement>
+    <p>  Find the following probabilities using these rules . </p>
+    <p> a. Drawing a red marble from a bag containing three red and two blue marbles. </p>
+    <p> b. Drawing a green marble from a bag containing only green marbles. </p>
+    <p> c. Drawing a black marble from a bag containing only blue marbles. </p>
+    </statement>
+<solution> 
+<p>  a. P(red) = 3/5 = 0.60 = 60% since 3 of the 5 marbles are red.  </p>
+<p> b. P(green) = 1 or 100% since all the marbles are green. </p>
+<p> c. P(black) = 0 since black is not in the sample space of only blue marbles</p>
+ </solution> 
+</exercise>
+
+<p> Suppose you want to know the probability that an event will not occur, this uses the <em> complement </em> of the event.  When we roll a die, we know that sample space consists of the outcomes 1, 2, 3, 4, 5, 6. The probability of rolling a 3 is <m> P(3)=1/6</m>. The probability of not rolling a 3 is <m>P(not  3) = 5/6 </m> since there are 5 outcomes that are not a 3. Since the sum of the outcomes in the sample space is 1 or 100%, we can find the complement by subtracting the probability of the event from 1. </p>
+<p> The <term>complement </term> of an event E is the set of outcomes in the sample space that are <em>not </em>included in the outcomes of the event E. The complement of E is<m>  P( E^c) = 1 - P(E)</m> . </p> 
+
+<exercise> <title> Complement </title>
+    <statement>
+    <p>  Find the complement of rolling an even number on a fair six-sided die. </p>
+    </statement>
+<solution> <p>  P(even) = 3/6=0.5 for the event of 2, 4, 6. So the complement will be not even (thus odd numbers) therefore P(not even) = 1-0.5 = 0.5 which are the events 1, 3, 5. </p> </solution> 
+</exercise>
+<exercise> <title> Complement </title>
+    <statement>
+    <p>  Find the complement of drawing a red marble from a bag containing 3 red marbles and 5 blue marbles. </p>
+    </statement>
+<solution> <p>  P(red)=3/8=0.375 thus the complement is P(not red) <m>=1-.375 =0.628 </m> which is the same as the 5/8 that are blue in the bag. </p> </solution> 
+</exercise>
+
+<p> So far we have focused on <term> simple events</term> where we focus on just one outcome. When we found the probability of getting an even number on a dice roll, we are working with <term> compound events </term> since there are three outcomes we are considering. This can be extended to multiple experiments - such as tossing two coins or rolling two dice. This will increase our sample space. </p>
+<p> We can use tree diagrams to help us find the sample space from compound events. A <term> tree diagram </term> is a device consisting of line segments branching from a starting point and from each outcome for each event. We read across the rows to find all possible outcomes for the sample space. </p> 
+<p> Lets find the sample space for tossing two coins, say a penny and nickel. If we toss the penny first, we have two outcomes of heads or tails. So we choose a starting point and draw two lines to represent the two outcomes and list them. When we toss the nickel, we also have two outcomes. So we draw two lines from EACH of the previous outcomes to represent the second event and list the outcomes. As we read along the tree diagram, we have the sample space that includes all possible outcomes: head on penny and head on nickel, head on penny but tail on nickel, tail on penny with head on nickel, or tails on both penny and nickel. Now there are four outcomes in the sample space. </p>
+ <figure xml:id="TwoCoinToss">
+            <caption>Tree diagram for two coin tosses</caption>
+            <image source="TwoCoinTree.png" width="50%">
+                <shortdescription>four outcomes since four branches.</shortdescription>
+            </image>
+        </figure>
+<p> With the four outcomes, which are equally likely to happen due to the fair coins, the probability is ¼ for each. The probability of getting at least one head on either of the tosses is ¾ since three of the four outcomes have a head. The probability of getting exactly one head on either toss is ½ for head-tail or tail-head. </p> 
+<p> Tree diagrams can be used for multiple events. Suppose you flip a penny, nickel and dime.  Make a tree diagram to list all possible outcomes. Hint: from your previous tree diagram, draw two lines from each previous branch to represent the outcomes for the dime. </p>
+
+<exercise> <title> Probabilities from tree diagram </title>
+    <statement>
+     <p> Find the following probabilities using your tree diagram for three coins. </p>
+    <p> a. getting three heads </p>
+    <p> b.  getting at least two heads </p>
+    <p> c. getting exactly two tails</p>
+    <p> d. getting four tails </p>
+    </statement>
+<solution> 
+<p> a. P( three heads) = 1/8 </p>
+<p>b. P(at least two heads) = 4/8 = ½  </p>
+<p> c. P(exactly two tails) = 3/8 </p>
+<p> d. P(four tails) = 0 since not in sample space </p>
+ </solution> 
+</exercise>
+
+<p> Next, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards. </p> 
+<figure xml:id="StandardDeck1">
+            <caption>Standard deck of cards</caption>
+            <image source="DeckCards.png" >
+                <shortdescription>four suits with 13 numbered cards in deck.</shortdescription>
+            </image>
+        </figure>
+
+
+<exercise> <title> Sample Space </title>
+    <statement>
+     <p>  How many outcomes are in the sample space for a standard deck of cards? </p>
+    </statement>
+    <solution> <p>  There are 52 outcomes in a standard deck. Each card represents an outcome. </p>  </solution> 
+</exercise>
+<exercise> <title> Spades </title>
+    <statement>
+     <p>  What is the probability of getting a spade drawing one card randomly from a deck?</p>
+    </statement>
+    <solution> <p>  There are 13 spades in a deck of 52 cards, thus P(spade)=13/52=1/4 . </p>  </solution> 
+</exercise>
+<exercise> <title> Jack </title>
+    <statement>
+     <p>  What is the probability of getting a Jack drawing one card randomly from a deck?</p>
+    </statement>
+    <solution> <p>  There are 4 jacks in a deck of 52 cards, thus P(jack)=4/52=1/13=0.077  </p>  </solution> 
+</exercise>
+<exercise> <title> Complement </title>
+    <statement>
+     <p>  What is the probability of not getting an Ace by drawing one card randomly from a deck?</p>
+    </statement>
+    <solution> <p>  P(Ace)=4/52 thus P(not Ace) = 1-4/52 = 0.923 </p>  </solution> 
+</exercise>
 
 
 

@@ -2,17 +2,247 @@
 
 <section xml:id="ProbDist" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title> Probability Distribution </title>
+    <Introduction>
+        <p> In this section we will learn how to create a probability distribution, find the mean and standard deviation for a probability distribution, and use technology to find these statistics. </p>
+    </Introduction>
+
  <objectives>
         <introduction>
           <p> At the end of this section you will able to:   </p>
+            </introduction>
             <ol>
-           <li> <p> Determine the .   </p> </li>
-            <li> <p> Calcuate the probabilty from a probability distribution  </p> </li>
-            <li> <p> Calculate the mean and standard deviaton for probabilty distributions    </p> </li>  
+           <li> <p> Create a probability distribution.  </p> </li>
+            <li> <p> Calcuate the probabilty from a probability distribution.  </p> </li>
+            <li> <p> Calculate the mean and standard deviaton for probabilty distributions.    </p> </li>  
             
           </ol>
-        </introduction>
+      
     </objectives>  
+
+<p> Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.</p>
+<p> We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values. </p>
+<p> <term> Pre-Class Activity: Dice Data</term> </p>
+<p> Each person will roll a die 50 times and keep track of the number that lands face up each time. It's handy using a tally for each dice value. Then find the total frequency for each dice value and then its corresponding probability. There is a link for some virtual dice below. </p>
+
+<p> Online Dice: <url href="https://www.virtualdiceroll.com/5/en/five-dice" > Virtual Dice </url> </p> 
+
+<p> Below is my data for 50 dice rolls. </p>
+<figure xml:id="DiceDataTable">
+            <caption>Sample of dice data table</caption>
+            <image source="DiceDataSampleTable.png" width="75%">
+                <shortdescription>lists dice number and probabilities.</shortdescription>
+            </image>
+        </figure>
+
+<p> Next, we want to graph the frequency or the probabilities to see the shape of the distribution. Using a graphing calculator, enter the dice number in <m> L_1 </m> and the frequency in <m> L_2</m> . Use the [STAT]  button and select option 1: Edit [enter] to enter the data. </p>
+<figure xml:id="DiceDataInput">
+            <caption>Entering dice data into calculator</caption>
+            <image source="DiceData1.png" width="75%">
+                <shortdescription> Entering dice data into calculator.</shortdescription>
+            </image>
+        </figure>
+
+<p> Create a histogram on the calculator. Use [2nd] [y =] button for the [Stat Plot] and select the first option and [enter]. Make sure <c>ON </c> is highlight or hit [enter] to turn on the graph. Arrow down once to TYPE and scroll over to the histogram which is the third image and hit [enter], then identify where the data is located, Xlist: <m> L_1 </m> and Freq: <m> L_2</m>.  Make sure to adjust the [Window] to scale for x = [0,7] and y = [0, largest frequency] and then [graph]. (If you do not have a graphing calculator you can construct a bar graph by hand. For StatKey you will have to list all 50 dice rolls individually.) </p>
+<figure xml:id="DiceDataGraph">
+            <caption>Graph of dice frequencies</caption>
+            <image source="DiceData2.png" >
+                <shortdescription> Histogram of dice frequencies is approximately uniform.</shortdescription>
+            </image>
+        </figure>
+
+<p> How would you describe the shape of your distribution? What does that tell you about the probability of each event?  We will compare your distribution in class. </p>
+
+
+<subsection xml:id="subsec-ProbDistBasics">
+  <title>Understanding the Basics</title>
+ <p> Let us review some vocabulary that we will be using in this section. Recall from Chapter 1 that a <em> variable </em> was defined as a characteristic that can assume different values. Since we are focusing on probability we will use random variables. </p>
+<p> A <term>random variable </term> is a variable whose values are determined by chance. The value of your dice roll was random. Each student in class will likely have differing results. </p>
+<p> <term> Discrete variables </term> have values that can be counted (whole numbers). The number of sixes that was rolled is discrete. The number of tables in each classroom is also discrete. While <term> continuous variables </term> can assume any real number value. The temperature outside does not jump from 75 to 76,  it can be any temperature in between these endpoints such as 75.6 to 75.83. </p>
+<p> When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically. </p>
+<definition xml:id="def-ProbabilityDistribution">
+            <statement>    
+<p> A <term>discrete probability distribution </term> consists of the values a random variable can assume and the corresponding probabilities of those values. </p> 
+        </statement>
+        </definition>
+
+<p> If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth. </p>
+
+<exercise label="ProbDiscrete-matching">
+    <title> Discrete Variables </title>
+    <statement>
+    <p> Which of the following variables are discrete?  Select all statements that apply.
+    </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> The number of energy drinks you purchased each day. </p>
+        </statement>
+        <feedback>
+        <p>             Yes, counting the number of drinks is discrete.          </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+<p> Time to complete the Bolder Boulder 10K run..  </p>
+        </statement>
+        <feedback>
+        <p> Time is continuous. The 2025 winning time was 28:21 minutes. </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p> Speed of swimmers in 100 m breaststroke. </p>
+        </statement>
+        <feedback>
+        <p> Speed is a continuous rate. </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p> Number of clients an insurance agent has. </p>
+        </statement>
+        <feedback>
+        <p>   Yes, counting the number of clients is discrete.       </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+<exercise label="ProbContinuous-matching">
+    <title> Continuous Variables </title>
+    <statement>
+    <p> Which of the following variables are continuous?  Select all statements that apply.     </p>
+    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p> The weight of players on the football team. </p>
+        </statement>
+        <feedback>
+        <p>             Yes, weight is continuous.          </p>
+        </feedback>
+    </choice>
+    <choice >
+        <statement>
+<p> The number of credit hours students are taking this semester. 
+</p>
+        </statement>
+        <feedback>
+        <p> Credit hours will be discrete. </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p> The number of pets students have. </p>
+        </statement>
+        <feedback>
+        <p> The number of pets is discrete. </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+    <p> Speed of swimmers in 100 m breaststroke. </p>
+        </statement>
+        <feedback>
+        <p>   Speed of swimmers will be continuous.       </p>
+        </feedback>
+    </choice>
+    </choices>
+</exercise>
+
+<exercise >
+    <title>Probability Distribution</title> 
+<p> Determine whether the following table is an appropriate probability distribution. Explain why or why not.
+ </p> 
+<figure> 
+           <image source="ProbDist1.png" width="75%">
+                <shortdescription> probabilities of -.05, 0.18, 0.28, 1.22.</shortdescription>
+            </image>
+        </figure>
+
+<solution> <p> No because some of probability values are negative or more than 1. The sum of the probabilities should equal 1. </p> </solution>
+</exercise>
+
+<exercise>
+<title>Probability Distribution</title> 
+<p> Is the following table an appropriate probability distribution? Explain why or why not.
+ </p> 
+ 
+<figure> 
+           <image source="ProbDist2.png" width="75%">
+                <shortdescription> probabilities of .35, 0.25, 0.15, .25.</shortdescription>
+            </image>
+        </figure>
+
+<solution> <p> Yes, since the probability values are between 0 and 1. The sum of the probabilities equals 1. </p> </solution>
+</exercise>
+
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-ProbDistStatistics">
+  <title>Summary Statistics</title>
+  
+<p> The next step in our adventure with probability distributions is to find the summary statistics - the mean, variance, and standard deviation. We determine the theoretical expected value of the outcome over time. </p>
+
+<p> So let's think of this intuitively. If you are playing a board game with one die, how many spaces are you expected to move - on average, for the game? </p>
+<p> If we want to test this out experimentally, we could roll the dice a whole bunch and find the average of the dice roll values. We will come back to this with your data. </p>
+<p> How can we do this theoretically?  First, think like a fifth grader… we can add up all the dice numbers together and divide by the six sides thus 21/6 = 3.5 spaces on average. Now let's look at the college version. We create the theoretical probability distribution table - we list the dice numbers and their probabilities. We are going to multiply each event by its probability and then add them all together.  </p>
+
+<figure xml:id="DiceDataTable2">
+            <caption>Theoretical dice distribution </caption>
+            <image source="DiceTable2.png" width="75%">
+                <shortdescription>lists dice number and theoretical values of 1/6.</shortdescription>
+            </image>
+        </figure>
+<p> The mean is </p>
+<p> <m> \mu = 1(1/6)+2(1/6)+3(1/6)+4(1/6)+5(1/6)+6(1/6)=21/6=3.5 </m> </p>
+
+<definition xml:id="def-ProbDistMean">
+            <statement>    
+<p> The <term> mean</term>  of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability.
+<me> \mu=\sum\left(X\cdot P(X)\right)  </me>
+where each X is one of the outcomes and each P(X) is the corresponding probability. </p>
+        </statement>
+        </definition>
+
+
+<p> Now let's find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together. </p> 
+<figure> 
+           <image source="ProbDistDice.png" width="75%">
+                <shortdescription> dice probabilities of .20, .18, .16, .14, .12, .20</shortdescription>
+            </image>
+        </figure>
+
+<p> Mean is <m> \mu = 1(.20)+2(.18)+3(.16)+4(.14)+5(.12)+6(.20)= 3.4</m> </p>
+<p> Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.</p> 
+
+
+<definition xml:id="def-ProbDistVariance">
+            <statement>    
+<p> To find the <term>variance</term>, subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products. <me> \sigma^2=\sum{\left(x-\mu\right)^2\cdot p(x)} </me> where each <m>x</m> represents the outcome, <m> \mu </m> is the mean, and <m>p(x)</m> is the corresponding probability. </p> 
+        </statement>
+        </definition>
+<p> Find the variance for 50 dice rolls.</p> 
+<p> <m> \sigma^2 = 
+(1-3.4)^2 (.20)+(2-3.4)^2 (.18) + (3-3.4)^2 (.16) + (4-3.4)^2 (.14) + (5-3.4)^2 (.12) +(6-3.4)^2 (.20) = 3.24 </m> </p> 
+
+
+<definition xml:id="def-ProbDistStandardDeviation">
+            <statement>    
+<p> The <term>standard deviation</term> is the square root of the variance. It measures how spread out the values are from the mean. <me> \sigma=\sqrt{\sum{\left(x-\mu\right)^2\cdot p(x)}}  </me> </p>
+        </statement>
+        </definition>
+<p> Find the standard deviation for 50 dice rolls.</p> 
+<p> <m> \sigma = \sqrt{3.24} =1.8 </m> </p>  
+<p> From the center of 3.4 most values are within 1.8 of it. </p>
+
+      </subsection> 
+
+
 
 
 

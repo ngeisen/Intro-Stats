@@ -14,6 +14,277 @@
         </introduction>
     </objectives>  
 
+<subsection xml:id="subsec-ProbRules1">
+  <title>Basic Probability Rules Review</title>
+ 
+<p> It is not always feasible to conduct an experiment thousands of times to determine the likelihood of events long term, so it would be better to be able to find the probabilities without conducting the experiment.  In this section we will focus on probability rules based on the <em>theoretical probabilities</em>. </p>
+
+<p>There is an assumption we must consider with theoretical probability, whether all outcomes in the sample space are <em> equally likely</em> to occur.  This means that every outcome has the same chance of happening.  </p>
+
+<exercise label="EquallyLikely-matching">
+    <title> Equally Likely </title>
+    <statement>  <p> Which of the following experiments have equally likely outcomes?
+    </p>    </statement>
+    <choices randomize="yes">
+    <choice correct="yes">
+        <statement>  <p> Tossing a fair coin. </p>
+        </statement>
+            </choice>
+    <choice >
+        <statement>    <p> Rolling loaded dice.  </p>     </statement>
+        <feedback>
+        <p> Since the dice is loaded, it will land showing some numbers more often than others, thus not equally likely events.  </p>
+        </feedback>
+    </choice>
+    <choice>
+        <statement>
+        <p> Pull a ball out of a bag containing 5 red balls and 6 green balls.   </p>
+        </statement>
+        <feedback>
+        <p> Assuming the balls are the same size, then each ball has the same chance of being chosen.  The outcomes of this experiment are the individual balls, so each outcome is equally likely. The probability of a specific color is not equally likely since the number of ways the color can occur is different . </p>
+        </feedback>
+    </choice>
+    
+    </choices>
+</exercise>
+
+<p> First, let us look at the standard deck of playing cards. There are four suits: diamonds, clubs, hearts, and spades. Half the cards are red and half are back. The are 13 numbered cards for each suit consisting of two thru ten, an ace, and the face cards as jack, queen, and king. This makes the standard deck of 52 cards. </p> 
+<figure xml:id="StandardDeck2">
+            <caption>Standard deck of cards</caption>
+            <image source="DeckCards.png" >
+                <shortdescription>four suits with 13 numbered cards in deck.</shortdescription>
+            </image>
+        </figure>
+  <exercise> <title> Hearts </title>
+    <statement>
+     <p>  If one card is randomly drawn from a deck, what is the probability of drawing a heart? </p>
+    </statement>
+    <solution> <p>  There are 13 hearts in a deck of 52 cards, thus P(heart)=13/52=1/4 . </p>  
+    </solution> 
+</exercise>
+<exercise> <title> Queen </title>
+    <statement>
+     <p>  If one card is randomly drawn from a deck, what is the probability of drawing a Queen?</p>
+    </statement>
+    <solution> <p>  P(Queen) = 4/52 = 1/13 = 0.077 </p>  </solution> 
+</exercise>
+<exercise> <title> Queen of Hearts</title>
+    <statement>
+     <p>  If one card is randomly drawn from a deck, what is the probability of drawing the Queen of Hearts?</p>
+    </statement>
+<solution> <p>  P(Queen of Hearts) = 1/52, only one card in the deck meets this condition. This has a low probability of occurring. </p>  </solution> 
+</exercise>
+<exercise> <title> not Queen of Hearts</title>
+    <statement>
+     <p>  If one card is randomly drawn from a deck, what is the probability of not drawing the Queen of Hearts?</p>
+    </statement>
+<solution> <p>  P(Queen of Hearts) = 1/52, thus P(not Queen of Hearts) = 1-1/52 = 51/52 is the complement which is likely to happen. </p>  </solution> 
+</exercise>      
+
+<p>Often with probability we want to investigate more than just one event taking place. Suppose we want to find the probability of drawing a 4 or a face card (which is the Jack, queen, and king). There are four events to consider. Since each of these represent a number card, they are mutually exclusive since they have no outcome in common. But when we want the queen of hearts, we want a queen and a heart card. These are not mutually exclusive since they share the same card. </p>
+<p>Two events are <term> mutually exclusive </term> if they cannot occur at the same time. This means if you belong to one group, you are excluded from belonging to another group. If a card is a heart, it is excluded from being a spade, diamond, or club. If a card is a 10, it is excluded from being a 2 or a 5. </p> 
+<p>Recognizing if events are mutually exclusive can help us use some rules of probability rather than trying to count all the ways the events can occur together.  We briefly used this idea in the last section when we look at the spinner. If you spin red, it is excluded from landing on blue, green, or yellow. Thus we were able to add the probabilities together.  </p>
+<p> When two events A and B are mutually exclusive, the probability that either A or B will occur is <m> P(\text{A or B}) = P(A) + P(B) </m> </p>
+<p> When two events A and B are mutually exclusive, the probability that A and B will occur together is <m> P(\text{A and B}) = 0 </m> since they cannot occur at the same time. </p>
+<p> <em> For example, </em> find the probability of drawing a 5 or 6 from one random draw from a deck of cards. Since 5 and 6 are number cards they are mutually exclusive then the P(5 or 6) = <m>P(5) + P(6) = 4/52+4/52=8/52 = 0.1538</m> </p>
+<p> Also, the probability of drawing one card at random and having it be a 5 and a 6 cannot occur, thus <m> P(\text{5 and 6})=0</m></p>
+
+<exercise> <title> Queen or King </title>
+    <statement>
+      <p>  If one card is randomly drawn from a deck, what is the probability of drawing a Queen or King?</p>
+    </statement>
+    <solution> <p>  P(Queen or King) = 4/52 +4/52 = 8/52 = .01538 </p>  </solution> 
+</exercise>
+<exercise> <title> Face Card </title>
+    <statement>
+      <p>  If one card is randomly drawn from a deck, what is the probability of drawing a face card (Jack or Queen or King)?</p>
+    </statement>
+    <solution> <p>  P(Jack or Queen or King) = 4/52 +4/52 +4/52 = 12/52 = 0.2308 </p>  </solution> 
+</exercise>
+
+<p> So, what happens when the events are not mutually exclusive? If we simply add the probabilities together we are double counting some of the events. <em> For example, </em> what is the probability of getting a Spade or an Ace from one draw? There are 13 spades and 4 aces, but the Ace of Spades is counted in both groups, so we need to subtract out the duplicated card. </p>
+<p>  P(Spade or Ace) 13/52 + 4/52 - 1/52 = 16/52 = 0.3077. </p>
+<p> If we list all the outcomes that meet this condition we have {2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, 10S, JS, QS, KS, AS, AC, AD, AH} so there are 16 outcomes for this event. </p>
+<p> When two events A and B are <em> not </em> mutually exclusive, the probability that either A or B will occur is <m> P(\text{A or B}) = P(A) + P(B) - P(\text{A and B})</m> </p>
+
+<exercise> <title> Five or Diamond </title>
+    <statement>
+     <p>  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or a diamond? </p>
+    </statement>
+<solution> <p>  P(5 or diamond) = 4/52 +13/52 - 1/52 = 16/52 = 0.3077</p>  </solution> 
+</exercise>
+<exercise> <title> Five or Six or Diamond </title>
+    <statement>
+      <p>  If one card is randomly drawn from a deck, what is the probability of drawing a 5 or 6 or diamond? </p>
+    </statement>
+    <solution> <p>  P(5 or 6 or diamond) = 4/52 +4/52 + 13/52 - 2/52 = 23/52 = 0.4423 since the 5 of diamonds and 6 of diamonds are repeated the groups</p>  </solution> 
+</exercise>
+
+<p>    </p> 
+<p> When two events are mutually exclusive, this is also known as being <term>disjoint </term>. In the Venn Diagram below, when the two groups are disjoint, there are no common elements in the two groups thus the circles do not touch. Therefore, we can add both groups together to get the total number of elements. This same ideas works with probability.  </p> 
+<figure xml:id="VennDisjoint">
+            <caption>Disjoint Venn Diagram</caption>
+            <image source="VennDisj.png" width="50%">
+                <shortdescription>non touching circles .</shortdescription>
+            </image>
+        </figure> 
+<p> When the events are not mutually exclusive, the circles overlap in a Venn Diagram, since there are common elements in both groups. This is why we subtract the duplicated values which are the “and” statements since they are in the overlapping section. Note: When the events are mutually exclusive, the “and” statement has a probability of 0, thus there is nothing to subtract, so you can use the same formula. </p> 
+<figure xml:id="VennNotDisjoint">
+            <caption>Non Disjoint Venn Diagram</caption>
+            <image source="VennNotDisj.png" width="50%">
+                <shortdescription>overlapping circles .</shortdescription>
+            </image>
+        </figure> 
+
+<p> We can also find a variety of probabilities from a table. Each row is mutually exclusive to each other, and each column is mutually exclusive to each other. The table below summaries the size and type of cars at Iron Mountain Auto Sales. The cars can be either foreign or domestic. The cars can be a SUV, compact, or a sedan. When the row and column have a common value in the intersection, this refers to the “and” since it meets both conditions. There are 20 Foreign Cars that are SUVs, thus Foreign and SUV. </p>
+
+<figure xml:id="AutoSalesTable">
+            <caption> Iron Mountain Auto Sales Table</caption>
+            <image source="AutoSalesTable.png" width="80%">
+                <shortdescription>First row are foreign with 20 SUV, 50 compact, 20 sedans for 90 total. Second row is domestic with 65 SUV, 100 compact, 45 sedans for 210 total. Grand total of 300 cars .</shortdescription>
+            </image>
+        </figure>
+<p> <term> Examples: </term> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event. </p> 
+<p> a. A foreign car is sold. </p> 
+<p> Solution: There are a total of 90 foreign cars with 300 total cars in the lot, so the probability of it being foreign is P(foreign) = 90/300 = 0.30 or 30%</p> 
+<p> b. The car is foreign and compact. </p>
+<p> Solution: We want the intersection of foreign and compact which is 50 cars out of the total of 300. Thus P(foreign and compact) = 50/300 = 0.1667 or 16.7% </p> 
+<p> c. The car is foreign or compact. </p>
+<p> Solution: we want all the foreign cars (90) or compact cars (150), so we need to add them together, but subtract the cars that were counted in both categories (which are the 50 cars that are both). Thus P(foreign or compact) = 90/300 + 150/300 – 50/300 = 190/300 = 0.633 or 63.3% </p> 
+<p> Alternatively we can take the total foreign cars of 90 plus any compact cars not yet added which are the 100 domestic compact cars for the same total of 190 cars out of 300 total. </p> 
+
+<p> <term> Checkpoints: </term> If a car is randomly selected from Iron Mountain Auto Sales, find the probability of each event. </p> 
+<exercise> <title> Compact </title>
+    <statement>
+      <p>  The car is compact. </p>
+    </statement>
+<solution> <p>  P(compact) = 150/300 = 0.5 or 50%</p>  </solution> 
+</exercise>
+<exercise> <title> domestic or sedan </title>
+    <statement>
+      <p>  The car is domestic or a sedan. </p>
+    </statement>
+<solution> <p>  P(domestic or a sedan) = 210/300+ 65/300 - 45/300 = 230/300 = 0.767 or 76.7%%</p>  </solution> 
+</exercise>
+<exercise> <title> Domestic SUV </title>
+    <statement>
+      <p>  The car is domestic and SUV. </p>
+    </statement>
+<solution> <p>  P(domestic and SUV) = 65/300 = 0.217 or 21.7%</p>  </solution> 
+</exercise>
+
+
+
+</subsection> 
+
+
+<subsection xml:id="subsec-ProbRulesPractice">
+  <title> Probability Practice Problems </title>
+
+<p> <term> Hockey Hall of Fame: </term> From its founding through 2023, the Hockey Hall of Fame has inducted 298 players (including 10 women). The table below shows the number of players by place of birth and by position played. If a player is chosen at random from all player inductees in the Hockey Hall of Fame, let C represent the event of being born in Canada, D represent the event of being a defenseman, and G represent the event of being a goalie. Data from www.hhof.com</p> 
+<figure xml:id="HockeyFame">
+            <caption>Hockey Hall of Fame Table</caption>
+            <image source="HockeyFameTable.png" width ="75%">
+                <shortdescription>First column list country, second column offense, third column is defense, fourth column is total, and fifth column is total for country born .</shortdescription>
+            </image>
+        </figure> 
+<p> Checkpoints: Write each of the following questions as a probability expression and find the probability using the Hockey Hall of Fame Table. </p>
+<exercise> <title> Defense </title>
+    <statement>
+      <p>  What is the probability that an inductee chosen at random is a defenseman? </p>
+    </statement>
+<solution> <p>  P(defenseman) = 89/298 = .2987 or 29.9% </p>  </solution> 
+</exercise>
+<exercise> <title> Canadian </title>
+    <statement>
+      <p>  What is the probability that an inductee chosen at random is not Canadian?</p>
+    </statement>
+<solution> <p>  P(not Canadian) = 1 – 251/298 = 47/298 = .1577 or 15.8% </p>  </solution> 
+</exercise>
+<exercise> <title> Canadian goalie </title>
+    <statement>
+      <p>  What is the probability that a player chosen at random is a goalie born in Canada </p>
+    </statement>
+<solution> <p>  P(goalie and Canadian) = 36/298 = .1208  or 12.1% </p>  </solution> 
+</exercise>
+<exercise> <title> Canada or Defense </title>
+    <statement>
+      <p>  What is the probability that a player chosen at random is either born in Canada or a defenseman?</p>
+    </statement>
+<solution> <p>  P(Canada or defenseman) = 251/298 + 89/298 – 74/398 = 266/298 = .8926 </p>  </solution> 
+</exercise>
+<exercise> <title> Defense or Goalie </title>
+    <statement>
+      <p>  What is the probability that the player chosen at random either plays defense or is a goalie </p>
+    </statement>
+<solution> <p>  P(defense or goalie) = 89/298 + 39/298 = 128/298 = .4295 since mutually exclusive events. </p>  </solution> 
+</exercise>
+<exercise> <title> Canada plays Defense </title>
+    <statement>
+      <p>  What is the probability that a Canadian inductee plays defense?</p>
+    </statement>
+<solution> <p>  P(defense | Canada) = 74/251 = .2948 </p>  </solution> 
+</exercise>
+<exercise> <title> Defense is Canadian </title>
+    <statement>
+      <p>  What is the probability that an inductee who plays defense is Canadian?</p>
+    </statement>
+<solution> <p>  P(Canada | defense) = 74/89 = .8315 </p>  </solution> 
+</exercise>
+
+
+<p> <term> Blood Typing:</term> Medical personnel determine blood typing by the type of antigens or markers that are on the surface of red blood cells (either A or B) and if there are antibodies to a portion of the blood type known as the Rh factor (either positive or negative). There are four blood types: A, B, AB, and O and two Rh factors: positive and negative.  The table below presents the results of a representative sample of 360 adults in the U.S. </p> 
+<figure xml:id="BloodTypes">
+            <caption>Blood Type Table</caption>
+            <image source="BloodTable.png" width ="60%">
+                <shortdescription>First column list blood type as O,A, B, AB, second column positive Rh, third column is negative Rh, fourth column is total.</shortdescription>
+            </image>
+        </figure> 
+<p> Checkpoints: Write each of the following questions as a probability expression and find the probability using the Blood Typing Table. </p> 
+<exercise> <title> negative </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has a negative Rh factor?</p>
+    </statement>
+<solution> <p>  P(negative) 58/360 = .161 have negative blood</p>  </solution> 
+</exercise>
+<exercise> <title> not AB </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random is <term>not</term>  a universal plasma donor (universal plasma donors have Type AB blood)?</p>
+    </statement>
+<solution> <p> use the complement thus  P(not AB) = 1 – 15/360 = 345/360 = .958  </p>  </solution> 
+</exercise>
+<exercise> <title> B+ </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has type B and positive Rh factor?</p>
+    </statement>
+<solution> <p> intersection P(B and pos) = 32/360 = .089</p>  </solution> 
+</exercise>
+<exercise> <title> A or negative </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has blood type A or a negative Rh factor (or both)?</p>
+    </statement>
+<solution> <p>  P(A or negative) = 144/360 + 58/360 – 22/360 = 180/360=.500 subtract the intersection since not mutually exclusive </p>  </solution> 
+</exercise>
+<exercise> <title> A or B </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has blood type A or blood type B?</p>
+    </statement>
+<solution> <p>  P( A or B) = 144/360 + 39/390 = 183/360 = .508 since mutually exclusive </p>  </solution> 
+</exercise>
+<exercise> <title> Blood </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has blood type O if we know the person has a negative Rh factor? </p>
+    </statement>
+<solution> <p>  P(O | neg) = 25/58 = .431</p>  </solution> 
+</exercise>
+<exercise> <title> Blood </title>
+    <statement>
+      <p>  What is the probability that a person in the sample chosen at random has a negative Rh factor if we know the person has blood type O? </p>
+    </statement>
+<solution> <p>  P(neg | O) = 25/162 = .154 </p>  </solution> 
+</exercise>
+
+  </subsection>
 
 
     </section> 
