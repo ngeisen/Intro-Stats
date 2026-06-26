@@ -81,13 +81,13 @@
     <knowl
       theorem="no"
       proof="yes"
-      definition="no"
+      definition="yes"
       example="yes"
       example-solution="yes"
       project="no"
       task="no"
       remark="no"
-      objectives="no"
+      objectives="yes"
       outcomes="no"
       figure="no"
       table="no"
@@ -104,7 +104,7 @@
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
-        theme="greeley"
+        theme="denver"
     />
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
