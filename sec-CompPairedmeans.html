@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>t-test for Paired Means</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
+<p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-CompIndpMeans.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapComparisonTests.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-CompareProp.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistsical Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Investigation-Process.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Statistical Investigation Process</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Working with Data</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-data-student-survey" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Student Survey</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-collect-data.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Collecting Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-studytypes.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Study Design</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterTwo.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-shape.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Shape of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="centers.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing the Center of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spread.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Describing Spread of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boxplots.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Describing data with boxplots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Data Organization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Data Display</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Association Between Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Study Type</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Estimating with Bootstrapping</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Using Randomization Samples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterTesting.html" class="internal"><span class="codenumber">6</span> <span class="title">Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-HT-Bob-Tim.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Hypothesis Test</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroHypothesisTest.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Introduction to Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-IntroHypotheses" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction to Hypothesis Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-WriteHypotheses" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Writing Hypotheses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Errors in Hypotheses Tests</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-HypothesesPractice" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SingleMean.html" class="internal"><span class="codenumber">6.3</span> <span class="title">t-test for the Mean</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanBasics" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-MeanOldFaithful" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Old Faithful Hypothesis Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanCalc" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanTestPractice" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SingleProportion.html" class="internal"><span class="codenumber">6.4</span> <span class="title">z-test for Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionTestBasics" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Hypothesis Testing for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionParrots" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Hypothesis Test Examples for Parrots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionCalculator" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ChapComparisonTests.html" class="internal"><span class="codenumber">7</span> <span class="title">Comparison Tests</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for Two Independent Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndependentMeansBasics" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#ParrotWordComparisonExample" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Comparing Means of Mimicked Words</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndependentMeansCalculator" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-CompPairedmeans.html" class="internal"><span class="codenumber">7.2</span> <span class="title">t-test for Paired Means</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanTestBasics" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanPushUps" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Paired Mean Hypothesis Test for Push Ups</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompareProp.html" class="internal"><span class="codenumber">7.3</span> <span class="title">z-test for Two Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsBasics" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsDrivers" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Compare Proportions Without Insurance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsMimicry" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Compare Proportions of Mimicry Repertoires</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsCalc" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-CompPairedmeans">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">t-test for Paired Means</span>
+</h2>
+<section class="introduction" id="sec-CompPairedmeans-2">
+<div class="para" id="sec-CompPairedmeans-2-1">The paired <span class="process-math">\(t\)</span>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-CompPairedmeans-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-CompPairedmeans-3-1">
+<div class="para" id="sec-CompPairedmeans-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec-CompPairedmeans-3-2">
+<li id="sec-CompPairedmeans-3-2-1">
+<div class="para" id="sec-CompPairedmeans-3-2-1-1">Write hypotheses for the paired difference in means.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 7.2.1"><a href="#sec-CompPairedmeans-3-2-1" title="Copy heading and permalink for Objective 7.2.1" aria-label="Copy heading and permalink for Objective 7.2.1">🔗</a></div>
+</li>
+<li id="sec-CompPairedmeans-3-2-2">
+<div class="para" id="sec-CompPairedmeans-3-2-2-1">Determine the test statistic and p-value for the paired t-test.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 7.2.2"><a href="#sec-CompPairedmeans-3-2-2" title="Copy heading and permalink for Objective 7.2.2" aria-label="Copy heading and permalink for Objective 7.2.2">🔗</a></div>
+</li>
+<li id="sec-CompPairedmeans-3-2-3">
+<div class="para" id="sec-CompPairedmeans-3-2-3-1">Write the conclusion of a test in context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 7.2.3"><a href="#sec-CompPairedmeans-3-2-3" title="Copy heading and permalink for Objective 7.2.3" aria-label="Copy heading and permalink for Objective 7.2.3">🔗</a></div>
+</li>
+<li id="sec-CompPairedmeans-3-2-4">
+<div class="para" id="sec-CompPairedmeans-3-2-4-1">Construct confidence intervals for the difference in means.<div class="autopermalink" data-description="Paragraph"><a href="#sec-CompPairedmeans-3-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 7.2.4"><a href="#sec-CompPairedmeans-3-2-4" title="Copy heading and permalink for Objective 7.2.4" aria-label="Copy heading and permalink for Objective 7.2.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 7.2"><a href="#sec-CompPairedmeans-3" title="Copy heading and permalink for Objectives 7.2" aria-label="Copy heading and permalink for Objectives 7.2">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-PairedMeanTestBasics">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+</h3>
+<div class="para" id="subsec-PairedMeanTestBasics-2">The paired <span class="process-math">\(t\)</span>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <span class="process-math">\(t\)</span>-test analyzes the <em class="emphasis">differences</em> within each pair. If we let <span class="process-math">\(d\)</span> represent the difference for each pair, then the <dfn class="terminology">hypotheses</dfn> are written in terms of the population mean difference <span class="process-math">\(\mu_d\text{.}\)</span>  The null hypothesis is <span class="process-math">\(\mu_d = 0\)</span> and the alternative hypothesis can be either <span class="process-math">\(\mu_d \lt 0\)</span> or <span class="process-math">\(\mu_d \gt 0 \)</span> for a one tailed test, or <span class="process-math">\(\mu_d \ne 0\)</span> for a two-tailed test .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanTestBasics-3">
+<div class="para">The <dfn class="terminology">test statistic</dfn> is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanTestBasics-3-2">
+\begin{equation*}
+t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}} 
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\bar{d}\)</span> is the sample mean of the differences, <span class="process-math">\(s_d\)</span> is the sample standard deviation of the differences, <span class="process-math">\(n\)</span> is the number of pairs in the sample, and <span class="process-math">\(\mu_{d}\)</span> is the hypothesized mean difference, usually <span class="process-math">\(0\)</span> indicating no difference in values.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanTestBasics-4">This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting <dfn class="terminology">p-value</dfn> is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanTestBasics-5">Recall that when the <em class="emphasis">p-value</em> <span class="process-math">\(\lt \alpha \)</span> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-paired-t-test-mean" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="definition definition-like knowl__content">
+<div class="para" id="def-paired-t-test-mean-1-1">A <dfn class="terminology">paired <span class="process-math">\(t\)</span>-test for the mean</dfn> is a statistical test used to compare the mean of the differences between two related measurements and determine whether there is evidence that the population mean difference is different from a hypothesized value.<div class="autopermalink" data-description="Paragraph"><a href="#def-paired-t-test-mean-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="def-paired-t-test-mean-1-2">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="def-paired-t-test-mean-1-2-1">
+\begin{equation*}
+t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}}     
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-paired-t-test-mean-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="def-paired-t-test-mean-1-3">where <span class="process-math">\(\bar{d}\)</span> is the sample mean of the differences, <span class="process-math">\(s_d\)</span> is the sample standard deviation of the differences, <span class="process-math">\(n\)</span> is the number of pairs, and <span class="process-math">\(\mu_d\)</span> is the hypothesized population mean difference.<div class="autopermalink" data-description="Paragraph"><a href="#def-paired-t-test-mean-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 7.2.1"><a href="#def-paired-t-test-mean" title="Copy heading and permalink for Definition 7.2.1" aria-label="Copy heading and permalink for Definition 7.2.1">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-PairedMeanTestBasics-7">A confidence interval for a paired mean is used when data are collected in matched pairs, such as before-and-after measurements on the same subjects or measurements on two related conditions. First, compute the difference for each pair, usually written as <span class="process-math">\(d = x_1 - x_2\)</span> or in a context-specific way such as <span class="process-math">\(d=\text{After}-\text{Before}\text{.}\)</span> Then treat the list of differences as a single sample. If the conditions for inference are satisfied, a confidence interval for the population mean difference <span class="process-math">\(\mu_d\)</span> is given by <span class="process-math">\(\bar{d}\pm t^*\dfrac{s_d}{\sqrt{n}}\text{,}\)</span> where <span class="process-math">\(\bar{d}\)</span> is the sample mean of the differences, <span class="process-math">\(s_d\)</span> is the sample standard deviation of the differences, <span class="process-math">\(n\)</span> is the number of pairs, and <span class="process-math">\(t^*\)</span> is the critical value from the <span class="process-math">\(t\)</span>-distribution with <span class="process-math">\(n-1\)</span> degrees of freedom.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanTestBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-paired-means-confidence-interval" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="definition definition-like knowl__content">
+<div class="para logical" id="def-paired-means-confidence-interval-1-1">
+<div class="para">A <dfn class="terminology">confidence interval for paired means</dfn> is used to estimate the population mean difference <span class="process-math">\(\mu_d\)</span> when data are collected in matched pairs. The confidence interval for the population mean difference is</div>
+<div class="displaymath process-math" id="def-paired-means-confidence-interval-1-1-3">
+\begin{equation*}
+\bar{d} \pm t^*\dfrac{s_d}{\sqrt{n}}\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\bar{d}\)</span> is the sample mean of the differences, <span class="process-math">\(s_d\)</span> is the sample standard deviation of the differences, <span class="process-math">\(n\)</span> is the number of pairs, and <span class="process-math">\(t^*\)</span> is the critical value from the <span class="process-math">\(t\)</span>-distribution with <span class="process-math">\(n-1\)</span> degrees of freedom.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-paired-means-confidence-interval-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 7.2.2"><a href="#def-paired-means-confidence-interval" title="Copy heading and permalink for Definition 7.2.2" aria-label="Copy heading and permalink for Definition 7.2.2">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 7.2.1: Understanding the Basics"><a href="#subsec-PairedMeanTestBasics" title="Copy heading and permalink for Subsection 7.2.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 7.2.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-PairedMeanPushUps">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Paired Mean Hypothesis Test for Push Ups</span>
+</h3>
+<div class="para" id="subsec-PairedMeanPushUps-2">A fitness instructor wants to know whether a 6-week training program improves the number of push-ups participants can complete in one minute. The instructor records the number of push-ups for each participant before the program and again after the program.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-3">The data are shown below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-1-1">
+<dfn class="terminology">Participant</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-2-1">
+<span class="process-math">\(1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-3-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-5-1">
+<span class="process-math">\(4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-1-6-1">
+<span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-1-1">
+<dfn class="terminology">Before</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-2-1">
+<span class="process-math">\(18\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-3-1">
+<span class="process-math">\(22\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-4-1">
+<span class="process-math">\(20\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-5-1">
+<span class="process-math">\(16\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-2-6-1">
+<span class="process-math">\(19\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-1-1">
+<dfn class="terminology">After</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-2-1">
+<span class="process-math">\(21\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-3-1">
+<span class="process-math">\(25\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-4-1">
+<span class="process-math">\(23\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-5-1">
+<span class="process-math">\(18\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-3-6-1">
+<span class="process-math">\(22\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-3-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-1-1">
+<dfn class="terminology">Difference</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-2-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-3-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-5-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-4-4-6-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-4-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+</table></div>
+<div class="para" id="subsec-PairedMeanPushUps-5">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context against <span class="process-math">\(\alpha = 0.05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PairedMeanPushUps-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Push Up Test.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-2-1">Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-PairedMeanPushUps-6-2-2">Because the same participants are measured twice, this is a <dfn class="terminology">paired t-test for the mean</dfn>. The differences can be found by subtracting the Before values from the After training values, giving the differences of  <span class="process-math">\(3, 3, 3, 2, 3\text{.}\)</span> This indicated they were able to do more push ups after the training program.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-PairedMeanPushUps-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differences</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-2">A paired <span class="process-math">\(t\)</span>-test is appropriate because the same  of 5 participants are measured twice, once before the training program and once after the training program. This creates matched pairs of observations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-3">First we need to compute the differences using <span class="process-math">\(d = \text{After} - \text{Before}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-1-1">
+<dfn class="terminology">Participant</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-2-1">
+<span class="process-math">\(1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-3-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-5-1">
+<span class="process-math">\(4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-1-6-1">
+<span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-1-1">
+<dfn class="terminology">Difference</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-2-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-3-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-4-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-5-1">
+<span class="process-math">\(2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-PairedMeanPushUps-6-3-4-2-6-1">
+<span class="process-math">\(3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-4-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr>
+</table></div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-5">So the sample of differences are <span class="process-math">\(3, 3, 3, 2, 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-6">The sample mean of the differences is <span class="process-math">\(\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-3-7">The sample standard deviation of the differences is <span class="process-math">\(s_d \approx 0.447\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.2.3.1: Differences"><a href="#subsec-PairedMeanPushUps-6-3" title="Copy heading and permalink for Solution 7.2.3.1: Differences" aria-label="Copy heading and permalink for Solution 7.2.3.1: Differences">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-4-2">We test <span class="process-math">\(H_0: \mu_d = 0\)</span> versus <span class="process-math">\(H_a: \mu_d  \gt 0\text{,}\)</span> where <span class="process-math">\(\mu_d\)</span> is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0,  thus a right tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.2.3.2: Hypotheses"><a href="#subsec-PairedMeanPushUps-6-4" title="Copy heading and permalink for Solution 7.2.3.2: Hypotheses" aria-label="Copy heading and permalink for Solution 7.2.3.2: Hypotheses">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-5-2">The sample mean of the differences is <span class="process-math">\(\bar{d} = \frac{14}{5} = 2.8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-3">The sample standard deviation of the differences is <span class="process-math">\(s_d \approx 0.447\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-4">The test statistic is <span class="process-math">\(t = \frac{\bar{d}-0}{s_d/\sqrt{n}}
+= \frac{2.8}{0.447/\sqrt{5}}         \approx 14.0\)</span> with <span class="process-math">\(df = 5-1 = 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-5">This gives a very small <span class="process-math">\(p\)</span>-value <span class="process-math">\(\approx 0.000076\text{,}\)</span> so we reject <span class="process-math">\(H_0\)</span> since it is less than <span class="process-math">\(\alpha = .05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-5-6">Recall with StatKey we select the t-distribution, enter the 4 degrees of freedom, select the Right Tail and enter the test value 14.0 along the bottom to get the shaded area of .000076.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TdistPushups"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Tdist1.png" class="contained" alt="Test value T=14.0 for a right tailed test giving a p-value=.000076 ."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>t-distribution in StatKey for t=14 with 4 df<div class="autopermalink" data-description="Figure 7.2.4"><a href="#TdistPushups" title="Copy heading and permalink for Figure 7.2.4" aria-label="Copy heading and permalink for Figure 7.2.4">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 7.2.3.3: Statistical Test"><a href="#subsec-PairedMeanPushUps-6-5" title="Copy heading and permalink for Solution 7.2.3.3: Statistical Test" aria-label="Copy heading and permalink for Solution 7.2.3.3: Statistical Test">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-6-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-6-6-2">This gives a very small <span class="process-math">\(p\)</span>-value <span class="process-math">\(\approx 0.000076\text{,}\)</span> so we reject <span class="process-math">\(H_0\)</span> since it is less than <span class="process-math">\(\alpha = .05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-6-6-3">There is strong evidence that the 6-week training program increases the mean number of push-ups participants can complete in one minute.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-6-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.2.3.4: Conclusion"><a href="#subsec-PairedMeanPushUps-6-6" title="Copy heading and permalink for Solution 7.2.3.4: Conclusion" aria-label="Copy heading and permalink for Solution 7.2.3.4: Conclusion">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 7.2.3: Push Up Test"><a href="#subsec-PairedMeanPushUps-6" title="Copy heading and permalink for Example 7.2.3: Push Up Test" aria-label="Copy heading and permalink for Example 7.2.3: Push Up Test">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-PairedMeanPushUps-7">A fitness instructor wants to know whether a 6-week training program improves the number of push-ups participants can complete in one minute. The instructor records the number of push-ups for each participant before the program and again after the program. Construct a 95% confidence interval for the mean difference in the number of pushups after the training program.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PairedMeanPushUps-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pushup Confidence Interval.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-8-2-1">To construct a 95% confidence interval for the mean difference in the number of pushups after the training program, let <span class="process-math">\(d=\text{After}-\text{Before}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-PairedMeanPushUps-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find t*</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-8-3-2">Since the population standard deviation is unknown and the data are paired, we use a <span class="process-math">\(t\)</span>-distribution with <span class="process-math">\(df=5-1=4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8-3-3">With StatKey, under the <dfn class="terminology">Theoretical Distributions</dfn> select <dfn class="terminology">t</dfn>, enter the degrees of freedom of <span class="process-math">\(4\text{,}\)</span>  click on<em class="emphasis">Two Tail</em> and enter 0.95 in the center area region. The <span class="process-math">\(t^* \)</span> value is along the bottom of the graph for <span class="process-math">\(t^* =2.776\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="TdistPushups2"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/Tdist3.png" class="contained" alt="95% confidence for 4 df is t=2.776"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>StatKey for 95% confidence for 4 degrees of freedom<div class="autopermalink" data-description="Figure 7.2.6"><a href="#TdistPushups2" title="Copy heading and permalink for Figure 7.2.6" aria-label="Copy heading and permalink for Figure 7.2.6">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 7.2.5.1: Find t*"><a href="#subsec-PairedMeanPushUps-8-3" title="Copy heading and permalink for Solution 7.2.5.1: Find t*" aria-label="Copy heading and permalink for Solution 7.2.5.1: Find t*">🔗</a></div>
+</div></details>
+<details id="subsec-PairedMeanPushUps-8-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interval</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-PairedMeanPushUps-8-4-2">The differences between the paired values are  <span class="process-math">\(3, 3, 3, 2, 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8-4-3">From these data,  <span class="process-math">\(n=5\text{,}\)</span>  <span class="process-math">\(\bar{d}= 2.8\text{,}\)</span> And   <span class="process-math">\(s_d\approx 0.447\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8-4-4">For a <span class="process-math">\(95\%\)</span> confidence interval with <span class="process-math">\(df=4\text{,}\)</span> the critical value Is  <span class="process-math">\(t^*\approx 2.776\)</span> using StatKey.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanPushUps-8-4-5">
+<div class="para">The margin of error is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-8-4-5-1">
+\begin{equation*}
+ME=t^*\frac{s_d}{\sqrt{n}}
+=2.776\left(\frac{0.447}{\sqrt{5}}\right)
+\approx 0.555\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PairedMeanPushUps-8-4-6">
+<div class="para">The confidence interval is</div>
+<div class="displaymath process-math" id="subsec-PairedMeanPushUps-8-4-6-1">
+\begin{equation*}
+\bar{d}\pm ME = 2.8 \pm 0.555\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8-4-7">So the <span class="process-math">\(95\%\)</span> confidence interval for the mean difference is <span class="process-math">\((2.245,\ 3.355)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PairedMeanPushUps-8-4-8">We are 95% confident that the true mean difference in the number of pushups after the training program is between <span class="process-math">\(2.2\)</span> and <span class="process-math">\(3.4\)</span> more pushups. Since the interval does not contain 0, this is consistent with the hypothesis test that the training program increases the mean number of pushups.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PairedMeanPushUps-8-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.2.5.2: Interval"><a href="#subsec-PairedMeanPushUps-8-4" title="Copy heading and permalink for Solution 7.2.5.2: Interval" aria-label="Copy heading and permalink for Solution 7.2.5.2: Interval">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 7.2.5: Pushup Confidence Interval"><a href="#subsec-PairedMeanPushUps-8" title="Copy heading and permalink for Example 7.2.5: Pushup Confidence Interval" aria-label="Copy heading and permalink for Example 7.2.5: Pushup Confidence Interval">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 7.2.2: Paired Mean Hypothesis Test for Push Ups"><a href="#subsec-PairedMeanPushUps" title="Copy heading and permalink for Subsection 7.2.2: Paired Mean Hypothesis Test for Push Ups" aria-label="Copy heading and permalink for Subsection 7.2.2: Paired Mean Hypothesis Test for Push Ups">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 7.2: t-test for Paired Means"><a href="#sec-CompPairedmeans" title="Copy heading and permalink for Section 7.2: t-test for Paired Means" aria-label="Copy heading and permalink for Section 7.2: t-test for Paired Means">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-CompIndpMeans.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-CompareProp.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

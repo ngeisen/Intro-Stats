@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>t-test for the Mean</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="og:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta property="book:title" content="Introduction to Statistical Analysis: An interactive approach to analyzing data.">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Introduction to Statistical Analysis</span> <span class="subtitle">An interactive approach to analyzing data.</span></a></h1>
+<p class="byline">Nancy Geisendorfer, Kristin Kang, Robert Powers</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-IntroHypothesisTest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ChapterTesting.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-SingleProportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Statistsical Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Investigation-Process.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Statistical Investigation Process</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Working with Data</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-section-name.html#subsec-data-student-survey" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Student Survey</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-collect-data.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Collecting Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-studytypes.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Study Design</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterOne.html" class="internal"><span class="codenumber">2</span> <span class="title">Organizing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="DayOne.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-two.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphOneCat" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Graphing One Categorical Variable</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoCategorical" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Graphing Two Categorical Variables</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-two.html#subsec-QuantGraphs" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphing One Quantitative Variable</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-two.html#subsec-GraphTwoQuantitative" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Graphing Two Quantitative Variables</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-three.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Graphing with StatKey</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterTwo.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-shape.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Shape of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="centers.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing the Center of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="spread.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Describing Spread of Data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="boxplots.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Describing data with boxplots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterProb.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-probBasics.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Probability Basics</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbRules.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Probability Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRules1" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Basic Probability Rules Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbRules.html#subsec-ProbRulesPractice" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Probability Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ProbDist.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Probability Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistBasics" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ProbDist.html#subsec-ProbDistStatistics" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Summary Statistics</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapterBootstrap.html" class="internal"><span class="codenumber">5</span> <span class="title">Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-sampdist.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Creating Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistReview" class="internal"><span class="codenumber">5.1.1</span> <span class="title">A Quick Review</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingMeans" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Sampling Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyMean" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-SamplingProportions" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Sampling Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-sampdist.html#subsec-DistTechnologyProp" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-bootdist.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Creating Bootstrap Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapMeans" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Bootstrap Distributions for Means</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyMean" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Using Technology: Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapProportions" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Bootstrap Distributions for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootTechnologyProp" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Using Technology: Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-bootdist.html#subsec-BootstrapPractice" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-randdist.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Randomization Distributions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-UrbanHeatStudy.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Urban Heat Study</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatDatatable" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Data Organization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatDisplay" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Data Display</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatAssociation" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Association Between Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatStudyType" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Study Type</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatBootstrap" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Estimating with Bootstrapping</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-UrbanHeatStudy.html#subsec-UrbanHeatRandom" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Using Randomization Samples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ChapterTesting.html" class="internal"><span class="codenumber">6</span> <span class="title">Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-HT-Bob-Tim.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Hypothesis Test</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroHypothesisTest.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Introduction to Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-IntroHypotheses" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction to Hypothesis Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-WriteHypotheses" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Writing Hypotheses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-ErrorsHypothesis" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Errors in Hypotheses Tests</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-IntroHypothesisTest.html#subsec-HypothesesPractice" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-SingleMean.html" class="internal"><span class="codenumber">6.3</span> <span class="title">t-test for the Mean</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanBasics" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-MeanOldFaithful" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Old Faithful Hypothesis Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanCalc" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleMean.html#subsec-SingleMeanTestPractice" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Practice Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SingleProportion.html" class="internal"><span class="codenumber">6.4</span> <span class="title">z-test for Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionTestBasics" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Hypothesis Testing for Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionParrots" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Hypothesis Test Examples for Parrots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SingleProportion.html#subsec-SingleProportionCalculator" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ChapComparisonTests.html" class="internal"><span class="codenumber">7</span> <span class="title">Comparison Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompIndpMeans.html" class="internal"><span class="codenumber">7.1</span> <span class="title">t-test for Two Independent Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndependentMeansBasics" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#ParrotWordComparisonExample" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Comparing Means of Mimicked Words</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompIndpMeans.html#subsec-IndependentMeansCalculator" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompPairedmeans.html" class="internal"><span class="codenumber">7.2</span> <span class="title">t-test for Paired Means</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanTestBasics" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompPairedmeans.html#subsec-PairedMeanPushUps" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Paired Mean Hypothesis Test for Push Ups</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-CompareProp.html" class="internal"><span class="codenumber">7.3</span> <span class="title">z-test for Two Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsBasics" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Understanding the Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsDrivers" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Compare Proportions Without Insurance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsMimicry" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Compare Proportions of Mimicry Repertoires</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-CompareProp.html#subsec-CompareProportionsCalc" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Using Technology</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-SingleMean">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">t-test for the Mean</span>
+</h2>
+<section class="introduction" id="sec-SingleMean-2">
+<div class="para" id="sec-SingleMean-2-1">The one-sample <span class="process-math">\(t\)</span>-test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean. The test statistic measures how many standard errors the sample mean is from the hypothesized value. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SingleMean-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="objectives goal-like" id="sec-SingleMean-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-SingleMean-3-1">
+<div class="para" id="sec-SingleMean-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-SingleMean-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec-SingleMean-3-2">
+<li id="sec-SingleMean-3-2-1">
+<div class="para" id="sec-SingleMean-3-2-1-1">Write hypotheses for the mean.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SingleMean-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 6.3.1"><a href="#sec-SingleMean-3-2-1" title="Copy heading and permalink for Objective 6.3.1" aria-label="Copy heading and permalink for Objective 6.3.1">🔗</a></div>
+</li>
+<li id="sec-SingleMean-3-2-2">
+<div class="para" id="sec-SingleMean-3-2-2-1">Determine the test statistic and p-value for the t-test .<div class="autopermalink" data-description="Paragraph"><a href="#sec-SingleMean-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 6.3.2"><a href="#sec-SingleMean-3-2-2" title="Copy heading and permalink for Objective 6.3.2" aria-label="Copy heading and permalink for Objective 6.3.2">🔗</a></div>
+</li>
+<li id="sec-SingleMean-3-2-3">
+<div class="para" id="sec-SingleMean-3-2-3-1">Write the conclusion of a test in context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SingleMean-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 6.3.3"><a href="#sec-SingleMean-3-2-3" title="Copy heading and permalink for Objective 6.3.3" aria-label="Copy heading and permalink for Objective 6.3.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 6.3"><a href="#sec-SingleMean-3" title="Copy heading and permalink for Objectives 6.3" aria-label="Copy heading and permalink for Objectives 6.3">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-SingleMeanBasics">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding the Basics</span>
+</h3>
+<div class="para" id="subsec-SingleMeanBasics-2">The one-sample <span class="process-math">\(t\)</span>-test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative <dfn class="terminology">hypotheses</dfn>. In this test, we compare a sample mean <span class="process-math">\(\bar{x}\)</span> to a hypothesized population mean <span class="process-math">\(\mu_0\)</span> by calculating a <em class="emphasis">test statistic</em> that measures how many standard errors the sample mean is from the hypothesized value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanBasics-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-SingleMeanBasics-3">
+<div class="para">The <dfn class="terminology">test statistic</dfn> is computed as</div>
+<div class="displaymath process-math" id="subsec-SingleMeanBasics-3-2">
+\begin{equation*}
+t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\bar{x}\)</span> is the sample mean, <span class="process-math">\(\mu_0 \)</span> is the hypothesized value, <span class="process-math">\(s\)</span> is the sample standard deviation, and <span class="process-math">\(n\)</span> is the sample size.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanBasics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SingleMeanBasics-4">Because the population standard deviation is not known, the test statistic follows a <dfn class="terminology">t-distribution</dfn> with <span class="process-math">\(n-1\)</span> degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting <dfn class="terminology">p-value</dfn> helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanBasics-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-one-sample-t-test-mean" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary>
+<article class="definition definition-like knowl__content">
+<div class="para logical" id="def-one-sample-t-test-mean-1-1">
+<div class="para">A <dfn class="terminology">one-sample <span class="process-math">\(t\)</span>-test for a mean</dfn> is a statistical method used to test a claim about a mean when the population standard deviation is unknown and the population is approximately normal. The formula for the t-test is</div>
+<div class="displaymath process-math" id="def-one-sample-t-test-mean-1-1-2">
+\begin{equation*}
+t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}
+\end{equation*}
+</div>
+<div class="para">with degrees of freedom <span class="process-math">\(df=n-1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-one-sample-t-test-mean-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.3.1"><a href="#def-one-sample-t-test-mean" title="Copy heading and permalink for Definition 6.3.1" aria-label="Copy heading and permalink for Definition 6.3.1">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-SingleMeanBasics-6">When competing the t-test for the mean, we assume we have a random sample from the population  and that the sample is either greater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em class="emphasis">t</em>-distribution because we do not know the population standard deviation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanBasics-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 6.3.1: Understanding the Basics"><a href="#subsec-SingleMeanBasics" title="Copy heading and permalink for Subsection 6.3.1: Understanding the Basics" aria-label="Copy heading and permalink for Subsection 6.3.1: Understanding the Basics">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-MeanOldFaithful">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Old Faithful Hypothesis Test</span>
+</h3>
+<div class="para" id="subsec-MeanOldFaithful-2">
+<dfn class="terminology">Hypothesis Test for the Mean Time Between Old Faithful Eruptions</dfn><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-3">A park researcher wants to determine whether the mean time between eruptions of Old Faithful in Yellowstone National Park is different from the claimed 90  minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-MeanOldFaithful-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Waiting Times Between Old Faithful Eruptions (minutes)<div class="autopermalink" data-description="Table 6.3.2: Waiting Times Between Old Faithful Eruptions (minutes)"><a href="#subsec-MeanOldFaithful-4" title="Copy heading and permalink for Table 6.3.2: Waiting Times Between Old Faithful Eruptions (minutes)" aria-label="Copy heading and permalink for Table 6.3.2: Waiting Times Between Old Faithful Eruptions (minutes)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r1 l1 t1 lines">82</td>
+<td class="l m b1 r1 l0 t1 lines">88</td>
+<td class="l m b1 r1 l0 t1 lines">91</td>
+<td class="l m b1 r1 l0 t1 lines">95</td>
+<td class="l m b1 r1 l0 t1 lines">87</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">93</td>
+<td class="l m b1 r1 l0 t0 lines">89</td>
+<td class="l m b1 r1 l0 t0 lines">84</td>
+<td class="l m b1 r1 l0 t0 lines">96</td>
+<td class="l m b1 r1 l0 t0 lines">90</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">85</td>
+<td class="l m b1 r1 l0 t0 lines">92</td>
+<td class="l m b1 r1 l0 t0 lines">94</td>
+<td class="l m b1 r1 l0 t0 lines">86</td>
+<td class="l m b1 r1 l0 t0 lines">89</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">91</td>
+<td class="l m b1 r1 l0 t0 lines">88</td>
+<td class="l m b1 r1 l0 t0 lines">97</td>
+<td class="l m b1 r1 l0 t0 lines">83</td>
+<td class="l m b1 r1 l0 t0 lines">90</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="subsec-MeanOldFaithful-5">At the <span class="process-math">\(\alpha = 0.05\)</span> significance level, test whether the true mean waiting time between eruptions is different from 90 minutes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-MeanOldFaithful-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypotheses.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-6-2-1">The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-MeanOldFaithful-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-6-3-1">The parameter is the mean <span class="process-math">\(\mu\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-6-3-2">The hypotheses are <span class="process-math">\(H_0: \mu=90\)</span> and <span class="process-math">\(H_a:\mu \ne 90\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-6-3-3">Because the park ranger asks whether the mean is “different” from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-6-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.3.1"><a href="#subsec-MeanOldFaithful-6-3" title="Copy heading and permalink for Solution 6.3.3.1" aria-label="Copy heading and permalink for Solution 6.3.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.3: Hypotheses"><a href="#subsec-MeanOldFaithful-6" title="Copy heading and permalink for Example 6.3.3: Hypotheses" aria-label="Copy heading and permalink for Example 6.3.3: Hypotheses">🔗</a></div>
+</article></details>
+<details id="subsec-MeanOldFaithful-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assumptions.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-7-2-1">Identify which test to perform and check that we meet the conditions for that test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-MeanOldFaithful-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-7-3-1">Since the population standard deviation is unknown and we have a sample of 20, use a one-sample <span class="process-math">\(t\)</span>-test for the mean. Which tells we use the <span class="process-math">\(t\)</span>-distribution. If we graph the data we can see it is approximately bell shaped and symmetric.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.4.1"><a href="#subsec-MeanOldFaithful-7-3" title="Copy heading and permalink for Solution 6.3.4.1" aria-label="Copy heading and permalink for Solution 6.3.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.4: Assumptions"><a href="#subsec-MeanOldFaithful-7" title="Copy heading and permalink for Example 6.3.4: Assumptions" aria-label="Copy heading and permalink for Example 6.3.4: Assumptions">🔗</a></div>
+</article></details>
+<details id="subsec-MeanOldFaithful-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistical Test.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-8-2-1">We need to compute the sample mean and sample standard deviation. Then we will calculate the <em class="emphasis">test statistic</em> and estimate the  <em class="emphasis">p-value</em> for a two-tailed test<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-MeanOldFaithful-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-8-3-1">the mean is <span class="process-math">\(\bar{x}= \frac{1780}{20}=89.50   \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-8-3-2">the standard deviation is <span class="process-math">\(s \approx 4.27\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-8-3-3">sample size is <span class="process-math">\(n=20\)</span> and degrees of freedom is <span class="process-math">\(df=20-1=18\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-MeanOldFaithful-8-3-4">
+<div class="para">Compute</div>
+<div class="displaymath process-math" id="subsec-MeanOldFaithful-8-3-4-1">
+\begin{equation*}
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-MeanOldFaithful-8-3-5">
+<div class="para">The standard error is</div>
+<div class="displaymath process-math" id="subsec-MeanOldFaithful-8-3-5-1">
+\begin{equation*}
+\frac{s}{\sqrt{n}}=\frac{4.27}{\sqrt{20}}\approx 0.95.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-MeanOldFaithful-8-3-6">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="subsec-MeanOldFaithful-8-3-6-1">
+\begin{equation*}
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{89.50-90}{0.95}\approx -0.52.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-MeanOldFaithful-8-3-7">With 19 degrees of freedom, the two-tailed <em class="emphasis">p-value</em> is <span class="process-math">\(2(.305)=0.61\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-8-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.5.1"><a href="#subsec-MeanOldFaithful-8-3" title="Copy heading and permalink for Solution 6.3.5.1" aria-label="Copy heading and permalink for Solution 6.3.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.5: Statistical Test"><a href="#subsec-MeanOldFaithful-8" title="Copy heading and permalink for Example 6.3.5: Statistical Test" aria-label="Copy heading and permalink for Example 6.3.5: Statistical Test">🔗</a></div>
+</article></details>
+<details id="subsec-MeanOldFaithful-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Decision.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-9-2-1">Make the decision to reject or not reject the null hypothesis by comparing the <em class="emphasis">p-value</em> with the level of significance <span class="process-math">\(\alpha = 0.05\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-MeanOldFaithful-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-9-3-1">Since the <em class="emphasis">p-value</em> = 0.61 is greater than <span class="process-math">\(\alpha=0.05\text{,}\)</span> we fail to reject the null hypothesis <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.6.1"><a href="#subsec-MeanOldFaithful-9-3" title="Copy heading and permalink for Solution 6.3.6.1" aria-label="Copy heading and permalink for Solution 6.3.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.6: Decision"><a href="#subsec-MeanOldFaithful-9" title="Copy heading and permalink for Example 6.3.6: Decision" aria-label="Copy heading and permalink for Example 6.3.6: Decision">🔗</a></div>
+</article></details>
+<details id="subsec-MeanOldFaithful-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-10-2-1">Now summarize the conclusion of the test by referring back to the alternative hypothesis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-MeanOldFaithful-10-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-MeanOldFaithful-10-3-1">There is not enough statistical evidence to conclude that the true mean time between Old Faithful eruptions is different from <span class="process-math">\(90\)</span> minutes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.7.1"><a href="#subsec-MeanOldFaithful-10-3" title="Copy heading and permalink for Solution 6.3.7.1" aria-label="Copy heading and permalink for Solution 6.3.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.7: Conclusion"><a href="#subsec-MeanOldFaithful-10" title="Copy heading and permalink for Example 6.3.7: Conclusion" aria-label="Copy heading and permalink for Example 6.3.7: Conclusion">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-MeanOldFaithful-11">For up-to-date geyser times visit: <a class="external" href="https://www.geysertimes.org/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geysertimes.org/</code></a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-MeanOldFaithful-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 6.3.2: Old Faithful Hypothesis Test"><a href="#subsec-MeanOldFaithful" title="Copy heading and permalink for Subsection 6.3.2: Old Faithful Hypothesis Test" aria-label="Copy heading and permalink for Subsection 6.3.2: Old Faithful Hypothesis Test">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-SingleMeanCalc">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Technology</span>
+</h3>
+<div class="para" id="subsec-SingleMeanCalc-2">Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-SingleMeanCalc-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Input Data.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-3-2-1">Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84. Press the <dfn class="terminology">[STAT]</dfn> button and under the EDIT menu select option <dfn class="terminology">1: Edit</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-3-2-2">Input each value pressing [ENTER] after each. Recall there are 20 data values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="InputFaithfulCalc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc1.png" class="contained" alt="Stat button, edit 1,  then enter values."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Inputting Old Faithful Data<div class="autopermalink" data-description="Figure 6.3.9"><a href="#InputFaithfulCalc" title="Copy heading and permalink for Figure 6.3.9" aria-label="Copy heading and permalink for Figure 6.3.9">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="subsec-SingleMeanCalc-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-3-3-1">You can check the summary statistics statistics by pressing the [STAT] button, press the arrow once to the right to select CALC and select option <dfn class="terminology">1: 1-Var Stats</dfn> and press [ENTER] to select it. Press the <code class="code-inline tex2jax_ignore">2nd</code> button and <code class="code-inline tex2jax_ignore"> 1</code> to identify the location of the data in List 1 then press [ENTER] again to see the results.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="FaithfulSummaryCalc"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/FaithfulCalc4.png" class="contained" alt="mean=89.5, Sx=4.26, n=20."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Summary Statistics for Old Faithful Data<div class="autopermalink" data-description="Figure 6.3.10"><a href="#FaithfulSummaryCalc" title="Copy heading and permalink for Figure 6.3.10" aria-label="Copy heading and permalink for Figure 6.3.10">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="subsec-SingleMeanCalc-3-3-3">The sample mean is <span class="process-math">\(\bar{x} = 89.5\)</span> and sample standard deviation of <span class="process-math">\(Sx=4.2612\)</span> for a sample of <span class="process-math">\(n=20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.8.1"><a href="#subsec-SingleMeanCalc-3-3" title="Copy heading and permalink for Solution 6.3.8.1" aria-label="Copy heading and permalink for Solution 6.3.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.8: Input Data"><a href="#subsec-SingleMeanCalc-3" title="Copy heading and permalink for Example 6.3.8: Input Data" aria-label="Copy heading and permalink for Example 6.3.8: Input Data">🔗</a></div>
+</article></details>
+<details id="subsec-SingleMeanCalc-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">T-test on TI-83 Plus.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-4-2-1">Press the <dfn class="terminology">[STAT]</dfn> button and press the arrow button twice to the right to the TESTS menu and select option <dfn class="terminology">2: T-Test</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-4-2-2">Since we entered the raw data, highlight <dfn class="terminology">Data</dfn> and [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-4-2-3">Input the null value <span class="process-math">\(\mu_0 :90\text{,}\)</span> the data is in List: <span class="process-math">\(L_1\text{,}\)</span> the frequency is 1,  select the alternative hypothesis <span class="process-math">\(\ne \mu_0\text{,}\)</span> scroll to <dfn class="terminology">Calculate</dfn> and press [ENTER]<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="SelectTtestCalc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc2.png" class="contained" alt="Data, null=90, list =L1, two tailed test."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Selecting T-test for Old Faithful Data<div class="autopermalink" data-description="Figure 6.3.12"><a href="#SelectTtestCalc" title="Copy heading and permalink for Figure 6.3.12" aria-label="Copy heading and permalink for Figure 6.3.12">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="subsec-SingleMeanCalc-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-4-3-1">The displays tells us we performed the T-Test with the statistical test value of <span class="process-math">\(t=-0.5247 \)</span> and p-value = 0.6058. The sample mean is <span class="process-math">\(\bar{x} = 89.5\)</span> and sample standard deviation of <span class="process-math">\(Sx=4.2612\)</span> for a sample of <span class="process-math">\(n=20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SingleMeanCalc-4-3-2">If you selected <dfn class="terminology">Draw</dfn>, it will graph the two tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ResultsFaithfulCalc"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc3.png" class="contained" alt="t=-.5247, p-value=.605 for two tails."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Results for Old FaithfulTest<div class="autopermalink" data-description="Figure 6.3.13"><a href="#ResultsFaithfulCalc" title="Copy heading and permalink for Figure 6.3.13" aria-label="Copy heading and permalink for Figure 6.3.13">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 6.3.11.1"><a href="#subsec-SingleMeanCalc-4-3" title="Copy heading and permalink for Solution 6.3.11.1" aria-label="Copy heading and permalink for Solution 6.3.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.11: T-test on TI-83 Plus"><a href="#subsec-SingleMeanCalc-4" title="Copy heading and permalink for Example 6.3.11: T-test on TI-83 Plus" aria-label="Copy heading and permalink for Example 6.3.11: T-test on TI-83 Plus">🔗</a></div>
+</article></details>
+<div class="para" id="subsec-SingleMeanCalc-5">Try the online TI-84 Applet <a class="external" href="https://ti84calcpro.com/" target="_blank"><code class="code-inline tex2jax_ignore"> https://ti84calcpro.com/</code></a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-SingleMeanCalc-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">T-test on TI-84.</span>
+</h4></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-6-2-1">We will need to enter the raw data into a list in the TI-84. Press the <dfn class="terminology">[STAT]</dfn> button and under the EDIT menu select option <dfn class="terminology">1: Edit</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-6-2-2">Input each value pressing [ENTER] after each. Recall there are 20 data values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="InputFaithfulCalc84"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc5.png" class="contained" alt="Stat button, edit 1,  then enter values."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Inputting Old Faithful Data<div class="autopermalink" data-description="Figure 6.3.15"><a href="#InputFaithfulCalc84" title="Copy heading and permalink for Figure 6.3.15" aria-label="Copy heading and permalink for Figure 6.3.15">🔗</a></div></figcaption>
+</figure> 
+<div class="para" id="subsec-SingleMeanCalc-6-2-4">Press the <dfn class="terminology">[STAT]</dfn> button and press the arrow button twice to the right to the TESTS menu and select option <dfn class="terminology">2: T-Test</dfn> and press [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-6-2-5">Since we entered the raw data, highlight <dfn class="terminology">Data</dfn> and [ENTER] to select it.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="subsec-SingleMeanCalc-6-2-6">Input the null value <span class="process-math">\(\mu_0 :90\text{,}\)</span> the data is in List: <span class="process-math">\(L_1\text{,}\)</span> the frequency is 1,  select the alternative hypothesis <span class="process-math">\(\ne \mu_0\text{,}\)</span> scroll to <dfn class="terminology">Calculate</dfn> and press [ENTER]<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="SelectTtestCalc84"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc6.png" class="contained" alt="Data, null=90, list =L1, two tailed test."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Selecting T-test for Old Faithful Data<div class="autopermalink" data-description="Figure 6.3.16"><a href="#SelectTtestCalc84" title="Copy heading and permalink for Figure 6.3.16" aria-label="Copy heading and permalink for Figure 6.3.16">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="subsec-SingleMeanCalc-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="subsec-SingleMeanCalc-6-3-1">The displays tells us we performed the T-Test with the statistical test value of <span class="process-math">\(t=-0.5247 \)</span> and p-value = 0.6058. The sample mean is <span class="process-math">\(\bar{x} = 89.5\)</span> and sample standard deviation of <span class="process-math">\(Sx=4.2612\)</span> for a sample of <span class="process-math">\(n=20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SingleMeanCalc-6-3-2">If you selected <dfn class="terminology">Draw</dfn>, it will graph the two tailed test.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SingleMeanCalc-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ResultsFaithfulCalc84"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/FaithfulCalc7.png" class="contained" alt="t=-.5247, p-value=.605 for two tails."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Results for Old FaithfulTest<div class="autopermalink" data-description="Figure 6.3.17"><a href="#ResultsFaithfulCalc84" title="Copy heading and permalink for Figure 6.3.17" aria-label="Copy heading and permalink for Figure 6.3.17">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 6.3.14.1"><a href="#subsec-SingleMeanCalc-6-3" title="Copy heading and permalink for Solution 6.3.14.1" aria-label="Copy heading and permalink for Solution 6.3.14.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.14: T-test on TI-84"><a href="#subsec-SingleMeanCalc-6" title="Copy heading and permalink for Example 6.3.14: T-test on TI-84" aria-label="Copy heading and permalink for Example 6.3.14: T-test on TI-84">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.3.3: Using Technology"><a href="#subsec-SingleMeanCalc" title="Copy heading and permalink for Subsection 6.3.3: Using Technology" aria-label="Copy heading and permalink for Subsection 6.3.3: Using Technology">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-SingleMeanTestPractice">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="oceanpH-hypothesis-test"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Change in Ocean pH.</span>
+</h4>
+<div class="para" id="oceanpH-hypothesis-test-2-1">Scientists have long used a historical average surface ocean pH of about <span class="process-math">\(8.20\)</span> as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface ocean pH has decreased by about <span class="process-math">\(0.1\)</span> to <span class="process-math">\(0.11\)</span> units since the Industrial Revolution, suggesting modern ocean pH may now be lower on average.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanpH-hypothesis-test-2-2">A marine science team collects a random sample of <span class="process-math">\(16\)</span> recent surface-ocean pH measurements from one region and obtains a sample mean of <span class="process-math">\(\bar{x}=8.08\)</span> and a sample standard deviation of <span class="process-math">\(s=0.12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanpH-hypothesis-test-2-3">At the <span class="process-math">\(0.05\)</span> significance level, test whether the true mean ocean pH in this region has changed from the historical value of <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanpH-hypothesis-test-2-4">State the null and alternative hypotheses, compute the test statistic, estimate the <dfn class="terminology">p-value</dfn>, and state a conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="oceanpH-hypothesis-test-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="oceanpH-hypothesis-test-3-1">Because the population standard deviation is unknown, use a one-sample <span class="process-math">\(t\)</span>-test for the mean.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-3-2">For the question of whether the pH has “changed”, use a two-sided test:<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-3-3">
+<span class="process-math">\(H_0:\mu=8.20 \qquad H_a: \mu\ne 8.20 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-3-4">Then compute<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanpH-hypothesis-test-3-5">
+<div class="displaymath process-math" id="oceanpH-hypothesis-test-3-5-1">
+\begin{equation*}
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 6.3.18.1"><a href="#oceanpH-hypothesis-test-3" title="Copy heading and permalink for Hint 6.3.18.1" aria-label="Copy heading and permalink for Hint 6.3.18.1">🔗</a></div>
+</div></details>
+<details id="oceanpH-hypothesis-test-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="oceanpH-hypothesis-test-4-1">The hypotheses are <span class="process-math">\(H_0:\mu=8.20\)</span> and <span class="process-math">\(H_a: \mu \ne 8.20\text{.}\)</span> The test statistic is <span class="process-math">\(t=-3.88\)</span> with <span class="process-math">\(df=15\text{.}\)</span> The two-sided <dfn class="terminology">p-value</dfn> is <span class="process-math">\(0.0017\text{.}\)</span> Since the <em class="emphasis">p-value</em> is less than 0.05, we reject <span class="process-math">\(H_0\text{.}\)</span> Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 6.3.18.1"><a href="#oceanpH-hypothesis-test-4" title="Copy heading and permalink for Answer 6.3.18.1" aria-label="Copy heading and permalink for Answer 6.3.18.1">🔗</a></div>
+</div></details>
+<details id="oceanpH-hypothesis-test-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="oceanpH-hypothesis-test-5-1">We test whether the population mean pH differs from the historical benchmark of <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-2">The hypotheses are <span class="process-math">\(H_0:\mu=8.20 \qquad H_a:\mu\ne 8.20.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-3">Because the population standard deviation is unknown and the sample size is 16, we use a one-sample <span class="process-math">\(t\)</span>-test.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanpH-hypothesis-test-5-4">
+<div class="para">The standard error is</div>
+<div class="displaymath process-math" id="oceanpH-hypothesis-test-5-4-1">
+\begin{equation*}
+\frac{s}{\sqrt{n}}=\frac{0.12}{\sqrt{16}}=\frac{0.12}{4}=0.03.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-5">The test statistic is<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanpH-hypothesis-test-5-6">
+<div class="displaymath process-math" id="oceanpH-hypothesis-test-5-6-1">
+\begin{equation*}
+t=\frac{8.08-8.20}{0.03}=\frac{-0.12}{0.03}=-4.00.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-7">The degrees of freedom are <span class="process-math">\(df=16-1=15.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-8">A test statistic of <span class="process-math">\(t=-3.89\)</span> with <span class="process-math">\(15\)</span> degrees of freedom gives a two-sided <dfn class="terminology">p-value</dfn> <span class="process-math">\(=2(.0018)=.0036\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-9">Since the <dfn class="terminology">p-value</dfn> is less than the significance level <span class="process-math">\(\alpha=0.05\text{,}\)</span> we reject the null hypothesis.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanpH-hypothesis-test-5-10">There is sufficient statistical evidence to conclude that the true mean ocean pH in this region has changed from the historical value of <span class="process-math">\(8.20\text{.}\)</span> Because the sample mean is lower than <span class="process-math">\(8.20\text{,}\)</span> the data suggests the change is a decrease in pH level.<div class="autopermalink" data-description="Paragraph"><a href="#oceanpH-hypothesis-test-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.18.1"><a href="#oceanpH-hypothesis-test-5" title="Copy heading and permalink for Solution 6.3.18.1" aria-label="Copy heading and permalink for Solution 6.3.18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.3.18: Change in Ocean pH"><a href="#oceanpH-hypothesis-test" title="Copy heading and permalink for Checkpoint 6.3.18: Change in Ocean pH" aria-label="Copy heading and permalink for Checkpoint 6.3.18: Change in Ocean pH">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="oceanDecph-hypothesis-test"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Decreasing in Ocean pH.</span>
+</h4>
+<div class="para" id="oceanDecph-hypothesis-test-2-1">Scientists have historically used an average surface ocean pH of about <span class="process-math">\(8.20\)</span> as a benchmark. Recent NOAA summaries indicate that average surface ocean pH has decreased over time, motivating a test of whether the mean pH in a particular region is now lower than <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanDecph-hypothesis-test-2-2">A marine science team collects a random sample of <span class="process-math">\(12\)</span> recent surface-ocean pH measurements from one coastal region:<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanDecph-hypothesis-test-2-3">
+<span class="process-math">\(8.07,\; 8.12,\; 8.05,\; 8.10,\; 8.09,\; 8.03,\; 8.11,\; 8.06,\; 8.08,\; 8.04,\; 8.13,\; 8.07\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanDecph-hypothesis-test-2-4">At the <span class="process-math">\(0.05\)</span> significance level, test whether the true mean ocean pH in this region has decreased from the historical value of <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="oceanDecph-hypothesis-test-2-5">State the null and alternative hypotheses, compute the test statistic, estimate the <em class="emphasis">p-value</em>, and state a conclusion in context.<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="oceanDecph-hypothesis-test-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="oceanDecph-hypothesis-test-3-1">Use a one-sample <span class="process-math">\(t\)</span>-test for a population mean, since the population standard deviation is unknown.<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-3-2">For a one-sided test of decrease, use<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-3-3">
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-3-3-1">
+\begin{equation*}
+H_0: \mu=8.20 \qquad H_a: \mu \lt 8.20.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-3-4">Then compute the sample mean, sample standard deviation, and test statistic<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-3-5">
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-3-5-1">
+\begin{equation*}
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 6.3.19.1"><a href="#oceanDecph-hypothesis-test-3" title="Copy heading and permalink for Hint 6.3.19.1" aria-label="Copy heading and permalink for Hint 6.3.19.1">🔗</a></div>
+</div></details>
+<details id="oceanDecph-hypothesis-test-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="oceanDecph-hypothesis-test-4-1">The hypotheses are <span class="process-math">\(H_0:\mu=8.20\)</span> and <span class="process-math">\(H_a: \mu \lt 8.20\text{.}\)</span> From the data, <span class="process-math">\(\bar{x}\approx 8.079\)</span> and <span class="process-math">\(s \approx 0.033\text{.}\)</span> The test statistic is <span class="process-math">\(t\approx -12.59\)</span> with <span class="process-math">\(df=11\text{.}\)</span> The <em class="emphasis">p-value</em> is effectively <span class="process-math">\(0\)</span> (far less than <span class="process-math">\(0.05\)</span>), so we reject <span class="process-math">\(H_0\text{.}\)</span> There is strong evidence that the true mean ocean pH in this region has decreased below <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 6.3.19.1"><a href="#oceanDecph-hypothesis-test-4" title="Copy heading and permalink for Answer 6.3.19.1" aria-label="Copy heading and permalink for Answer 6.3.19.1">🔗</a></div>
+</div></details>
+<details id="oceanDecph-hypothesis-test-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="oceanDecph-hypothesis-test-5-1">We want to test whether the population mean ocean pH is lower than the historical benchmark of <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-5-2">
+<div class="para">The hypotheses are</div>
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-5-2-1">
+\begin{equation*}
+H_0:\mu=8.20 \qquad H_a:\mu \lt 8.20     
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-3">Because the population standard deviation is unknown, we use a one-sample <span class="process-math">\(t\)</span>-test for the mean.<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-4">First compute the sample statistics from the data:<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-5-5">
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-5-5-1">
+\begin{equation*}
+\bar{x}=\frac{8.07+8.12+8.05+8.10+8.09+8.03+8.11+8.06+8.08+8.04+8.13+8.07}{12}\approx 8.079.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-5-6">
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-5-6-1">
+\begin{equation*}
+s\approx 0.033.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-7">The sample size is <span class="process-math">\(n=12\text{,}\)</span> so the degrees of freedom are  <span class="process-math">\(df=12-1=11.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-5-8">
+<div class="para">The standard error is</div>
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-5-8-1">
+\begin{equation*}
+\frac{s}{\sqrt{n}} \approx \frac{0.033}{\sqrt{12}} \approx 0.0095.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="oceanDecph-hypothesis-test-5-9">
+<div class="para">The test statistic is</div>
+<div class="displaymath process-math" id="oceanDecph-hypothesis-test-5-9-1">
+\begin{equation*}
+t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{8.079-8.20}{0.0095}\approx -12.77.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-10">With <span class="process-math">\(df=11\text{,}\)</span> this gives a one-sided <dfn class="terminology">p-value</dfn> that is extremely small, far below <span class="process-math">\(0.05\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-11">Therefore, we reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="oceanDecph-hypothesis-test-5-12">There is strong statistical evidence that the true mean ocean pH in this region has decreased below <span class="process-math">\(8.20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#oceanDecph-hypothesis-test-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.19.1"><a href="#oceanDecph-hypothesis-test-5" title="Copy heading and permalink for Solution 6.3.19.1" aria-label="Copy heading and permalink for Solution 6.3.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 6.3.19: Decreasing in Ocean pH"><a href="#oceanDecph-hypothesis-test" title="Copy heading and permalink for Checkpoint 6.3.19: Decreasing in Ocean pH" aria-label="Copy heading and permalink for Checkpoint 6.3.19: Decreasing in Ocean pH">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 6.3.4: Practice Problems"><a href="#subsec-SingleMeanTestPractice" title="Copy heading and permalink for Subsection 6.3.4: Practice Problems" aria-label="Copy heading and permalink for Subsection 6.3.4: Practice Problems">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 6.3: t-test for the Mean"><a href="#sec-SingleMean" title="Copy heading and permalink for Section 6.3: t-test for the Mean" aria-label="Copy heading and permalink for Section 6.3: t-test for the Mean">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-IntroHypothesisTest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-SingleProportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
