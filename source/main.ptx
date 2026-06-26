@@ -18,6 +18,7 @@
     <xi:include href="ChapterProb.ptx" />
     <xi:include href="ChapterBootstrap.ptx" />
     <xi:include href="ChapterTesting.ptx" />
+     <xi:include href="ChapComparisonTests.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

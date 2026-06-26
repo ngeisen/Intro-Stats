@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-CompareProp" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>z-test for Two Proportions</title>
+
+  <introduction>
+  <p> In this section we will test the equality of two proportions. </p>
+  <p> A two-proportion <m>z</m>-test is used to determine whether two population
+  proportions are significantly different. It compares the difference between two
+  sample proportions to what would be expected by random chance if the population
+  proportions were actually equal. This test is commonly used when data are
+  collected from two independent groups and the response for each individual
+  falls into one of two categories, such as success or failure.
+  </p>
+  </introduction>
+
+  <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the difference in proportions. </p> </li>
+    <li> <p> Determine the test statistic and p-value for the z-test for two proportions. </p> </li>
+     <li> <p> Write the conclusion of a test in context </p> </li>
+     <li> <p> Construct confidence intervals for the difference in proportions. </p> </li>
+        </ol>
+  </objectives>
+
+<subsection xml:id="subsec-CompareProportionsBasics">
+  <title>Understanding the Basics</title>
+  <p> The two-proportion <m>z</m>-test is used to compare the proportions of a particular outcome in two populations and determine whether there is evidence of a difference between them. This test is appropriate when each individual in both samples is classified into one of two categories, such as success or failure, yes or no, or support or do not support. The <term> hypotheses</term> are written in terms of the population proportions <m>p_1</m> and <m>p_2</m>. The null hypothesis is often written as </p> 
+  <p><m>p_1-p_2=0</m> or  <m>p_1 = p_2</m>. </p> 
+  <p> The alternative hypothesis is writing as either <m>p_1 \lt p_2</m> or <m>p_1 \gt p_2</m> for a one tailed test, or <m>p_1 \ne p_2</m> for a two tailed test. </p>
+  <p>The <term>test statistic</term> is
+  <md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}{\sqrt{\bar{p}\left(1-\bar{p}\right)\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}} </md>
+  where <m>\hat{p}_1=\dfrac{x_1}{n_1}</m> and <m>\hat{p}_2=\dfrac{x_2}{n_2}</m> are the sample proportions, and <m> \bar{p}=\frac{x_1+x_2}{n_1+n_2} </m>
+  is the pooled estimate for the population proportion. </p>
+  <p> This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that the sampling distribution of the difference in sample proportions is approximately normal. The normality condition is satisfied when there are at least 10 successes and 10 failures in each group. The samples should be random samples.</p>
+  <p>The resulting <term>p-value</term> is used to determine whether the observed difference between sample proportions provides enough evidence to conclude that the two population proportions differ.</p>
+  <p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-two-proportion-z-test">
+  <statement>
+    <p>
+      A <term>two-proportion <m>z</m>-test</term> is a statistical test used to
+      compare two population proportions and determine whether there is evidence
+      of a difference between them.
+    </p>
+    <p> The test statistic is
+        <md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}{\sqrt{\bar{p}(1-\bar{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+    </md> </p>
+    <p>
+      where <m>\hat{p}_1=\dfrac{x_1}{n_1}</m> and <m>\hat{p}_2=\dfrac{x_2}{n_2}</m>
+      are the sample proportions, and
+      <m>\bar{p}=\dfrac{x_1+x_2}{n_1+n_2}</m> is the pooled sample proportion.
+    </p>
+  </statement>
+</definition>
+
+  <p> At times, we may want to find the confidence interval for the difference in proportions. It is important to pay attention to which variable is listed first since this can change the interpretation. </p> 
+  <definition xml:id="def-ci-difference-proportions">
+  <statement>
+    <p>
+      A <term>confidence interval for the difference in proportions</term> is an
+      interval estimate used to estimate the difference between two population
+      proportions, <m>p_1-p_2</m>, based on two independent random samples.
+    </p>
+    <p>
+      A confidence interval for <m>p_1-p_2</m> is given by
+        <md> (\hat{p}_1-\hat{p}_2)\pm z^\ast \sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
+    </md> </p>
+    <p>
+      where <m>\hat{p}_1</m> and <m>\hat{p}_2</m> are the sample proportions,
+      <m>n_1</m> and <m>n_2</m> are the sample sizes, and <m>z^\ast</m> is the
+      critical value from the standard normal distribution corresponding to the
+      desired confidence level.
+    </p>
+  </statement>
+</definition>
+
+
+</subsection> 
+<subsection xml:id="subsec-CompareProportionsDrivers">
+  <title>Compare Proportions Without Insurance</title>
+  <p>
+      Transportation researchers want to determine whether the proportion of
+      drivers without auto insurance differs between California and Colorado.
+      Suppose a random sample of <m>800</m> drivers is selected from California,
+      and <m>163</m> of them are found to be driving without auto insurance. A
+      separate random sample of <m>750</m> drivers is selected from Colorado,
+      and <m>146</m> of them are found to be driving without auto insurance.
+    </p>
+    <p>
+      These sample results correspond to sample proportions of approximately
+      <m>20.41\%</m> for California and <m>19.47\%</m> for Colorado.
+    </p>
+    <p>
+      At the <m>\alpha =0.10</m> significance level, test whether the population
+      proportion of drivers without auto insurance differs between the two
+      states.
+    </p>
+  <example> <title> Uninsured Drivers by State</title> 
+  <statement>
+  <p>
+      State the null and alternative hypotheses, verify the conditions for a
+      two-sample <m>z</m>-test for proportions, compute the pooled estimate and the test statistic,  find the p-value, and state your conclusion in context.
+    </p>
+  </statement>
+  <solution><title> Hypotheses</title>
+    <p>
+      Let <m>p_1</m> be the population proportion of drivers without auto
+      insurance in California, and let <m>p_2</m> be the population proportion
+      in Colorado.
+    </p>
+    <p> The null and alternative hypotheses for there is no difference between the proportions or there is a difference in proportions are:  
+            <md> H_0:p_1-p_2=0 \qquad H_a:p_1-p_2\ne 0.  </md></p>
+        <p> The null hypothesis is that the two proportions are equal and the alternative hypothesis is that the proportions are not equal to each other. 
+          <md> H_0:p_1 =p_2 \qquad H_a:p_1 \ne p_2.  </md>
+     This is a two tailed test. </p> 
+  </solution> 
+<solution> <title> Sample Statistics</title>
+    <p>
+      The sample sizes and sample proportions are
+        <md> n_1=800,\quad x_1=163,\quad \hat{p}_1=\frac{163}{800}=0.20375
+    </md>
+    <md> n_2=750,\quad x_2=146,\quad \hat{p}_2=\frac{146}{750}\approx 0.19467.
+    </md></p>
+         <p>The pooled sample proportion is
+        <md> \bar{p}=\frac{x_1+x_2}{n_1+n_2}
+     =\frac{163+146}{800+750} =\frac{309}{1550} \approx 0.19935.     </md>
+    </p>
+</solution> 
+<solution> <title> Assumptions</title>
+    <p> We check the success-failure conditions that <m>np \ge 10</m> and <m>n(1-p) \ge 10</m> for both samples:
+        <md>
+n_1\hat{p}=800(0.19935)\approx 159.48,\qquad
+n_1(1-\hat{p})=800(0.80065)\approx 640.52
+    </md>
+    <md>
+n_2\hat{p}=750(0.19935)\approx 149.52,\qquad
+n_2(1-\hat{p})=750(0.80065)\approx 600.48.
+    </md></p>
+    <p>
+      All four values are greater than <m>10</m>, so the normal approximation
+      is appropriate for the z-test for proportions.
+    </p>
+</solution> 
+<solution> <title> Statistical Test</title>
+    <p> The test statistic is
+        <md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}
+{\sqrt{\bar{p}(1-\bar{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+=\frac{0.20375-0.19467}
+{\sqrt{(0.19935)(0.80065)\left(\frac{1}{800}+\frac{1}{750}\right)}}
+\approx \frac{0.00908}{0.02029}
+\approx 0.45.     </md> </p>
+</solution>
+<solution> <title> p-value</title>
+    <p>
+      The p-value for a two-tailed test is
+        <m> 2 P(Z \gt 0.45)\approx 2(0.326) \approx 0.652. </m></p>
+    <p>
+      Since the <term>p-value</term> is greater than <m>0.10</m>, we fail to
+      reject <m>H_0</m>.
+    </p>
+</solution> 
+<solution> <title> Conclusion</title>
+    <p>
+      At the <m>\alpha =0.10</m> significance level, there is not sufficient evidence to conclude that the population proportions of drivers without auto
+      insurance differ between California and Colorado.
+    </p>
+  </solution>
+  </example> 
+
+    <p>
+      Construct a <m>90\%</m> confidence interval for the difference
+      <m>p_1-p_2</m>, where <m>p_1</m> is the population proportion for
+      California and <m>p_2</m> is the population proportion for Colorado.
+    </p>
+<example> <title> Interval for Difference in Uninsured </title>
+  <statement>
+  <p>
+      Construct a <m>90\%</m> confidence interval for the difference
+      <m>p_1-p_2</m>, where <m>p_1</m> is the population proportion for
+      California and <m>p_2</m> is the population proportion for Colorado.
+    </p>
+  </statement>
+  <solution> <title> Sample Statistics</title>
+    <p>
+      First compute the sample proportions:
+        <md> \hat{p}_1=\frac{163}{800}=0.20375
+    </md>
+    <md> \hat{p}_2=\frac{146}{750}\approx 0.19467
+    </md> </p>
+    <p>
+      The point estimate for the difference in proportions is
+        <md> \hat{p}_1-\hat{p}_2=0.20375-0.19467=0.00908
+    </md></p>
+</solution>
+<solution> <title> Interval</title>
+    <p>
+      For a <m>95\%</m> confidence interval, the critical value is
+      <m>z^\ast=1.96</m>.
+    </p>
+    <p>
+      The standard error is
+        <md>
+SE=\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
+=\sqrt{\frac{(0.20375)(0.79625)}{800}+\frac{(0.19467)(0.80533)}{750}}
+    </md>
+    <md>
+SE=\sqrt{\frac{0.1622265625}{800}+\frac{0.1567795111}{750}}
+=\sqrt{0.0002028+0.0002090}
+=\sqrt{0.0004118}
+\approx 0.02029
+    </md> </p>
+    <p>
+      The margin of error is
+        <md> ME=z^\ast \cdot SE=1.645(0.02029)\approx 0.03338
+    </md> </p>
+    <p>
+      Therefore, the <m>95\%</m> confidence interval is
+    <md> (\bar{p}_1-\bar{p}_2)\pm ME =0.00908\pm 0.03338
+    </md>
+    <md>
+(-0.0243,\ 0.04246)
+    </md> </p>
+    <p>
+      We are <m>90\%</m> confident that the difference in the population
+      proportions of drivers without auto insurance in California and Colorado
+      is between -2.4% and 4.2%. Since this interval
+      contains <m>0</m>, the data do not suggest a clear difference between the
+      two state proportions.
+    </p>
+  </solution>
+</example>
+
+  </subsection>
+
+<subsection xml:id="subsec-CompareProportionsMimicry">
+  <title>Compare Proportions of Mimicry Repertoires </title>
+  <p>Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. Researchers surveyed the public about mimicry repertoires in companion parrots. </p>
+    <p> Researchers were curious whether the proportion of parrots with large mimicry repertoires differs between males and females. We will define a <q>success</q> as a parrot having a mimicry repertoire of more than <m>20</m> mimicked sounds, words, or phrases. </p>
+    <p>
+      Suppose that in a sample of <m>180</m> male parrots, <m>54</m> had
+      repertoires larger than <m>20</m>, while in a sample of <m>160</m> female
+      parrots, <m>32</m> had repertoires larger than <m>20</m> mimicked sounds.
+    </p>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the population
+      proportions differ for male and female parrots.
+    </p>
+ <example> <title> Parrot Mimicry by Sex </title>
+  <statement>
+   <p>
+      State the null and alternative hypotheses, verify the conditions for a
+      two-sample <m>z</m>-test for proportions, compute the pooled estimate and the test statistic,  find the p-value, and state your conclusion in context.
+    </p>
+  </statement>
+  <solution><title> Hypotheses </title>
+    <p>
+      Let <m>p_1</m> be the population proportion of male parrots with mimicry
+      repertoires greater than 20 sounds, and let <m>p_2</m> be the population
+      proportion of female parrots with mimicry repertoires greater than
+      20 sounds.
+    </p>
+    <p>
+      The null hypothesis is that the proportions are equal while the alternative hypothesis is that the proportions are not equal. 
+        <md> H_0:p_1-= p_2  \qquad H_a:p_1 \ne p_2    </md>
+    This is a two tailed test. </p>
+ </solution>
+<solution><title> Sample Statistics </title>
+<p> The sample proportions are
+        <md>  x_1=54,\quad n_1=180,\quad \hat{p}_1=\frac{54}{180}=0.30     </md>
+    <md> x_2=32,\quad n_2=160,\quad \hat{p}_2=\frac{32}{160}=0.20.     </md> </p>
+    <p>  The pooled sample proportion is
+    <md> \bar{p}=\frac{x_1+x_2}{n_1+n_2}
+   =\frac{54+32}{180+160} =\frac{86}{340} \approx 0.2529.     </md> </p>
+</solution> 
+<solution><title> Assumptions </title>
+    <p>  We check the success-failure conditions:
+        <md>
+n_1\hat{p}=180(0.2529)\approx 45.52,\qquad
+n_1(1-\hat{p})=180(0.7471)\approx 134.48
+    </md>
+    <md>
+n_2\hat{p}=160(0.2529)\approx 40.46,\qquad
+n_2(1-\hat{p})=160(0.7471)\approx 119.54.
+    </md>
+</p> 
+    <p>
+      All four values are greater than 10, so the normal approximation
+      is appropriate for the difference in proportions test.
+    </p>
+</solution>
+<solution><title> Statistical Test </title>
+    <p> The test statistic is
+        <md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}
+{\sqrt{\bar{p}(1-\bar{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+=\frac{0.30-0.20}
+{\sqrt{(0.2529)(0.7471)\left(\frac{1}{180}+\frac{1}{160}\right)}}
+\approx \frac{0.10}{0.0469} \approx 2.13.     </md> </p>
+</solution>
+<solution><title> p-value</title>
+    <p>  The p-value  for a two-tailed test is <m>\approx 2(0.017) \approx0.034  </m></p>
+    <p>  Since the p-value is less than <m>\alpha =0.05</m>, we reject
+      <m>H_0</m>.  </p>
+</solution>
+<solution><title> Conclusion </title>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, there is sufficient evidence to
+      conclude that the proportions of male parrots with mimicry repertoires greater than 20 sounds differs from the proportion of female parrots with
+      mimicry repertoires greater than 20 sounds differ.
+    </p>
+  </solution>
+</example>
+
+<p>
+      Construct a <m>95\%</m> confidence interval for the difference in proportions, 
+      <m>p_1-p_2</m>, where <m>p_1</m> is the population proportion for male
+      parrots and <m>p_2</m> is the population proportion for female parrots.
+    </p>
+
+<example> <title>Interval for Difference in Mimicry</title>
+<statement> 
+<p>
+      Construct a <m>95\%</m> confidence interval for the difference
+      in proportions between male parrots and female parrots who had repertoires larger than 20  mimicked sounds.
+    </p>
+  </statement>
+  <solution> <title> Sample Statistics</title>
+    <p>  First compute the sample proportions:
+    <md> \hat{p}_1=\frac{54}{180}=0.30
+    </md>
+    <md> \hat{p}_2=\frac{32}{160}=0.20
+    </md>     </p>
+    <p>
+      The point estimate for the difference in proportions is
+    <md> \hat{p}_1-\hat{p}_2=0.30-0.20=0.10
+    </md> </p>
+    <p>
+      For a <m>95\%</m> confidence interval, the critical value is
+      <m>z^\ast=1.96</m>.
+    </p>
+    <p>
+      The standard error is
+    <md>
+SE=\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
+=\sqrt{\frac{(0.30)(0.70)}{180}+\frac{(0.20)(0.80)}{160}}
+    </md>
+    <md>
+SE=\sqrt{\frac{0.21}{180}+\frac{0.16}{160}}
+=\sqrt{0.0011667+0.0010000}
+=\sqrt{0.0021667}
+\approx 0.04655
+    </md> </p>
+    <p>  The margin of error is
+    <md> ME=z^\ast \cdot SE=1.96(0.04655)\approx 0.09124
+    </md></p>
+    <p>       Therefore, the <m>95\%</m> confidence interval is
+        <md> (\hat{p}_1-\hat{p}_2)\pm E =0.10\pm 0.09124
+    </md>
+    <md> (0.00876,\ 0.19124)
+    </md> </p> 
+    <p>
+      We are <m>95\%</m> confident that the difference in the population
+      proportions of male and female parrots with large mimicry repertoires is
+      between 0.9% and 19.1%. Since the entire interval is positive and does not contain 0, the data suggest that the population proportion is higher for
+      male parrots than for female parrots.
+    </p>
+  </solution>
+</example> 
+
+  </subsection>
+
+<subsection xml:id="subsec-CompareProportionsCalc">
+  <title>Using Technology</title>
+  <p>
+    We can use technology to perform a two-proportion z-test. The following example uses the TI-83 Plus calculator, but other calculators and statistical software packages can also be used.
+  </p>
+  <p>  An ornithologist, which is an avian biologist, wants to know whether the proportion of birds that mimicked <term>human sounds</term> differs between parrots and parakeets. Suppose a random sample of <m>120</m> parrots were observed, and <m>54</m> of them mimicked human sounds. In a separate random sample of <m>100</m> parakeets, <m>32</m> were observed to mimic human sounds.
+    </p>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the population
+      proportions of parrots and parakeets that mimic human sounds are
+      different.
+    </p>
+<example>  <title> Parrots vs Parakeets Sounds</title>
+  <statement>
+     <p> State the null and alternative hypotheses, verify the conditions for a
+      two-sample <m>z</m>-test for proportions, compute the pooled estimate and the test statistic,  find the p-value, and state your conclusion in context. </p> 
+  </statement>
+  <solution><title> Hypotheses </title>
+    <p>
+      Let <m>p_1</m> be the population proportion of parrots that mimic human
+      sounds, and let <m>p_2</m> be the population proportion of parakeets that
+      mimic human sounds.
+    </p>
+    <p>  The hypotheses are the proportions are equal or the proportions are not equal:
+        <md> H_0:p_1 =p_2 \qquad H_a:p_1 \ne p_2    </md>
+This will be a two-tailed test. </p>
+</solution>
+<solution><title> Assumptions </title>
+    <p>
+      We check the success-failure conditions:
+        <md> n_1\hat{p}=120(0.3909)\approx 46.91,\qquad n_1(1-\hat{p})=120(0.6091)\approx 73.09     </md>
+    <md> n_2\hat{p}=100(0.3909)\approx 39.09,\qquad n_2(1-\hat{p})=100(0.6091)\approx 60.91.     </md> </p>
+    <p>
+      All four values are greater than <m>10</m>, so the normal approximation
+      is appropriate for the difference in proportions z-test.
+    </p>
+</solution> 
+<solution><title> Statistical Test </title>
+    <p>
+      The sample information is
+    <md> x_1=54,\quad n_1=120,\quad \hat{p}_1=\frac{54}{120}=0.45     </md>
+    <md> x_2=32,\quad n_2=100,\quad \hat{p}_2=\frac{32}{100}=0.32.   </md> </p>
+    <p> The pooled sample proportion is
+        <md> \bar{p}=\frac{x_1+x_2}{n_1+n_2} =\frac{54+32}{120+100} =\frac{86}{220}
+\approx 0.3909.     </md> </p>
+    <p> The test statistic is
+        <md> z=\frac{(\hat{p}_1-\hat{p}_2)-0}
+{\sqrt{\bar{p}(1-\bar{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+=\frac{0.45-0.32}
+{\sqrt{(0.3909)(0.6091)\left(\frac{1}{120}+\frac{1}{100}\right)}}
+\approx \frac{0.13}{0.0660} \approx 1.97.     </md> </p>
+</solution>
+<solution><title> p-value </title>
+    <p>       The <term>p-value</term> for a two-tailed test is <m>\approx 2 (0.024) = 0.048.     </m></p>
+     <p>  Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.
+    </p>
+</solution>
+    <solution><title> Conclusion </title>
+<p>
+      At the <m>0.05</m> significance level, there is sufficient evidence to
+      conclude that the population proportions of parrots and parakeets that
+      mimic human sounds are different.
+    </p>
+  </solution>
+
+</example> 
+
+<example> <title> Test Using TI-83 Plus </title>
+  <statement>
+  <p> For the TI-83 Plus you need to enter the counts for each sample. The calculator will calculate the <m> \hat{p}</m> values for each sample, the pooled <m> \bar{p}</m> value, and the test statistic <m>z</m>. See the previous example for the formula setup. </p>
+  </statement>
+  <solution><title> Statistical Test with TI-83 Plus</title>
+  <p> Click on the <term>[STAT] </term> button and press the arrow twice to the right to highlight TESTS across the top and select option <term>6: 2-PropZtest</term> and press [ENTER] to select it. </p>
+  <figure xml:id="Calculator2Proportion1">
+            <caption>Selecting 2 Proportion Z-Test on Calculator</caption>
+            <image source="ParakeetProp1.png" width="90%">
+                <shortdescription>Select option 6 then input values</shortdescription>
+            </image>
+          </figure>
+
+  <p> Input the values from the samples. 
+        <md>  x_1=54,\quad n_1=120  </md>
+    <md> x_2=32,\quad n_2=100 </md> </p>
+  <p> Identify the alternative hypothesis of <m> \ne p2</m> and then click on <term>Calculate</term> and press [ENTER] to evaluate the test. </p> 
+  <figure xml:id="Calculator2Proportion2">
+            <caption>Results 2 Proportion Z-Test between Parrots and Parakeets</caption>
+            <image source="ParakeetProp2.png" width="90%">
+                <shortdescription>z-test value is 1.9676 and p-value = 0.049</shortdescription>
+            </image>
+        </figure>
+
+<p> The display gives the alternative hypothesis of not equal, the test statistic is <m>z=1.9676</m> with <m> p-value = 0.049</m>. Then it lists the sample proportions <m> p_1 = 0.45</m> and <m> p_2 = 0.32</m> and the pooled proportion <m> \bar{p} = 0.39 </m> </p> 
+<p> If you select <term>Draw</term> it will graph the two-tailed test. </p>
+<p> Since the p-value is less than 0.05, reject the null hypothesis. </p>
+<p> there is sufficient evidence to conclude that the proportions of parrots and parakeets that mimic human sounds are different. </p> 
+</solution> 
+</example>
+
+<example> <title> Confidence Interval with TI-83 Plus</title>
+<statement>
+<p> Find the 95% confidence interval for the difference in proportion between parrots and parakeets that mimic human sounds. </p>
+</statement>
+<solution> <title> Interval</title>
+<p> Click on the <term>[STAT] </term> button and press the arrow twice to the right to highlight TESTS across the top and select option <term>B: 2-PropZInterval</term> on the TI83 Plus and press [ENTER] to select it. </p>
+<figure xml:id="Calculator2Proportion3">
+            <caption>Selecting 2 Proportion Interval </caption>
+            <image source="ParakeetProp3.png" width="90%">
+                <shortdescription>Select option B then input values</shortdescription>
+            </image>
+        </figure> 
+
+<p> Input the values from the samples. 
+        <md>  x_1=54,\quad n_1=120  </md>
+    <md> x_2=32,\quad n_2=100 </md> </p>
+<p> Change the C-lave to 0.95 then click on <term> Calculate</term> and press [ENTER] to evaluate the test. </p> 
+<figure xml:id="Calculator2Proportion4">
+            <caption>Interval Results for Difference in 2 Proportions between Parrots and Parakeets</caption>
+            <image source="ParakeetProp4.png" width="50%">
+                <shortdescription> interval .0024 to .2576</shortdescription>
+            </image>
+        </figure>
+
+<p> The interval is <m> (0.0024 , 0.2576) </m> indicating we are 95% confident that the difference in proportions is between 0.24% and 25.76%, indicting that parrots mimic human sounds more. Since the interval does not contain <m>0</m> it is statistically significant. </p>
+</solution>
+</example>
+
+
+
+  </subsection>
+
+
+</section> 

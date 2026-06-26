@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-SingleMean" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>t-test for the Mean</title>
+  <introduction>
+    <p>
+      The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. In this test, we compare a sample mean to a hypothesized population mean. The test statistic measures how many standard errors the sample mean is from the hypothesized value. The resulting p-value helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.
+    </p>
+
+  </introduction>
+  <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the mean. </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the t-test .</p> </li>
+     <li> <p> Write the conclusion of a test in context. </p>    </li>
+        </ol>
+</objectives>
+
+
+  <subsection xml:id="subsec-SingleMeanBasics">
+  <title>Understanding the Basics</title>
+  <p> The one-sample <m>t</m>-test is used to test a claim about a population mean when the population standard deviation is unknown. The first step is to write the null and alternative <term>hypotheses</term>. In this test, we compare a sample mean <m>\bar{x}</m> to a hypothesized population mean <m>\mu_0</m> by calculating a <em>test statistic</em> that measures how many standard errors the sample mean is from the hypothesized value.</p>
+  <p>  The <term>test statistic</term> is computed as <md>t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}</md>, where <m>\bar{x}</m> is the sample mean, <m>\mu_0 </m> is the hypothesized value, <m>s</m> is the sample standard deviation, and <m>n</m> is the sample size. </p> 
+  <p> Because the population standard deviation is not known, the test statistic follows a <term>t-distribution</term> with <m>n-1</m> degrees of freedom, provided the data come from a population that is approximately normal or the sample size is large enough. The resulting <term>p-value</term> helps determine whether the sample provides enough evidence to reject the null hypothesis to support the alternative hypothesis about the population mean. Then we state the conclusion of the test in context.</p>
+
+  <definition xml:id="def-one-sample-t-test-mean">
+  <statement>
+    <p>
+      A <term>one-sample <m>t</m>-test for a mean</term> is a statistical method
+      used to test a claim about a mean when the population standard
+      deviation is unknown and the population is approximately normal. The formula for the t-test is <md>t=\dfrac{\bar{x}-\mu_0}{s/\sqrt{n}}</md> with degrees of freedom <m>df=n-1</m>.
+    </p>
+  </statement>
+</definition>
+<p> When competing the t-test for the mean, we assume we have a random sample from the population  and that the sample is either greater than 30 or the population is normally distributed if the sample size is less than 30. We use the <em>t</em>-distribution because we do not know the population standard deviation. </p>
+
+</subsection>
+<subsection xml:id="subsec-MeanOldFaithful">
+  <title>Old Faithful Hypothesis Test</title>
+
+<p> <term>Hypothesis Test for the Mean Time Between Old Faithful Eruptions</term> </p>
+    <p>
+      A park researcher wants to determine whether the mean time between eruptions
+      of Old Faithful in Yellowstone National Park is different from the claimed 90  minutes. A random sample of 20 waiting times, measured in minutes, is recorded below.
+    </p>
+    <table>
+      <title>Waiting Times Between Old Faithful Eruptions (minutes)</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row bottom="minor">
+          <cell right="minor">82</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">91</cell>
+          <cell right="minor">95</cell>
+          <cell>87</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">93</cell>
+          <cell right="minor">89</cell>
+          <cell right="minor">84</cell>
+          <cell right="minor">96</cell>
+          <cell>90</cell>
+        </row>
+        <row bottom="minor">
+          <cell right="minor">85</cell>
+          <cell right="minor">92</cell>
+          <cell right="minor">94</cell>
+          <cell right="minor">86</cell>
+          <cell>89</cell>
+        </row>
+        <row>
+          <cell right="minor">91</cell>
+          <cell right="minor">88</cell>
+          <cell right="minor">97</cell>
+          <cell right="minor">83</cell>
+          <cell>90</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      At the <m>\alpha = 0.05</m> significance level, test whether the true mean waiting
+      time between eruptions is different from 90 minutes.
+    </p>
+
+<example>
+<title> Hypotheses</title>
+<statement> 
+<p> The first step is to state the null and alternative hypotheses in terms of the parameter. This helps us to identify which test to use as the semester progresses. </p>
+</statement>
+<solution> 
+ <p> The parameter is the mean <m> \mu</m></p>
+ <p> The hypotheses are <m>H_0: \mu=90</m> and <m>H_a:\mu \ne 90</m>.    </p>
+ <p> Because the park ranger asks whether the mean is <q>different</q> from 90, this will be a two-tailed test. We will use this piece of information when we calculate the p-value. </p>
+</solution>
+</example> 
+
+<example>
+<title> Assumptions </title>
+<statement>
+<p>Identify which test to perform and check that we meet the conditions for that test. </p>
+</statement>
+<solution> 
+<p> Since the population standard deviation is unknown and we have a sample of 20, use a one-sample <m>t</m>-test for the mean. Which tells we use the <m>t</m>-distribution. If we graph the data we can see it is approximately bell shaped and symmetric.</p>
+</solution>
+</example> 
+
+<example>
+<title> Statistical Test </title>
+<statement>
+<p> We need to compute the sample mean and sample standard deviation. Then we will calculate the <em>test statistic</em> and estimate the  <em>p-value</em> for a two-tailed test</p>
+</statement>
+<solution> 
+<p> the mean is <m> \bar{x}= \frac{1780}{20}=89.50   </m> </p>
+<p> the standard deviation is <m>s \approx 4.27</m> </p>
+<p> sample size is <m>n=20</m> and degrees of freedom is <m>df=20-1=18</m> </p>
+<p> Compute <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+<p> The standard error is     
+    <md>\frac{s}{\sqrt{n}}=\frac{4.27}{\sqrt{20}}\approx 0.95.</md> </p>
+  <p>The test statistic is
+    <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{89.50-90}{0.95}\approx -0.52.</md>     </p>
+    <p>
+      With 19 degrees of freedom, the two-tailed <em>p-value</em> is
+      <m>2(.305)=0.61</m>.     </p>
+  </solution>
+</example> 
+
+<example>
+<title>Decision</title>
+<statement> <p> Make the decision to reject or not reject the null hypothesis by comparing the <em>p-value</em> with the level of significance <m>\alpha = 0.05</m> </p>
+</statement>
+<solution>
+    <p>  Since the <em>p-value </em> = 0.61 is greater than <m>\alpha=0.05</m>, we fail to reject the null hypothesis <m>H_0</m>.     </p>
+</solution>
+</example>
+
+<example>
+<title> Conclusion</title>
+<statement> <p> Now summarize the conclusion of the test by referring back to the alternative hypothesis.</p>
+</statement> 
+<solution>
+    <p>
+      There is not enough statistical evidence to conclude that the true mean
+      time between Old Faithful eruptions is different from <m>90</m> minutes.
+    </p>
+  </solution>
+</example>
+
+<p> For up-to-date geyser times visit: <url href="https://www.geysertimes.org/"/> </p>
+
+
+
+
+
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-SingleMeanCalc">
+  <title>Using Technology</title>
+  <p> Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84.  </p>
+
+  <example><title> Input Data </title>
+<statement>
+<p> Let us solve the Old Faithful problem again, but this time using technology. We will need to enter the raw data into a list in the TI-83 Plus or the TI-84. Press the <term>[STAT]</term> button and under the EDIT menu select option <term>1: Edit</term> and press [ENTER] to select it. </p>
+<p> Input each value pressing [ENTER] after each. Recall there are 20 data values. </p>
+<figure xml:id="InputFaithfulCalc">
+            <caption>Inputting Old Faithful Data</caption>
+            <image source="FaithfulCalc1.png" width="90%">
+                <shortdescription>Stat button, edit 1,  then enter values.</shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution>
+<p> You can check the summary statistics statistics by pressing the [STAT] button, press the arrow once to the right to select CALC and select option <term>1: 1-Var Stats</term> and press [ENTER] to select it. Press the <c>2nd</c> button and <c> 1</c> to identify the location of the data in List 1 then press [ENTER] again to see the results. </p>
+<figure xml:id="FaithfulSummaryCalc">
+            <caption>Summary Statistics for Old Faithful Data</caption>
+            <image source="FaithfulCalc4.png" width="50%">
+                <shortdescription>mean=89.5, Sx=4.26, n=20.</shortdescription>
+            </image>
+        </figure>
+<p> The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+</solution>
+</example>
+
+<example><title> T-test on TI-83 Plus </title>
+<statement>
+<p> Press the <term>[STAT]</term> button and press the arrow button twice to the right to the TESTS menu and select option <term>2: T-Test</term> and press [ENTER] to select it. </p>
+<p> Since we entered the raw data, highlight <term>Data</term> and [ENTER] to select it. </p>
+<p> Input the null value <m> \mu_0 :90</m>, the data is in List: <m> L_1</m>, the frequency is 1,  select the alternative hypothesis <m> \ne \mu_0</m>, scroll to <term> Calculate</term> and press [ENTER]</p>
+<figure xml:id="SelectTtestCalc">
+            <caption>Selecting T-test for Old Faithful Data</caption>
+            <image source="FaithfulCalc2.png" width="90%">
+                <shortdescription>Data, null=90, list =L1, two tailed test.</shortdescription>
+            </image>
+        </figure>
+</statement>
+<solution> 
+<p> The displays tells us we performed the T-Test with the statistical test value of <m>t=-0.5247 </m> and p-value = 0.6058. The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+<p> If you selected <term>Draw</term>, it will graph the two tailed test. </p>
+<figure xml:id="ResultsFaithfulCalc">
+            <caption>Results for Old FaithfulTest</caption>
+            <image source="FaithfulCalc3.png" width="90%">
+                <shortdescription>t=-.5247, p-value=.605 for two tails.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+
+
+  <p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+
+<example><title> T-test on TI-84 </title>
+<statement>
+<p> We will need to enter the raw data into a list in the TI-84. Press the <term>[STAT]</term> button and under the EDIT menu select option <term>1: Edit</term> and press [ENTER] to select it. </p>
+<p> Input each value pressing [ENTER] after each. Recall there are 20 data values. </p>
+<figure xml:id="InputFaithfulCalc84">
+            <caption>Inputting Old Faithful Data</caption>
+            <image source="FaithfulCalc5.png" width="90%">
+                <shortdescription>Stat button, edit 1,  then enter values.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Press the <term>[STAT]</term> button and press the arrow button twice to the right to the TESTS menu and select option <term>2: T-Test</term> and press [ENTER] to select it. </p>
+<p> Since we entered the raw data, highlight <term>Data</term> and [ENTER] to select it. </p>
+<p> Input the null value <m> \mu_0 :90</m>, the data is in List: <m> L_1</m>, the frequency is 1,  select the alternative hypothesis <m> \ne \mu_0</m>, scroll to <term> Calculate</term> and press [ENTER]</p>
+<figure xml:id="SelectTtestCalc84">
+            <caption>Selecting T-test for Old Faithful Data</caption>
+            <image source="FaithfulCalc6.png" width="90%">
+                <shortdescription>Data, null=90, list =L1, two tailed test.</shortdescription>
+            </image>
+        </figure>
+</statement>
+<solution> 
+<p> The displays tells us we performed the T-Test with the statistical test value of <m>t=-0.5247 </m> and p-value = 0.6058. The sample mean is <m> \bar{x} = 89.5</m> and sample standard deviation of <m> Sx=4.2612</m> for a sample of <m>n=20</m>. </p>
+<p> If you selected <term>Draw</term>, it will graph the two tailed test. </p>
+<figure xml:id="ResultsFaithfulCalc84">
+            <caption>Results for Old FaithfulTest</caption>
+            <image source="FaithfulCalc7.png" width="90%">
+                <shortdescription>t=-.5247, p-value=.605 for two tails.</shortdescription>
+            </image>
+        </figure>
+</solution>
+</example>
+
+
+
+
+  </subsection> 
+
+
+
+<subsection xml:id="subsec-SingleMeanTestPractice">
+  <title>Practice Problems</title>
+
+ 
+<exercise xml:id="oceanpH-hypothesis-test">
+  <title> Change in Ocean pH</title>
+  <statement>
+    <p>
+      Scientists have long used a historical average surface ocean pH of about
+      <m>8.20</m> as a benchmark. Recent National Ocean and Atmospheric Administration (NOAA) summaries report that global surface
+      ocean pH has decreased by about <m>0.1</m> to <m>0.11</m> units since the
+      Industrial Revolution, suggesting modern ocean pH may now be lower on average.
+    </p>
+    <p>
+      A marine science team collects a random sample of <m>16</m> recent surface-ocean
+      pH measurements from one region and obtains a sample mean of
+      <m>\bar{x}=8.08</m> and a sample standard deviation of <m>s=0.12</m>.
+    </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the true mean ocean pH
+      in this region has changed from the historical value of <m>8.20</m>.
+    </p>
+    <p>
+      State the null and alternative hypotheses, compute the test statistic,
+      estimate the <term>p-value</term>, and state a conclusion in context.
+    </p>
+  </statement>
+  <hint>
+    <p>
+      Because the population standard deviation is unknown, use a one-sample
+      <m>t</m>-test for the mean.
+    </p>
+    <p>
+      For the question of whether the pH has <q>changed</q>, use a two-sided test:
+    </p>
+    <p> <m>H_0:\mu=8.20 \qquad H_a: \mu\ne 8.20 </m> </p>
+    <p>
+      Then compute
+    </p>
+    <p> <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+  </hint>
+  <answer>
+    <p> The hypotheses are <m>H_0:\mu=8.20</m> and <m>H_a: \mu \ne 8.20</m>.
+      The test statistic is <m>t=-3.88</m> with <m>df=15</m>.
+      The two-sided <term>p-value</term> is <m>0.0017</m>.
+      Since the <em>p-value</em> is less than 0.05, we reject <m>H_0</m>.
+      Conclude there is significant evidence that the mean ocean pH in this region has changed from 8.    </p>
+  </answer>
+  <solution>
+    <p> We test whether the population mean pH differs from the historical benchmark
+      of <m>8.20</m>.     </p>
+    <p> The hypotheses are    
+    <m> H_0:\mu=8.20 \qquad H_a:\mu\ne 8.20.</m> </p>
+    <p> Because the population standard deviation is unknown and the sample size is
+      16, we use a one-sample <m>t</m>-test.    </p>
+    <p> The standard error is     
+    <md>\frac{s}{\sqrt{n}}=\frac{0.12}{\sqrt{16}}=\frac{0.12}{4}=0.03.</md> </p>
+    <p> The test statistic is     </p>
+    <p> <md>t=\frac{8.08-8.20}{0.03}=\frac{-0.12}{0.03}=-4.00.</md> </p>
+    <p> The degrees of freedom are <m>df=16-1=15.</m> </p>
+    <p> A test statistic of <m>t=-3.89</m> with <m>15</m> degrees of freedom gives a two-sided <term>p-value</term> <m>=2(.0018)=.0036</m>.     </p>
+    <p> Since the <term>p-value</term> is less than the significance level
+      <m>\alpha=0.05</m>, we reject the null hypothesis.     </p>
+    <p>
+      There is sufficient statistical evidence to conclude that the true mean
+      ocean pH in this region has changed from the historical value of <m>8.20</m>.
+      Because the sample mean is lower than <m>8.20</m>, the data suggests the change
+      is a decrease in pH level.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="oceanDecph-hypothesis-test">
+  <title> Decreasing in Ocean pH</title>
+  <statement>
+    <p>
+      Scientists have historically used an average surface ocean pH of about
+      <m>8.20</m> as a benchmark. Recent NOAA summaries indicate that average
+      surface ocean pH has decreased over time, motivating a test of whether
+      the mean pH in a particular region is now lower than <m>8.20</m>.
+    </p>
+    <p>
+      A marine science team collects a random sample of <m>12</m> recent
+      surface-ocean pH measurements from one coastal region:
+    </p>
+    <p>
+      <m>8.07,\; 8.12,\; 8.05,\; 8.10,\; 8.09,\; 8.03,\; 8.11,\; 8.06,\; 8.08,\; 8.04,\; 8.13,\; 8.07</m>
+    </p>
+    <p>
+      At the <m>0.05</m> significance level, test whether the true mean ocean pH
+      in this region has decreased from the historical value of <m>8.20</m>.
+    </p>
+    <p> State the null and alternative hypotheses, compute the test statistic,
+      estimate the <em>p-value</em>, and state a conclusion in context.    </p>
+  </statement>
+  <hint>
+    <p> Use a one-sample <m>t</m>-test for a population mean, since the population
+      standard deviation is unknown.     </p>
+    <p>  For a one-sided test of decrease, use     </p>
+    <p> <md>H_0: \mu=8.20 \qquad H_a: \mu \lt 8.20.</md> </p>
+    <p> Then compute the sample mean, sample standard deviation, and test statistic  </p>
+    <p> <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}.</md> </p>
+  </hint>
+  <answer>
+    <p>
+      The hypotheses are <m>H_0:\mu=8.20</m> and <m>H_a: \mu \lt 8.20</m>.
+      From the data, <m>\bar{x}\approx 8.079</m> and <m>s \approx 0.033</m>.
+      The test statistic is <m>t\approx -12.59</m> with
+      <m>df=11</m>. The <em>p-value</em> is effectively <m>0</m>
+      (far less than <m>0.05</m>), so we reject <m>H_0</m>.
+      There is strong evidence that the true mean ocean pH in this region
+      has decreased below <m>8.20</m>.
+    </p>
+  </answer>
+  <solution>
+    <p> We want to test whether the population mean ocean pH is lower than
+      the historical benchmark of <m>8.20</m>.     </p>
+    <p> The hypotheses are     
+    <md> H_0:\mu=8.20 \qquad H_a:\mu \lt 8.20     </md> </p>
+    <p>       Because the population standard deviation is unknown, we use a one-sample
+      <m>t</m>-test for the mean.     </p>
+    <p>  First compute the sample statistics from the data:    </p>
+    <p> <md>\bar{x}=\frac{8.07+8.12+8.05+8.10+8.09+8.03+8.11+8.06+8.08+8.04+8.13+8.07}{12}\approx 8.079.</md> </p>
+    <p> <md>s\approx 0.033.</md> </p>
+    <p>       The sample size is <m>n=12</m>, so the degrees of freedom are  <m>df=12-1=11.</m> </p>
+    <p> The standard error is     
+    <md>\frac{s}{\sqrt{n}} \approx \frac{0.033}{\sqrt{12}} \approx 0.0095.</md> </p>
+    <p>       The test statistic is     
+    <md>t=\frac{\bar{x}-\mu_0}{s/\sqrt{n}}=\frac{8.079-8.20}{0.0095}\approx -12.77.</md> </p>
+    <p>
+      With <m>df=11</m>, this gives a one-sided <term>p-value</term> that is
+      extremely small, far below <m>0.05</m>.
+    </p>
+    <p>       Therefore, we reject <m>H_0</m>.     </p>
+    <p>       There is strong statistical evidence that the true mean ocean pH in this
+      region has decreased below <m>8.20</m>.     </p>
+  </solution>
+</exercise>
+
+
+
+
+  </subsection>
+
+
+
+
+
+
+</section> 

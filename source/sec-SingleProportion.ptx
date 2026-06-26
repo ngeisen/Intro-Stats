@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-SingleProportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>z-test for Proportions</title>
+  
+  <introduction>
+    <p>
+      In this section, we will learn how to perform a one-sample <m>z</m>-test for a population proportion. This test is used to determine whether there is
+      enough evidence in a sample of data to support a claim about the true
+      proportion of a population that has a certain characteristic. We will go through the steps of hypothesis testing, including stating the hypotheses, checking assumptions, calculating the test statistic and p-value, and making a conclusion in context. We will also see how to use technology to perform these calculations and practice with real data examples.
+    </p>
+  </introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses involving proportions </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the z-test for proportions. </p> </li>
+     <li> <p> Write the conclusion of a test in context </p>    </li>
+        </ol>
+</objectives>
+
+
+<subsection xml:id="subsec-SingleProportionTestBasics">
+  <title> Hypothesis Testing for Proportions</title>
+<p>The one-sample <m>z</m>-test for a population proportion is used to test a claim about the true proportion <m>p</m> of a population that has a certain characteristic. In this test, a sample proportion <m>\hat{p}</m> is compared to a hypothesized population proportion <m>p_0</m> to determine whether the difference between them is large enough to be statistically significant. We will state the <term> hypotheses</term> and check that we have met the assumptions that 1) the sample is random or representative of the population and 2) the success-failure condition is satisfied, meaning that the expected numbers of successes and failures under the null hypothesis are both sufficiently large. We check that <m>np \ge 10</m> and <m>n(1-p) \ge 10</m> </p>
+<p> Next, the <term>test statistic</term> is computed as <md>z=\dfrac{\hat{p}-p_0}{\sqrt{p_0(1-p_0)/n}}</md>, where <m>\hat{p}</m>  is the sample proportion, <m>p_0</m> is the hypothesized value, and <m>n</m> is the sample size. The resulting <term>p-value</term>  is the probability that statistical value or something more extreme is likely to occur if the null hypothesis is true and is used to decide whether to reject the null hypothesis to conclude that there is evidence for the alternative claim about the population proportion. </p>
+
+<definition xml:id="def-one-sample-z-test-proportion">
+  <statement>
+    <p>
+      A <term>one-sample <m>z</m>-test for a population proportion</term> is a
+      statistical method used to test a claim about a population proportion
+      <m>p</m> using sample data. The test statistic is  <md>z=\dfrac{\hat{p}-p_0}{\sqrt{p_0(1-p_0)/n}}</md>, where <m>\hat{p}</m>  is the sample proportion, <m>p_0</m> is the hypothesized value, and <m>n</m> is the sample size.
+    </p>
+  </statement>
+</definition>
+
+
+
+  </subsection>
+
+<subsection xml:id="subsec-SingleProportionParrots">
+  <title>Hypothesis Test Examples for Parrots </title>
+<p>
+      Researchers studying parrot vocal behavior recorded whether each parrot
+      regularly interacted socially with other parrots in the dataset
+      <c>BenedictParrotVocals.csv</c>. Suppose we want to test
+      whether the proportion of parrots that regularly interacted socially with
+      other parrots is greater than 50%.
+    </p>
+    <p>
+      In the sample, <m>470</m> out of <m>892</m> parrots were recorded as
+      having <q>Yes</q> for the question <q>Social with other parrots?</q>.
+    </p>
+    <p>
+      At the <m> \alpha = 0.05</m> significance level, test whether the population
+      proportion of parrots that regularly interacted socially with other
+      parrots is greater than 50%.
+    </p>
+<example>
+  <statement>
+    <p>
+      State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>z</m>-test for a proportion, compute the test statistic,
+      find the <em>p-value</em>, and state your conclusion in context.
+    </p>
+  </statement>
+  <solution> <title> Hypothesis</title>
+    <p>
+      Let <m>p</m> be the true proportion of parrots that regularly interacted
+      socially with other parrots. The null hypothesis is the proportion is 50% while the alternative hypothesis is the proportion is greater than 50%. 
+    <md> H_0:p=0.50  \qquad H_a:p \gt 0.50     </md>     </p>
+</solution>
+<solution> <title> Assumptions</title>
+<p> The conditions       for the one-sample <m>z</m>-test are satisfied because
+      <m>np_0=892(0.50)=446</m> and <m>n(1-p_0)=892(0.50)=446</m>, both of which
+      are at least <m>10</m>. So we can use the normal distribution since the sample is large enough. </p>
+</solution>
+<solution> <title> Statistical Test</title>
+<p>  Use the sample proportion  <m>\hat{p}=\dfrac{x}{n}=\dfrac{470}{892}=0.5269</m> </p>
+  <p>and the test statistic is
+    <md> z=\frac{\hat{p}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}.     </md>
+    <md>
+z=\frac{0.5269-0.50}{\sqrt{\dfrac{0.50(0.50)}{892}}}
+\approx \frac{0.0269}{0.0167} \approx 1.61.     </md> </p>
+  </solution>
+
+<solution> <title> p-value</title>
+    <p> For a right-tailed test, the <term>p-value</term> is    
+    <m> P(Z \gt 1.61)\approx 0.054.     </m>     </p>
+</solution>
+<solution> <title>Decision </title>
+<p>Since the <em>p-value</em> = 0.54 is slightly greater than the significance
+      level <m>\alpha=0.05</m>, we fail to reject <m>H_0</m>.    </p>
+</solution>
+<solution> <title> Conclusion</title>
+    <p>  There is not enough evidence at the <m>0.05</m> significance level to
+      conclude that the proportion of parrots that regularly interacted socially
+      with other parrots is greater than 50%.     </p>
+  </solution>
+</example>
+
+<p>
+      Researchers studying parrot vocal behavior recorded the number of mimicked
+      sounds, phrases, and words for each parrot in the dataset
+      <c>BenedictParrotVocals.csv</c>. Define a parrot as having a
+      small mimicry repertoire if its total number of mimicked sounds, phrases,
+      and words is less than <m>15</m>.
+    </p>
+    <p>
+      Suppose we want to test whether less than <m>60\%</m> of parrots have a
+      mimicry repertoire size less than 15.
+    </p>
+    <p>
+      In the sample, <m>451</m> out of <m>892</m> parrots had a total mimicry
+      repertoire size less than <m>15</m>.
+    </p>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the population
+      proportion of parrots with mimicry repertoire sizes less than 15 words and phrases
+      is less than 60%.
+    </p>
+<exercise>
+  <statement>
+    <p>
+      State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>z</m>-test for a proportion, compute the test statistic,
+      find the <term>p-value</term>, and state your conclusion in context.
+    </p>
+  </statement>
+  <hint>
+    <p>       Let <m>p</m> be the true proportion of parrots with a mimicry repertoire
+      size less than 15.     
+    <md> Hypotheses: H_0:p=0.60 \qquad H_a:p \lt 0.60     </md></p>
+    <p>
+      Use sample proportion   <m>\hat{p}=\dfrac{451}{892}</m>       and
+        <md> z=\frac{\hat{p}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}.     </md> </p>
+  </hint>
+
+
+  <answer>
+    <p>
+      The hypotheses are <m>H_0:p=0.60</m> and <m>H_a:p \lt 0.60</m>. The sample
+      proportion is <m>\hat{p}=\dfrac{451}{892}\approx 0.506</m>. The conditions
+      are satisfied because <m>np_0=892(0.60)=535.2</m> and
+      <m>n(1-p_0)=892(0.40)=356.8</m>, both at least <m>10</m>. The test
+      statistic is <m>z\approx -5.74</m>, giving a left-tailed
+      <term>p-value</term> of approximately <m>0.0</m>. Since the
+      <term>p-value</term> is much smaller than <m>0.05</m>, we reject
+      <m>H_0</m>. There is enough evidence to conclude that less than
+      60% of parrots have mimicry repertoire sizes of less than 15 words and phrases.
+    </p>
+  </answer>
+
+  <solution> <title>Hypotheses</title>
+    <p>
+      Let <m>p</m> represent the true proportion of parrots whose total mimicry
+      repertoire size is less than 15, where total repertoire size is the
+      sum of mimicked sounds, phrases, and words.
+    </p>
+    <p>   The hypothesis are 
+    <md> H_0:p=0.60  \qquad H_a:p \lt 0.60     </md> </p>
+</solution>
+<solution><title> Assumptions</title>
+    <p>
+      From the sample, <m>x=451</m> parrots out of <m>n=892</m> had a total
+      mimicry repertoire size less than 15. Therefore,
+       <md> \hat{p}=\frac{x}{n}=\frac{451}{892}\approx 0.5056.    </md> </p>
+    <p>
+      We verify the success-failure condition using <m>p_0=0.60</m>:
+        <md> np_0=892(0.60)=535.2 \qquad  n(1-p_0)=892(0.40)=356.8.  </md> </p>
+    <p>  Both values are greater than <m>10</m>, so the normal approximation is
+      appropriate.   </p>
+</solution>
+
+
+<solution><title> Statistical Test</title>  
+  <p> Now compute the test statistic:
+        <md> z=\frac{\hat{p}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}
+=\frac{0.5056-0.60}{\sqrt{\dfrac{0.60(0.40)}{892}}}
+\approx \frac{-0.0944}{0.0165}
+\approx -5.74.     </md> </p>
+</solution> 
+<solution> <title> p-value</title>
+    <p>
+      Because this is a left-tailed test, the <em>p-value</em> is
+    <md> P(Z \lt -5.74)\approx 4.33 \times 10^-9 \approx 0    </md></p>
+</solution>
+<solution> <title> Decision</title>
+    <p>
+      Since the <em>p-value</em> = 0 is much smaller than
+      <m>\alpha=0.05</m>, we reject the null hypothesis.
+    </p>
+</solution>
+<solution> <title> Conclusion</title> 
+    <p>
+      There is enough evidence at the <m>\alpha =0.05</m> significance level to
+      conclude that less than <m>60\%</m> of parrots have mimicry repertoire
+      sizes less than 15 words and phrases.
+    </p>
+  </solution>
+</exercise>
+
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-SingleProportionCalculator">
+  <title>Using Technology </title>
+  
+<p> Now let us use the TI-83 Plus Calculator to calculate the test statistic and p-value.</p>
+<p> Researchers studying parrot vocal behavior recorded the sex of each parrot
+      in the dataset <c>BenedictParrotVocals.csv</c>. Suppose we
+      want to test whether the proportion of parrots identified as male is
+      different from 50%    </p>
+    <p> In the sample, <m>430</m> out of <m>892</m> parrots were identified as
+      male.</p>
+    <p>  At the <m>\alpha = 0.05</m> significance level, test whether the population
+      proportion of parrots identified as male differs from 50%.     </p>
+
+ <example><title> Using TI-83 Plus</title>
+<statement> <p> 
+      State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>z</m>-test for a proportion, compute the test statistic,
+      and <em>p-value</em> and state your conclusion in context.
+    </p>
+  </statement>
+<solution> <title>Hypotheses</title>
+    <p>  Let <m>p</m> be the true proportion of parrots identified as male.     </p>
+<p> The hypotheses are 
+    <md> H_0:p=0.50 \qquad H_a:p\ne 0.50     </md> </p>
+</solution>
+<solution><title> Assumptions</title>
+<p> The conditions are satisfied because <m>np_0=892(0.50)=446</m> and
+      <m>n(1-p_0)=892(0.50)=446</m>, both at least <m>10</m> so we can use the normal distribution. </p>
+</solution> 
+<solution><title> Statistical Test</title>
+<p> From the sample, <m>x=430</m> parrots out of <m>n=892</m> were identified
+      as male. Thus, the sample proportion  <m>\hat{p}=\dfrac{430}{892} = 0.482</m> 
+      and the test statistic is
+<md>=\frac{0.4821-0.50}{\sqrt{\dfrac{0.50(0.50)}{892}}}
+\approx \frac{-0.0179}{0.0167}
+\approx -1.07.     </md>  </p>
+<p> For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option <c>5: 1-PropZ Test</c> and press [ENTER] to select the test.</p>
+<p> Input the null hypothesized value <m> p_0 = 0.50</m>, the count of <m>x=430 </m> males from the sample <m>n=892</m>. Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]</p>
+<figure xml:id="ParrotsMaleCalc">
+            <caption>Proportion Test for Male Parrots</caption>
+            <image source="ParrotMale1.png" width="100%">
+                <shortdescription>Select 1PropZtest and enter .5, 430, 892, and two tailed test.</shortdescription>
+            </image>
+        </figure>
+
+<p>The test statistic is <m>z= -1.07</m>, and the <em>p-value</em> is
+      <m>p=0.284</m>. </p>
+</solution>
+<solution> <title> Conclusion</title>
+<p> Since the <em>p-value=0.284</em> is greater than <m>\alpha = 0.05</m>, we fail to reject <m>H_0</m>. There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.     </p>
+</solution>
+</example> 
+
+<p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+ 
+ <example><title> Using TI-84 Applet</title>
+<statement> <p> 
+      State the null and alternative hypotheses, verify the conditions for a
+      one-sample <m>z</m>-test for a proportion, compute the test statistic,
+      and <em>p-value</em> and state your conclusion in context.
+    </p>
+  </statement>
+<solution> <title>Hypotheses</title>
+    <p>  Let <m>p</m> be the true proportion of parrots identified as male.     </p>
+<p> The hypotheses are 
+    <md> H_0:p=0.50 \qquad H_a:p\ne 0.50     </md> </p>
+</solution>
+<solution><title> Assumptions</title>
+<p> The conditions are satisfied because <m>np_0=892(0.50)=446</m> and
+      <m>n(1-p_0)=892(0.50)=446</m>, both at least <m>10</m> so we can use the normal distribution. </p>
+</solution> 
+<solution><title> Statistical Test</title>
+<p> From the sample, <m>x=430</m> parrots out of <m>n=892</m> were identified
+      as male. Thus, the sample proportion  <m>\hat{p}=\dfrac{430}{892} = 0.482</m> 
+      and the test statistic is
+<md>=\frac{0.4821-0.50}{\sqrt{\dfrac{0.50(0.50)}{892}}}
+\approx \frac{-0.0179}{0.0167}
+\approx -1.07.     </md>  </p>
+<p> For the calculator click on the [STAT] button and use the arrows twice to the right to highlight TESTS across the top and scroll down to option <c>5: 1-PropZ Test</c> and press [ENTER] to select the test.</p>
+<p> Input the null hypothesized value <m> p_0 = 0.50</m>, the count of <m>x=430 </m> males from the sample <m>n=892</m>. Identify the alternative hypothesis of not equal, scroll to Calculate and press [ENTER]</p>
+<figure xml:id="ParrotsMaleCalc2">
+            <caption>Proportion Test for Male Parrots</caption>
+            <image source="ParrotMale2.png" width="90%">
+                <shortdescription>Select 1PropZtest and enter .5, 430, 892, and two tailed test.</shortdescription>
+            </image>
+        </figure>
+<figure xml:id="ParrotsMaleCalc3">
+            <caption>Proportion Test Results for Male Parrots</caption>
+            <image source="ParrotMale3.png" width="60%">
+                <shortdescription>test value z=-1.07 and pvalue=0.284</shortdescription>
+            </image>
+        </figure>
+
+<p>The test statistic is <m>z= -1.07</m>, and the <em>p-value</em> is
+      <m>p=0.284</m>. </p>
+</solution>
+<solution> <title> Conclusion</title>
+<p> Since the <em>p-value=0.284</em> is greater than <m>\alpha = 0.05</m>, we fail to reject <m>H_0</m>. There is not enough evidence to conclude that the population proportion of parrots identified as male is different from 50%.     </p>
+</solution>
+</example> 
+
+
+  </subsection>
+
+
+
+
+</section> 

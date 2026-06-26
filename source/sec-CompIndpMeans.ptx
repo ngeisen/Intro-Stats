@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-CompIndpMeans" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>t-test for Two Independent Means</title>
+
+  <introduction>
+    <p> Previously, we looked at confidence intervals and hypothesis for a single sample mean or single proportion. There are many instances where researchers want to compare two samples, such as comparing an experimental group with a control group to see if there is a difference between them due to treatment.  In this section we will compare the means for two independent groups. We will use the same basic five step process for hypothesis testing: 1: write the hypotheses, check the assumptions, calculate the test statistics, find the p-value based on the alternative hypothesis, and write the conclusion in context as a sentence. 
+      
+    </p> 
+  </introduction>
+  
+ <objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the difference in population means. </p> </li>
+    <li> <p> Determine the test statistic and p-value for the t-test for two independent means. </p> </li>
+     <li> <p> Write the conclusion of a two sample t-test in context. </p> </li>
+     <li> <p>Construct confidence intervals for the difference in means. </p> </li>
+    </ol>
+</objectives>
+
+
+<subsection xml:id="subsec-IndependentMeansBasics">
+  <title>Understanding the Basics</title>
+ <p> The two-sample <m>t</m>-test for independent means is used to compare the means of two separate populations in order to determine whether there is evidence of a significant difference between them. This test is appropriate when the two samples are independent, meaning that the observations in one sample are not related to the observations in the other sample. The two samples should be random samples.  When the samples are less than 30, the populations should be approximately normally distributed. </p> 
+ <p> The <term> hypotheses </term> are written in terms of the difference between the population means, <m>\mu_1-\mu_2</m>, which is often compared to <m>0</m>. The null hypotheses can also be written as <m>\mu_1= \mu_2</m> with the alternative hypothesis as <m>\mu_1 \gt \mu_2</m> or <m>\mu_1 \lt \mu_2</m> for a one-tailed test, or <m>\mu_1 \ne\mu_2</m> for a two-tailed test. </p>
+<p>The <term>test statistic</term> is
+<md> t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}} </md>
+where <m>\bar{x}_1</m> and <m>\bar{x}_2</m> are the sample means, <m>s_1</m> and <m>s_2</m> are the sample standard deviations, and <m>n_1</m> and <m>n_2</m> are the sample sizes. This test assumes that the two samples are independently selected, that the observations within each sample are independent, and that each population is approximately normally distributed, especially when the sample sizes are small. In practice, the test is also reasonably robust when sample sizes are large.  </p>
+<p> The degrees of freedom for the two-sample t-test for the mean can be computed using Welch's formula or using the smaller value of <m>df_1 =n_1 -1</m> or <m>df_2 =n_2 -1</m>. This will depend on which your professor prefers. We will be using Welch's formula in this book since it matches the values from technology. </p> 
+
+<definition xml:id="def-welch-df-two-sample-t-test">
+  <statement>
+    <p>
+      For a two-sample <m>t</m>-test for independent means with unequal
+      variances, the approximate degrees of freedom are given by
+      <term>Welch's formula</term>:
+        <md>
+df \approx
+\frac{\left(\dfrac{s_1^2}{n_1}+\dfrac{s_2^2}{n_2}\right)^2}
+{\dfrac{\left(\dfrac{s_1^2}{n_1}\right)^2}{n_1-1}+\dfrac{\left(\dfrac{s_2^2}{n_2}\right)^2}{n_2-1}}
+    </md> </p>
+    <p>
+      where <m>s_1</m> and <m>s_2</m> are the sample standard deviations, and
+      <m>n_1</m> and <m>n_2</m> are the sample sizes.
+    </p>
+<p> We will always round the degrees of freedom down to the integer. </p>
+  </statement>
+</definition>
+
+<p>The resulting <term>p-value</term> is used to determine whether the observed difference between sample means provides enough evidence to conclude that the population means differ or if one is greater than the other.</p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-two-sample-t-test-independent-means">
+  <statement>
+    <p>
+      A <term>two-sample <m>t</m>-test for independent means</term> is a
+      statistical test used to compare the means of two independent populations
+      and determine whether there is evidence of a difference between them.
+    </p>
+    <p>
+      The test statistic is
+       <md>
+t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+    </md> </p> 
+    <p>
+      where <m>\bar{x}_1</m> and <m>\bar{x}_2</m> are the sample means,
+      <m>s_1</m> and <m>s_2</m> are the sample standard deviations, and
+      <m>n_1</m> and <m>n_2</m> are the sample sizes.
+    </p>
+  </statement>
+</definition>
+
+<p> At times, we may want to find the confidence interval for the difference in means for independent samples. It is important to pay attention to which variable is listed first since this can change the interpretation. </p> 
+
+<definition xml:id="def-interval-difference-independent-means">
+  <statement>
+    <p>
+      A <term>confidence interval for the difference of means for independent samples</term>
+      is an interval estimate used to estimate the difference between two population means,
+      <m>\mu_1-\mu_2</m>, based on two independent random samples.
+    </p>
+    <p>
+      When the population standard deviations are unknown, a confidence interval for
+      <m>\mu_1-\mu_2</m> is given by
+    <md>
+(\bar{x}_1-\bar{x}_2)\pm t^\ast \sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}
+    </md>
+</p>
+    <p>
+      where <m>\bar{x}_1</m> and <m>\bar{x}_2</m> are the sample means,
+      <m>s_1</m> and <m>s_2</m> are the sample standard deviations,
+      <m>n_1</m> and <m>n_2</m> are the sample sizes, and <m>t^\ast</m>
+      is the critical value from the <m>t</m>-distribution with appropriate
+      degrees of freedom, often estimated using Welch's formula.
+    </p>
+  </statement>
+</definition>
+
+  </subsection>
+
+<subsection xml:id="ParrotWordComparisonExample">
+  <title>Comparing Means of Mimicked Words </title>
+<p>Parrots are one of the rare animal taxa with life-long vocal learning. Parrot vocal repertoires are difficult to study in the wild, but companion parrots offer a valuable data source. Researchers surveyed the public about mimicry repertoires in companion parrots. Species differed significantly in mimicry ability, with grey parrots (Psittacus erithacus) having the largest mimicry repertoires.</p>
+<p> Researchers wanted to know whether the mean number of mimicked words is statistically greater for grey parrots than for cockatoos. Suppose a random sample of <m>18</m> grey parrots had a mean of   <m>52.4</m> mimicked words with a sample standard deviation of  <m>18.6</m>, while a separate random sample of <m>16</m> cockatoos had a mean of <m>39.1</m> mimicked words with a sample standard deviation of  <m>15.2</m>.  </p>
+<p>  At the <m>\alpha =0.05</m> significance level, test whether the population mean number of mimicked words is greater for grey parrots than the mean number of mimicked words for cockatoos.  </p>
+
+<example> <title> Mimicked Words Test</title> 
+  <statement>
+<p> 
+      State the null and alternative hypotheses, verify the conditions for a
+      two-sample <m>t</m>-test for independent means, compute the test statistic and the degrees of freedom, find the p-value, and state the conclusion in context.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      Let <m>\mu_1</m> be the population mean number of mimicked words for grey
+      parrots, and let <m>\mu_2</m> be the population mean number of mimicked
+      words for cockatoos.
+    </p>
+    <p>
+      The hypotheses written as a difference are
+        <md> H_0:\mu_1-\mu_2=0  \qquad  H_a:\mu_1-\mu_2 \gt 0.  </md>
+Alternatively, the hypotheses can be written as 
+<md> H_0:\mu_1 =\mu_2  \qquad  H_a:\mu_1 \gt \mu_2 .  </md> 
+This is a right tailed test.</p>
+</solution>
+<solution> <title> Assumptions</title>
+<p> The t-test is appropriate since the two samples are independent of each other and they were random samples. We are assuming the populations are normally distributed.
+</p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>
+      The sample statistics are
+        <md>
+n_1=18,\quad \bar{x}_1=52.4,\quad s_1=18.6
+    </md>
+    <md>
+n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
+    </md>
+</p>
+    <p>
+      Substituting in the values, the test statistic is
+        <md>
+t=\frac{(\bar{x}_1-\bar{x}_2)-0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+=\frac{52.4-39.1}{\sqrt{\frac{18.6^2}{18}+\frac{15.2^2}{16}}}
+=\frac{13.3}{\sqrt{19.22+14.44}}
+=\frac{13.3}{\sqrt{33.66}}
+\approx \frac{13.3}{5.80}
+\approx 2.29.
+    </md>
+</p>
+    <p>
+      Using the Welch two-sample <m>t</m>-test, the degrees of freedom are
+      approximately <m>df\approx 31</m>.</p>
+</solution>
+
+<solution> <title> Welch's degrees of freedom</title>
+<p>
+    For Welch's two-sample <m>t</m>-test, the approximate degrees of freedom are
+    given by
+     <md> df \approx
+\frac{\left(\dfrac{s_1^2}{n_1}+\dfrac{s_2^2}{n_2}\right)^2}
+{\dfrac{\left(\dfrac{s_1^2}{n_1}\right)^2}{n_1-1}+\dfrac{\left(\dfrac{s_2^2}{n_2}\right)^2}{n_2-1}}
+  </md> </p>
+  <p>
+    Here,
+    <m>n_1=18</m>, <m>s_1=18.6</m>, <m>n_2=16</m>, and <m>s_2=15.2</m>.
+  </p>
+  <p>
+    First compute the sample variance terms:
+  <md>
+\frac{s_1^2}{n_1}=\frac{18.6^2}{18}=\frac{345.96}{18}=19.22
+  </md>
+  <md>
+\frac{s_2^2}{n_2}=\frac{15.2^2}{16}=\frac{231.04}{16}=14.44
+  </md>
+  </p>
+  <p>
+    Now substitute into Welch's formula:
+  <md>
+df \approx \frac{(19.22+14.44)^2}
+{\dfrac{(19.22)^2}{18-1}+\dfrac{(14.44)^2}{16-1}}
+  </md>
+  <md>
+df \approx
+\frac{(33.66)^2}
+{\dfrac{369.4084}{17}+\dfrac{208.5136}{15}}
+  </md>
+  <md>
+df \approx
+\frac{1132.9956}
+{21.7299+13.9009}
+  </md>
+  <md>
+df \approx
+\frac{1132.9956}{35.6308}
+\approx 31.79
+  </md>
+  </p>
+
+  <p>
+    Therefore, the approximate degrees of freedom are
+    <m>df \approx 31.79</m>, which is often rounded down to <m>31</m> for
+    Tables and StatKey use. The good news is we will be using technology to find this value in the future. 
+  </p>
+</solution>
+
+
+<solution> <title> p-value</title>
+    <p>
+      The p-value for a right-tailed test with <m>t=2.29</m> and <m>df=31</m> is approximately <m>0.014</m>.
+    </p>
+    <p>
+      Since the p-value is less than the significance level of <m>\alpha =0.05</m>, we reject the null hypothesis. 
+    </p>
+  </solution>
+
+<solution> <title> Conclusion</title>
+      <p>
+      Since the p-value is less than the significance level of <m>\alpha =0.05</m>, we reject the null hypothesis. There is sufficient evidence to conclude that the population mean number of mimicked words is greater for grey parrots than for cockatoos.
+    </p>
+  </solution>
+</example> 
+
+<p>
+    Construct a <m>95\%</m> confidence interval for the difference in
+    population means, <m>\mu_1-\mu_2</m>, where <m>\mu_1</m> is the mean number
+    of mimicked words for grey parrots and <m>\mu_2</m> is the mean number of
+    mimicked words for cockatoos.
+  </p>
+<example> <title> Confidence Interval</title> 
+<statement>
+  <p>
+    Construct a <m>95\%</m> confidence interval for the difference in
+    population means, <m>\mu_1-\mu_2</m>, where <m>\mu_1</m> is the mean number
+    of mimicked words for grey parrots and <m>\mu_2</m> is the mean number of
+    mimicked words for cockatoos.
+  </p>
+</statement>
+<solution> <title>Interval</title>
+  <p>
+    The sample statistics are
+  <md>
+n_1=18,\quad \bar{x}_1=52.4,\quad s_1=18.6
+  </md>
+  <md>
+n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2
+  </md></p> 
+  <p>
+    The point estimate for the difference in means is
+  <md>
+\bar{x}_1-\bar{x}_2=52.4-39.1=13.3
+  </md></p>
+  <p>
+    The standard error is
+    <md>
+SE=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}
+=\sqrt{\frac{18.6^2}{18}+\frac{15.2^2}{16}}
+=\sqrt{\frac{345.96}{18}+\frac{231.04}{16}}
+=\sqrt{33.66}
+\approx 5.80
+  </md></p>
+  <p>
+    Using Welch's formula, the approximate degrees of freedom are
+    <md>
+df \approx \frac{\left(\dfrac{18.6^2}{18}+\dfrac{15.2^2}{16}\right)^2}
+{\dfrac{\left(\dfrac{18.6^2}{18}\right)^2}{18-1}+\dfrac{\left(\dfrac{15.2^2}{16}\right)^2}{16-1}} \approx 31.79
+  </md></p>
+  <p>
+    Using <m>df\approx 31.79</m>, the critical value for a <m>95\%</m>
+    confidence interval is approximately <m>t^\ast \approx 2.04</m>.
+  </p>
+  <p>
+    The margin of error is
+  <md> ME=t^\ast \cdot SE \approx 2.04(5.80)\approx 11.87
+  </md>
+    Therefore, the <m>95\%</m> confidence interval is
+    <md> (\bar{x}_1-\bar{x}_2)\pm ME =13.3\pm 11.87
+  </md>
+  <md>
+(1.43,\ 25.17)
+  </md></p> 
+  <p>
+    We are <m>95\%</m> confident that the difference in the population mean
+    number of mimicked words between grey parrots and cockatoos is between
+    <m>1.43</m> and <m>25.17</m>. Since the entire interval is positive, the
+    data suggest that grey parrots have a higher mean number of mimicked words
+    than cockatoos.
+  </p>
+</solution> 
+</example> 
+
+
+</subsection> 
+
+<subsection xml:id="subsec-IndependentMeansCalculator">
+  <title>Using Technology</title>
+    <p> We can use technology to perform the two-sample t-test for independent means. We will first look at using the calculator when we have the summary statistics.</p>
+    <p>
+      Researchers wanted to know whether the mean number of mimicked words is statistically greater for grey parrots than for cockatoos. Suppose a random sample of <m>18</m> grey parrots had a mean of   <m>52.4</m> mimicked words with a sample standard deviation of  <m>18.6</m>, while a separate random sample of <m>16</m> cockatoos had a mean of <m>39.1</m> mimicked words with a sample standard deviation of  <m>15.2</m>.
+    </p>
+    <p>
+      At the <m>\alpha =0.05</m> significance level, test whether the population mean
+      number of mimicked words is greater for grey parrots than the mean number of mimicked words for cockatoos.
+    </p>
+  
+<example> <title> Using TI-83 Plus</title>
+<statement>
+<p>
+      State the null and alternative hypotheses, use technology to compute
+      two-sample <m>t</m>-test for independent means and p-value, and state the conclusion in context.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      Let <m>\mu_1</m> be the population mean number of mimicked words for grey
+      parrots, and let <m>\mu_2</m> be the population mean number of mimicked
+      words for cockatoos.
+    </p>
+    <p>
+      The hypotheses are 
+<md> H_0:\mu_1 =\mu_2  \qquad  H_a:\mu_1 \gt \mu_2 .  </md> 
+This is a right tailed test.</p>
+</solution>
+  <solution> <title> Statistical Test</title>
+    <p>
+      The sample statistics are
+        <md>
+n_1=18,\quad \bar{x}_1=52.4,\quad s_1=18.6
+    </md>
+    <md>
+n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
+    </md>
+</p>
+<p> Click on the <term>[STAT] </term> button and press the arrow twice to the right to highlight <term>TESTS</term> across the top and select option <term>4: 2-Samp T-test</term> and press [ENTER] to select it.</p>
+<p> Use the arrow to highlight <term> Stats</term> so you can enter the summary statistics. If you enter the raw data then you will select <em>Data</em> . </p>
+<figure xml:id="TwoParrotTestCalc1">
+            <caption>Two sample t-test on calculator menu</caption>
+            <image source="TwoParrotCalc1.png" width="100%">
+                <shortdescription>select option 4 for 2 sample t-test.</shortdescription>
+            </image>
+        </figure> 
+<p> Use the arrow button to continue down the menu. Identify the alternative hypothesis for <q>greater than</q> and the <term>Pooled: NO</term> for this course. Then click on <term> Calculate</term> and press [ENTER] to evaluate the test. </p> 
+<figure xml:id="TwoParrotTestCalc2">
+            <caption>Two Sample Test Results</caption>
+            <image source="TwoParrotCalc2.png" width="60%">
+                <shortdescription> test statistic is t=2.29 with p-value =0.0143 and the Welch's degrees of freedom 31.79.</shortdescription>
+            </image>
+        </figure> 
+<p> The display shows the alternative hypothesis; the test statistic is <m>t=2.29</m> with  <m>p-value =0.0143</m> and the Welch's degrees of freedom is <m>df=31.79</m>. Then it will summarize the values you entered. If you selected <term> Draw</term> instead of <em>Calculate</em>, it will draw the area of the tail for you and states the test statistic <m>t=2.294</m> and <m>p-value=0.0143</m>. </p>  
+</solution>
+  <solution> <title> Conclusion</title>
+<p>
+      Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.
+    </p>
+    <p>
+      There is sufficient evidence to conclude that the population's mean number of mimicked words is greater for grey parrots than the mean number of mimicked words for cockatoos.
+    </p>
+  </solution>
+<solution> <title> Confidence Interval </title> 
+<p> Find the 95% confidence interval of the mean difference between number of mimicked words for grey parrots and cockatoos. </p>
+<p> Click on the<term> [STAT] </term> button and press the arrow twice to the right to highlight TESTS across the top and select option <term> 0: 2-Samp T-interval </term> and press [ENTER] to select it. Input the appropriate values, they will be the same as the test. Input the Confidence level where <term>C-Level:0.95</term>, and <term> Pooled: NO</term> and then press <term>Calculate </term>. </p>
+<figure xml:id="TwoParrotIntervalCalc3">
+            <caption>Two Sample Mean Interval on Calculator</caption>
+            <image source="TwoParrotCalc3.png" width="100%">
+                <shortdescription>scroll to option 0 for two sample t interval </shortdescription>
+            </image>
+        </figure> 
+<figure xml:id="TwoParrotIntervalCalc14">
+            <caption>Results of Two Sample Mean Interval</caption>
+            <image source="TwoParrotCalc4.png" width="50%">
+                <shortdescription> interval 1.5 to 25.1 more words for the grey parrots with df=31.79.</shortdescription>
+            </image>
+        </figure> 
+<p> Since we entered the grey parrot's data first, the interpretation is that we are 95% confident that the mean difference between number of mimicked words for grey parrots and cockatoos is between 1.5 to 25.1 more words for the grey parrots.  </p>
+</solution>
+</example> 
+
+
+
+<p> Try the online TI-84 Applet <url href=" https://ti84calcpro.com/" /> </p>
+
+<example> <title> Using TI-84 </title>
+<statement>
+<p>
+      State the null and alternative hypotheses, use technology to compute
+      two-sample <m>t</m>-test for independent means and p-value, and state the conclusion in context.
+    </p>
+  </statement>
+  <solution> <title> Hypotheses</title>
+    <p>
+      Let <m>\mu_1</m> be the population mean number of mimicked words for grey
+      parrots, and let <m>\mu_2</m> be the population mean number of mimicked
+      words for cockatoos.
+    </p>
+    <p>
+      The hypotheses are 
+<md> H_0:\mu_1 =\mu_2  \qquad  H_a:\mu_1 \gt \mu_2 .  </md> 
+This is a right tailed test.</p>
+</solution>
+<solution> <title> Statistical Test</title>
+    <p>
+      The sample statistics are
+        <md>
+n_1=18,\quad \bar{x}_1=52.4,\quad s_1=18.6
+    </md>
+    <md>
+n_2=16,\quad \bar{x}_2=39.1,\quad s_2=15.2.
+    </md>
+</p>
+
+<p> Click on the [STAT] button and press the arrow twice to the right to highlight TESTS across the top and select option <term>4: 2-Samp T-test</term> and press [ENTER] to select it.</p>
+<p> Use the arrow to highlight <term> Stats</term> so you can enter the summary statistics. If you enter the raw data then you will select <em>Data</em> </p>
+<figure xml:id="TwoParrotTestCalc5">
+            <caption>Two sample t-test on calculator menu</caption>
+            <image source="TwoParrotCalc5.png" width="100%">
+                <shortdescription>select option 4 for 2 sample t-test.</shortdescription>
+            </image>
+        </figure> 
+
+<p> Use the arrow button to continue down the menu. Identify the alternative hypothesis for <m> \gt  \mu_2 </m>  and the <term>Pooled: NO</term> for this course. Then click on <term> Calculate</term> and press [ENTER] to evaluate the test. </p>
+<figure xml:id="TwoParrotTestCalc6">
+            <caption>Two Sample Test Results</caption>
+            <image source=" TwoParrotCalc6.png" width="60%">
+                <shortdescription> test statistic is t=2.29 with p-value =0.0143 and the Welch's degrees of freedom 31.79.</shortdescription>
+            </image>
+        </figure> 
+
+<p> The display shows the alternative hypothesis; the test statistic is <m>t=2.29</m> with  <m>p-value =0.0143</m> and the Welch's degrees of freedom is <m>df=31.79</m>. Then it will summarize the values you entered. If you selected <term> Draw</term> instead of <em>Calculate</em>, it will draw the area of the tail for you and states the test statistic <m>t=2.294</m> and <m>p-value=0.0143</m>. </p>
+</solution>
+<solution> <title> Conclusion</title>
+<p>  Since the <term>p-value</term> is less than <m>0.05</m>, we reject
+      <m>H_0</m>.  </p>
+    <p> There is sufficient evidence to conclude that the population’s mean number of mimicked words is greater for grey parrots than the mean number of mimicked words for cockatoos.    </p>
+  </solution>
+</example> 
+
+
+
+  </subsection>
+
+
+</section> 

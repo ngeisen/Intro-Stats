@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-CompPairedmeans" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>t-test for Paired Means</title>
+
+ <introduction>
+  <p>
+    The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects.   
+  </p>
+ </introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses for the paired difference in means. </p>    </li>
+    <li> <p> Determine the test statistic and p-value for the paired t-test. </p> </li>
+     <li> <p> Write the conclusion of a test in context. </p>    </li>
+<li> <p>Construct confidence intervals for the difference in means. </p> </li>
+
+        </ol>
+</objectives>
+
+
+<subsection xml:id="subsec-PairedMeanTestBasics">
+  <title>Understanding the Basics</title>
+  <p> The paired <m>t</m>-test for means is used to compare two related measurements to determine whether their population mean difference is significantly different from zero. This test is appropriate when the data come in natural pairs, such as before-and-after measurements on the same individuals or matched observations from closely related subjects. Instead of comparing two independent sample means, the paired <m>t</m>-test analyzes the <em> differences </em> within each pair. If we let <m>d</m> represent the difference for each pair, then the <term>hypotheses</term> are written in terms of the population mean difference <m>\mu_d</m>.  The null hypothesis is <m>\mu_d = 0</m> and the alternative hypothesis can be either <m>\mu_d \lt 0</m> or <m>\mu_d \gt 0 </m> for a one tailed test, or <m>\mu_d \ne 0</m> for a two-tailed test .  </p>   
+<p>The <term> test statistic</term> is
+<md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}} </md>
+where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is the sample standard deviation of the differences, <m>n</m> is the number of pairs in the sample, and <m>\mu_{d}</m> is the hypothesized mean difference, usually <m>0</m> indicating no difference in values. </p>
+<p>This test assumes that the data consist of matched pairs, that the differences are independent from one pair to another, and that the distribution of the differences is approximately normal, especially when the sample size is small. The resulting <term>p-value</term> is used to decide whether there is enough evidence to conclude that a true mean difference exists between the paired observations.</p>
+<p> Recall that when the <em>p-value</em> <m>  \lt \alpha </m> we reject the null hypothesis, otherwise there is not enough evidence to reject the null hypothesis. </p>
+
+<definition xml:id="def-paired-t-test-mean">
+  <statement>
+    <p>
+      A <term>paired <m>t</m>-test for the mean</term> is a statistical test
+      used to compare the mean of the differences between two related
+      measurements and determine whether there is evidence that the population
+      mean difference is different from a hypothesized value.
+    </p> 
+    <p>  The test statistic is
+        <md> t=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}}     </md> </p>
+    <p>
+      where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is
+      the sample standard deviation of the differences, <m>n</m> is the number
+      of pairs, and <m>\mu_d</m> is the hypothesized population mean
+      difference.
+    </p>
+  </statement>
+</definition>
+
+<p>
+  A confidence interval for a paired mean is used when data are collected in
+  matched pairs, such as before-and-after measurements on the same subjects or
+  measurements on two related conditions. First, compute the difference for each
+  pair, usually written as <m>d = x_1 - x_2</m> or in a context-specific way such
+  as <m>d=\text{After}-\text{Before}</m>. Then treat the list of differences as a
+  single sample. If the conditions for inference are satisfied, a confidence
+  interval for the population mean difference <m>\mu_d</m> is given by
+  <m>\bar{d}\pm t^*\dfrac{s_d}{\sqrt{n}}</m>, where <m>\bar{d}</m> is the sample
+  mean of the differences, <m>s_d</m> is the sample standard deviation of the
+  differences, <m>n</m> is the number of pairs, and <m>t^*</m> is the critical
+  value from the <m>t</m>-distribution with <m>n-1</m> degrees of freedom.
+</p> 
+
+<definition xml:id="def-paired-means-confidence-interval">
+  <statement>
+    <p>
+      A <term>confidence interval for paired means</term> is used to estimate the
+      population mean difference <m>\mu_d</m> when data are collected in matched
+      pairs. The confidence interval for the population mean difference is
+      <md>\bar{d} \pm t^*\dfrac{s_d}{\sqrt{n}}</md>,
+      where <m>\bar{d}</m> is the sample mean of the differences, <m>s_d</m> is
+      the sample standard deviation of the differences, <m>n</m> is the number of
+      pairs, and <m>t^*</m> is the critical value from the <m>t</m>-distribution
+      with <m>n-1</m> degrees of freedom.
+    </p>
+  </statement>
+</definition>
+
+
+</subsection> 
+
+
+<subsection xml:id="subsec-PairedMeanPushUps">
+  <title>Paired Mean Hypothesis Test for Push Ups </title>
+
+
+    <p>
+      A fitness instructor wants to know whether a 6-week training
+      program improves the number of push-ups participants can complete in one
+      minute. The instructor records the number of push-ups for each participant
+      before the program and again after the program.
+    </p>
+    <p>
+      The data are shown below.
+    </p>
+    <tabular>
+      <row>
+        <cell><p><term>Participant</term></p></cell>
+        <cell><p><m>1</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>4</m></p></cell>
+        <cell><p><m>5</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Before</term></p></cell>
+        <cell><p><m>18</m></p></cell>
+        <cell><p><m>22</m></p></cell>
+        <cell><p><m>20</m></p></cell>
+        <cell><p><m>16</m></p></cell>
+        <cell><p><m>19</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>After</term></p></cell>
+        <cell><p><m>21</m></p></cell>
+        <cell><p><m>25</m></p></cell>
+        <cell><p><m>23</m></p></cell>
+        <cell><p><m>18</m></p></cell>
+        <cell><p><m>22</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Difference</term></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+      </row>
+    </tabular>
+    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context against <m>\alpha = 0.05</m>. </p> 
+
+  <example> <title> Push Up Test</title> 
+  <statement>
+    <p> Perform the appropriate test by stating the hypotheses, computing the test statistics and p-value, and state the conclusion in context. </p> 
+    <p>
+      Because the same participants are measured twice, this is a
+      <term>paired t-test for the mean</term>. The differences can be found by
+      subtracting the Before values from the After training values, giving the differences of  <m>3, 3, 3, 2, 3</m>. This indicated they were able to do more push ups after the training program.  
+    </p>
+  </statement>
+
+<solution> <title> Differences</title> 
+    <p>
+      A paired <m>t</m>-test is appropriate because the same  of 5
+      participants are measured twice, once before the training program and once
+      after the training program. This creates matched pairs of observations.
+    </p>
+    <p>  First we need to compute the differences using
+      <m>d = \text{After} - \text{Before}</m>.
+    </p>
+    <tabular>
+      <row>
+        <cell><p><term>Participant</term></p></cell>
+        <cell><p><m>1</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>4</m></p></cell>
+        <cell><p><m>5</m></p></cell>
+      </row>
+      <row>
+        <cell><p><term>Difference</term></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+        <cell><p><m>2</m></p></cell>
+        <cell><p><m>3</m></p></cell>
+      </row>
+    </tabular>
+    <p>  So the sample of differences are
+      <m>3, 3, 3, 2, 3</m>.
+    </p>
+  <p> The sample mean of the differences is
+      <m>\bar{d} = \frac{3+3+3+2+3}{5} = \frac{14}{5} = 2.8</m>.
+    </p>
+    <p>  The sample standard deviation of the differences is
+      <m>s_d \approx 0.447</m>.
+    </p>
+</solution>
+<solution> <title> Hypotheses </title>
+    <p>  We test
+      <m>H_0: \mu_d = 0</m>
+      versus
+      <m>H_a: \mu_d  \gt 0</m>,
+      where <m>\mu_d</m> is the mean difference in push-ups. Since the number of push ups increased we are testing if it is greater than 0,  thus a right tailed test. 
+    </p>
+</solution>
+<solution> <title> Statistical Test </title> 
+    <p> The sample mean of the differences is
+      <m>\bar{d} = \frac{14}{5} = 2.8</m>.
+    </p>
+    <p>  The sample standard deviation of the differences is
+      <m>s_d \approx 0.447</m>.
+    </p>
+    <p> The test statistic is
+      <m>         t = \frac{\bar{d}-0}{s_d/\sqrt{n}}
+        = \frac{2.8}{0.447/\sqrt{5}}         \approx 14.0
+      </m>
+      with <m>df = 5-1 = 4</m>.
+    </p>
+    <p> This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
+    </p>
+    <p> Recall with StatKey we select the t-distribution, enter the 4 degrees of freedom, select the Right Tail and enter the test value 14.0 along the bottom to get the shaded area of .000076. </p> 
+  <figure xml:id="TdistPushups">
+            <caption>t-distribution in StatKey for t=14 with 4 df</caption>
+            <image source="Tdist1.png" width="90%">
+                <shortdescription> Test value T=14.0 for a right tailed test giving a p-value=.000076 .</shortdescription>
+            </image>
+        </figure> 
+  </solution>
+<solution> <title> Conclusion</title>
+<p>
+      This gives a very small <m>p</m>-value <m> \approx 0.000076</m>, so we reject <m>H_0</m> since it is less than <m> \alpha = .05</m>.
+    </p>
+    <p>
+      There is strong evidence that the 6-week training program increases
+      the mean number of push-ups participants can complete in one minute.
+    </p>
+  </solution>
+</example>
+
+<p>  A fitness instructor wants to know whether a 6-week training
+      program improves the number of push-ups participants can complete in one
+      minute. The instructor records the number of push-ups for each participant
+      before the program and again after the program. Construct a 95% confidence interval for the mean difference in the number of pushups after the training program. 
+    </p>
+<example> <title> Pushup Confidence Interval </title>
+<statement> 
+<p>   To construct a 95% confidence interval for the mean difference in the number of pushups after the training program, let
+    <m>d=\text{After}-\text{Before}</m>.
+  </p> </statement> 
+<solution> <title> Find t* </title>
+<p>
+    Since the population standard deviation is unknown and the data are paired,
+    we use a <m>t</m>-distribution with <m>df=5-1=4</m>.
+  </p>
+<p> With StatKey, under the <term> Theoretical Distributions</term> select <term> t </term>, enter the degrees of freedom of <m> 4</m>,  click on<em> Two Tail </em> and enter 0.95 in the center area region. The <m> t^* </m> value is along the bottom of the graph for <m> t^* =2.776</m>. </p> 
+<figure xml:id="TdistPushups2">
+            <caption> StatKey for 95% confidence for 4 degrees of freedom</caption>
+            <image source="Tdist3.png" width="90%">
+                <shortdescription>95% confidence for 4 df is t=2.776</shortdescription>
+            </image>
+        </figure> 
+</solution>
+<solution> <title> Interval</title>
+  <p>  The differences between the paired values are  <m>3, 3, 3, 2, 3</m>.
+  </p>
+  <p> From these data,  <m>n=5</m>,  <m>\bar{d}= 2.8</m>,
+    And   <m>s_d\approx 0.447</m>.
+  </p>
+    <p> For a <m>95\%</m> confidence interval with <m>df=4</m>, the critical value
+    Is  <m>t^*\approx 2.776</m> using StatKey.
+  </p>
+  <p> The margin of error is
+    <md>   ME=t^*\frac{s_d}{\sqrt{n}}
+      =2.776\left(\frac{0.447}{\sqrt{5}}\right)
+      \approx 0.555
+    </md>.
+  </p>
+  <p> The confidence interval is
+    <md>   \bar{d}\pm ME = 2.8 \pm 0.555
+    </md>.
+  </p>
+  <p>
+    So the <m>95\%</m> confidence interval for the mean difference is
+    <m>(2.245,\ 3.355)</m>.
+  </p>
+  <p>
+    We are 95% confident that the true mean difference in the number of pushups after the training program is between <m>2.2</m> and <m>3.4</m> more pushups. Since the interval does not contain 0, this is consistent with the hypothesis test that the training program increases the mean number of pushups.
+  </p>
+</solution>
+</example>
+
+ </subsection>
+
+
+
+</section> 

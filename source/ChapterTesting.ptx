@@ -3,7 +3,23 @@
 <chapter xml:id="ChapterTesting" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Hypothesis Testing</title>
 
-    <xi:include href="sec-HT-Bob-Tim.ptx" />
+  <introduction>
+    <p>Researchers are interested in answering many types of questions. For example, a researcher might want to know whether the average high temperature is increasing during the summer. A physician might want to know where a new medication will lower a person's blood pressure better than previously used medications. Automobile manufactures are interested in determining whether seat belts will reduce the severity of injuries caused by accidents. These types of questions can be addressed through statistical <term> hypothesis testing</term> which is a decision-making process for evaluating the claims about a population. In this chapter we will focus on hypothesis testing for a single variable. </p>
+      </introduction>
 
+  <objectives>
+  <introduction>
+    <p> By the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write appropriate hypotheses for a variety of scenarios. </p>    </li>
+ <li> <p> Perform hypothesis tests for a single mean or single proportions. </p>    </li>
+   <li> <p> Correctly interpret p-values to form a conclusion.</p>    </li>
+  </ol>
+</objectives>
+    <xi:include href="sec-HT-Bob-Tim.ptx" />
+    <xi:include href="sec-IntroHypothesisTest.ptx" />
+    <xi:include href="sec-SingleMean.ptx" />
+    <xi:include href="sec-SingleProportion.ptx" />  
 
 </chapter>

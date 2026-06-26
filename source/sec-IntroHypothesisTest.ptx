@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-IntroHypothesisTest" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Hypothesis Testing </title>
+  <introduction>
+    <p> In hypothesis testing, the research defines the population under study, states the hypotheses being investigated, identify the significance level, selects a sample from the population, collects and summarizes the data, performs the required statistical analysis to reach a conclusion. Throughout the semester we have been simulation part of this process. In this section we will look in more detail at the statistical hypothesis testing process and how to write the hypotheses. Then we will investigate the different types of tests to analyze the data.      </p> 
+  </introduction>
+
+<objectives>
+  <introduction>
+    <p> At the end of this section you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write hypotheses in terms of the parameter </p>    </li>
+    <li> <p> Identify the type of tail from the alternative hypothesis .</p> </li>
+    <li> <p> Understand the hypothesis testing process. </p>    </li>
+  </ol>
+</objectives>
+
+
+<subsection xml:id="subsec-IntroHypotheses">
+  <title>Introduction to Hypothesis Testing</title>
+  <definition xml:id="def-hypothesis-testing">
+  <statement>
+    <p>
+      <term>Hypothesis testing</term> is a statistical method used to evaluate
+      a claim about a population parameter using sample data.
+    </p>
+  </statement>
+</definition>
+<p>
+    <term>Hypothesis testing</term> is a statistical method used to evaluate a claim about a population parameter using sample data. This is another form of statistical inference. Every hypothesis testing situation begins with the statement of a hypothesis, which is a conjecture about the population parameter. This conjecture may or may not be true. There are two hypotheses for each situation. In a hypothesis test, the <term>null hypothesis</term> symbolized as  <m>(H_0)</m> is the statement of no difference, no change, or no effect between the parameter and a known value, or between two parameters. While the <term>alternative hypothesis</term> symbolized as <m>(H_a)</m> is the claim the researcher wants to investigate. The research can indicate an increase, a decrease, or a change (not equal to) to the parameter value. A claim can be either the null hypothesis or the alternative hypothesis. </p>
+    <p> Data from a sample are used to compute a <term>test statistic</term>, which measures how far the sample result is from what would be expected if the null hypothesis were true. The <term>p-value</term> is the probability of obtaining a result at least as extreme as the one observed, assuming the null hypothesis is true. </p>
+    <p> Next, we make a decision based on these results. This p-value is compared to the <term>significance level </term> symbolized by <m>\alpha</m>, a cutoff chosen in advance, often as <m>\alpha = 0.05</m>. If the p-value is less than <m>\alpha</m>, we <em>reject the null hypothesis</em>; otherwise, we <em>fail to reject the null hypothesis</em>. This statistical evidence can only <em>support</em> the claim if it is the alternative hypothesis. Statistical evidence can be used to <em> reject</em> the claim if the clam is the null hypothesis. Then we state a <term>conclusion</term> from the test referring to the hypotheses in the context of the situation. 
+</p> 
+<p>Because the conclusion is based on sample data, hypothesis testing always involves the possibility of committing an error. There are two errors will look at in this course, a <term>Type I error </term> occurs when rejecting a true null hypothesis, and a <term>Type II error </term> which is failing to reject a false null hypothesis. </p>
+
+
+
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-WriteHypotheses">
+  <title>Writing Hypotheses</title>
+  <p> To understand the process of a hypothesis testing, we first need to understand what a hypothesis is, which is an educated guess about a parameter. This is typically a statement of what the research is about. We will be writing them in short symbolic notation in terms of the parameter under investigation. The hypotheses will also inform us of which test to complete.</p>
+<p> When writing hypotheses for a statistical test, begin by identifying the
+  <term>population parameter</term> you are studying, such as a population mean
+  <m>\mu</m> or population proportion <m>p</m>, and then state two competing
+  claims about that parameter. </p>
+  <p>The <term>null hypothesis</term> <m>H_0</m> always includes an equals sign, such as <m>=</m>, <m>\le</m>, or <m>\ge</m>, because it represents the status quo or a claimed value. </p>
+<p> The <term>alternative hypothesis</term> <m>H_a</m> describes the effect as an increase or decrease, or that a difference exists, or change being investigated and uses <m>&lt;</m>, <m>&gt;</m>, or <m>\ne</m>. </p>
+
+<example>
+<statement>
+<p>A park ranger wants to test whether the mean time between Old Faithful eruptions is different from <m>90</m> minutes. The parameter is the mean <m> \mu </m>. </p>
+</statement>
+<solution>
+<p>The null hypothesis is <m>H_0:\mu=90</m> since claiming the mean still equals 90 minutes. </p>
+<p> The alternative hypothesis is <m>H_a:\mu\ne 90</m>. The alternative hypothesis is that the mean is different than 90 minutes, thus not equal to the 90 minutes. The mean can be larger or smaller, thus referred to as a two-tailed test. </p>
+</solution>
+</example> 
+ 
+ <example>
+ <statement>
+<p> A marine scientist wants to test whether the average ocean pH has decreased from
+  8.20. The parameter is the mean <m> \mu </m>.</p>
+  </statement>
+  <solution>
+  <p> The null hypothesis is <m> H_0: \mu=8.20 </m> since the mean equals the pH of 8.20. </p>
+  <p> The alternative hypothesis is <m> H_a:\mu \lt 8.20 </m>. The marine scientist is seeing if the mean pH is less than 8.20 which is a left-tailed test. </p>
+  </solution>
+  </example> 
+ 
+<p> The hypotheses use the parameter symbols: mean <m>\mu</m>, proportion <m>p</m>, variance <m> \sigma ^2 </m>, or standard deviation <m> \sigma </m>. </p>
+<p> In this chapter we will focus on comparing the parameter to a known value. In the next chapter we will compare two populations. </p>
+<p> In general, the wording of the research question determines whether the test is: </p>
+<p>  <term>two-tailed test </term> using terms of <q>different</q> or <q>changed</q> or <q>not equal to</q>, </p>
+<p> <term>left-tailed test</term> for <q>less than</q> or <q>decreased</q> or <q>below</q>, </p>
+<p> <term>right-tailed test </term> when <q>greater than</q> or <q>increased</q>.
+</p>
+
+<example>
+<statement> <p>
+  A plant biologist wants to know whether a new fertilizer will reduce the variability in plant height. Suppose the historical variance in the height of a certain species of tomato seedlings is 4.0 centimeters. </p> </statement> 
+<solution>
+ <p> The parameter is the variance <m> \sigma ^2</m> to measure the variability. </p> 
+ <p> The  null hypotheses is <m> H_0:\sigma^2=4.0 </m> , equal to the historical values.</p>
+ <p> The alternative hypothesis is <m> H_a:\sigma^2 \lt 4.0 </m> since the plant biology claims the new a new fertilizer will reduce the variance. This will give a left-tailed test. </p> 
+</solution>
+</example>
+
+<example>
+<statement> 
+<p> A climatologist may want to study the proportion of days during summer that reach extreme heat levels in a city.  For example, historical records show that about 40% of summer days in Denver, Colorado have high temperatures exceeding <m>90^\circ</m>F.  The climatologist wants to test whether this proportion has increased. </p>
+</statement>
+<solution>
+<p> The null hypothesis is  written as  <m> H_0:p=0.40</m> since equal to the historical value of 40%. </p>
+<p> The alternative hypothesis is  <m> H_a:p \gt 0.40 </m> since claiming the proportion has increased. This will give a right-tailed test.</p>
+</solution> 
+</example>
+
+<p> Now is your chance to identify the null and alternative hypotheses in the following scenarios. Identify the population parameter for the hypotheses. This will also indicate what type of test will be needed in future sections. </p>
+
+<exercise> <title> Germination </title>
+<statement> <p> A biologist wants to test whether more than 60% of seeds germinate using a new potting soil. State the hypotheses. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> p</m> for percentages/proportions. </p>
+<p>The null hypothesis is <m>H_0:p=0.60</m> </p>
+<p> The alternative hypothesis is <m>H_a: p \gt 0.60</m> since claiming the proportion is greater than 60% for a right tailed test. </p>
+</solution>
+</exercise>
+
+<exercise> <title> Movies </title>
+<statement> <p> Previously the average moviegoer saw about 8.5 movies per year in the movie theater. A movie enthusiast believes this value has decreased with more option for streaming movies. State the hypotheses. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \mu</m> for the mean (average). </p>
+<p>The null hypothesis is <m>H_0: \mu = 8.5</m> </p>
+<p> The alternative hypothesis is <m>H_a: \mu \lt 8.5</m> since claiming the mean has decreased for a left tailed test. </p>
+</solution>
+</exercise>
+
+<exercise> <title> Days</title>
+<statement> <p> A hospital administration believes the standard deviation of the number of people using outpatient surgery per day is greater than 5. State the hypotheses. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \sigma </m> for the standard deviation. </p>
+<p>The null hypothesis is <m>H_0: \sigma = 5</m> </p>
+<p> The alternative hypothesis is <m>H_a: \sigma \gt 5</m> since claiming standard deviation is greater than 5 for a right tailed test. </p>
+</solution>
+</exercise>
+
+<exercise> <title> Syrup </title>
+<statement> <p> A nutritionist claims that the variance in the number of calories in 1 tablespoon of pancake syrup is 640. State the hypotheses to test if the variance differs from the 640. </p>
+</statement>
+<solution>
+<p> Looking at parameter <m> \sigma ^2</m> for variance. </p>
+<p>The null hypothesis is <m>H_0: \sigma ^2 = 640</m> </p>
+<p> The alternative hypothesis is <m>H_a: : \sigma ^2  \ne 640</m> since claiming the variance differs for a two tailed test. </p>
+</solution>
+</exercise>
+
+  </subsection>
+
+
+<subsection xml:id="subsec-ErrorsHypothesis">
+  <title>Errors in Hypotheses Tests</title>
+<p>The decision in hypothesis testing is to reject or not reject the null hypothesis based on the values obtained from the statical test. If the difference is statistically significant, the null hypothesis is rejected in <em>support </em> of the alternative hypothesis. If not, then the null hypothesis is<em> not rejected</em> and there is <em> not enough</em> evidence to support the alternative. </p>
+
+  <p>Because hypothesis testing is based on sample data, there's always a possibility of committing an error when making the decision. The null hypothesis may or may not be true. The decision to reject or not reject the null may be correct or not. If a null hypothesis is true and it is rejected, then a <em> Type I error</em> is made. </p>
+
+  <definition xml:id="def-type-i-error">
+  <statement>
+    <p>
+      A <term>Type I error</term> occurs when we reject a null hypothesis that
+  is actually true.
+    </p>
+  </statement>
+</definition>
+
+<p>
+  For example, suppose a food company claims that the mean   weight of its cereal boxes is <m>16</m> ounces. We test
+<md>H_0:\mu=16 \qquad \text{versus} \qquad H_a:\mu\ne 16. </md> </p>
+<p> If our statistical test leads us to reject <m>H_0</m> and conclude that the
+  mean weight is not <m>16</m> ounces, but in reality the true mean weight really
+  is <m>16</m> ounces, then we have made a <term>Type I error</term>. This is a
+  Type I error because the null hypothesis was true, yet we rejected it anyway.
+  In introductory statistics, this is often described as a <q>false positive</q>,
+  meaning that the test suggests a difference or effect that does not actually
+  exist.
+</p>
+<definition xml:id="def-type-ii-error">
+  <statement>
+    <p>
+      A <term>Type II error</term> occurs when we fail to reject a null
+      hypothesis that is actually false.
+    </p>
+  </statement>
+</definition>
+
+<p>
+  A <term>Type II error</term> occurs when we fail to reject a null hypothesis
+  that is actually false. For example, suppose a hospital claims that the
+  mean waiting time in its emergency room is <m>30</m> minutes,  but the patients claim it is more than 30 minutes. We test
+<md> H_0:\mu=30 \qquad \text{versus} \qquad H_a:\mu&gt;30. </md> </p>
+
+<p>
+  If our statistical test leads us to fail to reject <m>H_0</m> and conclude
+  that there is not enough evidence that the mean waiting time is greater than
+  <m>30</m> minutes, but in reality the true mean waiting time is actually more
+  than <m>30</m> minutes, then we have made a <term>Type II error</term>. This is
+  a Type II error because the null hypothesis was false, yet we did not reject it.
+  This is often described as a <q>false negative</q>,  meaning that the test fails to detect a difference or effect when it exists.
+</p>
+
+<exercise>
+  <statement>
+    <p> Suppose a bottled water company claims that the mean amount of water in
+      each bottle is <m>500</m> milliliters. A researcher tests
+        <md> H_0:\mu=500 \qquad H_a:\mu\ne 500   </md> </p>
+    <p>
+      If the statistical test leads the researcher to reject <m>H_0</m> and
+      conclude that the mean amount of water is not <m>500</m> milliliters, but
+      in reality the true mean amount is <m>500</m> milliliters, what type
+      of error has been made? Explain why.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A <term>Type I error</term> has been made.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      This is a <term>Type I error</term> because the null hypothesis
+      <m>H_0:\mu=500</m> is actually true, but the researcher rejected it. In other
+      words, the researcher concluded that the mean amount of water was different
+      from <m>500</m> milliliters when in fact it was not. 
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Suppose a pharmaceutical company claims that a new medication lowers mean
+      blood pressure by <m>10</m> mmHg on average. A researcher tests
+    <md> H_0:\mu=10 \qquad H_a:\mu \lt 10.   </md>     </p>
+
+    <p>
+      If the statistical test leads the researcher to fail to reject <m>H_0</m>
+      and conclude that there is not enough evidence that the medication lowers
+      blood pressure by less than <m>10</m> mmHg, but in reality the true mean
+      reduction is less than <m>10</m> mmHg, what type of error has been made?
+      Explain why.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A <term>Type II error</term> has been made.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      This is a <term>Type II error</term> because the null hypothesis
+      <m>H_0:\mu=10</m> is actually false, but the test failed to reject it.
+      In other words, the researcher did not detect that the medication was less
+      effective than claimed, even though the true mean reduction in blood
+      pressure was less than <m>10</m> mmHg. 
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>   Suppose a public health agency claims that the proportion of adults in a
+      city who receive a flu vaccine each year is <m>0.60</m>. A researcher tests
+    <md> H_0:p=0.60 \qquad H_a:p \lt 0.60    </md>     </p>
+
+    <p>
+      If the statistical test leads the researcher to fail to reject <m>H_0</m>
+      and conclude that there is not enough evidence that the true proportion of
+      vaccinated adults is less than <m>0.60</m>, but in reality the true
+      proportion is actually less than <m>0.60</m>, what type of error has been
+      made? Explain why.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      A <term>Type II error</term> has been made.
+    </p>
+  </answer>
+  <solution>
+    <p>
+      This is a <term>Type II error</term> because the null hypothesis
+      <m>H_0:p=0.60</m> is actually false, but the test failed to reject it.
+      In other words, the researcher did not detect that the true proportion of
+      vaccinated adults was less than <m>0.60</m> even though it really was.
+    </p>
+  </solution>
+</exercise>
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-HypothesesPractice">
+  <title>Practice Problems</title>
+<p> Now is your chance to identify the null and alternative hypotheses in the following scenarios. Identify the population parameter for the hypotheses. This will also indicate what type of test will be needed in future sections. </p>
+
+<exercise> <title> Rocky Mountain Visitors </title>
+  <statement>
+    <p>
+      A park ranger wants to test whether the mean number of people who visit
+      Rocky Mountain National Park is greater than <m>4.1</m> million people per
+      year.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+     </statement>
+    <choices>
+      <choice correct="no">
+        <statement> <p><m>H_0:\mu \gt 4.1</m> million, <m>H_a:\mu=4.1</m> million</p>
+        </statement>
+        <feedback>
+          <p>  Claiming greater than.  </p>
+        </feedback>
+              </choice>
+      <choice correct="no">
+        <statement> 
+      <p><m>H_0:\mu=4.1</m> million, <m>H_a:\mu\ne 4.1</m> million</p>
+        </statement>  
+        <feedback>
+          <p>  Claiming greater than.  </p>
+        </feedback>
+            </choice>
+      <choice correct="yes">
+        <statement>
+        <p><m>H_0:\mu=4.1</m> million, <m>H_a:\mu \gt 4.1</m> million</p>
+        </statement>
+        <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback> 
+      </choice>
+      <choice correct="no">
+        <statement>
+        <p><m>H_0:\mu \lt 4.1</m> million, <m>H_a:\mu \gt 4.1</m> million</p>
+        </statement>  
+        <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+
+      </choice>
+    </choices>
+ 
+</exercise>
+
+<exercise> <title> Uninsured </title> 
+  <statement>
+    <p>
+      Approximately <m>15.4\%</m> of Americans were uninsured in <m>2023</m>
+      according to the Insurance Research Council. An insurance company believes
+      this proportion is too high for their state.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+</statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \gt 0.154</m>, <m>H_a:p=0.154</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming less than since too high.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:p=0.154</m>, <m>H_a:p \lt 0.154</m></p>
+       </statement>
+       <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p=0.154</m>, <m>H_a:p \ne 0.154</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming less than since too high.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \lt 0.154</m>, <m>H_a:p \ge 0.154</m></p>
+      </statement>
+      <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title> Hudson Bay</title>
+  <statement>
+    <p>
+      The average depth of Hudson Bay in Canada is about <m>328</m> feet.
+      Climatologists are interested in seeing whether the effects of global
+      warming and ice melt are affecting the water levels. They want to test
+      whether the mean water depth is increasing.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p>
+</statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \gt 328</m>, <m>H_a:\mu=328</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:\mu=328</m>, <m>H_a:\mu \gt 328</m></p>
+      </statement>
+      <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=328</m>, <m>H_a:\mu\ne 328</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \gt;328</m>, <m>H_a:\mu \lt328</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming mean is increasing.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title>Barrier Reef </title>
+  <statement>
+    <p>
+      A marine biologist is investigating the pH levels of the ocean near the
+      Barrier Reef. In the <m>1950</m>s, the mean pH level was <m>8.15</m>. The
+      biologist believes the mean pH level has decreased.
+    </p>
+    <p>
+      Which of the following gives the correct null and alternative hypotheses?
+    </p> </statement>
+    <choices>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \lt 8.15</m>, <m>H_a:\mu=8.15</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming mean is decreasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:\mu=8.15</m>, <m>H_a:\mu \lt 8.15</m></p>
+       </statement>
+       <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=8.15</m>, <m>H_a:\mu\ne 8.15</m></p> 
+      </statement>
+      <feedback>
+          <p>  Claiming mean is decreasing.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu \lt 8.15</m>, <m>H_a:\mu \gt 8.15</m></p> 
+      </statement>
+      <feedback>
+          <p>  Null hypothesis contains the equal sign.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+<exercise> <title>Blue Eyes </title>
+  <statement>
+    <p>
+      A researcher wants to test if the class proportion of blue eyes is the same as the population. The proportion of the United States population with blue eyes is 27%.
+    </p>
+    <p>
+      Which of the following is the correct null and alternative
+      hypotheses for a hypothesis test about a population proportion?
+    </p> </statement>
+    <choices>
+      <choice correct="yes">
+<statement>
+        <p><m>H_0:p=0.27</m>, <m>H_a:p \ne 0.27</m></p> 
+      </statement>
+      <feedback>
+          <p>
+          Correct
+          </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\mu=0.27</m>, <m>H_a:\mu \ne 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:\hat{p}=0.27</m>, <m>H_a:\hat{p} \ne 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+      <choice correct="no">
+<statement>
+        <p><m>H_0:p \gt 0.27</m>, <m>H_a:p \lt 0.27</m></p>
+       </statement>
+       <feedback>
+          <p>  Claiming proportion equals 0.27 thus alternative is not equal.  </p>
+        </feedback>
+      </choice>
+    </choices>
+</exercise>
+
+
+</subsection> 
+
+
+
+
+</section>

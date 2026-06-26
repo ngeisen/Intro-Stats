@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ChapComparisonTests" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Comparison Tests</title>
+
+  <introduction>
+    <p>Sample comparison tests are statistical methods used to compare two or more groups to determine whether observed differences in sample data are likely to reflect real differences in the populations or are simply due to random variation. These tests allow researchers to investigate questions about differences in means, proportions, or variability across groups. Depending on the type of data and the question being asked, different procedures may be used, such as two-sample <m>t</m>-tests for independent means, paired <m>t</m>-tests, and <m>z</m>test for two proportions. In each case, the goal is to use sample evidence to evaluate a null hypothesis about no difference and decide whether there is enough evidence to support an alternative claim.</p>
+  </introduction>
+
+  <objectives>
+  <introduction>
+    <p> By the end of this chapter you will be able to:   </p>
+  </introduction>
+  <ol>
+    <li> <p> Write appropriate hypotheses for a scenario. </p>    </li>
+ <li> <p> Perform hypothesis tests for comparing two means or two proportions. </p>    </li>
+   <li> <p> Use technology appropriately. </p>    </li>
+  </ol>
+</objectives>
+
+<xi:include href="sec-CompIndpMeans.ptx" />
+<xi:include href="sec-CompPairedmeans.ptx" />
+<xi:include href="sec-CompareProp.ptx" />
+
+</chapter> 
