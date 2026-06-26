@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: greeley                        *-->
+<!--*  Theme: denver                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -93,7 +93,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
@@ -210,7 +210,8 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <div class="para" id="ProbDist-2-1">In this section we will learn how to create a probability distribution, find the mean and standard deviation for a probability distribution, and use technology to find these statistics.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="objectives goal-like" id="ProbDist-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<details id="ProbDist-3" class="objectives goal-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Objectives</span></h3></summary>
+<article class="objectives goal-like knowl__content">
 <div class="introduction" id="ProbDist-3-1">
 <div class="para" id="ProbDist-3-1-1">At the end of this section you will able to:<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -233,7 +234,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 4.3"><a href="#ProbDist-3" title="Copy heading and permalink for Objectives 4.3" aria-label="Copy heading and permalink for Objectives 4.3">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="ProbDist-4">Many decisions in business and insurance are made by assigning probabilities to all the possible outcomes pertaining to the situation and making evaluations based on the results. A salesperson may compute the probability of how many sales for each day. An insurance company might be able to assign probability to the number of vehicles a family owns. Once the probabilities can be determined, we can find statistics such as the mean, variance, and standard deviation for these events. The salesperson can find the average number of sales per day or week to determine inventory. An insurance company can determine the expected profit based on claims.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ProbDist-5">We will begin this section by creating a probability distribution and then find its statistics. We will then compare it to the theoretical values.<div class="autopermalink" data-description="Paragraph"><a href="#ProbDist-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -275,13 +276,14 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-ProbDistBasics-5">When we organize our random variable, with discrete outcomes, with its probabilities like we did with the dice data table we create a discrete probability distribution. The probabilities can be determined by observation or theoretically.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-ProbabilityDistribution"><h4 class="heading">
+<details id="def-ProbabilityDistribution" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para" id="def-ProbabilityDistribution-1-1">A <dfn class="terminology">discrete probability distribution</dfn> consists of the values a random variable can assume and the corresponding probabilities of those values.<div class="autopermalink" data-description="Paragraph"><a href="#def-ProbabilityDistribution-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 4.3.4"><a href="#def-ProbabilityDistribution" title="Copy heading and permalink for Definition 4.3.4" aria-label="Copy heading and permalink for Definition 4.3.4">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-ProbDistBasics-7">If we look at your dice distribution, you will notice the total frequency should be 50 dice rolls. Each probability value is between 0 and 1, inclusive. It is possible someone may not roll a 6 or every roll happened to be a 6. If you find the sum of all your probabilities it should equal 1 which represents 100% of the sample space. Of course, if there is rounding, it may be off by less than a tenth.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistBasics-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="ProbDiscrete-matching"><h4 class="heading">
@@ -409,9 +411,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="subsec-ProbDistStatistics-8">
 <span class="process-math">\(\mu = 1(1/6)+2(1/6)+3(1/6)+4(1/6)+5(1/6)+6(1/6)=21/6=3.5 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-ProbDistMean"><h4 class="heading">
+<details id="def-ProbDistMean" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para logical" id="def-ProbDistMean-1-1">
 <div class="para">The <dfn class="terminology">mean</dfn>  of a random variable with discrete probability distribution is the sum of the products of each outcome and its probability.</div>
 <div class="displaymath process-math" id="def-ProbDistMean-1-1-2">
@@ -423,7 +426,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistMean-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 4.3.12"><a href="#def-ProbDistMean" title="Copy heading and permalink for Definition 4.3.12" aria-label="Copy heading and permalink for Definition 4.3.12">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-ProbDistStatistics-10">Now let’s find the mean of the 50 dice rolls. Multiple each outcome by its probability, then add them together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="subsec-ProbDistStatistics-11"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/ProbDistDice.png" class="contained" alt="dice probabilities of .20, .18, .16, .14, .12, .20"></div>
@@ -433,9 +436,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-ProbDistStatistics-13">Which is pretty close to the theoretical value. Now find mean for your 50 dice rolls. Your mean value should be between 1 and 6 since those are the possible dice values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-ProbDistVariance"><h4 class="heading">
+<details id="def-ProbDistVariance" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para logical" id="def-ProbDistVariance-1-1">
 <div class="para">To find the <dfn class="terminology">variance</dfn>, subtract the mean from each outcome x then square the difference and multiply by its probability p(x), then find the sum of the products.</div>
 <div class="displaymath process-math" id="def-ProbDistVariance-1-1-2">
@@ -447,16 +451,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistVariance-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 4.3.14"><a href="#def-ProbDistVariance" title="Copy heading and permalink for Definition 4.3.14" aria-label="Copy heading and permalink for Definition 4.3.14">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-ProbDistStatistics-15">Find the variance for 50 dice rolls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-ProbDistStatistics-16">
 <span class="process-math">\(\sigma^2 = 
 (1-3.4)^2 (.20)+(2-3.4)^2 (.18) + (3-3.4)^2 (.16) + (4-3.4)^2 (.14) + (5-3.4)^2 (.12) +(6-3.4)^2 (.20) = 3.24 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-ProbDistStandardDeviation"><h4 class="heading">
+<details id="def-ProbDistStandardDeviation" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para logical" id="def-ProbDistStandardDeviation-1-1">
 <div class="para">The <dfn class="terminology">standard deviation</dfn> is the square root of the variance. It measures how spread out the values are from the mean.</div>
 <div class="displaymath process-math" id="def-ProbDistStandardDeviation-1-1-2">
@@ -467,7 +472,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#def-ProbDistStandardDeviation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 4.3.15"><a href="#def-ProbDistStandardDeviation" title="Copy heading and permalink for Definition 4.3.15" aria-label="Copy heading and permalink for Definition 4.3.15">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-ProbDistStatistics-18">Find the standard deviation for 50 dice rolls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-ProbDistStatistics-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-ProbDistStatistics-19">

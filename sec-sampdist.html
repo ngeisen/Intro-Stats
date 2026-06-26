@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: greeley                        *-->
+<!--*  Theme: denver                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -93,7 +93,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
@@ -211,7 +211,8 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-sampdist-2">
 <div class="para" id="sec-sampdist-2-1">Previously we discussed obtaining sample data from the population of interest. In this chapter we will be using information in the sample to confirm what is true about the population. Then we can generalize the process to when we do not know everything about the population.<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
-<article class="objectives goal-like" id="sec-sampdist-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<details id="sec-sampdist-3" class="objectives goal-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Objectives</span></h3></summary>
+<article class="objectives goal-like knowl__content">
 <div class="introduction" id="sec-sampdist-3-1">
 <div class="para" id="sec-sampdist-3-1-1">At the end of this section you will be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-sampdist-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -229,21 +230,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ol>
 <div class="autopermalink" data-description="Objectives 5.1"><a href="#sec-sampdist-3" title="Copy heading and permalink for Objectives 5.1" aria-label="Copy heading and permalink for Objectives 5.1">🔗</a></div>
-</article>
+</article></details>
 <section class="subsection" id="subsec-DistReview">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Quick Review</span>
 </h3>
 <div class="para" id="subsec-DistReview-2">The rest of the semester we will focus on statistical inference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-statisticalinference"><h4 class="heading">
+<details id="def-statisticalinference" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para" id="def-statisticalinference-1-1">
 <dfn class="terminology">Statistical inference</dfn> is a process of drawing conclusions about the population based on the information from a sample.<div class="autopermalink" data-description="Paragraph"><a href="#def-statisticalinference-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 5.1.1"><a href="#def-statisticalinference" title="Copy heading and permalink for Definition 5.1.1" aria-label="Copy heading and permalink for Definition 5.1.1">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-DistReview-4">First let us review some vocabulary and notations. When we refer to a <em class="emphasis">parameter</em>, we are referring to a number that describes some aspects of the population,  such as the mean, standard deviation, and proportions. While a <em class="emphasis">statistics</em> is a number that describes that same aspect about the sample.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-DistReview-5">Here is a summary of the notations we will be using the rest of the semester.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-DistReview-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -316,13 +318,14 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="subsec-SamplingMeans-16">The dotplots show different values for each sample mean, but the distribution is fairly symmetric (even though the original sample is right skewed) and centered around the population mean of 4.29 letters per word. The distribution of sample statistics from many samples is called a sampling distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="def-SamplingDistribution"><h4 class="heading">
+<details id="def-SamplingDistribution" class="definition definition-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
+</h4></summary>
+<article class="definition definition-like knowl__content">
 <div class="para" id="def-SamplingDistribution-1-1">A <dfn class="terminology">sampling distribution</dfn> is the distribution of sample statistics computed from different samples of the same size taken from the population. A sampling distribution shows us how the sample statistic varies from sample to sample.<div class="autopermalink" data-description="Paragraph"><a href="#def-SamplingDistribution-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Definition 5.1.7"><a href="#def-SamplingDistribution" title="Copy heading and permalink for Definition 5.1.7" aria-label="Copy heading and permalink for Definition 5.1.7">🔗</a></div>
-</article>
+</article></details>
 <div class="para" id="subsec-SamplingMeans-18">Knowing how much a statistic varies from sample to sample is key to helping us know how accurate the estimate is for the population. One measure of variability associated with the sample statistic is the standard deviation of the sampling distribution. When each sample is larger, there is less variation within the distribution. The more samples we use for the distribution the better our estimate will likely be.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-SamplingMeans-19">We use the <dfn class="terminology">standard error</dfn>  to describe this variation, which is the standard deviation of the sampling distribution. It measures the typical distance between the sample statistics and the population parameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SamplingMeans-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
