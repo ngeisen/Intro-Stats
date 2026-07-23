@@ -3,7 +3,32 @@
 <section xml:id="sec-three" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Graphing with StatKey</title>
 
-    <p>  </p> 
+    <introduction>  
+ 
+<p> In this section we will focus on how to graph data with technology. We will be using <term> StatKey </term> which is a free online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet. </p>
+<p> We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data. </p>
+   <p> Save the following data file on your computer where it is easily accessible: </p> 
+    <p>  <url href="external/ClassSurvey1.csv"> ClassSurvey1.csv</url> </p>
+</introduction>
+<objectives>
+        <introduction>
+          <p>
+            At the end of this section you will able to:
+          </p>
+        </introduction>
+        <ol>
+          <li>  <p> Graph one categorical variable with a bar graph. </p> </li>
+            <li> <p> Graph one quantitative variable with a dotplot, boxplot, and histogram. </p> </li>
+          <li> <p> Graph one quantitative variable with one categorical variable. </p>   </li>
+          <li> <p> Graph two categorical variables. </p> </li>
+        <li> <p> Graph two quantitative variables. </p> </li>
+        </ol>
+      </objectives>
+
+   
+<subsection xml:id="subsec-OneCatStatkey">
+  <title>Graphing One Categorical Variable</title>
+      <p>  </p> 
         <objective> <term> Graphing One Categorical Variable </term> </objective>
 
         <p> How to graph students eye color with StatKey. </p>
@@ -97,6 +122,177 @@
     </choice>
     </choices>
 </exercise>
+<p> Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the <c> Change Column </c> button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the <c> Show Data Table </c> button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape. </p> 
+</subsection>
+
+
+<subsection xml:id="subsec-CatQuantStatkey">
+  <title> One Categorical and One Quantitative Variable </title>
+<p>In this section we will explore a quantitative variable which is grouped by a categorical variable.  From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.</p>
+<p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>One Quantitative and One Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables. </p>
+<figure xml:id="OneQuantOneCat1">
+            <caption>StatKey Menu</caption>
+            <image source="Tathand1.png" width="50%">
+                <shortdescription>In first column select third option of one quantitative and one categorical variable.</shortdescription>
+            </image>
+        </figure> 
+<p>Make sure to select the quantitative variables first: <em>Tattoos</em> and then the categorical variable of <em>Dominant hand</em>. Then click the <c> OK</c> button at the bottom right. </p>
+<figure xml:id="OneQuantOneCat2">
+            <caption>Selecting variables</caption>
+            <image source="Tathand2.png" width="80%">
+                <shortdescription>Select quantitative Tattoos first and then categorical variable of dominant hand.</shortdescription>
+            </image>
+        </figure> 
+<p>The program will create three dotplots, one for each category. </p>
+<figure xml:id="OneQuantOneCatDotplot">
+            <caption>Dotplot of Tattoos grouped by dominant hand</caption>
+            <image source="Tathand3.png" width="80%">
+                <shortdescription>image of three dotplots for tattoos based on dominant hand.</shortdescription>
+            </image>
+        </figure> 
+<p> <em> Graph Interpretation </em> Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos. </p>
+<figure xml:id="OneQuantOneCatTable">
+            <caption>Table of Summary Statistics</caption>
+            <image source="Tathand4.png" width="75%">
+                <shortdescription>Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5,  with values of 4 ad 5.</shortdescription>
+            </image>
+        </figure> 
+<p>The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values. </p>
+<p> You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot. </p> 
+
+<exercise>
+<title> Compare Histograms</title>
+<statement> <p> Describe the shape of the histograms. </p> 
+ <figure xml:id="OneQuantOneCatHistTattoos">
+            <caption>Histogram of Tattoos grouped by dominant hand.</caption>
+            <image source="Tathand5.png" width="75%">
+                <shortdescription>triple histogram of tattoos based on dominant hand.</shortdescription>
+            </image>
+        </figure> 
+ </statement>   
+<solution> <p> The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.</p> </solution>
+</exercise>
+
+<exercise>
+<title> Compare Boxplots</title>
+<statement> <p> Describe the shape of the boxplots and note if there are any outliers. </p> 
+<figure xml:id="OneQuantOneCatBoxTattoos">
+            <caption>Boxplots of Tattoos grouped by dominant hand.</caption>
+            <image source="Tathand6.png" width="80%">
+                <shortdescription> The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.</shortdescription>
+            </image>
+        </figure>  
+</statement>
+<solution> <p> The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.</p> </solution>
+</exercise>
+
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-TwoCategoryStatkey">
+  <title> Graphing Two Categorical Variables </title>
+<p>In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated? </p>
+<p> Save the following data file on your computer where it is easily accessible: </p> 
+<p> <url href="external/ClassSurvey2.csv"> ClassSurvey2.csv</url> </p>
+
+<p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>Two Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables, I selected <em>Favorite Season</em> first and then <em>Vacation Location</em> and click on the <c> OK</c> button at the bottom right. </p>
+<figure xml:id="TwoCatStatkey">
+            <caption>StatKey Menu for Two Categorical Variables.</caption>
+            <image source="ChooseTwoCat.png" width="90%">
+                <shortdescription> Select the fourth option for Two categorical variables then select the two variables.</shortdescription>
+            </image>
+        </figure>  
+
+<p> Once the graph shows, check on the <c>Show Legend</c> button on the top left to show the color-coded categories for the seasons. </p>
+<figure xml:id="TwoCatVacationBar">
+            <caption>Segmented Bar graph of Vacation location and Favorite season</caption>
+            <image source="Vacation1.png" width="90%">
+                <shortdescription> Most preferred beach since tallest at 23, then mountains at 11,  theme parks at 4, staycation at 3, then cultural at 2 .</shortdescription>
+            </image>
+        </figure>  
+
+<p> <em> Graph Interpretation</em> The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach/coastal occurred most with 23 students while the city/cultural exploration only occurred twice. The Counts Table gives the frequency for each category. </p>
+
+<figure xml:id="TwoCatVacationTable">
+            <caption>Table of Frequencies for Vacation location and Favorite seasons</caption>
+            <image source="Vacation2.png" width="80%">
+                <shortdescription> Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .</shortdescription>
+            </image>
+        </figure>  
+
+<p>Click on the <c> Switch Variables </c> button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars. </p>
+<figure xml:id="TwoCatSwitchVar">
+    <caption> Switch Variable Button</caption>
+                        <image source="Vacation3.png" width="50%">
+                <shortdescription> image of switch variable button.</shortdescription>
+            </image>
+        </figure>  
+<p> The segmented bar graph will be updated withe Favorite Seasons along the x-axis. Click on Show Legend for the color coding of the vacation locations.</p>
+<figure xml:id="TwoCatSeasonBar">
+            <caption>Segmented Bar graph of favorite seasons with vacation location</caption>
+            <image source="Vacation4.png" width="80%">
+                <shortdescription> Fall occurred 15 times, summer 11, spring 11, winter 6.</shortdescription>
+            </image>
+        </figure>  
+<p> <em>Graph Interpretation: </em> We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the <c> Show Legend</c> button for the color coding of the vacation locations. Brown is the beach/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category. </p>
+<p>To find the proportion for each location by the Favorite Seasons click on the <c> Column </c> button next to Proportions. </p>
+<figure xml:id="TwoCatColumns">
+    <caption> Select Column</caption>
+                        <image source="Vacation5.png" width="50%">
+                <shortdescription> image of columns tab by proportions .</shortdescription>
+            </image>
+        </figure>  
+<figure xml:id="TwoCatSeasonTable">
+            <caption> Table of Frequencies and Proportions of favorite seasons with vacation location.</caption>
+            <image source="Vacation6.png" width="90%">
+                <shortdescription> lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.</shortdescription>
+            </image>
+        </figure>  
+<p> <em>Proportions Interpretation: </em> Looking at the proportion across each season, we can see the proportion of beach/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach/coastal while 72.7% of those who prefer Summer also like beach/coastal locations. The beach/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains. </p>
+
+<p> <term> Data Exploration </term> </p>
+<p>Click on the <c> Change Column(s)</c> button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different. </p>
+
+
+  </subsection>
+
+
+<subsection xml:id="subsec-TwoQNstatkey">
+  <title> Graphing Two Quantitative Variables  </title>
+  
+<p> We are going to investigate if there is a relationship between a person's height and his/her shoe size using the first day survey. </p> 
+<p> Open StatKey, under the left column <em> Descriptive Statistics and Graph </em>, select <c>Two Quantitative Variables.</c> Click on the<c>Upload File</c> button and find the saved data file <c>ClassSurvey1</c> on your computer and click <c> Open</c> on the bottom right. </p>
+<image source="StatkeyTwoQuant.png" >
+    <shortdescription> StatKey two quantitative variables </shortdescription>
+</image>
+<p> Identify the two quantitative variables, select the x-variable first, <em> Shoe size</em>, and then the y-variable, <em>Height</em>, and then click <c> Ok </c> at the bottom right.  </p>
+<image source="SelectTwoQuant.png" >
+    <shortdescription> select the two quantitative variables image </shortdescription>
+</image>
+<p> The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches. </p>
+
+<figure xml:id="ShoeHeightScatterplot">
+    <caption>Image of Scatterplot for Shoe Size and Height </caption>
+    <image source="ShoesHeightsScatter.png" >
+        <shortdescription> Shoe size and Height Scatterplot.</shortdescription>
+    </image>
+</figure>
+<p> If you click on the <c>Switch Variables</c> on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well. </p>
+<figure xml:id="HeightvsShoeScatterplot4">
+    <caption>Image of Scatterplot for Height and shoe size </caption>
+    <image source="HeightShoesScatterplot.png" >
+        <shortdescription> Scatterplot with height on x-axis.</shortdescription>
+    </image>
+</figure>
+<p> If you click on the box <c> Show Regression Line </c>, the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line. </p> 
+
+<p> <term> Data Exploration </term> </p>
+<p>Click on the <c> Change Column(s)</c> button near the top to change the variables. Make sure to select two quantitative variables. You are going to investigate if there is a correlation between any pairs. From ClassSurvey1 investigate the relationship between Weight and Height. Is there a correlation between Siblings and Weight? Which other pair will give you a slight negative correlation? </p> 
+
+</subsection>
+
 
 
 

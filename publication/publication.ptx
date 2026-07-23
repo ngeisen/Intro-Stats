@@ -81,7 +81,7 @@
     <knowl
       theorem="no"
       proof="yes"
-      definition="yes"
+      definition="no"
       example="yes"
       example-solution="yes"
       project="no"
