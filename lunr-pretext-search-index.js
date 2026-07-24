@@ -1006,7 +1006,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Graphing with StatKey",
-  "body": " Graphing with StatKey     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.      "
+  "body": " Graphing with StatKey   In this section we will focus on how to graph data with technology. We will be using StatKey which is a free online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.  We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.  Save the following data file on your computer where it is easily accessible:   ClassSurvey1.csv      At the end of this section you will able to:     Graph one categorical variable with a bar graph.    Graph one quantitative variable with a dotplot, boxplot, and histogram.    Graph one quantitative variable with one categorical variable.    Graph two categorical variables.    Graph two quantitative variables.      Graphing One Categorical Variable     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.      Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the Change Column button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the Show Data Table button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.    One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      Graphing Two Categorical Variables  In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated?  Save the following data file on your computer where it is easily accessible:   ClassSurvey2.csv   In StatKey in the first column Descriptive Statistics and Graphs , select Two Categorical Variables , and then click the Upload File button and select the two variables, I selected Favorite Season first and then Vacation Location and click on the OK button at the bottom right.   StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.    Once the graph shows, check on the Show Legend button on the top left to show the color-coded categories for the seasons.   Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .     Graph Interpretation The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach\/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach\/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach\/coastal occurred most with 23 students while the city\/cultural exploration only occurred twice. The Counts Table gives the frequency for each category.   Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .    Click on the Switch Variables button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars.   Switch Variable Button   image of switch variable button.    The segmented bar graph will be updated withe Favorite Seasons along the x-axis. Click on Show Legend for the color coding of the vacation locations.   Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.     Graph Interpretation: We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the Show Legend button for the color coding of the vacation locations. Brown is the beach\/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category.  To find the proportion for each location by the Favorite Seasons click on the Column button next to Proportions.   Select Column   image of columns tab by proportions .     Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.     Proportions Interpretation: Looking at the proportion across each season, we can see the proportion of beach\/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach\/coastal while 72.7% of those who prefer Summer also like beach\/coastal locations. The beach\/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different.    Graphing Two Quantitative Variables  We are going to investigate if there is a relationship between a person's height and his\/her shoe size using the first day survey.  Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    If you click on the box Show Regression Line , the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two quantitative variables. You are going to investigate if there is a correlation between any pairs. From ClassSurvey1 investigate the relationship between Weight and Height. Is there a correlation between Siblings and Weight? Which other pair will give you a slight negative correlation?   "
+},
+{
+  "id": "sec-three-2-1",
+  "level": "2",
+  "url": "sec-three.html#sec-three-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "StatKey "
+},
+{
+  "id": "sec-three-3",
+  "level": "2",
+  "url": "sec-three.html#sec-three-3",
+  "type": "Objectives",
+  "number": "2.3",
+  "title": "",
+  "body": "  At the end of this section you will able to:     Graph one categorical variable with a bar graph.    Graph one quantitative variable with a dotplot, boxplot, and histogram.    Graph one quantitative variable with one categorical variable.    Graph two categorical variables.    Graph two quantitative variables.    "
+},
+{
+  "id": "subsec-OneCatStatkey-3",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneCatStatkey-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Graphing One Categorical Variable "
 },
 {
   "id": "OneCatStatKey",
@@ -1027,6 +1054,15 @@ var ptx_lunr_docs = [
   "body": " Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.   "
 },
 {
+  "id": "subsec-OneCatStatkey-14",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneCatStatkey-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Interpreting Bar Graphs "
+},
+{
   "id": "eye-matching",
   "level": "2",
   "url": "sec-three.html#eye-matching",
@@ -1036,13 +1072,247 @@ var ptx_lunr_docs = [
   "body": " Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.     "
 },
 {
+  "id": "subsec-CatQuantStatkey-3",
+  "level": "2",
+  "url": "sec-three.html#subsec-CatQuantStatkey-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "One Quantitative and One Categorical Variables "
+},
+{
+  "id": "OneQuantOneCat1",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCat1",
+  "type": "Figure",
+  "number": "2.3.4",
+  "title": "",
+  "body": " StatKey Menu   In first column select third option of one quantitative and one categorical variable.   "
+},
+{
+  "id": "OneQuantOneCat2",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCat2",
+  "type": "Figure",
+  "number": "2.3.5",
+  "title": "",
+  "body": " Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatDotplot",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatDotplot",
+  "type": "Figure",
+  "number": "2.3.6",
+  "title": "",
+  "body": " Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatTable",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatTable",
+  "type": "Figure",
+  "number": "2.3.7",
+  "title": "",
+  "body": " Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.   "
+},
+{
+  "id": "subsec-CatQuantStatkey-13",
+  "level": "2",
+  "url": "sec-three.html#subsec-CatQuantStatkey-13",
+  "type": "Checkpoint",
+  "number": "2.3.8",
+  "title": "Compare Histograms.",
+  "body": " Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.   "
+},
+{
+  "id": "subsec-CatQuantStatkey-14",
+  "level": "2",
+  "url": "sec-three.html#subsec-CatQuantStatkey-14",
+  "type": "Checkpoint",
+  "number": "2.3.10",
+  "title": "Compare Boxplots.",
+  "body": " Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.   "
+},
+{
+  "id": "subsec-OneCatQuantStatkey-3",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneCatQuantStatkey-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "One Quantitative and One Categorical Variables "
+},
+{
+  "id": "OneQuantOneCatMenu",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatMenu",
+  "type": "Figure",
+  "number": "2.3.12",
+  "title": "",
+  "body": " StatKey Menu   In first column select third option of one quantitative and one categorical variable.   "
+},
+{
+  "id": "OneQuantOneCatVAr2",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatVAr2",
+  "type": "Figure",
+  "number": "2.3.13",
+  "title": "",
+  "body": " Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatDotplotTatHand",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatDotplotTatHand",
+  "type": "Figure",
+  "number": "2.3.14",
+  "title": "",
+  "body": " Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.   "
+},
+{
+  "id": "OneQuantOneCatHandTable",
+  "level": "2",
+  "url": "sec-three.html#OneQuantOneCatHandTable",
+  "type": "Figure",
+  "number": "2.3.15",
+  "title": "",
+  "body": " Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.   "
+},
+{
+  "id": "subsec-OneCatQuantStatkey-13",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneCatQuantStatkey-13",
+  "type": "Checkpoint",
+  "number": "2.3.16",
+  "title": "Compare Histograms.",
+  "body": " Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.   "
+},
+{
+  "id": "subsec-OneCatQuantStatkey-14",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneCatQuantStatkey-14",
+  "type": "Checkpoint",
+  "number": "2.3.18",
+  "title": "Compare Boxplots.",
+  "body": " Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.   "
+},
+{
+  "id": "subsec-TwoCategoryStatkey-5",
+  "level": "2",
+  "url": "sec-three.html#subsec-TwoCategoryStatkey-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Two Categorical Variables "
+},
+{
+  "id": "TwoCatStatkey",
+  "level": "2",
+  "url": "sec-three.html#TwoCatStatkey",
+  "type": "Figure",
+  "number": "2.3.20",
+  "title": "",
+  "body": " StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.   "
+},
+{
+  "id": "TwoCatVacationBar",
+  "level": "2",
+  "url": "sec-three.html#TwoCatVacationBar",
+  "type": "Figure",
+  "number": "2.3.21",
+  "title": "",
+  "body": " Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
+},
+{
+  "id": "TwoCatVacationTable",
+  "level": "2",
+  "url": "sec-three.html#TwoCatVacationTable",
+  "type": "Figure",
+  "number": "2.3.22",
+  "title": "",
+  "body": " Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
+},
+{
+  "id": "TwoCatSwitchVar",
+  "level": "2",
+  "url": "sec-three.html#TwoCatSwitchVar",
+  "type": "Figure",
+  "number": "2.3.23",
+  "title": "",
+  "body": " Switch Variable Button   image of switch variable button.   "
+},
+{
+  "id": "TwoCatSeasonBar",
+  "level": "2",
+  "url": "sec-three.html#TwoCatSeasonBar",
+  "type": "Figure",
+  "number": "2.3.24",
+  "title": "",
+  "body": " Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.   "
+},
+{
+  "id": "TwoCatColumns",
+  "level": "2",
+  "url": "sec-three.html#TwoCatColumns",
+  "type": "Figure",
+  "number": "2.3.25",
+  "title": "",
+  "body": " Select Column   image of columns tab by proportions .   "
+},
+{
+  "id": "TwoCatSeasonTable",
+  "level": "2",
+  "url": "sec-three.html#TwoCatSeasonTable",
+  "type": "Figure",
+  "number": "2.3.26",
+  "title": "",
+  "body": " Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.   "
+},
+{
+  "id": "subsec-TwoCategoryStatkey-20",
+  "level": "2",
+  "url": "sec-three.html#subsec-TwoCategoryStatkey-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data Exploration "
+},
+{
+  "id": "ShoeHeightScatterplot",
+  "level": "2",
+  "url": "sec-three.html#ShoeHeightScatterplot",
+  "type": "Figure",
+  "number": "2.3.27",
+  "title": "",
+  "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
+},
+{
+  "id": "HeightvsShoeScatterplot4",
+  "level": "2",
+  "url": "sec-three.html#HeightvsShoeScatterplot4",
+  "type": "Figure",
+  "number": "2.3.28",
+  "title": "",
+  "body": " Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.   "
+},
+{
+  "id": "subsec-TwoQNstatkey-12",
+  "level": "2",
+  "url": "sec-three.html#subsec-TwoQNstatkey-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data Exploration "
+},
+{
   "id": "sec-shape",
   "level": "1",
   "url": "sec-shape.html",
   "type": "Section",
   "number": "3.1",
   "title": "Shape of Data",
-  "body": " Shape of Data    At the end of this section you will able to:     Accurately describe the shape of a graph as uniform, right skewed, left skewed, or bell shaped and symmetrical.    Correctly identify the approximate center of a distribution.    Correctly estimate the range of values of a distribution.     When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is referred to as normally distributed. Symmetric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the right side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps   "
+  "body": " Shape of Data    At the end of this section you will able to:     Accurately describe the shape of a graph as uniform, right skewed, left skewed, or bell shaped and symmetrical.    Correctly identify the approximate center of a distribution.    Correctly estimate the range of values of a distribution.     When we display numerical data in a histogram we often look at its overall shape. If the data has similar frequencies, the bars are about the same size. This is knows as a uniform distribution. The center of the distribution is around the center of the middle intervals.   uniform with equal heights     A distribution the is more bell-shaped, meaning most of the data is in the center with few on the tails and appears symmetric, is referred to as normally distributed. Symmetric refers to imagining folding the graph in half about the middle and the two sides will align. If one of the tails is longer than the other, we refer to it as being skewed.   symmetric with hump in middle     If the data tends to cluster on the right side, and we see a few values on the left side, this is known as left skewed since the tail goes to the left of the data. This indicates the mean will be left of the median.   left skew     If the data tends to cluster on the left side, and we see a few values on the right side, this is known as right skewed since the tail goes to the right of the data. This indicates the mean will be right of the median.   right skew     Sometimes the graph can have multiple bumps showing certain values occur more often than others. This can be an example of bimodal (meaning two values occur more often than others).   bimodal with two humps    Practice Problems   Shape of Pets   Describe the shape of the distribution for the number of pets students have.   Dotplot for Number of Pets   Students had between 0 and 8 pets, with most students having 0 pets, 11 students had none, 13 students had none, 11 students had1 pet, 9 students had 2 pets, 5 students had 3 pets, no students had 4 pets, 1 student had 5, 6, 7, and 8 pets each.      It is right skewed since the tail goes to the right.     Shape Credit Hours   Describe the shape of the distribution for the number of credit hours students are taking.   Histogram for number of credits   Students take between 12 and 21 credits with more taking 15-16 credit hours.      It is roughly bell-shaped since most values are around 14-17 credits and fewer at the tails.     Shape of Tattoos   Describe the shape of the distribution for the number of tattoos students have.   Dotplot of Tattoos   Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.      It is right skewed since the tail goes to the right. Most students have no tattoos.    "
 },
 {
   "id": "sec-shape-2",
@@ -1099,13 +1369,49 @@ var ptx_lunr_docs = [
   "body": "bimodal "
 },
 {
+  "id": "sec-shape-17",
+  "level": "2",
+  "url": "sec-shape.html#sec-shape-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Practice Problems "
+},
+{
+  "id": "sec-shape-18",
+  "level": "2",
+  "url": "sec-shape.html#sec-shape-18",
+  "type": "Checkpoint",
+  "number": "3.1.1",
+  "title": "Shape of Pets.",
+  "body": " Shape of Pets   Describe the shape of the distribution for the number of pets students have.   Dotplot for Number of Pets   Students had between 0 and 8 pets, with most students having 0 pets, 11 students had none, 13 students had none, 11 students had1 pet, 9 students had 2 pets, 5 students had 3 pets, no students had 4 pets, 1 student had 5, 6, 7, and 8 pets each.      It is right skewed since the tail goes to the right.   "
+},
+{
+  "id": "sec-shape-19",
+  "level": "2",
+  "url": "sec-shape.html#sec-shape-19",
+  "type": "Checkpoint",
+  "number": "3.1.3",
+  "title": "Shape Credit Hours.",
+  "body": " Shape Credit Hours   Describe the shape of the distribution for the number of credit hours students are taking.   Histogram for number of credits   Students take between 12 and 21 credits with more taking 15-16 credit hours.      It is roughly bell-shaped since most values are around 14-17 credits and fewer at the tails.   "
+},
+{
+  "id": "sec-shape-20",
+  "level": "2",
+  "url": "sec-shape.html#sec-shape-20",
+  "type": "Checkpoint",
+  "number": "3.1.5",
+  "title": "Shape of Tattoos.",
+  "body": " Shape of Tattoos   Describe the shape of the distribution for the number of tattoos students have.   Dotplot of Tattoos   Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.      It is right skewed since the tail goes to the right. Most students have no tattoos.   "
+},
+{
   "id": "centers",
   "level": "1",
   "url": "centers.html",
   "type": "Section",
   "number": "3.2",
   "title": "Describing the Center of Data",
-  "body": " Describing the Center of Data    At the end of this section you will able to:     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean and median using technology.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.   Sample: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .   Sample: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42 apps. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per person.   Find the measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    .    "
+  "body": " Describing the Center of Data    At the end of this section you will able to:     Accurately estimate the location of the center of a distribution.    Calculate the mean, median, and mode from a data set.    Calculate the mean and median using technology.     This section focuses on measures of central tendency. Many times you are asking what to expect \"on average\" or what is a typical value. These types of questions can be answered by knowing the center of the data set. There are three measures of the center of the data. They are the mean, median, and mode.  The mode is the data value that occurs the most frequently in the data. To find it, you count how often each data value occurs, and then determine which data value occurs most often. This is easily seen with a dot plot.  The median is the value in the middle of a sorted list of data. To find it, you put the data in order from smallest to larger, and then determine which data value is in the middle of the data set. If there is an odd number of values, it will land on an actually data value. When there is an even number of values you will need to average the middle two values.  The mean is the arithmetic average of the numbers. You will add all the values together then divide by the number of values.  The formula for the sample mean is     where x-bar represents the mean, the sigma symbol indicates to find the sum of the data values, where each x is a data value, and then divide by the sample size of n .   Example: A sample of five students have the following number of apps on their cellular phones: 72, 36, 36, 25, 48.   Solution: The mode is 36 since it occurs most often. Since there are five values, the middle value is 25, 36, 36 , 48, 72 when arranged in order, thus the median is 36. The mean is the sum of the values divided by 5, thus 217\/5 = 43.4 apps per person. This is higher than the median because it is skewed to the right by the large value of 72.  A data set can have more than one mode. If there is a tie between two values for the most number of times, then both values are the mode and the data is called bimodal (two modes). If every data point occurs the just once, there is no mode. If there are multiple modes, then it is referred to being multimodal .   Example: A sample of six students have the following number of apps on their cellular phones: 25, 36, 36, 48, 72, 72.   Solution: This is bimodal with modes of 36 and 72 since both occur twice. Since there are six values, the middle value is (36+48)\/2=42, thus the median is 42 apps. The mean is the sum of the values divided by 6, thus 289\/6 = 48.167 apps per person.   Find the measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    .    Now you try finding the measures of center in the following problems.   Nursing   A nurse manager records the number of minutes it takes nurses to complete a patient admission assessment. The times measured in minutes are:     Find the mean, median, mode, and midrange time for completing the patient admission assessment.   mean  The sample mean is   The sample mean time to complete the patient admission assessment is approximately minutes.   median  The median is between the sixth and seventh value,  20, 27, 28, 28, 29, 30, [median] , 31, 31, 32, 33, 34, 35  thus the median is minutes.   mode  The data is multimodal with three modes of 28, 30, 31 minutes.    midrange  The midrange is minutes.     Hearing   An audiologist records the hearing threshold levels, in decibels, for 11 patients at a specific test frequency. The recorded values are:     Find the mean, median, mode, and midrange hearing threshold level.    mean  The sample mean is   The sample mean hearing threshold level is approximately decibels.   median  The median is the sixth value when arranged in increasing order, thus 21 decibels.   mode  The data is bimodal with two modes of 20 and 21.    midrange  midrange is decibels.    "
 },
 {
   "id": "centers-2",
@@ -1153,31 +1459,13 @@ var ptx_lunr_docs = [
   "body": "mean "
 },
 {
-  "id": "centers-7",
-  "level": "2",
-  "url": "centers.html#centers-7",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Sample: "
-},
-{
-  "id": "centers-8",
-  "level": "2",
-  "url": "centers.html#centers-8",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Solution: "
-},
-{
   "id": "centers-10",
   "level": "2",
   "url": "centers.html#centers-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Sample: "
+  "body": "Example: "
 },
 {
   "id": "centers-11",
@@ -1189,13 +1477,49 @@ var ptx_lunr_docs = [
   "body": "Solution: "
 },
 {
-  "id": "centers-12",
+  "id": "centers-13",
   "level": "2",
-  "url": "centers.html#centers-12",
+  "url": "centers.html#centers-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "centers-14",
+  "level": "2",
+  "url": "centers.html#centers-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Solution: "
+},
+{
+  "id": "centers-15",
+  "level": "2",
+  "url": "centers.html#centers-15",
   "type": "Checkpoint",
   "number": "3.2.1",
   "title": "Find the measures of center.",
   "body": " Find the measures of center  Find the mode, median, and mean for the data set 4, 5, 6?  find the sum of the values and divide by the number of values.  No mode, median = 5, mean = 5    .   "
+},
+{
+  "id": "ex-sample-center-nursing",
+  "level": "2",
+  "url": "centers.html#ex-sample-center-nursing",
+  "type": "Checkpoint",
+  "number": "3.2.2",
+  "title": "Nursing.",
+  "body": " Nursing   A nurse manager records the number of minutes it takes nurses to complete a patient admission assessment. The times measured in minutes are:     Find the mean, median, mode, and midrange time for completing the patient admission assessment.   mean  The sample mean is   The sample mean time to complete the patient admission assessment is approximately minutes.   median  The median is between the sixth and seventh value,  20, 27, 28, 28, 29, 30, [median] , 31, 31, 32, 33, 34, 35  thus the median is minutes.   mode  The data is multimodal with three modes of 28, 30, 31 minutes.    midrange  The midrange is minutes.   "
+},
+{
+  "id": "ex-sample-center-audiology",
+  "level": "2",
+  "url": "centers.html#ex-sample-center-audiology",
+  "type": "Checkpoint",
+  "number": "3.2.3",
+  "title": "Hearing.",
+  "body": " Hearing   An audiologist records the hearing threshold levels, in decibels, for 11 patients at a specific test frequency. The recorded values are:     Find the mean, median, mode, and midrange hearing threshold level.    mean  The sample mean is   The sample mean hearing threshold level is approximately decibels.   median  The median is the sixth value when arranged in increasing order, thus 21 decibels.   mode  The data is bimodal with two modes of 20 and 21.    midrange  midrange is decibels.   "
 },
 {
   "id": "spread",
@@ -1249,7 +1573,97 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Describing data with boxplots",
-  "body": " Describing data with boxplots  "
+  "body": " Describing data with boxplots   Finding Quartiles  There are special percentiles called quartiles. Quartiles are numbers that divide the data into four equal parts. One fourth (or a quarter) of the data falls between consecutive quartile values. To find the quartiles, we find the median and the divide each half of the data into two parts again.    Sort the data in increasing order.    Find the median, this divides the data list into 2 halves, thus the 50th percentile.    Find the median of the data below the median. This value is Q1 which is the 25th percentile.    Find the median of the data above the median. This value is Q3 which is the 75th percentile.     Example: The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20.   Solution:   Put the values in order and find the median: 5, 6, 12, 13 , 15, 18, 20  Find Q1 of the values below 13: thus 5, 6 , 12  Find Q3 of the values above 13: thus 15, 18 , 20  Thus Q1 = 6, Q2 = 13, Q3 = 15.  If you record the quartiles together with the maximum and minimum you have five-number summary. The five-number summary consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot.  The interquartile range (IQR) , is the difference between the first and third quartiles, thus which represents the middle 50% of the data. If the IQR is large the data is spread out and if the IQR is small the data is closer together.   Example: The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20, 25  Solution: Put the values in order and find the median 5, 6, 12, 13, | 15, 18, 20, 25 which occurs between 13 and 15 since there are an even number of values, thus the median = 14. Q1 is between 6 and 12 and Q3 is between 18 and 20, thus Q1 = 9 and Q3 = 19. Therefore, 50% of the students in ths sample are taking between 9 and 19 credits. The IQR = 19 - 9 = 10, thus the spread is 10 credits.    Checking for Outliers  Data should be checked for extremely high or extremely low values when compared to the rest of the data, these are known as outliers . Often you see the outliers as the starred values in a boxplot. To determine the possible outliers using the IQR method, we look at any value that is:     less than or     more than .     Example: A sample of seven students identified how many pairs of shoes they have in their closet: 6, 10, 15, 13, 4, 18, 50. Check for any outliers.  Intuitively we can see that 50 is much larger than the rest of the data, thus we anticipate it being an outlier. But we check mathematically.  First, find the Quartiles: 4, 6 , 10, 13 , 15, 18 , 50  Second, find IRQ= 18 - 6 = 12  Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12.  Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group.    When using technology, the outliers are often identified as an asterisk in the boxplot. Quartile 1 and Quartile 3 make up the box with a line drawn to the smallest non-outlier value and a line drawn to the largest non-outlier value.   Boxplot of Shoes   Boxplot with smallest 4 to largest 50, since 50 is outlier it is marked with an asterisk .    The boxplot shows and as the box, the median of 13 is the center bar. There is line to the smallest value of 4 extending from . The value 50 is the outlier and is marked as an asterisk. The upper line goes from to 18 which is the largest non-outlier in the data set.   Check for Outliers   A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample?    Yes, 220 and 238 are both outliers    First, find quartiles: 120, 138, 140 , 145, 157, M=159.5 162, 165, 175 , 220, 238  Find IQR = 175 - 140 = 35  Lower extreme = 140-1.5x35 = 87.5 so no lower outliers.  Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers.     pH Solution   A chemistry student measures the pH of 10 liquid samples from the same solution. Find the quartiles and determine if there is an outlier in the samples.  The pH levels are:    Quartiles  Arrange values in order:   The median is since there are an even number of values.  The quartiles are and .    Outlier Check  The interquartile range is .  The lower outlier bound is , so no lower outlier.  The upper outlier bound is , since 9.4 is greater than 7.55, it is an outlier.  In this data set, 9.4 is an outlier because it is far from the rest of the pH values.     "
+},
+{
+  "id": "subsec-Quartiles-2",
+  "level": "2",
+  "url": "boxplots.html#subsec-Quartiles-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Quartiles "
+},
+{
+  "id": "subsec-Quartiles-4",
+  "level": "2",
+  "url": "boxplots.html#subsec-Quartiles-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "subsec-Quartiles-10",
+  "level": "2",
+  "url": "boxplots.html#subsec-Quartiles-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "five-number summary "
+},
+{
+  "id": "subsec-Quartiles-11",
+  "level": "2",
+  "url": "boxplots.html#subsec-Quartiles-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "interquartile range (IQR) "
+},
+{
+  "id": "subsec-Quartiles-12",
+  "level": "2",
+  "url": "boxplots.html#subsec-Quartiles-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "subsec-Outliers-2",
+  "level": "2",
+  "url": "boxplots.html#subsec-Outliers-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "outliers "
+},
+{
+  "id": "subsec-Outliers-4",
+  "level": "2",
+  "url": "boxplots.html#subsec-Outliers-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Example: "
+},
+{
+  "id": "BoxplotOutliers",
+  "level": "2",
+  "url": "boxplots.html#BoxplotOutliers",
+  "type": "Figure",
+  "number": "3.4.1",
+  "title": "",
+  "body": " Boxplot of Shoes   Boxplot with smallest 4 to largest 50, since 50 is outlier it is marked with an asterisk .   "
+},
+{
+  "id": "subsec-Outliers-14",
+  "level": "2",
+  "url": "boxplots.html#subsec-Outliers-14",
+  "type": "Checkpoint",
+  "number": "3.4.2",
+  "title": "Check for Outliers.",
+  "body": " Check for Outliers   A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample?    Yes, 220 and 238 are both outliers    First, find quartiles: 120, 138, 140 , 145, 157, M=159.5 162, 165, 175 , 220, 238  Find IQR = 175 - 140 = 35  Lower extreme = 140-1.5x35 = 87.5 so no lower outliers.  Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers.   "
+},
+{
+  "id": "ex-outlier-pH",
+  "level": "2",
+  "url": "boxplots.html#ex-outlier-pH",
+  "type": "Checkpoint",
+  "number": "3.4.3",
+  "title": "pH Solution.",
+  "body": " pH Solution   A chemistry student measures the pH of 10 liquid samples from the same solution. Find the quartiles and determine if there is an outlier in the samples.  The pH levels are:    Quartiles  Arrange values in order:   The median is since there are an even number of values.  The quartiles are and .    Outlier Check  The interquartile range is .  The lower outlier bound is , so no lower outlier.  The upper outlier bound is , since 9.4 is greater than 7.55, it is an outlier.  In this data set, 9.4 is an outlier because it is far from the rest of the pH values.   "
 },
 {
   "id": "sec-probBasics",
