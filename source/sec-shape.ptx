@@ -46,4 +46,50 @@
             </image>
 
 
+<p> <term> Practice Problems </term></p> 
+<exercise> <title> Shape of Pets</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of pets students have. </p>
+<figure xml:id="PetDotplot2">
+            <caption>Dotplot for Number of Pets</caption>
+            <image source="PetDotplot.png" width="80%">
+                <shortdescription>Students had between 0 and 8 pets, with most students having 0 pets, 11 students had none, 13 students had none, 11 students had1 pet, 9 students had 2 pets, 5 students had 3 pets, no students had 4 pets, 1 student had 5, 6, 7, and 8 pets each.</shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> It is right skewed since the tail goes to the right.</p>
+</solution>
+</exercise> 
+
+<exercise> <title> Shape Credit Hours</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of credit hours students are taking. </p>
+<figure xml:id="CreditHistogram2">
+            <caption>Histogram for number of credits</caption>
+            <image source="CreditHisto.png" width="80%">
+                <shortdescription>Students take between 12 and 21 credits with more taking 15-16 credit hours.</shortdescription>
+            </image>
+        </figure> 
+
+</statement>
+<solution>
+<p> It is roughly bell-shaped since most values are around 14-17 credits and fewer at the tails.</p>
+</solution>
+</exercise> 
+
+<exercise> <title> Shape of Tattoos</title>
+<statement> 
+<p> Describe the shape of the distribution for the number of tattoos students have. </p>
+<figure xml:id="TattooDotplot2">
+            <caption>Dotplot of Tattoos</caption>
+            <image source="DotplotTattoos.png" width="80%">
+                <shortdescription>Students have between 0 and 12 tattoos with 0 occurring more often than more tattoos.</shortdescription>
+            </image>
+        </figure> 
+</statement>
+<solution>
+<p> It is right skewed since the tail goes to the right. Most students have no tattoos.</p>
+</solution>
+</exercise> 
 </section>

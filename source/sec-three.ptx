@@ -29,7 +29,7 @@
 <subsection xml:id="subsec-OneCatStatkey">
   <title>Graphing One Categorical Variable</title>
       <p>  </p> 
-        <objective> <term> Graphing One Categorical Variable </term> </objective>
+        <p> <term> Graphing One Categorical Variable </term> </p>
 
         <p> How to graph students eye color with StatKey. </p>
         <p> Open a web browser and copy <url href="http://www.lock5stat.com/StatKey/" /> </p>
@@ -57,7 +57,7 @@
      <p>  </p> 
        <p>  </p> 
        
-<objective> <term>Interpreting Bar Graphs</term> </objective>
+<p> <term>Interpreting Bar Graphs</term> </p>
 <p> From the bar graph we can see that most students have brown eyes and green eyes occur the least often. </p>
 <p> From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class. </p>
     
@@ -185,6 +185,76 @@
 </statement>
 <solution> <p> The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.</p> </solution>
 </exercise>
+
+
+
+  </subsection>
+
+  
+<subsection xml:id="subsec-OneCatQuantStatkey">
+  <title> One Categorical and One Quantitative Variable </title>
+<p>In this section we will explore a quantitative variable which is grouped by a categorical variable.  From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.</p>
+<p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>One Quantitative and One Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables. </p>
+<figure xml:id="OneQuantOneCatMenu">
+            <caption>StatKey Menu</caption>
+            <image source="Tathand1.png" width="50%">
+                <shortdescription>In first column select third option of one quantitative and one categorical variable.</shortdescription>
+            </image>
+        </figure>  
+    
+<p>Make sure to select the quantitative variables first: <em>Tattoos</em> and then the categorical variable of <em>Dominant hand</em>. Then click the <c> OK</c> button at the bottom right. </p>
+<figure xml:id="OneQuantOneCatVAr2">
+            <caption>Selecting variables</caption>
+            <image source="Tathand2.png" width="80%">
+                <shortdescription>Select quantitative Tattoos first and then categorical variable of dominant hand.</shortdescription>
+            </image>
+        </figure> 
+<p>The program will create three dotplots, one for each category. </p>
+<figure xml:id="OneQuantOneCatDotplotTatHand">
+            <caption>Dotplot of Tattoos grouped by dominant hand</caption>
+            <image source="Tathand3.png" width="80%">
+                <shortdescription>image of three dotplots for tattoos based on dominant hand.</shortdescription>
+            </image>
+        </figure> 
+<p> <em> Graph Interpretation </em> Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos. </p>
+<figure xml:id="OneQuantOneCatHandTable">
+            <caption>Table of Summary Statistics</caption>
+            <image source="Tathand4.png" width="75%">
+                <shortdescription>Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5,  with values of 4 ad 5.</shortdescription>
+            </image>
+        </figure> 
+<p>The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values. </p>
+<p> You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot. </p> 
+
+<exercise>
+<title> Compare Histograms</title>
+<statement> <p> Describe the shape of the histograms. </p> 
+ <figure xml:id="OneQuantOneCatHistogramTattoos">
+            <caption>Histogram of Tattoos grouped by dominant hand.</caption>
+            <image source="Tathand5.png" width="75%">
+                <shortdescription>triple histogram of tattoos based on dominant hand.</shortdescription>
+            </image>
+        </figure> 
+ </statement>   
+<solution> <p> The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.</p> </solution>
+</exercise>
+
+<exercise>
+<title> Compare Boxplots</title>
+<statement> <p> Describe the shape of the boxplots and note if there are any outliers. </p> 
+<figure xml:id="OneQuantOneCatBoxplotTattoos">
+            <caption>Boxplots of Tattoos grouped by dominant hand.</caption>
+            <image source="Tathand6.png" width="80%">
+                <shortdescription> The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.</shortdescription>
+            </image>
+        </figure>  
+</statement>
+<solution> <p> The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.</p> </solution>
+</exercise>
+
+ 
+
+
 
 
 

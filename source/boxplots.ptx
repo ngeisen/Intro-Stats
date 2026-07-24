@@ -3,6 +3,91 @@
 <section xml:id="boxplots" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Describing data with boxplots </title>
 
-    
+ <subsection xml:id="subsec-Quartiles">
+  <title> Finding Quartiles </title>
+
+<p> There are special percentiles called quartiles. <term> Quartiles </term> are numbers that divide the data into four equal parts. One fourth (or a quarter) of the data falls between consecutive quartile values. To find the quartiles, we find the median and the divide each half of the data into two parts again. </p>
+  <ol>
+    <li> <p> Sort the data in increasing order. </p> </li> 
+   <li> <p> Find the median, this divides the data list into 2 halves, thus the 50th percentile. </p> </li>
+   <li> <p> Find the median of the data below the median. This value is Q1 which is the 25th percentile. </p> </li> 
+   <li> <p> Find the median of the data above the median. This value is Q3 which is the 75th percentile. </p> </li> 
+    </ol> 
+<p> <term>Example: </term>  The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20. </p>
+<p> <em> Solution: </em> </p>
+ <p>Put the values in order and find the median: 5, 6, 12, <c>13</c>, 15, 18, 20 </p>
+<p> Find Q1 of the values below 13: thus 5, <c>6</c>, 12 </p>
+<p> Find Q3 of the values above 13: thus 15, <c>18</c>, 20 </p>
+<p> Thus Q1 = 6, Q2 = 13, Q3 = 15. </p>
+
+<p> If you record the quartiles together with the maximum and minimum you have five-number summary. The <term> five-number summary </term> consists of the minimum, the first quartile (Q1), the median (Q2), the third quartile (Q3), and the maximum (in that order). These are the values that make up the boxplot. </p>
+ <p>The <term>interquartile range (IQR) </term>, is the difference between the first and third quartiles, thus <m> IQR = Q3 - Q1</m> which represents the middle 50% of the data. If the IQR is <em> large </em> the data is spread out and if the IQR is <em>small</em> the data is closer together. </p>
+ <p> <term>Example: </term> The data represents the number of credit hours a sample of seven students are taking this semester: 15, 13, 6, 5, 12, 18, 20, 25 </p>
+<p> Solution: Put the values in order and find the median   5, 6, 12, 13, | 15, 18, 20, 25 which occurs between 13 and 15 since there are an even number of values, thus the median = 14. Q1 is between 6 and 12 and Q3 is between 18 and 20, thus Q1 = 9 and Q3 = 19. Therefore, 50% of the students in ths sample are taking between 9 and 19 credits. The IQR = 19 - 9 = 10, thus the spread is 10 credits. </p>
+ 
+</subsection> 
+
+<subsection xml:id="subsec-Outliers">
+  <title>Checking for Outliers</title>
+
+<p> Data should be checked for extremely high or extremely low values when compared to the rest of the data, these are known as <term> outliers</term>. Often you see the outliers as the starred values in a boxplot.  To determine the possible outliers using the IQR method, we look at any value that is: </p>
+<ul>
+ <li> <p>  <em> less</em> than <m>Q1-1.5 * IQR </m>  or </p> </li>
+<li> <p>  <em> more</em>  than <m> Q3+1.5 * IQR </m>. </p> </li>
+</ul>
+<p> <term> Example:</term> A sample of seven students identified how many pairs of shoes they have in their closet: 6, 10, 15, 13, 4, 18, 50. Check for any outliers.</p>
+<p> Intuitively we can see that 50 is much larger than the rest of the data, thus we anticipate it being an outlier. But we check mathematically. </p> 
+<p> First, find the Quartiles:	 4, <c>6</c>, 10, <c>13</c>, 15, <c>18</c>, 50 </p>
+<p> Second, find IRQ= 18 - 6 = 12 </p>
+<p> Lower extreme = 6 - 1.5(12) = -12 thus no lower outliers since no value below -12. </p>
+<p> Upper extreme = 18 + 1.5(12) = 36 thus 50 pairs of shoes is an outlier since it is more than 36. So having 50 pairs of shoes is atypical for this group. </p>
+<p>     </p> 
+
+<p> When using technology, the outliers are often identified as an asterisk in the boxplot. Quartile 1 and Quartile 3 make up the box with a line drawn to the smallest non-outlier value and a line drawn to the largest non-outlier value. </p> 
+<figure xml:id="BoxplotOutliers">
+            <caption> Boxplot of Shoes</caption>
+            <image source="ShoeBoxplot.png" width="100%">
+                <shortdescription>Boxplot with smallest 4 to largest 50,  since 50 is outlier it is marked with an asterisk .</shortdescription>
+            </image>
+        </figure>
+<p> The boxplot shows <m>Q_1=8</m> and <m>Q_3=16.5</m> as the box, the median of 13 is the center bar. There is line to the smallest value of 4 extending from <m>Q_1</m>. The value 50 is the outlier and is marked as an asterisk. The upper line goes from <m>Q_3</m> to 18 which is the largest non-outlier in the data set. </p> 
+
+<exercise> 
+<title> Check for Outliers </title>
+<statement> <p>
+A sample of ten students identified their weight in pounds: 162, 138, 140, 238, 120, 175, 165, 145, 157, 220. Are there any outliers in the sample? </p>
+</statement>
+<answer> <p> Yes, 220 and 238 are both outliers </p> </answer> 
+<solution> <p> First, find quartiles: 120, 138, <c>140</c>, 145, 157, <c> M=159.5 </c> 162, 165, <c>175</c>, 220, 238 </p>
+<p> Find IQR = 175 - 140 = 35 </p>
+<p> Lower extreme = 140-1.5x35 = 87.5 so no lower outliers. </p>
+<p> Upper extreme = 175+1.5x35 = 192.5 thus 220 and 238 are both outliers. </p>
+ </solution>
+</exercise>
+
+<exercise xml:id="ex-outlier-pH">
+<title> pH Solution</title> 
+  <statement>
+    <p>
+      A chemistry student measures the pH of 10 liquid samples from the
+      same solution. Find the quartiles and determine if there is an outlier in the samples.
+    </p>
+    <p> The pH levels are:  <m>6.8, 7.0, 6.9, 7.1, 6.7, 6.9, 7.0, 6.8, 7.1, 9.4</m>
+    </p>
+</statement>
+<solution><title> Quartiles </title> 
+  <p> Arrange values in order: <m> 6.7, 6.8, 6.8, 6.9, 6.9, 7.0, 7.0, 7.1, 7.1, 9.4 </m> </p>
+  <p> The median is <m>M=6.95</m> since there are an even number of values. </p>
+  <p>The quartiles are <m>Q_1=6.8</m> and <m>Q_3=7.1</m>.  </p>
+</solution>
+<solution> <title> Outlier Check </title>
+  <p>  The interquartile range is <m>IQR=Q_3 - Q_1=7.1-6.8=0.3</m>.  </p>
+  <p> The lower outlier bound is <m>6.8-1.5(0.3)=6.35</m>, so no lower outlier.  </p>
+  <p> The upper outlier bound is <m>7.1+1.5(0.3)=7.55</m>, since 9.4 is greater than 7.55, it is an outlier.  </p>
+  <p>  In this data set, 9.4 is an outlier because it is far from the rest of the pH values.  </p>
+  </solution>
+</exercise>
+
+</subsection>
 
 </section>
