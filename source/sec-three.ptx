@@ -125,6 +125,100 @@
 <p> Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the <c> Change Column </c> button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the <c> Show Data Table </c> button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape. </p> 
 </subsection>
 
+<subsection xml:id="subsec-OneQuantStatkey">
+  <title> Graphing One Quantitative Variable </title>
+<p> In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings).  StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary. </p>
+<p> Click on the following link to take you to StatKey  <url href="http://www.lock5stat.com/StatKey/" /> </p>
+    <p> Download the csv file <c> ClassSurvey1.csv </c> posted above and save to your computer where it is easily accessible. We are going to analyze the numerical data. </p>
+    <p> Under the <em> Descriptive Statistics and Graph </em> column on the left, choose the <em> One Quantitative Variable </em>. </p>
+        <figure xml:id="OneQuantStatKey">
+            <caption>Image of StatKey menu</caption>
+            <image source="StatkeyOneQN.png" >
+                <shortdescription>The first option under descriptive statistics menu is the one quantitative variable.</shortdescription>
+            </image>
+        </figure>
+<p> Click on the <c>Upload File</c> button and locate the data file on your computer and click <c>open</c>. Identify which numerical variable you will analyze (Siblings) and click the <c> OK </c> button at the bottom right of the window.  </p> 
+<image source="SelectSibling.png" width="50%">
+                <shortdescription>select sibling variable.</shortdescription>
+            </image>
+<p>The program will construct all three graphs and the summary table. </p> 
+<figure xml:id="SiblingDotsStatKey">
+            <caption> StatKey Output of Sibling Dotplot</caption>
+            <image source="SiblingDots.png">
+                <shortdescription>Dotplot showing 0 to 7 siblings with most at 2 siblings.</shortdescription>
+            </image>
+        </figure>
+<p> <em> Interpreting the Dotplot:</em>  We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students.  You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation. </p>
+<p> If we click on the <c>Histogram</c> button we can see the histogram graph and the summary statistics table. </p>
+<figure xml:id="SiblingHistogramStatKey">
+            <caption> StatKey Output of Histogram</caption>
+            <image source="SiblingHisto.png" >
+                <shortdescription>Histogram showing bars for siblings.</shortdescription>
+            </image>
+        </figure>
+<p> <em> Interpreting the Histogram: </em> We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty).  On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed. </p>
+<p> Next, click on the <c> Boxplot </c> button to see the boxplot graph, also known as a box-and-whisker plot. </p>  
+
+<figure xml:id="SiblingBoxplotStatKey">
+            <caption> StatKey Output of Boxplot</caption>
+            <image source="SiblingBox.png" >
+                <shortdescription>Boxplot showing box around 1-3 siblings.</shortdescription>
+            </image>
+        </figure>
+ <p> <em> Interpreting the Boxplot: </em> The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary. </p> 
+<p> Click on the <c>Change Columns</c> button to change variables. Weights and Heights are continuous quantitative variables.  Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers. </p> 
+
+<exercise> <title> Dotplot of Weights </title>
+<statement> <p> Use the dotplot to answer the questions about student weights, measured in pounds.</p>
+<figure xml:id="StudentWeightDots">
+            <caption>Dotplot of Student Weights</caption>
+            <image source="StuWeightDot.png" width="80%">
+                <shortdescription>dots representing weights of students between 115 and 303 pounds. Most students are between 150 and 200 pounds.</shortdescription>
+            </image>
+        </figure>
+
+<p> A. Which weight occurs most often for this class? </p> 
+<p>B. What is the largest weight of a student? </p>
+<p>C. What is the mean weight of students? </p>
+</statement>
+<solution> <p>A. If you hover over the dots, you will see 200 pounds occurred most often. </p> </solution>
+<solution> <p> B. 303 pounds is the maximum weight. </p> </solution>
+<solution> <p> C. The mean weight is 171.1 pounds with median of 163.5 pounds. </p> </solution>
+</exercise> 
+
+<exercise> <title> Histogram of Weights </title>
+<statement> <p> Use the histogram to answer the questions about student weights, measured in pounds.</p>
+  <figure xml:id="StudentWeightHist">
+            <caption>Histogram of Student Weights</caption>
+            <image source="StuWeightHist.png" width="80%">
+                <shortdescription>Histogram representing weights of students between 115 and 303 pounds with more students below 200 pounds.</shortdescription>
+            </image>
+        </figure>
+ <p> A. Describe the shape of the weight distribution? </p> 
+<p>B. Which is larger, the mean or median? </p>
+</statement>
+<solution> <p>A. The distribution is right skewed. </p> </solution>
+<solution> <p> B. The mean = 171.1 pounds is larger since right skewed with median =163.5 pounds. </p> </solution>
+</exercise> 
+
+<exercise> <title> Boxplot of Weights </title>
+<statement> <p> Use the boxplot to answer the questions about student weights, measured in pounds.</p>
+<figure xml:id="StudentWeightBox">
+            <caption>Boxplot of Student Weights</caption>
+            <image source="StuWeightBox.png" width="80%">
+                <shortdescription>Boxplot represents weights of students between 115 and 303 pounds with box bounded at 140 and 200 pounds. </shortdescription>
+            </image>
+        </figure>
+<p> A. Are there any outliers? </p> 
+<p>B. What does the box in the graph represent? </p>
+</statement>
+<solution> <p>A. Yes, the value of 303 pounds is an outlier and marked as an asterisk. </p> </solution>
+<solution> <p> B. The box represents the middle 50% of the values which are between 140 pounds and 200 pounds with the median of 163.5 pounds as the vertical line. </p> 
+</solution>
+</exercise> 
+
+
+  </subsection>
 
 <subsection xml:id="subsec-CatQuantStatkey">
   <title> One Categorical and One Quantitative Variable </title>
@@ -191,76 +285,6 @@
   </subsection>
 
   
-<subsection xml:id="subsec-OneCatQuantStatkey">
-  <title> One Categorical and One Quantitative Variable </title>
-<p>In this section we will explore a quantitative variable which is grouped by a categorical variable.  From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.</p>
-<p>In StatKey in the first column <em>Descriptive Statistics and Graphs</em>, select <term>One Quantitative and One Categorical Variables</term>, and then click the <c> Upload File </c>  button and select the two variables. </p>
-<figure xml:id="OneQuantOneCatMenu">
-            <caption>StatKey Menu</caption>
-            <image source="Tathand1.png" width="50%">
-                <shortdescription>In first column select third option of one quantitative and one categorical variable.</shortdescription>
-            </image>
-        </figure>  
-    
-<p>Make sure to select the quantitative variables first: <em>Tattoos</em> and then the categorical variable of <em>Dominant hand</em>. Then click the <c> OK</c> button at the bottom right. </p>
-<figure xml:id="OneQuantOneCatVAr2">
-            <caption>Selecting variables</caption>
-            <image source="Tathand2.png" width="80%">
-                <shortdescription>Select quantitative Tattoos first and then categorical variable of dominant hand.</shortdescription>
-            </image>
-        </figure> 
-<p>The program will create three dotplots, one for each category. </p>
-<figure xml:id="OneQuantOneCatDotplotTatHand">
-            <caption>Dotplot of Tattoos grouped by dominant hand</caption>
-            <image source="Tathand3.png" width="80%">
-                <shortdescription>image of three dotplots for tattoos based on dominant hand.</shortdescription>
-            </image>
-        </figure> 
-<p> <em> Graph Interpretation </em> Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos. </p>
-<figure xml:id="OneQuantOneCatHandTable">
-            <caption>Table of Summary Statistics</caption>
-            <image source="Tathand4.png" width="75%">
-                <shortdescription>Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5,  with values of 4 ad 5.</shortdescription>
-            </image>
-        </figure> 
-<p>The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values. </p>
-<p> You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot. </p> 
-
-<exercise>
-<title> Compare Histograms</title>
-<statement> <p> Describe the shape of the histograms. </p> 
- <figure xml:id="OneQuantOneCatHistogramTattoos">
-            <caption>Histogram of Tattoos grouped by dominant hand.</caption>
-            <image source="Tathand5.png" width="75%">
-                <shortdescription>triple histogram of tattoos based on dominant hand.</shortdescription>
-            </image>
-        </figure> 
- </statement>   
-<solution> <p> The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.</p> </solution>
-</exercise>
-
-<exercise>
-<title> Compare Boxplots</title>
-<statement> <p> Describe the shape of the boxplots and note if there are any outliers. </p> 
-<figure xml:id="OneQuantOneCatBoxplotTattoos">
-            <caption>Boxplots of Tattoos grouped by dominant hand.</caption>
-            <image source="Tathand6.png" width="80%">
-                <shortdescription> The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.</shortdescription>
-            </image>
-        </figure>  
-</statement>
-<solution> <p> The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.</p> </solution>
-</exercise>
-
- 
-
-
-
-
-
-  </subsection>
-
-
 <subsection xml:id="subsec-TwoCategoryStatkey">
   <title> Graphing Two Categorical Variables </title>
 <p>In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated? </p>
