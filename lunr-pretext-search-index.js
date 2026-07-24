@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Graphing with StatKey",
-  "body": " Graphing with StatKey   In this section we will focus on how to graph data with technology. We will be using StatKey which is a free online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.  We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.  Save the following data file on your computer where it is easily accessible:   ClassSurvey1.csv      At the end of this section you will able to:     Graph one categorical variable with a bar graph.    Graph one quantitative variable with a dotplot, boxplot, and histogram.    Graph one quantitative variable with one categorical variable.    Graph two categorical variables.    Graph two quantitative variables.      Graphing One Categorical Variable     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.      Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the Change Column button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the Show Data Table button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.    One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      Graphing Two Categorical Variables  In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated?  Save the following data file on your computer where it is easily accessible:   ClassSurvey2.csv   In StatKey in the first column Descriptive Statistics and Graphs , select Two Categorical Variables , and then click the Upload File button and select the two variables, I selected Favorite Season first and then Vacation Location and click on the OK button at the bottom right.   StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.    Once the graph shows, check on the Show Legend button on the top left to show the color-coded categories for the seasons.   Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .     Graph Interpretation The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach\/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach\/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach\/coastal occurred most with 23 students while the city\/cultural exploration only occurred twice. The Counts Table gives the frequency for each category.   Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .    Click on the Switch Variables button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars.   Switch Variable Button   image of switch variable button.    The segmented bar graph will be updated withe Favorite Seasons along the x-axis. Click on Show Legend for the color coding of the vacation locations.   Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.     Graph Interpretation: We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the Show Legend button for the color coding of the vacation locations. Brown is the beach\/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category.  To find the proportion for each location by the Favorite Seasons click on the Column button next to Proportions.   Select Column   image of columns tab by proportions .     Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.     Proportions Interpretation: Looking at the proportion across each season, we can see the proportion of beach\/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach\/coastal while 72.7% of those who prefer Summer also like beach\/coastal locations. The beach\/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different.    Graphing Two Quantitative Variables  We are going to investigate if there is a relationship between a person's height and his\/her shoe size using the first day survey.  Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    If you click on the box Show Regression Line , the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two quantitative variables. You are going to investigate if there is a correlation between any pairs. From ClassSurvey1 investigate the relationship between Weight and Height. Is there a correlation between Siblings and Weight? Which other pair will give you a slight negative correlation?   "
+  "body": " Graphing with StatKey   In this section we will focus on how to graph data with technology. We will be using StatKey which is a free online statistical tool. The program has some pre-built data sets to explore and allows you to upload your own data from a csv spreadsheet.  We are going to investigate the variables found in the Class Survey 1 by graphing and interpreting the data.  Save the following data file on your computer where it is easily accessible:   ClassSurvey1.csv      At the end of this section you will able to:     Graph one categorical variable with a bar graph.    Graph one quantitative variable with a dotplot, boxplot, and histogram.    Graph one quantitative variable with one categorical variable.    Graph two categorical variables.    Graph two quantitative variables.      Graphing One Categorical Variable     Graphing One Categorical Variable   How to graph students eye color with StatKey.  Open a web browser and copy   Download the csv file Lab 1 Data.csv posted in Canvas and save to your computer where it is easily accessible. We are going to analyze the students eye colors.  Under the Descriptive Statistics and Graph column on the left, choose the One Categorical Variable .   Image of StatKey menu   The second option under descriptive statistics menu is the one categorical variable.    Click on the Upload File button and locate the data file on your computer.  Identify which variable you will analyze (Eye Color) and click OK. The program constructs a bar graph and frequency table. A sample output image is below.   Sample image of StatKey output.   Sample image of bar graph and frequency table of the students eye color.         Interpreting Bar Graphs   From the bar graph we can see that most students have brown eyes and green eyes occur the least often.  From the frequency table we see the sample consisted of 63 UNC students. There are 34 students with brown eyes which is 54% of the class.  Using the graph above, which of the following statements are correct? Select all that apply.   Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.      Sometimes discrete numerical data can be represented with a bar graph. But the order the data is listed is based on the order the data is read into the StatKey program. Click on the Change Column button and select the sibling data. Notice that the graph does not list them in numerical order, rather by the way the data was listed in the spreadsheet. If you click on the Show Data Table button it shows the data file. This is why we do not discuss skewness with categorical data, we can change the order the categories are graphed, and it changes the shape.    Graphing One Quantitative Variable  In this section we will explore the number of siblings for these UNC students. This is a discrete quantitative variable (although one student claimed 1.5 siblings). StatKey will construct a dotplot, histogram, and boxplot for the data. StatKey will also create a Summary Statistics table identifying the sample size, mean, median, standard deviation, and the five-number summary.  Click on the following link to take you to StatKey   Download the csv file ClassSurvey1.csv posted above and save to your computer where it is easily accessible. We are going to analyze the numerical data.  Under the Descriptive Statistics and Graph column on the left, choose the One Quantitative Variable .   Image of StatKey menu   The first option under descriptive statistics menu is the one quantitative variable.    Click on the Upload File button and locate the data file on your computer and click open . Identify which numerical variable you will analyze (Siblings) and click the OK button at the bottom right of the window.   select sibling variable.   The program will construct all three graphs and the summary table.   StatKey Output of Sibling Dotplot   Dotplot showing 0 to 7 siblings with most at 2 siblings.     Interpreting the Dotplot: We can see there are three students with 0 siblings (minimum) and one student with 7 siblings (maximum). Most students have 1-3 siblings, with 2 siblings occurring most for 15 students. Recall each dot represents the number of siblings for that student, thus there are 42 dots to represent the sample size of 42 students. You can hover over a dot to display the value. The summary statistics table is on the right identifying the mean, median, and standard deviation.  If we click on the Histogram button we can see the histogram graph and the summary statistics table.   StatKey Output of Histogram   Histogram showing bars for siblings.     Interpreting the Histogram: We can see the data is grouped into 10 bars (although we see just 7 since some intervals are empty). On the right side we can use the slider to change the number of bars for the histogram. Shift the slider left so you have 8 buckets. This is a better histogram. We can see that the histograms are right skewed since most values are on the left side with a few far to the right. A few larger values pull the mean to the right, thus right skewed.  Next, click on the Boxplot button to see the boxplot graph, also known as a box-and-whisker plot.   StatKey Output of Boxplot   Boxplot showing box around 1-3 siblings.     Interpreting the Boxplot: The boxplot displays the five-number summary. The box represents the quartiles Q1 = 1 sibling and Q3 = 3 siblings, with the middle line representing the median of 2 siblings. The whisker goes left to the smallest value of 0 and the right whisker to the largest value of 7 siblings. In this case, 7 siblings is an outlier as indicated by the star or asterisk. The summary statistics table identifies the values for the five-number summary.  Click on the Change Columns button to change variables. Weights and Heights are continuous quantitative variables. Investigate the shape of the graphs, where the center is represented, and how spread out the values are. Use the boxplot to check for outliers.   Dotplot of Weights   Use the dotplot to answer the questions about student weights, measured in pounds.   Dotplot of Student Weights   dots representing weights of students between 115 and 303 pounds. Most students are between 150 and 200 pounds.    A. Which weight occurs most often for this class?  B. What is the largest weight of a student?  C. What is the mean weight of students?    A. If you hover over the dots, you will see 200 pounds occurred most often.    B. 303 pounds is the maximum weight.    C. The mean weight is 171.1 pounds with median of 163.5 pounds.     Histogram of Weights   Use the histogram to answer the questions about student weights, measured in pounds.   Histogram of Student Weights   Histogram representing weights of students between 115 and 303 pounds with more students below 200 pounds.    A. Describe the shape of the weight distribution?  B. Which is larger, the mean or median?    A. The distribution is right skewed.    B. The mean = 171.1 pounds is larger since right skewed with median =163.5 pounds.     Boxplot of Weights   Use the boxplot to answer the questions about student weights, measured in pounds.   Boxplot of Student Weights   Boxplot represents weights of students between 115 and 303 pounds with box bounded at 140 and 200 pounds.    A. Are there any outliers?  B. What does the box in the graph represent?    A. Yes, the value of 303 pounds is an outlier and marked as an asterisk.    B. The box represents the middle 50% of the values which are between 140 pounds and 200 pounds with the median of 163.5 pounds as the vertical line.      One Categorical and One Quantitative Variable  In this section we will explore a quantitative variable which is grouped by a categorical variable. From the Class Survey 2, students identified the number of tattoos they have, and which hand is their dominant hand.  In StatKey in the first column Descriptive Statistics and Graphs , select One Quantitative and One Categorical Variables , and then click the Upload File button and select the two variables.   StatKey Menu   In first column select third option of one quantitative and one categorical variable.    Make sure to select the quantitative variables first: Tattoos and then the categorical variable of Dominant hand . Then click the OK button at the bottom right.   Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.    The program will create three dotplots, one for each category.   Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.     Graph Interpretation Because of the small sample, only 2 students are ambidextrous, 4 students are left-handed which all have no tattoos, and 37 students who are right-handed. The number of tattoos is right skewed for the right-handed group with a mean of 1.378, median of 0, and values ranging from 0 to 12 tattoos. Clearly most students in this class do not have tattoos.   Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.    The summary table gives the statistics for the number of tattoos for each group as well as the overall values. Even though the left-handed group as 4 students, all values are zero. The ambidextrous group has a larger mean and median for the number of tattoos. The right handed group has the greatest range in values.  You can click on the tab for Histogram and Boxplot to see the spread of the other graphs. Because the number of tattoos is discrete, the histogram looks like the dotplot.   Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.     Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.      Graphing Two Categorical Variables  In this section we will explore the relationship between two categorical variables using their graphs. From the Class Survey 2, students identified their favorite season and their favorite vacation location. Is it possible the two variables are associated?  Save the following data file on your computer where it is easily accessible:   ClassSurvey2.csv   In StatKey in the first column Descriptive Statistics and Graphs , select Two Categorical Variables , and then click the Upload File button and select the two variables, I selected Favorite Season first and then Vacation Location and click on the OK button at the bottom right.   StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.    Once the graph shows, check on the Show Legend button on the top left to show the color-coded categories for the seasons.   Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .     Graph Interpretation The graph shows the segmented bar graph with the Vacation Location along the x-axis with the colors indicating which season is preferred. Brown is for Fall which occurs more often for those who prefer beach\/coastal areas, for 8 out of the 43 students. Blue is for summer which also occurred 8 times in the beach\/coastal area. Spring is green which occurred 4 times in the mountains and winter is red which did not occur in the Theme Parks or Staycation categories. The beach\/coastal occurred most with 23 students while the city\/cultural exploration only occurred twice. The Counts Table gives the frequency for each category.   Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .    Click on the Switch Variables button to change the x-axis to the Favorite Season with the type of Vacation on the y-axis for the height of the segmented bars.   Switch Variable Button   image of switch variable button.    The segmented bar graph will be updated withe Favorite Seasons along the x-axis. Click on Show Legend for the color coding of the vacation locations.   Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.     Graph Interpretation: We can see the fall season occurred most often at 15 with Winter occurring least often with 6 students. Check the Show Legend button for the color coding of the vacation locations. Brown is the beach\/coastal location which occurred 8 times in Fall and Summer. The blue Mountains occurred 4 times in Spring. The green Theme Parks did not occur in the Winter category.  To find the proportion for each location by the Favorite Seasons click on the Column button next to Proportions.   Select Column   image of columns tab by proportions .     Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.     Proportions Interpretation: Looking at the proportion across each season, we can see the proportion of beach\/coastal vary across the seasons which lets us know there is a possible association between the variables. The table lets us know that 53.3% of those who prefer Fall also like the beach\/coastal while 72.7% of those who prefer Summer also like beach\/coastal locations. The beach\/coastal combined represents 53.5% of the students (which is 23 out of 43 students). About 26.7% of the students who prefer Fall also like the mountains while only 9.1% who prefer summer also prefer the mountains.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two categorical variables. You are going to investigate if there is an association between them. Recall you are comparing if the proportions are about the same across the second variable or if they are noticeable different.    Graphing Two Quantitative Variables  We are going to investigate if there is a relationship between a person's height and his\/her shoe size using the first day survey.  Open StatKey, under the left column Descriptive Statistics and Graph , select Two Quantitative Variables. Click on the Upload File button and find the saved data file ClassSurvey1 on your computer and click Open on the bottom right.   StatKey two quantitative variables   Identify the two quantitative variables, select the x-variable first, Shoe size , and then the y-variable, Height , and then click Ok at the bottom right.   select the two quantitative variables image   The scatterplot shows each pair of points, such as size 10 shoe with the height of 66 inches, as (10,66). If we look at the pattern, we see a positive correlation. As the shoe sizes increase the student heights are also increasing. From the table the Correlation value is 0.913 which tells us this is a strong positive linear relationship, which also matches with the positive slope of 2.014. The scatterplot is scaled based on your values. If we extend the graph to shoe size 0, we get the y-intercept of 48.396 inches.   Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.    If you click on the Switch Variables on the top right, you can switch the x-axis and y-axis. The correlation value will be the same 0.913 but the slope and y-intercept will change with the independent variable on the x-axis. We still have a positive slope which is now 0.414 and if we extend the graph to the height of 0 inches, we get the y-intercept of size -18.683. This scatterplot tells us that as the heights of the students increase, their shoe sizes tend to increase as well.   Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.    If you click on the box Show Regression Line , the program will add the regression line to the scatterplot to help you make the predictions. Recall that the regression line is also know as the line of best fit since it minimizes the distances each point is to the regression line.   Data Exploration   Click on the Change Column(s) button near the top to change the variables. Make sure to select two quantitative variables. You are going to investigate if there is a correlation between any pairs. From ClassSurvey1 investigate the relationship between Weight and Height. Is there a correlation between Siblings and Weight? Which other pair will give you a slight negative correlation?   "
 },
 {
   "id": "sec-three-2-1",
@@ -1072,6 +1072,69 @@ var ptx_lunr_docs = [
   "body": " Interpreting information from a graph   Using the graph above, select all true statements that apply to the eye color graph.      Brown eyes occur most often for these students.    This is represented by the tallest bar.      Blue eyes occurred 22.2%    Take the frequency count and divide by the sample size for the percentage.      The sample size is 54 students.    Look at the total from the frequency table.      The distribution is right skewed.    We do not discuss distribution shape with categorical data.     "
 },
 {
+  "id": "OneQuantStatKey",
+  "level": "2",
+  "url": "sec-three.html#OneQuantStatKey",
+  "type": "Figure",
+  "number": "2.3.4",
+  "title": "",
+  "body": " Image of StatKey menu   The first option under descriptive statistics menu is the one quantitative variable.   "
+},
+{
+  "id": "SiblingDotsStatKey",
+  "level": "2",
+  "url": "sec-three.html#SiblingDotsStatKey",
+  "type": "Figure",
+  "number": "2.3.5",
+  "title": "",
+  "body": " StatKey Output of Sibling Dotplot   Dotplot showing 0 to 7 siblings with most at 2 siblings.   "
+},
+{
+  "id": "SiblingHistogramStatKey",
+  "level": "2",
+  "url": "sec-three.html#SiblingHistogramStatKey",
+  "type": "Figure",
+  "number": "2.3.6",
+  "title": "",
+  "body": " StatKey Output of Histogram   Histogram showing bars for siblings.   "
+},
+{
+  "id": "SiblingBoxplotStatKey",
+  "level": "2",
+  "url": "sec-three.html#SiblingBoxplotStatKey",
+  "type": "Figure",
+  "number": "2.3.7",
+  "title": "",
+  "body": " StatKey Output of Boxplot   Boxplot showing box around 1-3 siblings.   "
+},
+{
+  "id": "subsec-OneQuantStatkey-19",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneQuantStatkey-19",
+  "type": "Checkpoint",
+  "number": "2.3.8",
+  "title": "Dotplot of Weights.",
+  "body": " Dotplot of Weights   Use the dotplot to answer the questions about student weights, measured in pounds.   Dotplot of Student Weights   dots representing weights of students between 115 and 303 pounds. Most students are between 150 and 200 pounds.    A. Which weight occurs most often for this class?  B. What is the largest weight of a student?  C. What is the mean weight of students?    A. If you hover over the dots, you will see 200 pounds occurred most often.    B. 303 pounds is the maximum weight.    C. The mean weight is 171.1 pounds with median of 163.5 pounds.   "
+},
+{
+  "id": "subsec-OneQuantStatkey-20",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneQuantStatkey-20",
+  "type": "Checkpoint",
+  "number": "2.3.10",
+  "title": "Histogram of Weights.",
+  "body": " Histogram of Weights   Use the histogram to answer the questions about student weights, measured in pounds.   Histogram of Student Weights   Histogram representing weights of students between 115 and 303 pounds with more students below 200 pounds.    A. Describe the shape of the weight distribution?  B. Which is larger, the mean or median?    A. The distribution is right skewed.    B. The mean = 171.1 pounds is larger since right skewed with median =163.5 pounds.   "
+},
+{
+  "id": "subsec-OneQuantStatkey-21",
+  "level": "2",
+  "url": "sec-three.html#subsec-OneQuantStatkey-21",
+  "type": "Checkpoint",
+  "number": "2.3.12",
+  "title": "Boxplot of Weights.",
+  "body": " Boxplot of Weights   Use the boxplot to answer the questions about student weights, measured in pounds.   Boxplot of Student Weights   Boxplot represents weights of students between 115 and 303 pounds with box bounded at 140 and 200 pounds.    A. Are there any outliers?  B. What does the box in the graph represent?    A. Yes, the value of 303 pounds is an outlier and marked as an asterisk.    B. The box represents the middle 50% of the values which are between 140 pounds and 200 pounds with the median of 163.5 pounds as the vertical line.   "
+},
+{
   "id": "subsec-CatQuantStatkey-3",
   "level": "2",
   "url": "sec-three.html#subsec-CatQuantStatkey-3",
@@ -1085,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#OneQuantOneCat1",
   "type": "Figure",
-  "number": "2.3.4",
+  "number": "2.3.14",
   "title": "",
   "body": " StatKey Menu   In first column select third option of one quantitative and one categorical variable.   "
 },
@@ -1094,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#OneQuantOneCat2",
   "type": "Figure",
-  "number": "2.3.5",
+  "number": "2.3.15",
   "title": "",
   "body": " Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.   "
 },
@@ -1103,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#OneQuantOneCatDotplot",
   "type": "Figure",
-  "number": "2.3.6",
+  "number": "2.3.16",
   "title": "",
   "body": " Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.   "
 },
@@ -1112,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#OneQuantOneCatTable",
   "type": "Figure",
-  "number": "2.3.7",
+  "number": "2.3.17",
   "title": "",
   "body": " Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.   "
 },
@@ -1121,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#subsec-CatQuantStatkey-13",
   "type": "Checkpoint",
-  "number": "2.3.8",
+  "number": "2.3.18",
   "title": "Compare Histograms.",
   "body": " Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.   "
 },
@@ -1130,70 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#subsec-CatQuantStatkey-14",
   "type": "Checkpoint",
-  "number": "2.3.10",
-  "title": "Compare Boxplots.",
-  "body": " Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.   "
-},
-{
-  "id": "subsec-OneCatQuantStatkey-3",
-  "level": "2",
-  "url": "sec-three.html#subsec-OneCatQuantStatkey-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "One Quantitative and One Categorical Variables "
-},
-{
-  "id": "OneQuantOneCatMenu",
-  "level": "2",
-  "url": "sec-three.html#OneQuantOneCatMenu",
-  "type": "Figure",
-  "number": "2.3.12",
-  "title": "",
-  "body": " StatKey Menu   In first column select third option of one quantitative and one categorical variable.   "
-},
-{
-  "id": "OneQuantOneCatVAr2",
-  "level": "2",
-  "url": "sec-three.html#OneQuantOneCatVAr2",
-  "type": "Figure",
-  "number": "2.3.13",
-  "title": "",
-  "body": " Selecting variables   Select quantitative Tattoos first and then categorical variable of dominant hand.   "
-},
-{
-  "id": "OneQuantOneCatDotplotTatHand",
-  "level": "2",
-  "url": "sec-three.html#OneQuantOneCatDotplotTatHand",
-  "type": "Figure",
-  "number": "2.3.14",
-  "title": "",
-  "body": " Dotplot of Tattoos grouped by dominant hand   image of three dotplots for tattoos based on dominant hand.   "
-},
-{
-  "id": "OneQuantOneCatHandTable",
-  "level": "2",
-  "url": "sec-three.html#OneQuantOneCatHandTable",
-  "type": "Figure",
-  "number": "2.3.15",
-  "title": "",
-  "body": " Table of Summary Statistics   Right hand as sample of 37, mean 1.378 with values ranging from 0 to 12. Left hand has sample 4 with all values 0. Ambidextrous has sample size of 2, mean 4.5, with values of 4 ad 5.   "
-},
-{
-  "id": "subsec-OneCatQuantStatkey-13",
-  "level": "2",
-  "url": "sec-three.html#subsec-OneCatQuantStatkey-13",
-  "type": "Checkpoint",
-  "number": "2.3.16",
-  "title": "Compare Histograms.",
-  "body": " Compare Histograms   Describe the shape of the histograms.   Histogram of Tattoos grouped by dominant hand.   triple histogram of tattoos based on dominant hand.      The ambidextrous group has two values at 4 and 5 tattoos. The left handed group all have 0 tattoos. The right handed group is right skewed with most values at 0 tattoos with some as high as 12 tattoos.   "
-},
-{
-  "id": "subsec-OneCatQuantStatkey-14",
-  "level": "2",
-  "url": "sec-three.html#subsec-OneCatQuantStatkey-14",
-  "type": "Checkpoint",
-  "number": "2.3.18",
+  "number": "2.3.20",
   "title": "Compare Boxplots.",
   "body": " Compare Boxplots   Describe the shape of the boxplots and note if there are any outliers.   Boxplots of Tattoos grouped by dominant hand.   The ambidextrous group has box based on 4 and 5 tattoos. The left handed group all have 0 tattoos thus no box. The right handed group has multiple outliers to the right of box.      The ambidextrous group has box based on 4 and 5 tattoos, with median of 4.5. The left handed group all have 0 tattoos thus no box. The right handed group is right skewed with a box from 0 to 1 with multiple outliers from 3 tattoos to 12 tattoos.   "
 },
@@ -1211,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatStatkey",
   "type": "Figure",
-  "number": "2.3.20",
+  "number": "2.3.22",
   "title": "",
   "body": " StatKey Menu for Two Categorical Variables.   Select the fourth option for Two categorical variables then select the two variables.   "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatVacationBar",
   "type": "Figure",
-  "number": "2.3.21",
+  "number": "2.3.23",
   "title": "",
   "body": " Segmented Bar graph of Vacation location and Favorite season   Most preferred beach since tallest at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatVacationTable",
   "type": "Figure",
-  "number": "2.3.22",
+  "number": "2.3.24",
   "title": "",
   "body": " Table of Frequencies for Vacation location and Favorite seasons   Most preferred beach at 23, then mountains at 11, theme parks at 4, staycation at 3, then cultural at 2 .   "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatSwitchVar",
   "type": "Figure",
-  "number": "2.3.23",
+  "number": "2.3.25",
   "title": "",
   "body": " Switch Variable Button   image of switch variable button.   "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatSeasonBar",
   "type": "Figure",
-  "number": "2.3.24",
+  "number": "2.3.26",
   "title": "",
   "body": " Segmented Bar graph of favorite seasons with vacation location   Fall occurred 15 times, summer 11, spring 11, winter 6.   "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatColumns",
   "type": "Figure",
-  "number": "2.3.25",
+  "number": "2.3.27",
   "title": "",
   "body": " Select Column   image of columns tab by proportions .   "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#TwoCatSeasonTable",
   "type": "Figure",
-  "number": "2.3.26",
+  "number": "2.3.28",
   "title": "",
   "body": " Table of Frequencies and Proportions of favorite seasons with vacation location.   lists counts for each variable by location and season. The second table calculates the proportion for each segmented bar.   "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#ShoeHeightScatterplot",
   "type": "Figure",
-  "number": "2.3.27",
+  "number": "2.3.29",
   "title": "",
   "body": " Image of Scatterplot for Shoe Size and Height   Shoe size and Height Scatterplot.   "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-three.html#HeightvsShoeScatterplot4",
   "type": "Figure",
-  "number": "2.3.28",
+  "number": "2.3.30",
   "title": "",
   "body": " Image of Scatterplot for Height and shoe size   Scatterplot with height on x-axis.   "
 },
